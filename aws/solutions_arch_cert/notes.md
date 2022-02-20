@@ -1539,5 +1539,827 @@ Operates over Internet, but customer gateway to AWS VPN CloudHub is encrypted (s
 - use private IP address over public IP address to save costs. this uses AWS backbone network.
 - to cut network costs, have all your EC2 instances in the same availability zone and use private IP address. 100% cost free but has **single point of failure issues**.
 
+# HA Architecture
 
+## Load Balancers Theory
+
+### application lb
+
+balancing HTTP and HTTPS traffic
+
+operate at level 7
+
+capable of advanced routing
+
+### network lb
+
+TCP traffic
+
+operates on level 4
+
+high permanence; millions of requests per second; ultra-low latencies
+
+### classic 
+
+balancing HTTP and HTTPS traffic
+
+can use Layer 7 specific features like X-Forwarded ans sticky sessions
+
+can use strict Layer 4 load balancing for TCP
+
+preferably use application LB but classic LB can be cheaper if you want simple round robin LB
+
+errors: 504 gateway timeout (application error)
+
+X-Forwarded-For Header: all traffic to applications reaches via the load balancer, which means it will log only the load balancer's IP for each request. Instead, it should use the X-Forwarded-For header which will retain the original sender's IP.
+
+## lab: Load Balancers and Health Checks
+
+### define classic load balancer
+
+load balancer name, VPC to create it inside
+
+listener configuration: protocol, port, instance protocol, instance port
+
+security group
+
+health check: ping protocol, port, path; response timeout, interval, unhealthy threshold, healthy threshold
+
+add EC2  instances, cross zone LB, connection draining
+
+### target groups
+
+Groups of EC2 instances where traffic will be routed to according to certain criteria.
+
+target group name; target type (instance, IP, lambda function); protocol; port; VPC; related health check 
+
+Add EC2 instances as targets to the target groups
+
+### define application load balancer
+
+name; scheme (internal facing, internal); IP address type
+
+listener: protocol
+
+AZs
+
+security group
+
+target group
+
+add EC2  instances to registered group of load balancer
+
+Rules can be created here with conditions and actions. This is not available in classic load balancers.
+
+
+
+504 means gateway has timed out, means the application is not responding to the gateway within the timeout configured on the gateway.
+
+`X-Forwarded-For` header can be used to see the original sender of the request.
+
+Instance statuses are `InService` or `OutofService`  
+
+Load balancers have their own DNS names and not IP address
+
+*Read ELB FAQ for Classic Load Balancers*
+
+## Advanced Load Balancer Theory
+
+### Sticky Sessions
+
+Normally Classic LB will route each request to the the instance with the smallest load. **Sticky sessions** will allow all requests from a user to be sent to the same EC2 instance for that session.
+In application load balancers, the traffic will be sent at the same target group and not individual instances.
+
+### Cross Zone Load balancing
+
+Imagine AZ One has 4 instances and AZ Two has 1 instance. Total of 5 instances.
+
+Route 53 will send 50% each to the each of these AZs which means AZ One will divide 50% of the received AZ load between 4 instances and AZ Two will divide 50% of received load between just 1 instance.
+
+Enabling Cross Zone Load Balancing will still make Route 53 divide the load 50% but the load balancers themselves will gang up cross AZ to divide up the load between the 5 instances. That is, load balancer in one AZ can redirect load to an instance in another AZ.
+
+You need not have a load balancer set up on an AZ Two to include instances there into the load balancer targets of AZ One's load balancer.
+
+### Path patterns
+
+Used to route traffic based on what is in the URL path. Useful for microservices. eg. general requests to one target group, image requests to another, etc.
+
+## Auto Scaling Theory
+
+**groups**: logical component i.e web server, application, database group
+
+**configuration templates**: launch template/configuration for EC2 instances in each group. specify information like AMI ID, instance type, key pair, security grouos, block device mapping.
+
+**scaling options**: ways to scale eg. on conditions or on schedule
+
+### scaling options
+
+#### maintain current instance levels at all times
+
+maintain a specified number of instances at all time. health check used to detect unhealthy instances, when detected terminate it and bring up a new one.
+
+#### scale manually
+
+manually specify the maximum, minimum, desired capacity of the auto scaling group
+
+#### scale based on schedule
+
+time and date, used when you know exactly when to increase or decrease the number of instances based on a predictable schedule
+
+#### scale based on demand
+
+sacling policies defined to control scaling process based on load
+
+#### Use predictive scaling
+
+Amazon EC2 scaling in combination with AWS Auto Scaling to use predictive (based of history of load) and dynamic (based on real time conditions) methods
+
+## lab: launch configurations and auto scaling groups
+
+### launch configuration
+
+create launch configuration, instance type
+
+name, IAM role, boot strap script, IP address type, Kernel ID, RAM disk ID
+
+storage
+
+security group
+
+### auto scaling group
+
+group name, launch configuration, group size, network (VPC), subnet
+
+load balancing, health check grace period
+
+keep group at initial size or use scaling policy
+
+scaling policy: min and max instances; name; metric type (average CPU utilization, etc); target value (of metric); warm up seconds for instance
+
+notification
+
+## HA Architecture
+
+Always design for failure
+
+use multiple AZs and regions wherever possible
+
+difference between multi-AZ (disaster recovery) and read replicas (performance) for RDS
+
+difference between scaling out (add ore instances) and scaling up (increases resources on existing instances)
+
+consider cost element
+
+S3 storage classes
+
+## lab: HA WordPress site
+
+S3 bucket: storage
+
+CloudFront: CDN
+
+Security Groups: which ports on which instances are open to which security groups
+
+RDS: database
+
+IAM Role: for EC2 to talk to S3
+
+EC2 instance: bootstrap scripts, etc.
+
+## lab: setting up EC2
+
+ssh into the EC2 instance to check if the bootstrap script has done its job
+
+WordPress wp config and database setup.
+
+S3 redundancy for uploaded images
+
+htaccess for url rewrite
+
+load balancer
+
+## lab: adding resilience and autoscaling
+
+cron job to update S3 with changes to EC2 storage. This can be done via the `aws s3 sync` command.
+
+auto scale launch config, auto scaling group
+
+## lab: cleaning up
+
+## Cloud Formation
+
+stack: template
+
+completely scripting your cloud environment
+
+Quick Start is a collection of CloudFormation templates already built by AWS Solution Architects
+
+## lab: Elastic Beanstalk
+
+Quickly deploy and manage applications in the AWS cloud without worrying about the infrastructure that runs those applications
+
+ELB automatically handles capacity provisioning, load balancing, scaling, and health monitoring.
+
+You just upload your application.
+
+## HA Bastions
+
+#### Option 1
+2 hosts in 2 separate AZs. Use Network Load Balancer with static IP addresses and health checks to fail over from one host to another. Network LB because layer 4, you can't use application load balancer here as it is layer 7.
+
+#### Option 2 
+
+1 host in 1 AZ behind an auto scaling group with health checks and a fixed Elastic IP address. If host fails, the auto scaling group will provision a new EC2 instance in a separate AZ. User data script can be used to configure the same Elastic IP address to the new host. Cheapest but not 100% fault tolerant.
+
+## On Premise Strategies
+
+**Database Migration Service**: AWS db exported out of AWS; heterogenous and homogenous migration
+
+**Server Migration Service**: incremental replication of on prem servers to AWS; backup, disaster recovery, etc.
+
+**AWS Application Discovery Service**: install on prem and generate a server utilization and dependency map of your on prem environment; can be used toestimate the total cost of ownership of runnign on AWS; data available on AWS Migration Hub 
+
+**VM Import/Export**: migrate existing applications into EC2 or export your AWS VMs to on-prem; 
+
+**Download Amazon Linux 2 as an ISO**
+
+# Applications
+
+## SQS
+
+This is a distributed queue system that allows web service applications to *queue messages* that *one component in the application generates to be consumed by another component*.
+
+**Pull based**, not push based.
+
+"**Decouple**" components of an application to run independently.
+
+### Messages
+
+- Messages can contain **up to 256 KB of text**.  Any messages going above this limit will be stored in S3 with limit of 2GB.
+- retention period in queue from 1 minute to 14 days; default is 4 days
+- Can be retrieved programatically using the **Amazon SQS API**
+  - **short polling** retrieves messages immediately even if queue is empty
+  - **long polling** does not return till a message arrives or the long poll times out
+  - *long polling should be used to avoid constant short polling on an empty queue which leads to unnecessary cost*
+
+### Queue
+
+A **queue** is a temporary repository for messages that are waiting to be processed.
+
+- acts as a buffer between producer and consumer
+- useful when producer is creating work faster than consumer can process
+- useful when the producer or consumer are intermittently connected to the network
+- helps to store messages even an EC2 goes down. Another instances can simply pick the message up instead of the message getting lost due to the failing EC2 instance.
+
+#### Standard Queue
+
+- default queue type
+- nearly unlimited number of transactions per second
+- guaranteed to deliver message at least once
+- more than one copy of the message may  be delivered 
+- messages may be received out of order
+
+#### FIFO Queue
+
+- messages' order is strictly preserved
+- once delivered, a message will stay there till a consumer processes and deletes it
+- duplicates are not introduced
+- allows multiple ordered message groups within a single queue
+- limited to 300 transactions per second
+
+#### Visibility Timeout
+
+- amount of time that a message is invisible in a queue after a reader has picked it up
+- If reader processes it before the timeout, the message will be deleted
+- If reader does not process it before timeout, the message will become visible again which may be picked up by another reader
+- common cause of same message being delivered twice; increase the visibility timeout
+- maximum of 12 hours
+
+
+
+## Simple Work Flow Service (SWF)
+
+- cordinate work across distributed application components
+- tasks/work can be executable code, web service calls, **human actions**, scripts
+- used for manual or human tasks involved in a workflow
+- collection of related workflows are refered to as a **domain**
+
+### SWF vs SQS
+
+| topic            | SWF     | SQS   |
+| ---------------- | ------- | ------ |
+| **retention period** | 14 days | 1 year |
+|**duplicate messages possible?**|no|yes, application needs to handle|
+|**tracking**|yes, tracks all tasks and events|no, need to implement your own application-level tracking |
+
+### SWF Actors
+
+**Workflow starters**: application that initiates a workflow
+
+**Deciders**: control flow of activity tasks; if something has finished/failed, this will decide what to do next
+
+**Activity Workers**: carry out the activity tasks
+
+## Simple Notification Service
+
+- setup, operate, send notifications from cloud
+- publish messages from application and immediately deliver to subscribers or other applications
+- Messages stored redundantly across multiple AZs.
+
+### Destination types
+
+- Apple, Google, Fire OS, Windows devices
+- Android devices in China with Baidu Cloud Push
+- SMS
+- email to SQS
+- any HTTO endpoint
+
+### **Topic**
+
+- access point allowing receipients to subscribers to dynamically subscribe for identical copies of same notification
+- Multiple endpoints eg. group together android, iOS, SMS
+- application can pulbish to a topic, SNS will then send out the notification
+
+### Benefits
+
+- instantaneuos push, no polling
+- simple API
+- multiple transport protocols
+- pay as you go; no up front cost
+- AWS Management Console offers point-and-click interface
+
+## Elastic Transcoder
+
+- media transcoder in the cloud ie convert media files to different formats to play on smartphones, tablets, PCs, etc
+- provides popular presets for popular output formats supports on various devices
+- pay for minutes and resolution
+
+## API Gateway
+
+- fully managed service for developers to publish, maintain, monitor, and secure APIs at scale
+- expose HTTPS end points to define RESTful API
+- "serverless" connection to Lambda and DynamoDB
+- send each API endpoint to different target
+- low cost; scale effortlessly
+- track and control usage by API key
+- throttle requests to prevent attacks that will impact cost
+- connect to CloudWatch to log all requests for monitoring
+- maintain multiple versions of API
+
+### Configuration
+
+- define API (container)
+- definte resources and nested resources (URL)
+- for each resource:
+  - supported HTTP methods (verb)
+  - security
+  - target (EC2, Lambda, DynamoDB, etc.)
+  - request and response transformations
+
+### Deploy
+
+- uses API Gateway domain
+- can use custom domain
+- supports AWS Certificate Manager (free SSL/TLS certs)
+- deployed to a stage
+
+### Caching
+
+- reduce number of calls made to your endpoints
+- improve latency of requests
+- TTL period can be defined in seconds
+
+### Origin Policy
+
+To prevent Cross-Site Scripting attacks (XSS), same origin policy is enforced by browsers where in scripts from one page can access data from another page only if the web pages have the same origin.
+
+But AWS uses different domain names for different services.
+
+CORS (Cross-origin resource sharing) allows restricted resources on a web page to be requested from another domain than from which the web page was served. This is implemented at the server side and not in the client browser code.
+
+#### CORS Flow
+
+- browser makes HTTP OPTIONS call for a URL
+- server responds with the list of domains allowed to call the URL
+- If you get error "Origin policy cannot be read at the remote resource", then enable CORS on API gateway.
+
+***TODO How is this different than CloudFront CDN?***
+
+## Kenesis
+
+**Streaming Data** is data that is 
+
+- generated continuously by 1000s of data sources
+- sent simultanously as data records
+- sent in small sizes (kilobytes)
+
+Examples purchases from online stores, stock prices, game data, social network data, geospatial data, iOT data.
+
+**Amazon Kenesis**
+
+- platform to send streaming data to
+- load, analyse streaming data
+- build custom applications
+
+### Kenesis Streams
+
+Different producers can stream data to Kenesis Streams.
+
+Streams from each of these producers can be stored in separate Shards. Retention from 24 hours to 7 days.
+
+Consumer applications will read from these shards.
+
+#### Shards
+
+- read: 5 transactions per second; upto max total read rate of 2MB per second
+- write: 1000 records per second; upto max total write rate of 1MB per second (including partition keys)
+- total capacity of the stream is the sum of the capacities of shards
+
+### Kenesis Firehose
+
+No persistence (storage), needs to be processed immediately.
+
+### Kenesis Analytics
+
+Works with both Streams and Firehose.
+
+Analyze data on the fly and save it at endpoints like S3, Redshift, Elasticsearch Cluster.
+
+## Cognito (Web Identity Federation)
+
+**Web Identity Federation** lets user get access to AWS resources by authenticating with a web-based identity provider like Google, Facebook, Amazon.
+
+User receives a temporary AWS security credentials.
+
+**Cognito** is the WIF service by Amazon.
+
+Allows
+
+- sign up and sign in to apps
+- access to guest users
+- sync user data for multiple devices
+- recommended for all AWS mobile apps
+
+Cognito **User Pools** are user directories used to manage sign-up and sign-in functionality for mobile and web applications. Successful auth generates a **JSON Web token** (JWT). *Deals with user names, passwords, registrations, account recovery, initial authentication.*
+
+Cognito **Identity Pools** provide temporary AWS credentials to access AWS services like S3 or DynamoDB. *Deals with actual granting of IAM role as part of the authentication.*
+
+Cognito tracks association between user identity and the various devices that the user has signed in from. Cognito will use **Push Synchronization to push updates and sync a user across multiple devices**. Uses **SNS** to send notification to devices whenever data stored on cloud has changed.
+
+# Security
+
+## Reducing Security Threats
+
+Bad actors: 
+
+- typically automated processes
+- content scrapers
+- bad bots
+- fake user agent
+- Denial of Service
+
+By blocking these, we lower overall costs by eliminating access and also reduce security threats.
+
+NACL (Network Access Control List):
+
+- NACL rules can be used to block IPs in outbound or inbound manner.
+- works at layer 4 (Transport layer)
+
+Host based firewall: 
+
+- Linux: firewalld, iptables, uff
+- Windows Firewall
+
+Application Load Balancer (ALB):
+
+- The connection from the bad actor will terminate at the ALB and not at the EC2 instance. So host based firewalls are ineffective.
+
+- The ALB security group (public subnet) can be configured to be the only one that can access the EC2 Security Group (private subnet).
+
+Network Load Balancer (NLB):
+
+- traffic passes thru and thru the NLB to the EC2 instance, so NACL should be used.
+
+Web Application Firewall (WAF):
+
+- attached to load balancer or CloudFront
+- monitor web requests and block/allow according to conditions
+- preconfigured filtering to block common attacks like cross site scripting or SQL injection
+- works at layer 7 (application layer), so you can inspect content of the traffic
+- if you want to block IP or range of IPs, NACL should be used
+- when using CloudFront:
+  - the CloudFront IP is passed on the NACL, so origin IP will not be visible. In this case, use WAF with CloudFront.
+  - CloudFront's Geo Match feature can be used to block IPs geographically
+
+## Key Management Service (KMS)
+
+- manage keys for encryption and decryption
+- manage **customer master keys (CMK)** which are logical representation of key or pointer to cyrptographic material
+- regional; CMKs do not leave the report or KMS
+- ideal for S3 objects, database password, API keys that stored in Systems Manager Parameter store
+- encrypt/decrypt data upto 4KB in size
+- integrated with most AWS services
+- pay per API call like listing keys, encrypt, decrypt, reencrypt
+- audit via CloudTail; logs on S3
+- uses FIPS 140-2 Level 2, requires to show evidence of tampering. (Level 3 CloudHSM)
+
+### Types of CMKs
+
+AWS Managed CMK: free; used by default if encryption is enabled in any AWS service; only the service can use them; can track usage; lifecycle and permissions are managed by KMS
+
+Customer Manager CMK: specific to and created by customer; full control over lifecycle of key via key policies which can be enabled or disabled; allows key rotation
+
+AWS Owned CMK: owned by AWS service and used on shared basis across multiple accounts; you can't view/track/audit them
+
+### Symmetric vs Asymmetric CMKs
+
+| Criterion                         | Symmetric                                                    | Asymmetric                                                   |
+| --------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| how many keys?                    | default, same key for encryption/decryption                  | public and private key pair                                  |
+| Algorithm?                        | AES-256                                                      | RSA and ECC                                                  |
+| Never leaves AWS unencrypted?     | yes                                                          | only private key                                             |
+| Must call KMS APIs to use?        | yes                                                          | only private key                                             |
+| KMS integrated with AWS services? | yes                                                          | Not supported. Public key can be downloaded and used outside AWS. Used by those who can't call KMS API. |
+| Usage?                            | encrypt, decrypt, reencrypt                                  | sign messages, verify signatures                             |
+| Misc.                             | Generate data keys, data key pairs, and random byte strings. Import your own key material. | --                                                           |
+
+### Key Policies
+
+A default key policy is created when a CMK is created via API. This policy grants full access to the keys to the AWS account (root user).
+
+When encrypted objects move between region, the object needs to be decrypted first, then moved and encrypted in the other region with a CMK there.
+
+Key alias is a shortcut to point to multiple keys; help with key rotation as any key within that alias will be used. All alias need to be prefixed with `alias/`
+
+Cipher text blob is Base 64 encoded.
+
+ciphertext -> base 64 decode -> decrypt -> base64 decode
+
+Data Encryption Key (DEK) used for encrypting files more than 4KB. When you created one you get the plain text key and cipher text blob of the key which contains metadata. Throw the plain text, store cipher text blob with your encrypted file. the decrypting process wil use the cipher text blob when calling the KMS API to fetch the Data Key and decrypt locally. This avoids unnecessary latency that could have resulted out of sending the entire file over to KMS to decrypt and return.
+
+## CloudHSM
+
+- Dedicated "Hardware Secure Modules"
+
+- FIPS 140-2 Level 3, physical security mechanisms
+- manage your keys
+- single tenant, multi-AZ cluster dedicated to one customer
+- no accedd to AWS managed component
+- runs within VPC
+- industry standard APIs (PKCS#11, Java Cryptography Extensions - JCE, Microsoft CryptoNG - CNG); no AWS APIs
+- keys irretrievable if lost
+- operates within its own VPC. Each HSM will project Elastic Network Interfaces into a VPC where your application sits in, your application can then communicate via that ENI. 
+- Not highly available, need to configure one per AZ with its opwn subnet.
+- Have at least 2 so that when one HSM fails, the ENI of the other HSM can be accessed.
+
+## Systems Manager Parameter Store
+
+- AWS Systems manager (SSM)
+
+- Used to securely store secret keys, passwords, connections strings, configurations, license codes, API keys, etc. instead of maintaining the same in code base.
+- serverless storage
+- encrypted (KMS) or plaintext
+- store in hierarchies; can be addressed via URL; max 15 level deep
+- track versions
+- TTL expiry for configurations like passwords
+
+### lab:
+
+- created policy to give access to certain API like `GetParameter`
+- create role and assigned policy to it
+- create simple lambda that will
+  - read ceratin environment variables
+  - use those env vars to create a URL
+  - URL will be used to read parameters at that parameter store path
+- create a key in KMS
+  - create an admin of that key
+  - give the previously created role access on that key
+- create parameter in parameter store
+  - name as the URL; standard tier since values less that 4KB; specify KMS
+  - paramter can be String;  Secure String; String List
+- configure test event for lambda to test
+
+# Serverless
+
+## Lambdas
+
+Data Centre -> IAAS -> PAAS -> Containers -> Serverless
+
+AWS Lambdas is a compute service where you can upload just your code in the form of Lambda functions. AWS Lambdas takes care of provisioning and managing the servers that are used to run the code.
+
+Lambdas can trigger other lambdas.
+
+Lambdas scale out, not up. Means a new function instance is started instead of upgrading resource of existing function.
+
+Independent, 1 event = 1 function.
+
+API gateway can trigger lambdas.
+
+Languages:
+
+Node.js, Java, Python, C#, Go, PowerShell 
+
+Not serverless: All RDS except for AuroraDB; EC2
+
+AWS X-ray allows you to debug Lambdas among other microservice and serverless architectures.
+
+Can perform global tasks.
+
+***TODO list what are not serverless; triggers***
+
+### Used as
+
+- event driven: runs code in response to events like changes to S3 bucket or DynamoDB table
+- compute service: runs code in response to HTTP requests made to amazon API Gateway or AWS SDKs
+
+### Pricing
+
+**number of requests**: first 1 million requests are free. 0.20 $ per 1 millions requests thereafter
+
+**duration**: calculated from time code begins execution till it returns or terminates, rounded to 100ms. $0.00001667 for every GB-second used (memory allocated by function)
+
+## lab: Build Serverless Webpage
+
+### Lambdas homepage
+
+**options**: author from scratch; blueprints; AWS serverless app repo
+
+Select "author from scratch"
+
+Name; Runtime (language); Role; Role name; Policy Templates
+
+### Designer
+
+Trigger: {API; Security}
+
+Function code
+
+Environment variables
+
+Tags
+
+Execution Role; Basic Settings {memory, timeout}; Network {VPC}; Debugging {DLQ}; Concurrency; Auditing and Compliance
+
+### API
+
+Amazon API gateway
+
+Actions: create method (create a GET request and configure it to hit the lambda function)
+
+Actions: Deploy API 
+
+Click on the newly created GET method, invoke URL
+
+Make a S3 bucket; make it public; static web site hosting; upload index.html and error.html; make them public; index.html has a button that hits the above created lambda
+
+## lab: Build an Alexa Skill
+
+*Too complex for notes*
+
+https://www.udemy.com/course/aws-certified-solutions-architect-associate/learn/lecture/13888042#content
+
+Create a s3 bucket for AWS Polly to write out to. 
+
+Create a AWS Polly synthesis task to create mp3 file out of some notes.
+
+Create a Alexa skill to read out random facts. Use the audio src tag to point to the above mp3 files in s3 bucket.
+
+## Serverless Application Model (SAM)
+
+CloudFormation extension optimised for serverless applications.
+
+New type: functions, APIs, tables
+
+Supports anything that CloudFormation supports
+
+run serverless applications locally
+
+package and deploy using CodeDeploy
+
+### SAM Template
+
+yaml file with:
+
+1. headers like `transform`: tells CloudFormation that this is a SAM template
+2. `Globals` that help specify properties to all functions
+3. `Resources`: creates lambda function from local code; create API gateway endpoint, mappings, permissions
+4. `Outputs`: specify ARNs for lambda functions configured above
+
+### CLI
+
+`sam init`: interview style cli to initialize SAM template. creates directory with a SAM template file.
+
+`sam build`
+
+`sam deploy --guided`: stack name; AWS region; IAM role; authorization to acces lambda; save these reply arguments to .toml file for next run
+
+The resulting configurations can be viewed in management console.
+
+## Elastic Container Service (ECS)
+
+container: package that contains application; and the  libraries, runtime, tools required to run it
+
+containers run on an engine like Docker
+
+isolation benefits of virtualization with less overhead and faster starts than VMs
+
+portable and offer a consistent environment
+
+### What is ECS?
+
+- managed container orchestration service
+- create clusters to manage fleets of container deployments
+- manages EC2 or Fargate instances
+- schedules optimum placement of containers
+- define rules for CPU and memory requirements
+- monitors resource utilization
+- deploy, update, roll back 
+- integration with VPC, security groups, EBS volumes, ELB
+- CloudTrail and CloudWatch
+
+### Terminology
+
+Cluster: logical collection of ECS resources (ECS EC2 or Fargate instances)
+
+Task Definition: defines your application for running containers in ECS; can contain multiple containers
+
+Container definition: individual container that a *task* uses; controls CPU, memory allocations, port mappings
+
+Task: single running copy of any containers defined by a *task definition*
+
+Service: allows *task definitions* to be scaled by adding new *tasks*; define max and min values 
+
+Registry: storage for container images, used to download images to create containers
+
+```
+Cluster { 
+	Service { 
+		Task Definition { 
+			Container Definition 
+		} 
+	} 
+}
+```
+
+### Fargate
+
+- serverless container engine
+- eliminates need to provision and manager servers
+- specify and pay for resources per application
+- works with ECS and EKS
+- each workload runs in its own kernel
+- isolation and security
+- choose ec2 instead if:
+  - compliance requirements
+  - require broader customization
+  - require GPUs
+
+### EKS
+
+- Elastic Kubernetes Service
+- K8s is open-source and lets you deploy and manager containerized applications at scale
+- containers grouped into pods (tasks in ECS)
+- supports EC2 and Fargate
+- use EKS when:
+  - already using K8s
+  - want to migrate K8s setup to AWS
+
+### ECR
+
+- managed Docker container registry
+- store, manage, deploy images
+- integrates with ECS and EKS
+- works on on-prem deployments
+- highly available
+- intergrated with IAM
+- pay for storage and data transfer
+
+### ECS + ELB
+
+- distribute traffic evenly across tasks in service
+- supports ALB, NLB, CLB
+- use ALB to route HTTP/HTTPS (layer 7) traffic
+- use NLB or CLB to route TCP (layer 4) traffic
+- supported by both EC2 and Fargate launch types
+- ALB allows:
+  - dynamic host port mapping
+  - path-based routing
+  - priority rules
+- ALB is recommended over NLB or CLB
+
+### ECS Security
+
+EC2 Instance Roles: Policies applied to all tasks in that EC2 instance
+
+Task Roles: applies policy per task
+
+### lab:
+
+Container definition (image for container); task definition
+
+Define service (service name, number of tasks, security group, load balancer type)
+
+Cluster (cluster name, VPC ID, Subnets)
+
+Review
 
