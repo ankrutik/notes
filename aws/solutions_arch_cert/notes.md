@@ -4,31 +4,37 @@
 
 # 10000ft view
 
-Region: physical locations that contain >=2 AZs
+Availability Zone: one or more discrete Data Centers; each with redundant power, network
 
-Availability Zone: ~ discrete Data Center; redundant power, network
+Region: physical locations that contain >=2 AZs
 
 Edge locations: caching content; Amazon CDN
 
 ```
-Region < Availability Zones < Edge Locations
+n(Region) < n(Availability Zones) < n(Edge Locations)
 ```
 
 # IAM - Identity Access Management
 
-users; groups; policies; roles
+**users**: end users like employees of an org
+
+**groups**: collection of users. All users of a group inherit the permissions of the group 
+
+**policies**: policy document in json that says what permissions can be applied to users/groups/roles
+
+**roles**: assigned to AWS resources to dictate what all an AWS resource can do
 
 Identity Federation: Use LDAP, Google, LinkedIn, Facebook, etc. for logins
 
 multifactor auth
 
-temporary access
+can be used to give temporary access to devices
 
-PCI DSS: credit cards
+PCI DSS certified: certified to store credit cards information
 
 ## IAM dashboard
 
-alias for account let's you use customized logins URLs
+alias for account; let's you use customized logins URLs
 
 Users not locked to any region; always global.
 
@@ -43,9 +49,9 @@ Users credentials can be downloaded to CSV at the time of
 
 ***Credential Report* CSV download will not contain the passwords, so save the password CSV files or else you will have to regenerate them.**
 
-User passwords:
+User passwords types:
 
-- login password with MFA if enabled (login to console)
+- login password with MFA if enabled (login to web console)
 
 - access key id and secret access key (programmatic access to APIs)
 
@@ -55,13 +61,13 @@ User passwords:
 Inside CloudWatch, create alarm to check billing/cost
 
 - ran at every configured period
-- normal or detect anamoly
-- SNS (simple notification service) topic
+- static (value as a threshold) or detect anamoly (use a value band as a threshold)
+- create SNS (simple notification service) topic
 - go to email and subscribe to that topic
 
 # S3
 
-Object based storage. File size can be 0 bytes to 5 TB. Unlimited storage. Block based, so can't install OS.
+**Object based** storage as against byte modification storage. File size can be **0 bytes to 5 TB**. Unlimited storage. Block based, so can't install OS.
 
 ## Bucket
 
@@ -100,34 +106,37 @@ read after write for PUTs
 ## Path Styles
 
 - Virtual style puts your bucket name 1st, s3 2nd, and the region 3rd.   
-- Path style puts s3 1st and your bucket as a sub domain. 
-- Legacy Global endpoint has no region.  
-- S3 static hosting can be your own domain or your bucket name 1st, s3-website 2nd, followed by the region. 
-- AWS are in the process of phasing out Path style, and support for Legacy Global  Endpoint format is limited and discouraged.  
+- Path style puts s3 1st and your bucket as a sub domain. Phasing out.
+- Legacy Global endpoint has no region. Limited support and discouraged.
+- S3 static hosting can be your own domain or your bucket name 1st, s3-website 2nd, followed by the region.
 
 ## Storage classes
 
-1. Standard
+1. **Standard**
 
    99.99% availability, 99.x11 9 durability; stored redundantly across multiple devices/facilities; sustain loss of 2 facilities concurrently
 
-2. Infrequently Accessed
+2. **Infrequently Accessed**
 
    for data accessed infrequently, but need rapid access when needed; lower fee, but retreival fee applicable (previously reduced redundancy storage)
 
-3. One Zone - Infrequently Accessed
+3. **One Zone - Infrequently Accessed**
 
    Lower cost than IA; multiple availability zones not needed
 
-4. Intelligent Tiering
+4. **Intelligent Tiering**
 
    Machine Learning used to understand how data is used and moved to that tier automatically
 
-5. Glacier
+5. **Glacier Instant Retrieval**
 
-   Low cost archive; store any amount of data; retrieval time configurable from hours to minutes
+   68% cheaper than IA **when accessed once per quarter**; retrieval time is in milliseconds
 
-6. Glacier deep archive
+6. **Glacier Flexible Retrieval**
+
+   Low cost archive, 10% cheaper than Glacier Instant Retrieval; store any amount of data; retrieval time configurable from hours to minutes
+
+7. **Glacier deep archive**
 
    lowest cost archive; retrieval time is 12 hours
 
@@ -135,9 +144,11 @@ read after write for PUTs
 
 **Read S3 FAQ** https://aws.amazon.com/s3/faqs/
 
+**S3 Outposts** provides a single Amazon S3 storage class to keep data close to on-premises applications; uses S3 APIs; redundantly store data across multiple devices/servers; ideal for workloads with local data residency requirements or demanding performance; transfer data to AWS Region with AWS Data Sync
+
 ## Charge criteria
 
-Storage; requests; storage management pricing; data transfer pricing; 
+Storage; Requests; storage management pricing; data transfer pricing; 
 
 transfer acceleration: transfer to edge location first then send to S3 bucket via Amazon's backbone network;
 
@@ -158,7 +169,7 @@ Access to buckets can be setup via:
 
 ## Uploading files
 
-Uploading files gives URL but URL cannot be used till object is made public
+Uploading files gives URL which cannot be used till object is made public
 
 - bucket needs to be made public
 - object needs to be made public
@@ -171,7 +182,11 @@ Storage class can be specified at object level
 
 ### what are you charged for?
 
-storage; requests and data retrievals; data transfer; management and replication
+- storage
+- requests and data retrievals
+- data transfer
+- management 
+- replication
 
 ### comparisons notes
 
@@ -259,16 +274,16 @@ Delete file; the bucket looks empty; toggle on version and you **can see the obj
 
 *bucket view* > Management > Lifecycle
 
-rule name: name of the rule 
+**rule name**: name of the rule 
 
-rule scope: filter the objects that this rule applies to or all objects
+**rule scope**: filter the objects that this rule applies to or all objects
 
-lifecycle rule actions: what to do to what version of object at what interval; transition between states, delete, etc.
+**lifecycle rule actions**: what to do, to what version of object, at what interval; transition between states, delete, etc.
 
 Timeline summary is displayed as describing what happens to applicable objects as time passes.
 
 - Automates moving your objects between different storage classes.
-- can be used in conjuction ith versioning.
+- can be used in conjuction with versioning.
 - can be applied to current and previous versions.
 
 ## Object lock and Glacier Vault Lock
@@ -353,7 +368,7 @@ create organizations; add accounts by sending invites;
 
 Create Role > grant permissions > give Role name > copy and save link 
 
-Log into other account > Accoutn drop down > Switch Role OR use link to open page that has Role information already filled in
+Log into other account > Account drop down > Switch Role OR use link to open page that has Role information already filled in
 
 ## lab: Cross Region Replication
 
@@ -377,7 +392,7 @@ Versioning should be enabled on both source and destination buckets.
 
 Deleting individual versions or delete markers are not replicated.
 
-## Tranfer Accelaration
+## Transfer Accelaration
 
 - Uses CloudFront Edge Network
 - Upload to Edge location (instead of directly to S3 bucket). Edge location transfers to S3 bucket.
@@ -445,7 +460,7 @@ contains:
 
 - URL expiration
 - IP ranges
-- Trusted signed (which aws accounts can crete signed urls)
+- Trusted signed (which aws accounts can create signed urls)
 
 ### Flow
 
@@ -482,25 +497,25 @@ Consider using these capabilities according to your network speeds to upload/dow
 
 ## Storage Gateway
 
-Used to connect on-premise software appliances to cloud storage.
+Used to **connect on-premise software appliances to cloud storage**.
 
 Can be a virtual machine image or a physical appliance.
 
-File gateway (NFS and SMB): store files to S3; allows all features of S3 onto the stored fies/objects; 
+**File gateway (NFS and SMB)**: store files to S3; allows all features of S3 onto the stored files/objects; 
 
-Volume gateway (iSCSI): store images of harddisks on S3; incremental changes are stored for versioning; uses Amazon EBS snapshots
+**Volume gateway (iSCSI)**: store images of harddisks on S3; incremental changes are stored for versioning; uses Amazon EBS snapshots
 
 - stored: store primary data locally; asynchronously back up to S3 in form of EBS
 
-- cached: S3 as primary data storage; retain frequently a cessed data locally in storage gateway
+- cached: S3 as primary data storage; retain frequently accessed data locally in storage gateway
 
-Tape gateway: store tapes in virtual tapes and move to cloud; archive data; VTL interface
+**Tape gateway**: store tapes in virtual tapes and move to cloud; archive data; VTL interface
 
 ## Athena vs Macie
 
 ### Athena
 
-- interactive query service using which you can anlyse and query data on S3 using standard SQL
+- interactive query service using which you can analyse and query data on S3 using standard SQL
 - serverless; pay per query OR per TB scanned
 - no ETL setup
 - can be use on log files, business reports, AWS cost and usage reports, click-stream data
@@ -520,8 +535,6 @@ Tape gateway: store tapes in virtual tapes and move to cloud; archive data; VTL 
 - upscale and downscale capability as needed
 - Amazon Elastic Compute Cloud
 
-
-
 ### Models
 
 #### On demand
@@ -532,11 +545,11 @@ fixed rate by the hour/second; trying things out; no long term commitments
 
 capacity reservation; significant discount on hourly charge; 1 or 3 years terms
 
-Standard: 75% off
+**Standard**: 75% off
 
-Convertible: 54%; change instance type
+**Convertible**: 54%; change instance type
 
-Scheduled: time window when capacity will be used
+**Scheduled**: time window when capacity will be used
 
 #### Spot
 
@@ -556,7 +569,12 @@ existing software licenses that restrict deployment on limited number of servers
 
 ### Instance Types
 
-Multiple EC2 Instance types as per your needs. For example, T3 is lower cost and general purpose for web servers and small DBs; M5 is for general purpose Application servers.
+Multiple EC2 Instance types as per your needs. 
+
+For example, 
+
+- T3 is lower cost and general purpose for web servers and small DBs; 
+- M5 is for general purpose Application servers.
 
 ## lab: Setting up EC2
 
@@ -573,11 +591,10 @@ Termination Protection (default off) doesn't allow the usual terminate button to
 
 #### Other
 
-
 Tags
-Security Groups: what protocol at what port and what IP
+Security Groups: what protocol, at what port, and what IP
 Key pair is created
-Console can be access via a console which opens in the browser, EC2 Instance Connect
+Console can be access via web-based in browser console, EC2 Instance Connect
 
 
 
@@ -625,6 +642,8 @@ File servers; sc1 API; <=250 IOPS
 
 infrequently accessed data; Standard API; 40-200 IOPS
 
+Use SSDs for fast random access; expensive. Use HDD for sequential access, cheaper.
+
 ## lab: EBS Volumes
 
 Volume will be in the same AZ as the EC2 instance.
@@ -635,7 +654,12 @@ Hardware assisted virtualization
 
 Snapshots are point in time copies of Volumes. Incremental nature i.e. only changes are stored on S3. First snapshot takes time to create.
 
-**Migrating EBS overview**: Volumes to snapshots to AMI (Amazon Machine Image) then copy AMI to destination region then launch on another AZ
+**Migrating EBS overview**: 
+
+1. Volumes to snapshots
+2. snapshots to AMI (Amazon Machine Image) 
+3. then copy AMI to destination region 
+4. then launch on another AZ
 
 For root device (device with OS) snapshots, best pratice to stop the instance before taking snapshot.
 
@@ -649,7 +673,7 @@ For root device (device with OS) snapshots, best pratice to stop the instance be
 
 - arch (32/64-bit)
 
-- lauch permission
+- launch permission
 
 - storage for root device
 
@@ -668,7 +692,7 @@ For root device (device with OS) snapshots, best pratice to stop the instance be
 
 | criteria | ENI                                             | ENA                                                          | EFA                                                          |
 | -------- | ----------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| meaning  | Elastic network Interface                       | Enhanced networking via Elastic Network Adaptor (100 Gbps) or Virtual Function (10 Gbps) | Elastic Fabric Adaptor                                       |
+| meaning  | Elastic **Network Interface**                   | Enhanced networking via Elastic **Network Adaptor** (100 Gbps) or Virtual Function (10 Gbps) | Elastic **Fabric Adaptor**                                   |
 | use case | basic networking; low budget; multiple networks | reliable, high throughput                                    | high-performance computing, ML applications, OS by pass (linux only) |
 
 ## lab: Encrypted root device volumes and snapshots
@@ -683,7 +707,7 @@ Snapshots can be shared only when unencrypted.
 
 ## Spot Instances and Spot Fleets
 
-AWS has unused capacity. This capacity can be bid on. If your price matches below your maximum bid, the capacity is provisioned for your use. When the spot prices goes above your bid, your application is brought down.
+AWS has unused capacity. This capacity can be bid on. If price matches below your maximum bid, the capacity is provisioned for your use. When the spot prices goes above your bid, your application is brought down.
 
 Used when you need flexible, fault tolerant applications that can be brought down in 2 minutes notice and resume when brought up again -applications that need not be online all the time.
 
@@ -730,11 +754,11 @@ Monitoring performance of:
 - Compute:
   - EC2 instances
   - autoscaling groups
-  - Elsactic load balances
+  - Elastic load balancers
   - route53
 - Storage
   - EBS
-  - Storeage gateways
+  - Storage gateways
   - CloudFront
 
 EC2 is 5 minutes by default, configurable to 1 minute intervals.
@@ -743,7 +767,7 @@ CloudWatch alarms can be created to trigger notifications.
 
 Events help to respond to state changes.
 
-Logs help wit aggregate, monitor, and store logs.
+Logs help with aggregate, monitor, and store logs.
 
 Host level metrics like CPU, Network, Disk, status check
 
@@ -773,11 +797,11 @@ ssh to EC2 instance then use the aws command
 
 ## lab: IAM Roles
 
-Roles are more secure than stpring access keys and secret access keys on individual EC2 instances
+Roles are more secure than string access keys and secret access keys on individual EC2 instances
 
 Roles are easier to manage
 
-Roles can be assigned to EC2 instance using both command line and console
+Roles can be assigned to EC2 instance using both command line and console.
 
 Roles are universal.
 
@@ -816,7 +840,7 @@ Supports thousands of concurrent NFS connections.
 
 Data stored across multiple AZs within a region.
 
-Read after write cosistency.
+Read after write consistency.
 
 ## FSX for Windows and FSX for Lustre
 
@@ -871,7 +895,7 @@ On AWS
 - Amazon Aurora 
 - MariaDB
 
-Multi-AZ for disaster recevery
+Multi-AZ for disaster recovery
 
 Read replicas for performance
 
@@ -885,7 +909,7 @@ Elasticache: MemcacheD, Redis; to speed up existing databases using caching
 
 Configure your DB security group to talk with application security group when creating the RDS instance
 
-RDS runs onn virtual machine, can't ssh into that
+RDS runs on virtual machine, can't ssh into that
 
 Not serverless
 
@@ -949,13 +973,13 @@ balance cost and performance
 
 no minimum capacity
 
-**use for new product launches, then observe and switch to provisioned according to waht you learned with on-demand**
+**use for new product launches, then observe and switch to provisioned according to what you learned with on-demand**
 
 ### On-Demand backup and Restore
 
 Full backups at any time
 
-0 impact on table performance and availability
+Zero impact on table performance and availability
 
 consistent within seconds, retained until deleted
 
@@ -969,7 +993,7 @@ restore to any point in the last 35 days to 5 minutes
 
 incremental backups
 
-not enabled by deafult
+not enabled by default
 
 ### Streams
 
@@ -1028,7 +1052,7 @@ Individual columns are compressed
 
 Massively parralel processing
 
-backups:
+Backups:
 
 - enabled by default
 - maximum retention of 35 days
@@ -1067,7 +1091,7 @@ types of aurora replicas:
 - MySQL read replicas (5)
 - PostgreSQL (1)
 
-autmated backups on by default
+automated backups on by default
 
 serverless
 
@@ -1075,7 +1099,7 @@ suited for infrequent, intermittent, or unpredictable workloads
 
 ## Elasticache
 
-web service to deploy, operate, and scal in-memory cache in the cloud
+web service to deploy, operate, and scale in-memory cache in the cloud
 
 supports memcached and redis
 
@@ -1114,7 +1138,7 @@ Cluster components:
 
 Master node stored log data. 
 
-replication can be configured to replicate log data every 5 mintues on S3; can on;ly be set up during initial creation
+replication can be configured to replicate log data every 5 mintues on S3; can only be set up during initial creation
 
 # Advanced IAM
 
@@ -1145,11 +1169,11 @@ AD Trust is used to extend AWS AD onto your on-prem.
 
 ## IAM policies
 
-AWS policies are policies created by AWS for convienences. Not editable.
+AWS policies are created by AWS for convenience. Not editable.
 
 Customer managed policies are used for customizations.
 
-If not explicitly allowed, it is implicitly denied
+If not explicitly allowed, it is implicitly denied.
 
 Policies only work when applied to a group or role.
 
@@ -1179,11 +1203,11 @@ DNS is used to convert human readable domain names to IPv4 (32 bits) or IPv6 (12
 
 .com .edu .co.uk is top level domain name
 
-Elastic Load balancers do not have pre-defined IPv4 addresses, uyou resolve them using a DNS name
+Elastic Load balancers do not have pre-defined IPv4 addresses, you resolve them using a DNS name
 
 **Top level domain names** controlled by Internet Assigned Numbers Authority (IANA)
 
-A **registrar** (Amazon, GoDaddy) assigns domain names under one of the top level domain names. Domains are registered with interNIC (service of ICANN) which enforees uniqueness of domain names across the Internet. Registered with a central database called WhoIS database.
+A **registrar** (Amazon, GoDaddy) assigns domain names under one of the top level domain names. Domains are registered with interNIC (service of ICANN) which enforces uniqueness of domain names across the Internet. Registered with a central database called WhoIS database.
 
 **SOA** (start of authority) records stores:
 
@@ -1244,13 +1268,13 @@ active and passive site setup. health checks are configured with the record set 
 
 ### Geolocation
 
-routing of traffic based on geographical location of your user. Not to be confused with latency based, here we are restricting users to a site based on their geograhical location and not worrying about latency.
+routing of traffic based on geographical location of your user. Not to be confused with latency based, here we are restricting users to a site based on their geographical location and not worrying about latency.
 
 ### Geoproximity (Traffic flow only)
 
 routing based on geographical location of your user and your resources. 
 
-optionally choose to route more or kess to a given resource based on a bias value. 
+optionally choose to route more or less to a given resource based on a bias value. 
 
 bias expands or shrinks the **size of the geographical location from which traffic is routed** to a resource. 
 
@@ -1262,7 +1286,7 @@ same as simple routing policy (one domain name returns multiple IP addresses) bu
 
  # VPC
 
-Virtual private cloud let's you provision a loggically isloated section of AWS services. Select your own IP address range, create subnets, configure routing tables and network gateways.
+Virtual private cloud let's you provision a loggically isolated section of AWS services. Select your own IP address range, create subnets, configure routing tables and network gateways.
 
 For example, configure web server instances on public subnets and DB instances on private subnet with no Internet access.
 
