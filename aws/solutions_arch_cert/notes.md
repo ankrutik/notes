@@ -22,15 +22,23 @@ n(Region) < n(Availability Zones) < n(Edge Locations)
 
 **policies**: policy document in json that says what permissions can be applied to users/groups/roles
 
-**roles**: assigned to AWS resources to dictate what all an AWS resource can do
+**roles**: assumed by AWS resources and users to define a set of permissions for making AWS service requests
 
 Identity Federation: Use LDAP, Google, LinkedIn, Facebook, etc. for logins
 
-multifactor auth
+multi factor auth
 
 can be used to give temporary access to devices
 
 PCI DSS certified: certified to store credit cards information
+
+API access can use Identity Federation and MFA.
+
+**Power users** have full access to all AWS resources minus administration of users and groups.
+
+Users, groups, and policies are universal and not restricted to regions.
+
+https://aws.amazon.com/iam/faqs/
 
 ## IAM dashboard
 
@@ -75,12 +83,15 @@ Inside CloudWatch, create alarm to check billing/cost
 - needs to be universally unique or unique gobally; universal namespace
 - URL or web address created for it
 - HTTP 200 code received if upload is successful
-- by default newly created bucket is private
-  - Access can be setup using:
-    - bucket policies (**bucket level**)
-    - Access Control Lists (**object level**)
-- Access logs can be configured to be stored on another bucket in same or different account
+- by default newly created bucket is private. Access can be setup using:
+  - bucket policies (**bucket level**)
+  - Access Control Lists (**object level**)
+- **Access logs** can be configured to be stored on another bucket in same or different account
 - 100 buckets allowed per account
+- Restricting bucket access:
+  - bucket policies
+  - object policies
+  - IAM policies to users and groups
 
 ## Object
 
@@ -90,24 +101,39 @@ Inside CloudWatch, create alarm to check billing/cost
 - metadata
 - subresources: ACL, torrents
 
+MFA delete can be enabled.
+
 ## Data consistency
 
-read after write for PUTs
+Read after write for PUTs means
 
-"eventual consistency" for overwrite PUTs and DELETEs means 
+- writing new files will be immediately available for reads
+
+"Eventual consistency" for overwrite PUTs and DELETEs means 
 
 - if you overwrite an object and try to read immediately, you may get old version  
 - takes a little time to propogate
 
 ## Guarantees
 
-99.99% availability; 99.999..9% (11 x9) durability; Tiered storage; lifecycle management; versioning; encryption; multi factored auth for deletion; access control lists
+99.999..9% (11 x9) durability; Tiered storage; lifecycle management; versioning; encryption; multi factored auth for deletion; access control lists
 
 ## Path Styles
 
 - Virtual style puts your bucket name 1st, s3 2nd, and the region 3rd.   
+
+  - ```
+    https://bucket-name.s3.Region.amazonaws.com/key-name
+    ```
+
 - Path style puts s3 1st and your bucket as a sub domain. Phasing out.
+
+  - ```
+    https://s3.Region.amazonaws.com/bucket-name/key-name
+    ```
+
 - Legacy Global endpoint has no region. Limited support and discouraged.
+
 - S3 static hosting can be your own domain or your bucket name 1st, s3-website 2nd, followed by the region.
 
 ## Storage classes
@@ -118,27 +144,27 @@ read after write for PUTs
 
 2. **Infrequently Accessed**
 
-   for data accessed infrequently, but need rapid access when needed; lower fee, but retreival fee applicable (previously reduced redundancy storage)
+   99.9% availability; for data accessed infrequently, but need rapid access when needed; lower fee, but retreival fee applicable (previously reduced redundancy storage)
 
 3. **One Zone - Infrequently Accessed**
 
-   Lower cost than IA; multiple availability zones not needed
+   99.5% availability; Lower cost than IA; multiple availability zones not needed; 
 
 4. **Intelligent Tiering**
 
-   Machine Learning used to understand how data is used and moved to that tier automatically
+   99.9% availability; Machine Learning used to understand how data is used and moved to that tier automatically
 
 5. **Glacier Instant Retrieval**
 
-   68% cheaper than IA **when accessed once per quarter**; retrieval time is in milliseconds
+   99.9% availability; 68% cheaper than IA **when accessed once per quarter**; retrieval time is in milliseconds
 
 6. **Glacier Flexible Retrieval**
 
-   Low cost archive, 10% cheaper than Glacier Instant Retrieval; store any amount of data; retrieval time configurable from hours to minutes
+   99.99% availability; Low cost archive, 10% cheaper than Glacier Instant Retrieval; store any amount of data; retrieval time configurable from hours to minutes
 
 7. **Glacier deep archive**
 
-   lowest cost archive; retrieval time is 12 hours
+   99.99% availability; lowest cost archive; retrieval time is 12 hours
 
 **See S3 tier comparison chart** https://aws.amazon.com/s3/storage-classes/#Performance_across_the_S3_Storage_Classes
 
@@ -190,8 +216,8 @@ Storage class can be specified at object level
 
 ### comparisons notes
 
-gets cheaper in order of: 
-S3; S3 IA; S3 IT; S3 One Zone IA; S3 Glacier; Glacier deep archive
+cheaper in order of: 
+S3 -> S3 IA -> S3 IT -> S3 One Zone IA -> S3 Glacier -> Glacier deep archive
 
 One Zone IA risks loss of data or unavailability if that one zone goes down.
 
@@ -200,7 +226,7 @@ One Zone IA risks loss of data or unavailability if that one zone goes down.
 same but intelligent tiering gives 
 
 - access to infrequently accessed (IA) which makes IA objects cheaper to store
-- management fee per 100 objects
+- management fee per 1000 objects
 
 Better to use Intelligent Tiering than S3 standard unless you have thousands/millions of objects.
 
@@ -309,9 +335,9 @@ Vault lock policies can be applied on Glacier vaults which once applied cannot b
 
 S3 has extremely low latency.
 
-3500 requests PUT/COPY/POST/DELETE per second per prefix
+PUT/COPY/POST/DELETE at **3500 requests** per second per prefix
 
-5500 requests GET/HEAD per second per prefix
+GET/HEAD at **5500 requests** per second per prefix
 
 **If you spread out your object in separate prefixes, you can get that much high read rate.**
 
@@ -379,7 +405,7 @@ go to original bucket A > go to needed version > Create Replication Rule > IAM r
 Few configurations:
 
 - Storage class for replicated objects
-- Replication Time Control (replicate 99.99% objects in 15 minutes)
+- Replication Time Control (replicate 99.99% objects in **15 minutes**)
 - metrics and events
 - encrypt with KMS
 - replicate delete markers (deletion operations are replicated, lifecycle rules do not apply)
@@ -510,6 +536,8 @@ Can be a virtual machine image or a physical appliance.
 - cached: S3 as primary data storage; retain frequently accessed data locally in storage gateway
 
 **Tape gateway**: store tapes in virtual tapes and move to cloud; archive data; VTL interface
+
+Connects over Direct Connect.
 
 ## Athena vs Macie
 
@@ -1298,7 +1326,9 @@ Bastion subnet is when you connect to a public subnet to connect to a private su
 
 CIDR blocks: 10.0.0.0/16 subnet is the largest allowed. 10.0.0.0/28 is the smallest.
 
-Bring up instances in subnet of your choice. Attach network Access Control Lists (ACLs) to control access to those subnets.
+(CIDR, Classless Inter-Domain Routing is a method for allocating IP addresses and for IP routing)
+
+Bring up instances in subnet of your choice. Attach Network Access Control Lists (NACLs) to control access to those subnets.
 
 Default VPC has subnets that connect to Internet.
 
@@ -1306,7 +1336,10 @@ VPC peering uses private IP address to allow one VPC to connect to another via a
 
 1 subnet = 1 AZ
 
-Security groups are stateful; Network ACL are stateless.
+| Security Groups                                              | Network ACLs                                                 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Stateful; if inbound is created for a port, the outbound is created automatically | Stateless; inbound and outbound rules need to be defined separately |
+| To firewall EC2 instances                                    | To firewall VPCs                                             |
 
 ## lab: build a custom VPC
 
@@ -1357,13 +1390,15 @@ Copy private key of DB instance into App instance. Then ssh into app instance an
 
 Network Address Translation
 
-These instances allow private subnets to communicate to the Internet. Eg when you want to run yum to update/patch software within instances on a private subnet.
+These instances **allow private subnets to communicate to the Internet**. 
+
+Eg when you want to run `yum` to update/patch software within instances on a private subnet.
 
 NAT instance is a single EC2 instance. NAT gateways are multiple instances spread across multiple AZ with high availability.
 
 ### NAT Instance
 
-NAT instance must be in a public subnet
+NAT instance must be in a public subnet.
 
 Should be a route out of the private subnet to the NAT instance.
 
@@ -1373,7 +1408,7 @@ Create a new Route such that destination is 0.0.0.0/0 (all outbound traffic on a
 
 Issues:
 
-- multiple EC2 instances using the same NAT instance can overwhelm it, can increase isntance size
+- multiple EC2 instances using the same NAT instance can overwhelm it, can increase instance size
 - can create HA by using autoscaling groups, multiple subnets in different AZs, and script to automate failover
 - behind security groups
 
@@ -1581,13 +1616,13 @@ TCP traffic
 
 operates on level 4
 
-high permanence; millions of requests per second; ultra-low latencies
+high performance; millions of requests per second; ultra-low latencies
 
 ### classic 
 
 balancing HTTP and HTTPS traffic
 
-can use Layer 7 specific features like X-Forwarded ans sticky sessions
+can use Layer 7 specific features like X-Forwarded and sticky sessions
 
 can use strict Layer 4 load balancing for TCP
 
@@ -1631,11 +1666,9 @@ security group
 
 target group
 
-add EC2  instances to registered group of load balancer
+add EC2 instances to registered group of load balancer
 
 Rules can be created here with conditions and actions. This is not available in classic load balancers.
-
-
 
 504 means gateway has timed out, means the application is not responding to the gateway within the timeout configured on the gateway.
 
@@ -1672,7 +1705,7 @@ Used to route traffic based on what is in the URL path. Useful for microservices
 
 **groups**: logical component i.e web server, application, database group
 
-**configuration templates**: launch template/configuration for EC2 instances in each group. specify information like AMI ID, instance type, key pair, security grouos, block device mapping.
+**configuration templates**: launch template/configuration for EC2 instances in each group. specify information like AMI ID, instance type, key pair, security groups, block device mapping.
 
 **scaling options**: ways to scale eg. on conditions or on schedule
 
@@ -1692,7 +1725,7 @@ time and date, used when you know exactly when to increase or decrease the numbe
 
 #### scale based on demand
 
-sacling policies defined to control scaling process based on load
+scaling policies defined to control scaling process based on load
 
 #### Use predictive scaling
 
@@ -1859,11 +1892,9 @@ A **queue** is a temporary repository for messages that are waiting to be proces
 - common cause of same message being delivered twice; increase the visibility timeout
 - maximum of 12 hours
 
-
-
 ## Simple Work Flow Service (SWF)
 
-- cordinate work across distributed application components
+- co-ordinate work across distributed application components
 - tasks/work can be executable code, web service calls, **human actions**, scripts
 - used for manual or human tasks involved in a workflow
 - collection of related workflows are refered to as a **domain**
@@ -1896,20 +1927,21 @@ A **queue** is a temporary repository for messages that are waiting to be proces
 - Android devices in China with Baidu Cloud Push
 - SMS
 - email to SQS
-- any HTTO endpoint
+- any HTTP endpoint
 
 ### **Topic**
 
-- access point allowing receipients to subscribers to dynamically subscribe for identical copies of same notification
+- access point allowing recipients to dynamically subscribe for identical copies of same notification
 - Multiple endpoints eg. group together android, iOS, SMS
 - application can pulbish to a topic, SNS will then send out the notification
 
 ### Benefits
 
-- instantaneuos push, no polling
+- instantaneous push, no polling
 - simple API
 - multiple transport protocols
 - pay as you go; no up front cost
+- Filtering 
 - AWS Management Console offers point-and-click interface
 
 ## Elastic Transcoder
@@ -1933,7 +1965,7 @@ A **queue** is a temporary repository for messages that are waiting to be proces
 ### Configuration
 
 - define API (container)
-- definte resources and nested resources (URL)
+- definite resources and nested resources (URL)
 - for each resource:
   - supported HTTP methods (verb)
   - security
@@ -1979,10 +2011,9 @@ CORS (Cross-origin resource sharing) allows restricted resources on a web page t
 
 Examples purchases from online stores, stock prices, game data, social network data, geospatial data, iOT data.
 
-**Amazon Kenesis**
+**Amazon Kenesis** is a platform to send streaming data to
 
-- platform to send streaming data to
-- load, analyse streaming data
+- load, analyse it
 - build custom applications
 
 ### Kenesis Streams
@@ -2152,7 +2183,7 @@ Data Encryption Key (DEK) used for encrypting files more than 4KB. When you crea
 - created policy to give access to certain API like `GetParameter`
 - create role and assigned policy to it
 - create simple lambda that will
-  - read ceratin environment variables
+  - read certain environment variables
   - use those env vars to create a URL
   - URL will be used to read parameters at that parameter store path
 - create a key in KMS
@@ -2173,7 +2204,7 @@ AWS Lambdas is a compute service where you can upload just your code in the form
 
 Lambdas can trigger other lambdas.
 
-Lambdas scale out, not up. Means a new function instance is started instead of upgrading resource of existing function.
+Lambdas **scale out**, not up. Means a new function instance is started instead of upgrading resource of existing function.
 
 Independent, 1 event = 1 function.
 
@@ -2190,6 +2221,30 @@ AWS X-ray allows you to debug Lambdas among other microservice and serverless ar
 Can perform global tasks.
 
 ***TODO list what are not serverless; triggers***
+
+A **layer** is a .zip file archive that can contain additional code or data. A layer can contain libraries, a custom runtime, data, or configuration files. Using layers reduces the size of uploaded deployment archives and makes it faster to deploy your code.
+
+Can be configured to run upto 15 minutes. **Timeout** is between 1 second and 15 minutes.
+
+You can enable your Lambda function for tracing with **AWS X-Ray** by adding X-Ray permissions to your Lambda function execution role and changing your function “tracing mode” to “active”.
+
+The Lambda **Runtime Interface Emulator** is a proxy for the Lambda [Runtime API](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-api.html),which allows customers to locally test their Lambda function packaged as a  container image. It is a lightweight web server that converts HTTP  requests to JSON events and emulates the Lambda Runtime API. It allows  you to locally test your functions using familiar tools such as cURL and the Docker CLI.
+
+When enabled, **Provisioned Concurrency** keeps functions initialized and hyper-ready to respond in double-digit milliseconds. If the concurrency of a function reaches the configured level,  subsequent invocations of the function have the latency and scale  characteristics of regular Lambda functions. You can restrict your  function to only scale up to the configured level.
+
+With **Amazon Elastic File System (Amazon EFS) for AWS Lambda**, customers can securely read, write and persist large volumes of data at virtually any scale using a fully managed elastic NFS file system that can scale on demand without the need for provisioning or capacity management. Previously, developers added code to their functions to download data from S3 or databases to local temporary storage, limited to 512MB. Maximum 1 EFS can be used by a Lambda. Lambda will need to be inside the VPC of the EFS mount.
+
+When you update a Lambda function, there will be a brief window of time, typically less than a minute, when requests could be served by either  the old or the new version of your function.
+
+On **exceeding the throttle limit**, AWS Lambda functions being invoked  synchronously will return a throttling error (429 error code). Lambda  functions being invoked asynchronously can absorb reasonable bursts of  traffic for approximately 15-30 minutes, after which incoming events will be rejected as throttled.
+
+On **exceeding the retry policy for asynchronous invocations**, you can  configure a “dead letter queue” (DLQ) into which the event will be  placed; in the absence of a configured DLQ the event may be rejected. On **exceeding the retry policy for stream based invocations**, the data would have already expired and therefore rejected.
+
+Lambda functions provide **access only to a single VPC**. If multiple subnets are specified, they must all be in the same VPC. You can connect to other VPCs by **peering your VPCs**. Access to internet is blocked and must be routed thru a NAT if needed.
+
+**Code Signing for AWS Lambda** offers trust and integrity controls that  enable you to verify that only unaltered code from approved developers  is deployed in your Lambda functions. 
+
+Lambda like EC2 and ECS **supports hyper-threading** on one or more virtual CPUs (if your code supports hyper-threading).
 
 ### Used as
 
@@ -2386,4 +2441,12 @@ Define service (service name, number of tasks, security group, load balancer typ
 Cluster (cluster name, VPC ID, Subnets)
 
 Review
+
+## Function as a ZIP vs from ECR
+
+| Criteria                 | Zip function          | ECR function                                                 |
+| ------------------------ | --------------------- | ------------------------------------------------------------ |
+| size limits of package   | 250MB                 | 10GB                                                         |
+| availability in registry | N/A                   | may not be able to invoke if deleted from registry           |
+| patching containers      | automatically patched | customer's responsibility to patch containers maintained in registry |
 
