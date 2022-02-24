@@ -563,15 +563,21 @@ Connects over Direct Connect.
 - upscale and downscale capability as needed
 - Amazon Elastic Compute Cloud
 
+Amazon Elastic Compute Cloud (EC2) will begin rolling out a change to restrict email traffic over port 25 by default to protect customers and other recipients from spam and email abuse. 
+
 ### Models
 
 #### On demand
 
 fixed rate by the hour/second; trying things out; no long term commitments
 
+Amazon EC2 is transitioning On-Demand Instance limits from the **current instance count-based limits to the new vCPU-based limits** to simplify the limit management experience for AWS customers. Usage toward the vCPU-based limit is measured in terms of number of vCPUs (virtual central processing units) for the Amazon EC2 Instance Types to launch any combination of instance types that meet your application needs.
+
 #### Reserved
 
 capacity reservation; significant discount on hourly charge; 1 or 3 years terms
+
+Depending on you type of RL you can You can modify the AZ, scope,  network platform, or instance size (within the same instance type), but  not Region.
 
 **Standard**: 75% off
 
@@ -589,15 +595,39 @@ usefully for when applications are flexible and feasible only at very low costs
 
 #### Dedicated hosts
 
-physical EC2 servers dedicated for your use
+dedicated **physical** EC2 servers for your use
 
 no multiple tenancy
+
+can be purchased on hourly basis
 
 existing software licenses that restrict deployment on limited number of servers
 
 ### Instance Types
 
 Multiple EC2 Instance types as per your needs. 
+
+**Accelerated Computing instance** family is a family of instances which use hardware accelerators, or co-processors, to perform some functions,  such as floating-point number calculation and graphics processing, more  efficiently than is possible in software running on CPUs.
+
+**GPU instances** work best for applications with massive parallelism such as workloads using thousands of threads. 
+
+**Compute Optimized instances** are designed for applications that benefit  from high compute power. These applications include compute-intensive  applications like high-performance web servers, high-performance  computing (HPC), scientific modelling, distributed analytics and machine learning inference.
+
+Amazon EC2 **Mac instances** are a family that features the macOS operating system, powered by Apple Mac mini hardware, and built on the AWS Nitro System.
+
+Amazon EC2 **A1 instances** are general purpose instances powered by the  first-generation AWS Graviton Processors that are custom designed by  AWS.
+
+Amazon EC2 allows you to choose between **Fixed Performance Instances** (e.g. C, M and R instance families) and **Burstable Performance Instances** (e.g. T2). Burstable Performance Instances provide a baseline level of CPU performance with the ability to burst above the baseline if they have accumulated enough CPU credit by staying idle (CPU credits are consumed by when instances are active).
+
+Amazon EC2 **High Memory instances** offer 3, 6, 9, 12, 18, or 24 TiB of memory in a single instance. Offered as both virtualized and bare metal. They use Elastic Network Adapter (ENA) for high speed connectivity.
+
+**Memory-optimized instances** offer large memory size for memory intensive  applications including in-memory applications, in-memory databases, in-memory analytics solutions, High Performance Computing (HPC), scientific computing, and other memory-intensive applications. 
+
+**Dense-storage instances** are designed for workloads that require high sequential read and write access to very large data sets, such as Hadoop distributed computing, massively parallel processing data warehousing, and log processing applications.
+
+**High I/O instances** use NVMe based local instance storage to deliver very high, low latency, I/O capacity to applications, and are optimized for applications that require millions of IOPS. Like Cluster instances, High I/O instances can be clustered via cluster placement groups for low  latency networking. Used when random memory IO is needed.
+
+FIGHTDRMCPXZAU
 
 For example, 
 
@@ -609,7 +639,7 @@ For example,
 #### Storage
 Root volume will be SSD and magnetic. Subsequent volumes can be of more types.
 IPOS: input output per second can be configurable
-Delete on terminate or not, EBS is delete by default
+Delete on terminate or not, EBS root volume is deleted by default
 Encrypt or not
 
 #### Termination
@@ -632,62 +662,86 @@ Connecting via console:
 ssh ec2-username@IPADDRESS_EC2 -i PrivateKey.pem
 ```
 
-
-
 ## Security Groups
 
+Virtual firewalls that control traffic to EC2 instance.
+
+Changes to security group are reflected immediately.
+
 All inbound traffic is blocked by default, all outbound is allowed.
+
+Therefore, only allow rules can be configured, no support for deny rules.
 
 Define which type of connection (eg. HTTP, SSH, etc) , which protocol (eg. TCP), which port (eg. 80, 22) is allowed inbound and outbound on the instance.
 
 **If inbound is created for a port, the outbound is created automatically. Stateful.**
 
+1 Security Group can have many EC2 instances. 1 EC2 instance can have many Security Groups.
+
 No way to blacklist. Only whitelist.
 
-Multiple security groups can be applied to same instance.
+#### Instead
+
+Specific IP addresses cannot be blocked using Security Groups. Use NACL instead.
+
+Traffice cannot be controlled by what is in request. Use WAF instead.
 
 ## EBS 101 
 
-Elastic Block Storage is a harddisk on the cloud.
+The data stored on a **local instance store will persist only as long as that instance is alive**. However, data that is stored on an Amazon EBS volume will persist independently of the life of the instance. 
 
-### General Purpose (SSD)
+Normally, EBS volumes can only be attached to one EC2 instance. As of Feb 2020 you can attach certain types of EBS volumes to multiple EC2 instances. https://aws.amazon.com/blogs/aws/new-multi-attach-for-provisioned-iops-io1-amazon-ebs-volumes/
 
-Most workloads; gp2 API; <=16K IOPS
+Elastic Block Storage is a hard-disk on the cloud.
 
-### Provisional IOPS (SSD)
+Migrating or encrypting non-encrypted EBS volumes will need them to be converted to AMI before they can be re-launched.
 
-Databases; io1 API; <=64K IOPS
+EBS volumes can be detached while instance is running only if the volume is not the root volume of that EC2 instance.
 
-### Throughput optimised HDD
+You can add multiple volumes to an EC2 instance and then create your own RAID 5/RAID 10/RAID 0 configurations using those volumes.
 
-Big data, warehouses; st1 API; <=500 IOPS
+You can control whether an EBS root volume is deleted when its  associated instance is terminated. The default delete-on-termination  behaviour depends on whether the volume is a root volume, or an  additional volume. By default, the DeleteOnTermination attribute for  root volumes is set to 'true.' However, this attribute may be changed at launch by using either the AWS Console or the command line. For an  instance that is already running, the DeleteOnTermination attribute must be changed using the CLI.
 
-### Cold HDD
+### General Purpose (SSD) - gp2
 
-File servers; sc1 API; <=250 IOPS
+Most workloads; **gp2** API; <=16K IOPS
 
-### Magnetic
+### Provisional IOPS (SSD) - io1
 
-infrequently accessed data; Standard API; 40-200 IOPS
+Databases; **io1** API; <=64K IOPS
 
-Use SSDs for fast random access; expensive. Use HDD for sequential access, cheaper.
+### Throughput Optimised HDD - st1
+
+Big data, warehouses; **st1** API; <=500 IOPS
+
+### Cold HDD - sc1
+
+File servers; **sc1** API; <=250 IOPS
+
+### Magnetic - standard
+
+infrequently accessed data; **Standard** API; 40-200 IOPS
+
+Use SSDs for fast random access; expensive. 
+
+Use HDD for sequential access, cheaper.
 
 ## lab: EBS Volumes
 
 Volume will be in the same AZ as the EC2 instance.
 
-Volume sizes can be changed, but will take time to reflect. May need to repartition the drive to detect the added size.
+Volume sizes can be changed, but will take time to reflect. May need to re-partition the drive to detect the added size.
 
 Hardware assisted virtualization
 
-Snapshots are point in time copies of Volumes. Incremental nature i.e. only changes are stored on S3. First snapshot takes time to create.
+Snapshots are point in time copies of Volumes. **Incremental** nature i.e. only changes are stored on S3. First snapshot takes time to create.
 
-**Migrating EBS overview**: 
+### Migrating EBS overview 
 
 1. Volumes to snapshots
 2. snapshots to AMI (Amazon Machine Image) 
-3. then copy AMI to destination region 
-4. then launch on another AZ
+3. copy AMI to destination region 
+4. launch on another AZ
 
 For root device (device with OS) snapshots, best pratice to stop the instance before taking snapshot.
 
@@ -707,31 +761,48 @@ For root device (device with OS) snapshots, best pratice to stop the instance be
 
   - Types and criteria
 
-    | criteria                                                     | instance store (ephemeral) | EBS Backed  |
-    | ------------------------------------------------------------ | -------------------------- | ----------- |
-    | what happens to data after restart due to host failure?      | deleted                    | not deleted |
-    | can it be stopped?                                           | no                         | yes         |
-    | can be configured to not delete after termination on instance? | no                         | yes         |
-    | can be rebooted?                                             | yes                        | yes         |
+  | criteria                                                     | instance store (ephemeral) | EBS Backed        |
+  | ------------------------------------------------------------ | -------------------------- | ----------------- |
+  | what happens to data after restart due to host failure?      | deleted                    | not deleted       |
+  | can it be stopped?                                           | no                         | yes               |
+  | can be configured to not delete after termination on instance? | no                         | yes               |
+  | can be rebooted?                                             | yes, no data loss          | yes, no data loss |
 
 
 
-## ENI vs ENA vs EFA
+## Networking
+
+By default, all accounts are limited to 5 **public** Elastic IP addresses per region. 
+
+A small hourly fee is charged when your EC2 instance that uses a public IP is not running.
+
+You do not need an Elastic IP address for all your instances. By default, every instance comes with a private IP address and an internet routable public IP address. The private IP address remains associated with the  network interface when the instance is stopped and restarted, and is  released when the instance is terminated. The public address is  associated exclusively with the instance until it is stopped, terminated or replaced with an Elastic IP address. These IP addresses should be  adequate for many applications where you do not need a long lived  internet routable end point. 
+
+### ENI vs ENA vs EFA
 
 | criteria | ENI                                             | ENA                                                          | EFA                                                          |
 | -------- | ----------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| meaning  | Elastic **Network Interface**                   | Enhanced networking via Elastic **Network Adaptor** (100 Gbps) or Virtual Function (10 Gbps) | Elastic **Fabric Adaptor**                                   |
+| meaning  | Elastic **Network Interface**                   | **Enhanced networking** via Elastic **Network Adaptor** (100 Gbps) or Virtual Function (10 Gbps) | Elastic **Fabric Adaptor**                                   |
 | use case | basic networking; low budget; multiple networks | reliable, high throughput                                    | high-performance computing, ML applications, OS by pass (linux only) |
 
 ## lab: Encrypted root device volumes and snapshots
 
 When creating root volumes, you have the new option to configure encryption at creation time.
 
-For existing volumes without encryption > create snapshot > create copy > during creation mention that it needs to be encrypted > create AMI > use AMI to launch instance
+For encrypting existing volumes that are without encryption,
+
+- create snapshot
+- create copy, mention that it needs to be encrypted
+- create AMI 
+- use AMI to launch instance
 
 Cannot take an encrypted snapshot and launch as unencrypted
 
 Snapshots can be shared only when unencrypted.
+
+You should enable **Fast Snapshot Restore** on snapshots if you are concerned about latency of data access when you restore data from a snapshot to a volume and want to avoid the initial performance hit during initialization. Will improve only snapshot restore and not snapshot creation.
+
+Snapshot of an EBS Volume that is used as the root device of a registered AMI cannot be deleted.
 
 ## Spot Instances and Spot Fleets
 
@@ -739,25 +810,25 @@ AWS has unused capacity. This capacity can be bid on. If price matches below you
 
 Used when you need flexible, fault tolerant applications that can be brought down in 2 minutes notice and resume when brought up again -applications that need not be online all the time.
 
-Can save upto 90% cost of On-Demand instances.
+Use only when **ephemeral storage** is needed.
 
-Spot blocks can be used to stop termination for 1 to 6 hours if spot price goes above your bid.
+Can **save upto 90%** cost of On-Demand instances.
+
+**Spot blocks** can be used to **stop termination for 1 to 6 hours** if spot price goes above your bid.
 
 ### Spot request
-
-Contains
 
 - maximum price
 - desired number of instances
 - launch specs
-- request type (application went down due to spot price increase, what to do next time that spot price goes below bid?) :
+- request type (if application went down due to spot price increase, what to do next time that spot price goes below bid?) :
   - one time: do nothing
   - persistent: bring application up again
 - valid from and until
 
 ### Spot Fleets
 
-Collection of spot instances and on demand instances
+Collection of Spot instances and (optionally) On-Demand instances
 
 Will try to maintain target capacity within budget
 
@@ -765,7 +836,9 @@ Will try to maintain target capacity within budget
 
 **What happens when EC2 instance starts**: OS boots up, User data scripts are run, application starts
 
-**What happens on Hibernation**: saves contents of instance RAM into EBS root volume; persists root and data volumes; on restart RAM contents are reloaded, processes are resumed, OS need not restart; **instance ID is retained**;
+**What happens on Hibernation**: saves contents of instance RAM into EBS root volume in encrypted form; persists root and data volumes; on restart RAM contents are reloaded, processes are resumed, OS need not restart; **instance ID is retained**; Elastic IP address is retained
+
+Root volumes need to be encrypted to use hibernate.
 
 Use cases for hibernate: long running processes; applications that take time to initialise 
 
@@ -773,11 +846,13 @@ RAM must be <150GB
 
 Hibernation time cannot exceed 60 days
 
-Available for on-demand and reserved instances
+Available for On-Demand and Reserved instances
+
+In the case of hibernate, your instance gets hibernated and the RAM data persisted. In the case of Stop, your instance gets shutdown and RAM is cleared. Hibernated instances are in ‘Stopped’ state.
 
 ## CloudWatch
 
-Monitoring performance of:
+**Monitoring performance** of:
 
 - Compute:
   - EC2 instances
@@ -789,7 +864,7 @@ Monitoring performance of:
   - Storage gateways
   - CloudFront
 
-EC2 is 5 minutes by default, configurable to 1 minute intervals.
+EC2 is 5 minutes by default (standard), configurable to 1 minute intervals (detailed).
 
 CloudWatch alarms can be created to trigger notifications.
 
@@ -801,11 +876,11 @@ Host level metrics like CPU, Network, Disk, status check
 
 ### CloudTrail (Auditing)
 
-User and resource activity monitored by recording AWS management console actions and API calls. Unrelated to CloudWatch.
+User and resource activity monitored by **recording AWS management** console actions and API calls. Unrelated to CloudWatch.
 
 ## lab: CloudWatch
 
-Dashboards, Alarms
+Dashboards, Alarms, Events, Logs
 
 ## lab: AWS Command Line
 
@@ -825,13 +900,15 @@ ssh to EC2 instance then use the aws command
 
 ## lab: IAM Roles
 
-Roles are more secure than string access keys and secret access keys on individual EC2 instances
-
-Roles are easier to manage
+On individual EC2 instances, **Roles are more secure** **and easy to manage** than string access keys and secret access keys .
 
 Roles can be assigned to EC2 instance using both command line and console.
 
 Roles are universal.
+
+Permissions of a role can be changed, even if that role is already assigned to an existing EC2 instance. Changes will take effect immediately.
+
+AWS Console can be used to add a role to an EC2 instance after that instance has been created and powered-up.
 
 ## lab: Using Boot Strap Scripts
 
@@ -860,9 +937,9 @@ curl http://<169.254.169.254>/latest/user-data
 
 Supports NFSv4
 
-Multiple EC2 instances cannot share an EBS volume but can share a EFS volume.
+**Multiple EC2 instances cannot share an EBS volume** but can share a EFS volume. As of Feb 2020 you can attach certain types of EBS volumes to multiple EC2 instances. https://aws.amazon.com/blogs/aws/new-multi-attach-for-provisioned-iops-io1-amazon-ebs-volumes/
 
-Grows and reduces automatically, no preprovision of space needed. Pay for only what you use.
+Grows and reduces automatically, no pre-provision of space needed. Pay for only what you use.
 
 Supports thousands of concurrent NFS connections.
 
@@ -870,31 +947,45 @@ Data stored across multiple AZs within a region.
 
 Read after write consistency.
 
+Use when Linux is needed.
+
 ## FSX for Windows and FSX for Lustre
 
-FSX for Windows: Windows file server designed for Windows based applications. SMB based.
+FSX for Windows: Windows file server designed for Windows based applications. SMB based which is Windows proprietary.
 
-FSX for Lustre: for HPC and ML applications. Can stored data directly on S3.
+FSX for Lustre: for HPC (high performance compute) and ML applications. Can stored data directly on S3.
 
 ## EC2 Placement Groups
 
-**Cluster Placement group** is grouping of instances within a single AZ. Applications that need low latency, high n/w thruput.
+How to place or group EC2 instances?
 
-**Spread Placement Group** are group of instances each placed on distinct underlying hardware. Used when you have small number of critical instances that should be kept separate from each other.
+**Cluster Placement group** is grouping of instances within a single AZ. Applications that need low latency, high n/w thruput. EC2 **very close to each other**. AWS recommends grouping same instance types in cluster placement group.
 
-**Partitioned Placement groups** divides each group into logical segment partitions such that each partition that its own rack (each rack has own network and power source). Used for HDFS, HBase, Cassandra.
+**Spread Placement Group** are group of instances each placed on **distinct underlying hardware**. Used when you have small number of **critical instances that should be kept separate** from each other. Can be spread across multiple AZs. Maximum of 7 running instances per Availability Zone
 
-## HPC on AWS
+**Partitioned Placement groups** divides each **group into logical segment partitions** such that each partition that its **own rack** (each rack has own network and power source). Used for HDFS, HBase, Cassandra. Can be spread across multiple AZs.
 
-### Data Store
+Groups cannot be merged.
+
+Instances must be stopped before moved into different groups.
+
+## HPC (high performance compute) on AWS
+
+### Data Transfer
 
 Snowball, AWS Data Sync, Direct connect
 
 AWS Direct Connect is a dedicated line between from your premises to AWS rather than using Internet.
 
-### Compute
+### Compute and Network
 
-EC2 instances that are GPU or CPU optimised; EC2 fleets; Cluster Placement groups; ENA; ENI; EFA
+EC2 instances that are GPU or CPU optimised; EC2 fleets; Cluster Placement groups; ENA, ENI, EFA
+
+### Storage
+
+Instance attached: EBS, Instance store
+
+Network storage: S3, EFS, FSx for Lustre
 
 ### Orchestration and Automation
 
@@ -902,19 +993,43 @@ AWS batch; AWS ParallelCluster
 
 ## AWS WAF
 
-Web application firewall to monitor HTTP and HTTPS requests that are forwarded to CloudFront, Application Load balance or API gateway.
+**Web Application Firewall** to **monitor HTTP and HTTPS requests** that are forwarded to 
+
+- CloudFront
+- Application Load Balancer
+- API gateway.
+
+Works on Level 7
 
 Control access to content.
 
 Firewall on what IP addresses should be allowed or what query parameters should be passed.
 
-Whitelist, Blacklist, counter.
+Actions available: Allow, Deny, Count.
 
-Block access to geography, malicious IPs.
+### Conditions to check in request
+
+- IP addresses
+- Country of origin
+- values in request header
+- strings or regex matches
+- length of request
+- presence of SQL code
+- presence of malicious scripts
+
+### Instead
+
+For IP and port level, use Security Groups instead.
+
+For IP and port level deny, use NACLs instead.
 
 # Databases on AWS
 
-On AWS
+Multi-AZ for disaster recovery. Auto fail over.
+
+Read replicas for performance. No auto scaling or fail over.
+
+**RDS (OLTP)**
 
 - Microsoft SQL Server
 - Oracle
@@ -923,47 +1038,98 @@ On AWS
 - Amazon Aurora 
 - MariaDB
 
-Multi-AZ for disaster recovery
+**No SQL**
 
-Read replicas for performance
+- DynamoDB 
 
-DynamoDB (Amazon's no SQL solution)
+**Data Warehousing (OLAP)**
 
-Red Shift OLAP (Amazon's data warehousing solution)
+- Red Shift
 
-Elasticache: MemcacheD, Redis; to speed up existing databases using caching
+**In-memory caching or Elasticache**
+
+- MemcacheD
+- Redis
+
+A **database parameter group (DB Parameter Group)** acts as a “container”  for engine configuration values that can be applied to one or more DB  Instances. If you create a DB Instance without specifying a DB Parameter Group, a default DB Parameter Group is used. This default group  contains engine defaults and Amazon RDS system defaults optimized for  the DB Instance you are running. 
 
 ## Lab: create RDS instance
 
-Configure your DB security group to talk with application security group when creating the RDS instance
+Configure your DB Security Group to talk with application's Security Group when creating the RDS instance.
 
-RDS runs on virtual machine, can't ssh into that
+RDS instances 
 
-Not serverless
+- run on virtual machines
+- cannot ssh into OS
+- patching is Amazon's responsibility
+- cannot be serverless (except Aurora)
 
 ## Back Ups, Multi-AZ, and read replicas
 
-Backup needs to be enabled for read replicas.
-
-2 types of backup:
+2 types of backup, **both stored in S3**:
 
 - automated backups
 - database snapshots
 
-Read replicas on read replicas are possible. Too many can bring latency.
+When these backups are restored, the RDS instance will be a new one with a new DNS endpoint.
 
-- can be multi-AZ
-- increase performance
-- can be in different region
-- MySQL, PostgreSQL, MariaDB, Oracle, Aurora
-- can be promoted to master, this will break the read replica
+Encryption is managed using Amazon KMS. Encryption at rest. When encryption is enabled on RDS instance automated backups, snapshots, read replicas are encrypted.
 
-MultiAZ:
+It is normal to have **1 or 2 more automated DB snapshots than the number of days in your retention period**. One extra automated snapshot is retained to ensure the ability to perform a point in time restore to any time during the retention period.
 
-- used for Disaster recovery
-- force failover from one AZ to another by rebooting RDS instance
+### Automated Backups
 
-Encryption available for all 6 DB types. Uses KMS. Automated backup, read replicas, snapshots are encrypted too.
+- performs automatic daily full snapshots with transaction logs
+- stored on S3
+- retention period is 1 to 35 days
+- transaction logs are saved which allows point-in-time recovery down to seconds
+- affects IO, so can experience elavated latency
+- deleted when RDS instance is deleted
+- default on with default 7 day retention period
+
+### Database Snapshots
+
+- not automatic, taken manually
+- retained even if RDS instance is deleted. Gives you option to create a new db snapshot on deletion.
+
+### Multi-AZ
+
+- for disaster recovery only
+- exact working copy of your RDS instance is synced by AWS **on another AZ but in same region**
+- replication used by Multi-AZ deployments is **synchronous**, meaning that all database writes are concurrent on the primary and standby
+- fail over is automatic in case of AZ failure or maintenance
+- you can force failover from one AZ to another by rebooting RDS instance
+- Available for Oracle, SQL Server, MySQL, PostgreSQL, MariaDB. **Not needed for Aurora** since it is fault tolerant by design.
+- if you are running a Multi-AZ deployment, **automated backups and DB Snapshots are simply taken from the standby** to avoid I/O suspension on the primary.
+
+### Read Replicas
+
+- for performance improvement during reading
+- write is performed to single database, but reads happen from different replicas
+- **asynchronous** replication, database writes occur on a read replica after  they have already occurred on the source DB instance, and this replication “lag” can vary
+- Read replicas on read replicas are possible. Too many can bring latency.
+
+- can be spread across AZs and regions
+- MySQL, PostgreSQL, MariaDB, Oracle, Aurora. **Not for SQL Server.**
+- Can be promoted to be their own database. This will break replication.
+- automated backups need to be enabled
+- upto 5 read replicas available
+- each read replica has its own DNS endpoint
+
+Read replicas are designed to serve read traffic. However, there may be use cases where advanced users wish to execute DDL SQL statements against a read replica. Eg adding a database index to a read replica that is used for business reporting without adding the same index to the corresponding source DB instance.
+
+### Billing
+
+Billing can be on-demand or reserved.
+
+#### Reserved instances
+
+- paid for 1 to 3 years which gives higher discount than on-demand
+- on-demand can be converted to reserved instances
+- non-refundable
+- once term ends, revert back to on-demand pricing
+- purchased and can be reserved **only in a specific region**
+- read replicas can be reserved instances
 
 ## DynamoDB
 
@@ -1017,7 +1183,7 @@ same region as source table
 
 protects against accidental writes or deletes
 
-restore to any point in the last 35 days to 5 minutes 
+restore to any point in the **last 35 days to 5 minutes**
 
 incremental backups
 
@@ -1037,7 +1203,7 @@ combine with lambda functions for functionality like stored procedures
 
 ### Global Tables
 
-globally distributed appls
+globally distributed applications
 
 multi region redundancy for DR or HA
 
@@ -1164,7 +1330,7 @@ Cluster components:
 - core node: runs tasks and stores data on Hadoop Distributed File System
 - task node: only runs tasks and does not store data; optional
 
-Master node stored log data. 
+Master node stores log data. 
 
 replication can be configured to replicate log data every 5 mintues on S3; can only be set up during initial creation
 
