@@ -1617,7 +1617,11 @@ CIDR blocks: 10.0.0.0/16 subnet is the largest allowed. 10.0.0.0/28 is the small
 
 An **AWS Site-to-Site VPN connection** connects your VPC to your datacenter over an encrypted VPN connection. An internet gateway is not required to establish an AWS Site-to-Site VPN connection. 
 
-A **default VPC** is a logically isolated virtual network in the AWS cloud that is automatically created for your AWS account the **first time you provision Amazon EC2 resources**. When you launch an instance without specifying a subnet-ID, your instance will be launched in your default VPC.
+A **default VPC** is a logically isolated virtual network in the AWS cloud that is automatically created for your AWS account the **first time you provision Amazon EC2 resources**. When you launch an instance without specifying a subnet-ID, your instance will be launched in your default VPC. **Default VPC will be assigned 1 private and 1 public IP address.**
+
+By default, any user-created VPC subnet will not automatically assign public IPv4 addresses to instances.
+
+Until recently customers were not permitted to conduct penetration testing without AWS engagement. However that has changed. There are still conditions though.
 
 Maximum 5 VPCs per region per AWS account.
 
@@ -1741,8 +1745,9 @@ Behind security group.
 
 **Issues**:
 
-- multiple EC2 instances using the same NAT instance can overwhelm it, can increase instance size
-- can create HA by using autoscaling groups, multiple subnets in different AZs, and script to automate failover
+- multiple EC2 instances using the same NAT instance can **overwhelm** it, can increase instance size
+  - can create HA by using autoscaling groups, multiple subnets in different AZs, and script to automate failover
+
 - behind security groups
 
 ### NAT Gateway
@@ -1777,7 +1782,7 @@ A subnet can be associated with only one NACL at any given time. But a NACL can 
 
 NACL > Edit Subnet associations:  to add or remove subnets from NACL
 
-The rule sequence matters since it checks the first passing rule, the rules are evaluated in ascending order of rule number starting with 100. **Deny rules need to be before Allow rules.**
+The rules are evaluated in ascending order of rule number starting with 100, it checks the first passing rule. **Deny rules need to be before Allow rules.**
 
 Ephemeral ports are a range of ports that are randomly allocated to incoming sessions to server. The port is then used for the lifetime of the communication session.
 
@@ -1785,13 +1790,7 @@ NACLs are stateless which means inbound and outbound rules need to be defined se
 
 Internet Gateway > Route Table > **NACL** > Security Group
 
-**Contrast with Security groups**
-
-- NACLs act before Security Groups.
-- NACLs can have IP block lists
-- NACLs are at subnet level while Security Groups are at instance level
-
-See *Security groups vs Network ACLs*
+**See *Security groups vs Network ACLs***
 
 ## lab: Custom VPCs and ELBs
 
@@ -1819,7 +1818,7 @@ IP traffic that is not monitored:
 - DHCP traffic
 - to reserved IP address for default VPC router
 
-### Levels
+Can be applied at following levels:
 
 - VPC
 - subnet
@@ -1841,13 +1840,18 @@ Bastion hosts community AMIs are available.
 
 ## **VPC peering** 
 
-- allows direct network route between VPCs in 2 different regions and/or AWS accounts 
+**Allows direct network route between VPCs in 2 different regions and/or AWS accounts.**
+
 - uses private IP addresses so VPCs talk as if on the same private network
 - Uses star configuration (1 central with *n* others) not transitive.
 
-## Direct Connect - private conn from AWS to on-prem
+*You have five VPCs in a 'hub and spoke' configuration, with VPC 'A' in the center and individually paired with VPCs 'B', 'C', 'D', and 'E', which make up the 'spokes'. There are no other VPC connections. Which of the following VPCs can VPC 'B' communicate with directly?* ***VPC 'A'. As transitive peering is not allowed, VPC 'B' can communicate directly only with VPC 'A'.***
 
-Private connection between AWS and your DC/office/colocation environment. Helps reduce network costs, increase bandwidth, improve latency.
+## Direct Connect 
+
+**Private connection between AWS and your DC/office/colocation environment.** 
+
+Helps reduce network costs, increase bandwidth, improve latency.
 
 ### Setting up Direct Connect
 
@@ -1863,7 +1867,7 @@ Private connection between AWS and your DC/office/colocation environment. Helps 
 
 ## Global Accelerator
 
-Directs traffic to the optimal endpoint in terms of proximity to client, health, endpoint weights
+**Directs traffic to the optimal endpoint in terms of proximity to client, health, endpoint weights**.
 
 **Components**:
 
@@ -1879,7 +1883,9 @@ Disable, wait for some time, delete
 
 *TODO How is this different than a multivalue load balancer?*
 
-## VPC endpoints - private conn your VPC to certain AWS services
+## VPC endpoints
+
+**Privately connect your VPC to only certain supported AWS services and VPC endpoint services.**
 
 What are VPC end points?
 
@@ -1900,7 +1906,9 @@ No public IP needed.
 
 Instance in private subnet sends message to VPC endpoint gateway. The gateway then sends the message  to the AWS service.
 
-## AWS PrivateLink - conn VPC to other VPC
+## AWS PrivateLink
+
+**Allows direct network route between VPCs in 2 different regions and/or AWS accounts.**
 
 **Other ways to connect to other VPC:**
 
@@ -1919,11 +1927,11 @@ Instance in private subnet sends message to VPC endpoint gateway. The gateway th
 - customer side: Elastic network interface (ENI)
 - Take static IP of network load balancer and open it up on the ENI. 
 
-## AWS Transit Gateway - simplify complex n/w topologies
+## AWS Transit Gateway
 
-**Problem to solve**: Network topologies can get very complicated.
+**Simplifies complicated network topologies**
 
-Transit gateway is "**hub-spoke**" like topology to simplify. All VPCs that need to connect to each other needs to connect to the Transit Gateway.
+Transit gateway is "**hub-spoke**" like topology. All VPCs that need to connect to each other needs to connect to the Transit Gateway.
 
 Transitive peering between 1000s of VPC and on-prem DCs.
 
@@ -1939,9 +1947,9 @@ Supports **IP multicast** (not supported by any other AWS service).
 
 ## AWS VPN CloudHub - conn sites in different VPNs
 
-If you have **multiple sites each with its own VPN**, you can use AWS VPN CloudHub to connect these sites.
+**Connects multiple sites each with its own VPN.**
 
-"**Hub-spoke**" model
+Uses "**Hub-spoke**" model
 
 Operates over Internet, but customer gateway to AWS VPN CloudHub is encrypted (since it's a VPN).
 
