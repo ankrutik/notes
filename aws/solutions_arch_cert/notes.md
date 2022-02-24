@@ -1598,15 +1598,7 @@ Amazon Route 53 is both an **Authoritative** DNS service and **Recursive** DNS s
 
  # VPC
 
-Virtual private cloud let's you provision a logically isolated section of AWS services. Select your own IP address range, create subnets, configure routing tables and network gateways.
-
-For example, configure web server instances on public subnets and DB instances on private subnet with no Internet access.
-
-Hardware VPC between corporate DC and your VPC. Leverage AWS cloud as extension of your corporate DC.
-
-Internet/Virtual Private gateway -> Router -> route table -> Network ACL -> Public/Private subnet (security group applied)
-
-VPC is a collection of 
+Virtual private Cloud is a collection of 
 
 - virtual private gateways
 - route tables
@@ -1614,39 +1606,47 @@ VPC is a collection of
 - security groups
 - subnets
 
-**Bastion subnet** is when you connect to a public subnet to connect to a private subnet.
+Common example, configure web server instances on public subnets and DB instances on private subnet with no Internet access.
 
-**Bastion == Jumpbox**
+A common flow to traffic to an instance looks like:
+Internet/Virtual Private gateway -> Router -> route table -> Network ACL -> Public/Private subnet -> Security Group -> Instance
 
 CIDR blocks: 10.0.0.0/16 subnet is the largest allowed. 10.0.0.0/28 is the smallest.
 
 (CIDR, Classless Inter-Domain Routing is a method for allocating IP addresses and for IP routing)
 
-Bring up instances in subnet of your choice. Attach Network Access Control Lists (NACLs) to control access to those subnets.
+An **AWS Site-to-Site VPN connection** connects your VPC to your datacenter over an encrypted VPN connection. An internet gateway is not required to establish an AWS Site-to-Site VPN connection. 
 
-**Default VPC** has subnets that connect to Internet.
+A **default VPC** is a logically isolated virtual network in the AWS cloud that is automatically created for your AWS account the **first time you provision Amazon EC2 resources**. When you launch an instance without specifying a subnet-ID, your instance will be launched in your default VPC.
 
-**VPC peering** 
+Maximum 5 VPCs per region per AWS account.
 
-- allows direct network route between VPCs in 2 different regions and/or AWS accounts 
-- uses private IP addresses so VPCs talk as if on the same private network
-- Uses star configuration (1 central with *n* others) not transitive.
+VPC can span multiple AZs.
 
 **1 subnet = 1 AZ**, meaning:
 
 - you can't have 1 subnet stretch over multiple AZs
 - 1 AZ can have multiple subnets
 
+### Connectivity options from Amazon VPC 
+
+- The internet (via an internet gateway)
+- Your corporate data center using an AWS Site-to-Site VPN connection (via the virtual private gateway)
+- Both the internet and your corporate data center (utilizing both an internet gateway and a virtual private gateway)
+- Other AWS services (via internet gateway, NAT, virtual private gateway, or VPC endpoints)
+- Other Amazon VPCs (via VPC peering connections)
+
 ### Security groups vs Network ACLs
 
 | Security Groups                                              | Network ACLs                                                 |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Stateful; if inbound is created for a port, the outbound is created automatically | Stateless; inbound and outbound rules need to be defined separately |
+| Stateful; if inbound is created for a port, the outbound is created automatically. Stateful filtering tracks the origin of a request and can automatically allow the reply to the request to be returned to the originating computer. | Stateless; inbound and outbound rules need to be defined separately. Stateless filtering only examines the source or destination IP address and the destination port, ignoring whether the traffic is a new request or a reply to a request. |
 | To firewall EC2 instances                                    | To firewall VPCs                                             |
 | Can specify only allow rules                                 | Can specify block and allow rules                            |
 | Used after NACLs                                             | Used before Security groups                                  |
+| Instance level                                               | Subnet level                                                 |
 
-## lab: build a custom VPC
+## lab: Build a Custom VPC
 
 Remember using this diagram.
 
@@ -1658,15 +1658,19 @@ Go to *Networking > VPC*
 
 name, IPv4 CIDR block, IPv6 CIDR, tenancy
 
-Above creates **route table**, **network ACL** and **security group** by default.
+Above creates **route table**, **network ACL**, and **security group** by default.
+
+Above does not create **internet gateways** and **subnets** by default.
+
+Tenancy is default or dedicated. Dedicated tenancy puts everything on a dedicated hardware, expensive.
 
 ### **Create subnet**
 
 name, VPC, AZ, IPv4 CIDR block, IPv6 CIDR block
 
-Can create multiple subnets for each VPC
+Can create multiple subnets in each VPC. Maximum 200.
 
-5 IP addresses are reserved by Amazon (10.0.0.0-3, 10.0.0.255)
+Amazon reserves the first four (4) IP addresses and the last one (1) IP address of every subnet for IP networking purposes. For example, 10.0.0.0-3, 10.0.0.255.
 
 ### **Modify auto-assign IP settings**
 
@@ -1690,10 +1694,10 @@ connect subnet to required route table
 
 ### When creating Instance from AMI
 
-Select:
+Specify the following:
 
-- network Internet Gateway
-- subnet
+- Network Internet Gateway
+- Subnet
 - auto assign public IP address if needed (eg disable for DB instances)
 
 ### Create Security Groups
@@ -1725,13 +1729,17 @@ NAT instance is a single EC2 instance. NAT gateways are multiple instances sprea
 
 NAT instance must be in a public subnet.
 
+Disable source and destination check. This check is that either source or destination traffic should have the instance, but the NAT instance should not have that check.
+
 Should be a route out of the private subnet to the NAT instance.
 
 Bring up a NAT instance from the one available under Community AMIs. Bring it up under the same VPC. Disable source/destination check.
 
 Create a new Route such that destination is 0.0.0.0/0 (all outbound traffic on all port) and target is our NAT instance.
 
-Issues:
+Behind security group.
+
+**Issues**:
 
 - multiple EC2 instances using the same NAT instance can overwhelm it, can increase instance size
 - can create HA by using autoscaling groups, multiple subnets in different AZs, and script to automate failover
@@ -1757,7 +1765,7 @@ no need to disable source and destination checks
 
 When you have one NAT Gateway being used by instances in multiple AZs, then failure of that NAT gateway's AZ will block others. Better to bring up multiple NAT gateways in multiple AZs.
 
-## Access Control Lists
+## Network Access Control Lists
 
 When a VPC is created, a Network ACL is created by default. 
 
@@ -1769,19 +1777,21 @@ A subnet can be associated with only one NACL at any given time. But a NACL can 
 
 NACL > Edit Subnet associations:  to add or remove subnets from NACL
 
-The rule sequence matters since it checks the first passing rule, the rules are evaluated in ascending order of rule number starting with 100. Deny rules need to be before Allow rules.
+The rule sequence matters since it checks the first passing rule, the rules are evaluated in ascending order of rule number starting with 100. **Deny rules need to be before Allow rules.**
 
 Ephemeral ports are a range of ports that are randomly allocated to incoming sessions to server. The port is then used for the lifetime of the communication session.
 
-NACLs are stateless i.e. inbound and outbound rules need to be defined separately, creation of inbound rule doesn't create corresponding outbound rule.
+NACLs are stateless which means inbound and outbound rules need to be defined separately. Creation of inbound rule doesn't create corresponding outbound rule.
 
 Internet Gateway > Route Table > **NACL** > Security Group
 
-### Contrast with Security groups
+**Contrast with Security groups**
 
 - NACLs act before Security Groups.
 - NACLs can have IP block lists
 - NACLs are at subnet level while Security Groups are at instance level
+
+See *Security groups vs Network ACLs*
 
 ## lab: Custom VPCs and ELBs
 
@@ -1807,7 +1817,7 @@ IP traffic that is not monitored:
 - Amazon Windows license activation
 - 169.254.169.254 for instance metadata
 - DHCP traffic
-- to reserved IPS address for default VPC router
+- to reserved IP address for default VPC router
 
 ### Levels
 
@@ -1815,19 +1825,27 @@ IP traffic that is not monitored:
 - subnet
 - network interface
 
+## Traffic monitoring
+
+Amazon VPC traffic mirroring, provides deeper insight into network traffic by allowing you to **analyze actual traffic content, including payload**, and is targeted for use-cases when you need to analyze the actual packets to determine the root cause a performance issue, reverse-engineer a sophisticated network attack, or detect and stop insider abuse or compromised workloads.
+
 ## Bastions Hosts
 
-Special purpose computer specifically designed and configured to withstand attacks. Eg. hosts a single application like a Proxy server and all services are removed to the bare essentials to reduce threat to the computer. Can be outside the firewall or inside a DMZ and involves access from untrusted networks/computers.
+NAT Gateway/Instance allows EC2 instances in a private subnet to connect to the Internet. On the other hand, a Bastion/Jumpbox is used to connect to the EC2 instance in the private subnet from the Internet via SSH or RDP to securely administer it.
 
-NAT Gateway/Instance is used to provide Internet traffic to EC2 instances in a private subnet.
-
-Bastion/Jumpbox is used to securely administer EC2 instances using SSH or RDP.
+Bastion is a special purpose EC2 instance that is hardened which means it is specifically designed and configured to withstand attacks. All services on that instance are brought down to bare essentials to avoid exploits.
 
 NAT gateway cannot be used as a bastion host.
 
 Bastion hosts community AMIs are available.
 
-## Direct Connect
+## **VPC peering** 
+
+- allows direct network route between VPCs in 2 different regions and/or AWS accounts 
+- uses private IP addresses so VPCs talk as if on the same private network
+- Uses star configuration (1 central with *n* others) not transitive.
+
+## Direct Connect - private conn from AWS to on-prem
 
 Private connection between AWS and your DC/office/colocation environment. Helps reduce network costs, increase bandwidth, improve latency.
 
@@ -1836,16 +1854,18 @@ Private connection between AWS and your DC/office/colocation environment. Helps 
 - create **public virtual interface** in DC console
 - VPC > VPN connections > create **customer gateway**
 - create **virtual private gateway**
-- attach virtual private gateway to desired VPC
+  - attach virtual private gateway to desired VPC
+
 - VPC > VPN connections > create new **VPN connection**
-- select virtual private gateway and customer gateway
+  - select virtual private gateway and customer gateway
+
 - once VPN is available, setup VPN on customer gateway/firewall
 
 ## Global Accelerator
 
 Directs traffic to the optimal endpoint in terms of proximity to client, health, endpoint weights
 
-Components:
+**Components**:
 
 - static ip addresses: AWS brings 2 IPs or you can bring your own
 - accelerator
@@ -1857,46 +1877,53 @@ Components:
 
 Disable, wait for some time, delete
 
-## VPC endpoints
+*TODO How is this different than a multivalue load balancer?*
 
-privately connection your VPC to **only certain supported** AWS services and VPC endpoint services without without internet gateway, NAT, VPN, Direct Connect. 
+## VPC endpoints - private conn your VPC to certain AWS services
+
+What are VPC end points?
+
+- these are virtual devices
+- used to **privately** connect your VPC to **only certain supported** AWS services and VPC endpoint services
+-  without internet gateway, NAT, VPN, Direct Connect
+- traffic never leaves the Amazon network, Internet is not used
+
+**Types of endpoints:**
+
+- interface
+  - provide private connectivity to services powered by PrivateLink, being AWS services, your own services or SaaS solutions, and supports connectivity over Direct Connect
+- gateway
+  - only for AWS services including S3 and DynamoDB
+  - routes traffic via Amazon's private network
 
 No public IP needed.
 
-Traffic doesn't leave amazon network.
-
 Instance in private subnet sends message to VPC endpoint gateway. The gateway then sends the message  to the AWS service.
 
-Endpoints are virtual devices.
+## AWS PrivateLink - conn VPC to other VPC
 
-Types of endpoints:
+**Other ways to connect to other VPC:**
 
-- interface
-- gateway: S3, DynamoDB
+- open up to Internet via **Internet Gateway**: problems with security, have to setup firewall, etc.
+- use **VPC peering**: will have to create that many star config connections and gets hard to manage for large number of peers
 
-## AWS PrivateLink
+**What PrivateLink offers:**
 
-Ways to connect to other VPC:
+- none of the problems of Internet Gateways and Peering
+- No need to configure VPC peering, NAT, Internet gateways, route tables, etc.
+- connect your VPC to 10s, 100s, 1000s of customer VPCs
 
-- open up to Internet via Internet Gateway: problems with security, have to setup firewall, etc.
-- use VPC peering: will have to create that many star config connections and gets hard to manage for large number of peers
+**What PrivateLink needs:**
 
-Use PrivateLink instead:
+- service side: network load balancer
+- customer side: Elastic network interface (ENI)
+- Take static IP of network load balancer and open it up on the ENI. 
 
-- network load balancer on service side
-- Elastic network interface (ENI) on customer side
+## AWS Transit Gateway - simplify complex n/w topologies
 
-Take static IP of network load balancer and open it up on the ENI
+**Problem to solve**: Network topologies can get very complicated.
 
-Useful to connect your VPC to 10s, 100s, 1000s of customer VPCs.
-
-No VPC peering, NAT, Internet gateways, route tables, etc.
-
-## AWS Transit Gateway
-
-Network topologies can get very complicated.
-
-Transit gateway is "**hub-spoke**" like topology to **simplify**.
+Transit gateway is "**hub-spoke**" like topology to simplify. All VPCs that need to connect to each other needs to connect to the Transit Gateway.
 
 Transitive peering between 1000s of VPC and on-prem DCs.
 
@@ -1910,18 +1937,18 @@ Works with Direct Connect, VPN.
 
 Supports **IP multicast** (not supported by any other AWS service).
 
-## AWS VPN CloudHub
+## AWS VPN CloudHub - conn sites in different VPNs
 
 If you have **multiple sites each with its own VPN**, you can use AWS VPN CloudHub to connect these sites.
 
-Hub-spoke model
+"**Hub-spoke**" model
 
 Operates over Internet, but customer gateway to AWS VPN CloudHub is encrypted (since it's a VPN).
 
 ## AWS Network Costs
 
-- use private IP address over public IP address to save costs. this uses AWS backbone network.
-- to cut network costs, have all your EC2 instances in the same availability zone and use private IP address. 100% cost free but has **single point of failure issues**.
+- Use private IP address over public IP address to save costs. This uses AWS backbone network.
+- To cut network costs, have all your EC2 instances in the same availability zone and use private IP address. 100% cost free but has **single point of failure issues**.
 
 # HA Architecture
 
