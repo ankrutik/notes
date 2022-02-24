@@ -1025,9 +1025,9 @@ For IP and port level deny, use NACLs instead.
 
 # Databases on AWS
 
-Multi-AZ for disaster recovery. Auto fail over.
+**Multi-AZ** for disaster recovery. Auto fail over.
 
-Read replicas for performance. No auto scaling or fail over.
+**Read replicas** for performance. No auto scaling or fail over.
 
 **RDS (OLTP)**
 
@@ -1053,6 +1053,18 @@ Read replicas for performance. No auto scaling or fail over.
 
 A **database parameter group (DB Parameter Group)** acts as a “container”  for engine configuration values that can be applied to one or more DB  Instances. If you create a DB Instance without specifying a DB Parameter Group, a default DB Parameter Group is used. This default group  contains engine defaults and Amazon RDS system defaults optimized for  the DB Instance you are running. 
 
+**Enhanced Monitoring for Amazon RDS** gives you deeper visibility into the health of your Amazon RDS instances. Captures instance system level metrics, such as the CPU, memory, file system, and disk I/O among others.
+
+**Amazon RDS Proxy** is a fully managed, highly available, database proxy feature of Amazon RDS that enables your applications to: 
+
+1. improve **scalability** by pooling and sharing database connections; 
+2. improve **availability** by reducing database failover times by up to 66% and preserving application connections during failovers; 
+3. improve **security** by optionally enforcing AWS IAM authentication to databases and securely storing credentials in AWS Secrets Manager.
+
+If you want your application to check RDS for an error, have it look for an ERROR node in the response from the Amazon RDS API.
+
+MySQL installaton port is 3306.
+
 ## Lab: create RDS instance
 
 Configure your DB Security Group to talk with application's Security Group when creating the RDS instance.
@@ -1075,7 +1087,15 @@ When these backups are restored, the RDS instance will be a new one with a new D
 
 Encryption is managed using Amazon KMS. Encryption at rest. When encryption is enabled on RDS instance automated backups, snapshots, read replicas are encrypted.
 
+On a single-AZ RDS instance setup, I/O may be briefly suspended while the backup process initializes (typically under a few seconds), and you may experience a brief period of elevated latency.
+
 It is normal to have **1 or 2 more automated DB snapshots than the number of days in your retention period**. One extra automated snapshot is retained to ensure the ability to perform a point in time restore to any time during the retention period.
+
+**No transfer charge is incurred** when replicating data from your primary RDS instance to your secondary RDS instance.
+
+If you are using Amazon RDS Provisioned IOPS storage with a Microsoft SQL Server database engine, 16 TB is the maximum size RDS volume you can have by default.
+
+In RDS, changes to the backup window take effect immediately.
 
 ### Automated Backups
 
@@ -1115,6 +1135,7 @@ It is normal to have **1 or 2 more automated DB snapshots than the number of day
 - automated backups need to be enabled
 - upto 5 read replicas available
 - each read replica has its own DNS endpoint
+- A read replica is billed as a standard DB Instance and at the same rates.
 
 Read replicas are designed to serve read traffic. However, there may be use cases where advanced users wish to execute DDL SQL statements against a read replica. Eg adding a database index to a read replica that is used for business reporting without adding the same index to the corresponding source DB instance.
 
@@ -1133,27 +1154,25 @@ Billing can be on-demand or reserved.
 
 ## DynamoDB
 
-single-digit millisecond latency
+- No-SQL solution; supports both **documents and key-value** data models
 
-supports both documents and key-value data models
-
-uses SSDs
-
-spread across 3 distinct geographic locations
-
-eventually consistent reads: consistency across all copies reached within 1 second; default
-
-strongly consistent reads: returns result that reflects all writes that received successful response prior to read; sub 1 second
+- uses SSDs, single-digit millisecond latency
+- spread across 3 distinct geographic locations
+- Choose between consistency strategies:
+  - **eventually consistent reads**: default option; consistency across all copies reached within 1 second; might not return recently successful write
+  - **strongly consistent reads**: returns result that reflects all writes that received successful response prior to read; sub 1 second
+  - **ACID** transactions: atomicity, consistency, isolation, and durability 
+- DynamoDB **Standard-IA** helps you reduce your DynamoDB total costs for tables that store infrequently accessed data such as applications’ logs, old social media posts, e-commerce order history, and past gaming achievements. 
 
 ## Advanced DynamoDB
 
 ### DynamoDb Accelarator (DAX)
 
-in-mem cache; 10x performance; microseconds response; no need for devs to manage separate caching logic
+in-mem cache; 10x performance; microseconds response; no need for devs to manage separate caching logic like memcache or redis
 
 ### Transactions
 
-Multiple "all or nothing" operations like in financial transactions or fulfilling orders
+Multiple **"all or nothing" operations** like in financial transactions or fulfilling orders
 
 2 underlying reads/writes: prepare and commit
 
@@ -1161,9 +1180,7 @@ upto 25 items or 4MB of data
 
 ### On-Demand Capacity
 
-pay-per-request pricing
-
-balance cost and performance
+**pay-per-request** pricing to balance cost and performance
 
 no minimum capacity
 
@@ -1179,7 +1196,7 @@ consistent within seconds, retained until deleted
 
 same region as source table
 
-### Point in time Recovery
+### Point-in-time Recovery
 
 protects against accidental writes or deletes
 
@@ -1197,7 +1214,7 @@ inserts, updated, deletes
 
 stored for 24 hours
 
-stream records grouped into shards
+stream records grouped into **shards**
 
 combine with lambda functions for functionality like stored procedures
 
@@ -1225,7 +1242,7 @@ site-to-site VPN, Direct Connect
 
 IAM policies and Roles
 
-Fine-grained access
+Fine-grained access thru IAM to give access to only specific attributes
 
 CloudWatch and CloudTrail
 
@@ -1237,19 +1254,19 @@ petabyte scale data warehouse service
 
 single node config (160Gb)
 
-multi-node config:
+Multi-node configuration
 
-- leader node: manage client requests
-- compute nodes: store data and perform queries and computations
+- **leader** node: manage client requests
+- **compute** nodes: store data and perform queries and computations
 
 Individual columns are compressed
 
-Massively parralel processing
+Massively parallel processing
 
 Backups:
 
 - enabled by default
-- maximum retention of 35 days
+- default 1 day retention, maximum retention of 35 days
 - maintains at least 3 copies of data
 - async replicate your snapshots to S3 in another region
 
@@ -1261,8 +1278,8 @@ Pricing:
 
 Security
 
-- ssl
-- aes-256 encryption
+- ssl in transit
+- aes-256 encryption at rest
 - KMS
 
 Only available in 1 AZ currently
@@ -1275,45 +1292,79 @@ Starts at 10GB, scales in 10GB increaments, upto 64TB
 
 compute resources upto 32vCPUs and 244GB RAM
 
-2 copies of data in each AZ, minimum 3 AZs
+2 copies of data in each AZ with minimum 3 AZs; so 6 copies of data
 
 share snapshots with other AWS accounts
 
-types of aurora replicas:
+Types of Aurora replicas:
 
-- aurora replicas (15)
+- aurora read replicas (15); automated failover available with these
 - MySQL read replicas (5)
 - PostgreSQL (1)
 
-automated backups on by default
+Automated backups on by default
 
-serverless
+**Serverless** design; comes up, goes down, scales out when required automatically
 
-suited for infrequent, intermittent, or unpredictable workloads
+**Amazon Aurora Global Database** is a feature that allows a single Amazon Aurora database to span multiple AWS regions. No automatic failover. Upto 5 regions.
+
+Amazon Aurora **Parallel Query** refers to the ability to push down and distribute the computational load of a single query across thousands of CPUs in Aurora’s storage layer. Without Parallel Query, a query issued against an Amazon Aurora database would be executed wholly within one instance of the database cluster; this would be similar to how most databases operate. Not to be turned on always as it may incur hogher IO cost.
+
+**Cost effective solution** because:
+
+- serverless saves cost to adjust or bring down instances with inactivity
+  - Suited for infrequent, intermittent, or unpredictable workloads
+- based on open source
+- implemented like other commercial databases
 
 ## Elasticache
 
 web service to deploy, operate, and scale in-memory cache in the cloud
 
-supports memcached and redis
+Amazon ElastiCache manages the work involved:
 
-memcached: simple, multithreaded performance
+- in **setting up** a distributed in-memory environment, from provisioning the server resources you request to installing the software. 
+- automating common **administrative tasks** such as failure detection and recovery, and software patching.
+- in **detailed monitoring** metrics associated with your nodes, enabling you to diagnose and react to issues very quickly. 
 
-redis: advanced data type, sorting
+Supports following engines:
 
-redis is multi AZ and allows back/restores
+- **Memcached**: 
+  - simple, multithreaded performance
+  - multi-AZ available
+
+- **Redis**: 
+  - advanced data types
+  - sorting
+  - querying
+  - persistence
+  - multi-AZ and allows back-ups and restores
+
+A **node** is the smallest building block, a fixed-size chunk of secure, network-attached RAM. A Redis **shard** is a subset of the cluster’s keyspace, that can include a primary node and zero or more read-replicas. The shards add up to form a **cluster**.
+
+**Pricing** is per Node-hour consumed for each Node Type.
+
+**Reserved Nodes/Instance (RI)** is an offering that provides you with a significant discount over on-demand usage when you commit to a one-year or three-year term. Cost saved with upfront one time payment.
+
+A **Parameter Group** acts as a "container" for engine configuration values that can be applied to one or more clusters. If you create a cluster without specifying a Parameter Group, a default Parameter Group is used. This default group contains engine defaults and Amazon ElastiCache system defaults optimized for the cluster you are running.
+
+**Auto Discovery** is a feature that saves developers time and effort, while reducing complexity of their applications. Auto Discovery enables automatic discovery of cache nodes by clients when they are added to or removed from an Amazon ElastiCache cluster. Until now to handle cluster membership changes, developers must update the list of cache node endpoints manually which may need restarts.
 
 ## Database Migration Service
 
-homogenous (eg Oracle to Oracle) or heterogenous (eg. Oracle to Aurora) migration
+**Homogenous** (eg Oracle to Oracle) or **Heterogenous** (eg. Oracle to Aurora) migration
 
-Heterogenous needs Schema Conversion Tool
+Heterogenous needs **Schema Conversion Tool**
+
+EC2 instance that run DMS and SCT. SCT is not needed with homogeneous migrations.
+
+DMS traditionally moves **smaller relational workloads** (<10 TB) and MongoDB, whereas SCT is primarily used to migrate **large data warehouse workloads**. DMS supports **ongoing replication** to keep the target in sync with the source; SCT does not.
 
 ## Caching strategies
 
 Services that have caching capabilites:
 
-- CloudFront
+- CloudFront: media files
 - API Gateway
 - Elasticache
 - DynamoDB Accelarator
@@ -1322,72 +1373,123 @@ Add caching more towards the front to decrease latency.
 
 ## Elastic Map Reduce
 
-Big Data scenarios
+Cloud big data platform for data processing, interactive analysis, and machine learning using open source frameworks such as Apache Spark, Apache Hive, and Presto
 
 Cluster components:
 
-- Master node: manage and track status of tasks; monitor health of cluster; at least one in each cluster
-- core node: runs tasks and stores data on Hadoop Distributed File System
-- task node: only runs tasks and does not store data; optional
+- **Master** node: **manage and track** status of tasks; monitor health of cluster; at least one in each cluster
+- **core** node: runs tasks and stores data on Hadoop Distributed File System
+- **task** node: **only runs tasks** and does not store data; optional
 
 Master node stores log data. 
 
-replication can be configured to replicate log data every 5 mintues on S3; can only be set up during initial creation
+Replication can be configured to replicate log data every 5 mintues on S3; can only be set up during initial creation.
 
 # Advanced IAM
 
 ## AWS Directory Service
 
-AWS Managed Microsoft AD
+AWS Directory service is used to regulate access to AWS resources using already existing on-prem AD services.
 
-Simple AD
+What are **Active Directories**:
 
-AD Connector
+- on-prem directory service by Microsoft
+- hierarchical database of users, groups, computers; trees, forests
+- apply groups and policies to manager users
+- based on LDAP and DNS protocols 
+- supports LDAP, NTLM, Kerberos Authentication
 
-Cloud Directory
+**AD Trust** is used to extend AWS AD onto your on-prem.
 
-Cognito user pools
+### **AD compatible Directory Services**
 
-AD compatible:
+- **Simple AD**
 
--  microsoft AD
-- ad connector
-- simple ad
+  -  small (<=500) and large (<=5000) user sets 
 
-Not AD compatible:
+  -  does not support trusts
 
-- cloud directory
-- cognito user pools
+- **AWS Managed Microsoft AD**
 
-AD Trust is used to extend AWS AD onto your on-prem.
+-  **AD Connector**
+   -  Directory gateway (proxy) for on-prem AD
+   -  avoid caching information in the cloud
+   -  allow on-prem users to log into AWS using AD
+   -  scale across multiple AD connectors
+
+
+### Non AD compatible Directory Services
+
+- **Cloud Directory**
+  - directory based store intended for developers
+  - multiple hierarchies, millions of objects
+  - use cases: org charts, course catalogs, device registries
+  - fully managed service
+
+- **Amazon Cognito User Pools**
+  - managed user directory for SaaS
+  - Sign up/in for web or mobile
+  - works with social media
+
+
+## ARN
+
+ARN `arn:partition:service:region:account_id`
 
 ## IAM policies
 
-AWS policies are created by AWS for convenience. Not editable.
+**IAM policies**
 
-Customer managed policies are used for customizations.
+- JSON document with that has permission statements as arrays
+- Statement contains
+  - effect: Allow or Deny
+  - action: API
+  - resource: AWS entity
 
-If not explicitly allowed, it is implicitly denied.
+**Policy evaluation logic**
 
-Policies only work when applied to a group or role.
+- No in effect till attached to a user or group
+- if not explicitly allowed, it is implicitly denied. By default denied till explicitly allowed
+- AWS joins all applicable policies
+- Any deny will override any allow
 
-AWS joins all applicable policies
+**Identity vs Resource Policies**
 
-Permission boundaries
+- Identity policy: what identity can do what?
+- Resource policy: what resource can do what and who can access that resource?
 
-- used to delegate administration to other users
+**AWS created vs Customer managed policies**
+
+- AWS policies are created by AWS for convenience. Not editable.
+- Customer managed policies are used for customizations.
+
+**Permission boundaries**
+
+- used to **delegate administration to other users**
 - prevent privilege escalation or unnecessarily broad permissions
 - control maximum permissions that a IAM policy can apply
 
 ## Resource Access Manager
 
-resource sharing between accounts
+Resource sharing between AWS accounts.
 
-only some services can be shared
+Only some services can be shared via RAM.
+
+**Steps**:
+
+1. Under Resource Access Manager, create a new resource share using 
+   1. principal: the secondary AWS account ID 
+   2. resource you want to share
+2. Resource will now be associated, principal will be associating.
+3. On the secondary account, under RAM, see Resource sharing requests and accept.
+4. Resource will now be associated, principal will be associated.
+5. On the secondary account, you can now clone and work on the resource.
 
 ## AWS Single Sign-On
 
-centrally manage access to AWS accoutns and business applications
+centrally manage access to AWS accounts and business applications
+
+SAML for SSO
 
 # Route53
 
@@ -1403,30 +1505,38 @@ Elastic Load balancers do not have pre-defined IPv4 addresses, you resolve them 
 
 A **registrar** (Amazon, GoDaddy) assigns domain names under one of the top level domain names. Domains are registered with interNIC (service of ICANN) which enforces uniqueness of domain names across the Internet. Registered with a central database called WhoIS database.
 
-**SOA** (start of authority) records stores:
+User enters URL -> Browser goes to top level domain -> TLD returns NS record -> Browser looks up NS record to get SOA record -> SOA record contains DNS records
+
+AWS does not use default TTL for record type. You have to specify.
+
+Route53 propogates changes in 60 seconds.
+
+**NS (name server) record** used by **top level domain servers** to direct traffic to the **content DNS server** which return authorative (SOA) DNS records.
+
+**SOA (start of authority) record** stores:
 
 - name of server that supplied data for zone
 - administrator of zone
 - current version of the data file
 - default TTL seconds
 
-**NS** (name server) records used by top level domain servers to direct traffic to the content dns server which contains authorative DNS records.
-
-User enters URL -> Browser goes to top level domain -> TLD returns NS record -> Browser looks up NS record to get SOA record -> SOA record contains DNS records
+**DNS Record types**
 
 - **"A" Record**: Address record; used to convert name of domain to an IP address
-- **TTL**
-- **CName** (canonical name): Used to resolve one domain to another; instead of using multiple IP address, use one IP and have 2 domain names on it. CNAME can't be used for naked domain name (`http://google.com`). It must be either an "A" record or alias.
-
-- **Alias** records are used to map resource records sets in your hosted zone to ELB, CloudFront distributions, or S3 buckets. Alias records are like CNAME records.
-- **PTR** records are used to look up domain names for IP addresses
+- **PTR records** are used to look up domain names for IP addresses. Reverse of "A" record.
+- **CName (canonical name) Record**: Used to resolve one domain to another; instead of using multiple IP address, use one IP and have 2 domain names on it. CNAME can't be used for naked domain name (`http://google.com`). It must be either an "A" record or alias.
+- **Alias records** are used to map resource records sets in your hosted zone to ELB, CloudFront distributions, or S3 buckets. Alias records are like CNAME records.
 - **MX** records are used for mail
+
+### ELB - Elastic Load Balancer
+
+IPv4 addresses are never shared for ELBs. You have to use a DNS name.
 
 ## lab: Register a domain name
 
-domain registration can be bought from the AWS console for hosted zones (.com addressed for 20USD)
+Domain registration can be bought from the AWS console for hosted zones (.com addressed for 20USD)
 
-can take upto 3 days
+Can take upto 3 days
 
 _3 EC2 instances were brought up in different regions with different IP addresses and different index.html contents. One domain name was registered (hosted zone). Route 53 was used to configure the 3 different IP address to the same domain name (hosted zone) to try out the following routing policies. Hit the address, wait for DNS flush (TTL) or manually flush, hit again and see if it DNS resolve a different IP address._
 
@@ -1440,47 +1550,55 @@ Health checks can be configured for each IP; can configure notifications.
 
 ### Simple
 
-one record with multiple IP adddresses
+- One record with multiple IP adddresses.
 
-for multiple values in record, Route 53 will return all values in random order
+- When there are multiple values in a record, Route 53 will return all values in **random order**.
 
-### Weighted 
+### Weighted (Weighted Round Robin)
 
-split traffic based on different weights assigned to each IP address
+- Split traffic based on different **weights assigned** to each IP address.
 
-Heath checks can be created and configured with records in your hosted zones.
+- Heath checks can be created and configured with records in your hosted zones.
 
-### Latency based
+### Latency based (LBR)
 
-route traffic based on lowest network latency for your end user i.e. route to region that will give them the fastest response time
-
-Latency records are created for each IP address. Regions are automatically detected when IP addresses are entered.
+- Route traffic based on **lowest network latency** for your end user i.e. route to region that will give them the **fastest response time**.
+- Latency records are created for each IP address. Regions are automatically detected when IP addresses are entered.
 
 ### Failover
 
-active and passive site setup. health checks are configured with the record set for the active site which help route to passive site incase the active's health goes down.
+- **Active and passive** site setup. 
+- Health checks are configured with the record set for the active site which help route to passive site incase the active's health goes down.
 
-### Geolocation
+### Geolocation (Geo DNS)
 
-routing of traffic based on geographical location of your user. Not to be confused with latency based, here we are restricting users to a site based on their geographical location and not worrying about latency.
+- Routing of traffic based on **geographical location of your user**. 
+- Not to be confused with latency based, here we are **restricting users to a site based on their geographical location** and not worrying about latency.
 
 ### Geoproximity (Traffic flow only)
 
-routing based on geographical location of your user and your resources. 
+- Amazon Route 53 **Traffic Flow** is a global traffic management service. You can improve the performance and availability of your application for your end users by running multiple endpoints around the world. Amazon Route 53 Traffic Flow lets developers **create policies that route traffic based on the constraints they care most about**, including latency, endpoint health, load, geoproximity and geography. 
+- Routing based on **geographical location of your user and resources**. 
 
-optionally choose to route more or less to a given resource based on a bias value. 
+- optionally choose to route more or less to a given resource based on a **bias value**. 
 
-bias expands or shrinks the **size of the geographical location from which traffic is routed** to a resource. 
+- bias expands or shrinks the **size of the geographical location from which traffic is routed** to a resource. 
 
-must use Route 53 traffic flow
+- must use Route 53 traffic flow
+- A **traffic policy** is the set of rules that you define to route end users’ requests to one of your application’s endpoints. You create a **policy record** which associates the traffic policy with the appropriate DNS name within an Amazon Route 53 hosted zone that you own.
 
 ### Multivalue Answer
 
-same as simple routing policy (one domain name returns multiple IP addresses) but associate health check with each record. this policy will then only return those records that are healthy.
+- Same as **simple routing policy with health checks**
+- Health check associated with each record. This policy will return only those records that are healthy.
+
+### Route 53 Resolver
+
+Amazon Route 53 is both an **Authoritative** DNS service and **Recursive** DNS service. **Authoritative DNS** contains the **final answer to a DNS query**, generally an IP address. Clients (such as mobile devices, applications running in the cloud, or servers in your datacenter) don’t actually talk directly to authoritative DNS services, except in very rare cases. Instead, clients talk to **recursive DNS services** (also known as DNS resolvers) which find the correct authoritative answer for any DNS query. Route 53 Resolver is a recursive DNS service.
 
  # VPC
 
-Virtual private cloud let's you provision a loggically isolated section of AWS services. Select your own IP address range, create subnets, configure routing tables and network gateways.
+Virtual private cloud let's you provision a logically isolated section of AWS services. Select your own IP address range, create subnets, configure routing tables and network gateways.
 
 For example, configure web server instances on public subnets and DB instances on private subnet with no Internet access.
 
@@ -1488,7 +1606,17 @@ Hardware VPC between corporate DC and your VPC. Leverage AWS cloud as extension 
 
 Internet/Virtual Private gateway -> Router -> route table -> Network ACL -> Public/Private subnet (security group applied)
 
-Bastion subnet is when you connect to a public subnet to connect to a private subnet.
+VPC is a collection of 
+
+- virtual private gateways
+- route tables
+- network ACLs
+- security groups
+- subnets
+
+**Bastion subnet** is when you connect to a public subnet to connect to a private subnet.
+
+**Bastion == Jumpbox**
 
 CIDR blocks: 10.0.0.0/16 subnet is the largest allowed. 10.0.0.0/28 is the smallest.
 
@@ -1496,59 +1624,90 @@ CIDR blocks: 10.0.0.0/16 subnet is the largest allowed. 10.0.0.0/28 is the small
 
 Bring up instances in subnet of your choice. Attach Network Access Control Lists (NACLs) to control access to those subnets.
 
-Default VPC has subnets that connect to Internet.
+**Default VPC** has subnets that connect to Internet.
 
-VPC peering uses private IP address to allow one VPC to connect to another via a direct network route. Uses star configuration (1 central with *n* others) not transitive.
+**VPC peering** 
 
-1 subnet = 1 AZ
+- allows direct network route between VPCs in 2 different regions and/or AWS accounts 
+- uses private IP addresses so VPCs talk as if on the same private network
+- Uses star configuration (1 central with *n* others) not transitive.
+
+**1 subnet = 1 AZ**, meaning:
+
+- you can't have 1 subnet stretch over multiple AZs
+- 1 AZ can have multiple subnets
+
+### Security groups vs Network ACLs
 
 | Security Groups                                              | Network ACLs                                                 |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Stateful; if inbound is created for a port, the outbound is created automatically | Stateless; inbound and outbound rules need to be defined separately |
 | To firewall EC2 instances                                    | To firewall VPCs                                             |
+| Can specify only allow rules                                 | Can specify block and allow rules                            |
+| Used after NACLs                                             | Used before Security groups                                  |
 
 ## lab: build a custom VPC
 
-Networking > VPC
+Remember using this diagram.
 
-**Create VPC**: name, IPv4 CIDR block, IPv6 CIDR, tenancy
+![vpc-overview](notes.assets/vpc-overview.png)
+
+Go to *Networking > VPC*
+
+### **Create VPC**
+
+name, IPv4 CIDR block, IPv6 CIDR, tenancy
 
 Above creates **route table**, **network ACL** and **security group** by default.
 
-**Create subnet**: name, VPC, AZ, IPv4 CIDR block, IPv6 CIDR block
+### **Create subnet**
 
-can create multiple subnets for each VPC
+name, VPC, AZ, IPv4 CIDR block, IPv6 CIDR block
+
+Can create multiple subnets for each VPC
 
 5 IP addresses are reserved by Amazon (10.0.0.0-3, 10.0.0.255)
 
-**Modify auto-assign IP settings**
+### **Modify auto-assign IP settings**
 
-**Create Internet Gateway**: name
+### **Create Internet Gateway**
 
-attach IG to VPC; allows only 1 IG to each VPC
+name
+
+Attach Internet Gateway to VPC; allows only 1 Internet Gateway to each VPC
+
+### **Create route table**
+
+name, VPC
 
 Best practice, keep main route table private.
 
-**Create route table**: name, VPC
+Edit routes and connect outbound IPv4(0.0.0.0/0) and IPv6(::/0) to required Internet Gateway.
 
-Edit routes and connect outbound IPv4(0.0.0.0/0) and IPv6(::/0) to required IG.
+### Subnet association
 
-Subnet association: connect subnet to required route table
+connect subnet to required route table
 
-When creating Instance from AMI, select:
+### When creating Instance from AMI
 
-- network IG
+Select:
+
+- network Internet Gateway
 - subnet
 - auto assign public IP address if needed (eg disable for DB instances)
 
-Security groups are limited to one VPC. Cannot be used in multiple VPCs.
+### Create Security Groups
 
 Create security group for private subnet such that it will accept requests from within our public subnet i.e. our application instances talking to our DB instance.
 
 create security group for private subnet: name, VPC, inbound rules {ICMP IPv4, public subnet}, {HTTP, public subnet}, {HTTPS, public subnet}, {SSH, public subnet}, {MySQL/Aurora, public subnet},
 allow all outbound rules
 
+Security groups are limited to one VPC. Cannot be used in multiple VPCs.
+
 Change security group of DB instance to this new security group.
+
+### Using public instance as jumpbox to private instance
 
 Copy private key of DB instance into App instance. Then ssh into app instance and then ssh into db instance. Alternative to this is to use bastion hosts.
 
