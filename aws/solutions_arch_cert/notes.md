@@ -1962,79 +1962,104 @@ Operates over Internet, but customer gateway to AWS VPN CloudHub is encrypted (s
 
 ## Load Balancers Theory
 
-### application lb
+https://aws.amazon.com/elasticloadbalancing/faqs/
 
-balancing HTTP and HTTPS traffic
+Durability: resource will continue to exist until you decide to remove it
 
-operate at level 7
+resiliency: resource's ability to recover from damage or disruption
 
-capable of advanced routing
+availability: access a resource or service when you need it
 
-### network lb
+reliability: resource will work as designed
 
-TCP traffic
+When you receive **504 gateway timeout error**, it means there is an issue with the application and not the load balancer itself.
 
-operates on level 4
+**X-Forwarded-For Header**: All traffic to applications reaches via the load balancer, which means it will log only the load balancer's IP for each request. Instead, it should use the X-Forwarded-For header which will retain the original sender's IP.
 
-high performance; millions of requests per second; ultra-low latencies
+Preferably use application LB but classic LB can be cheaper if you want simple round robin LB.
 
-### classic 
+### Application LB
 
-balancing HTTP and HTTPS traffic
+- Balancing HTTP and HTTPS traffic
+- Operate at level 7
+- Capable of advanced routing with conditions
+- You can **terminate HTTPS connection** on the Application Load Balancer. You must install a Secure Sockets Layer (SSL) certificate on your load balancer. The load balancer uses this certificate to terminate the connection and then **decrypt requests from clients before sending them to targets**.
+- currently supports 
+  - 50 load balancers per region
+  - 100 targets per load balancer
+  - 100 targets groups per load balancer
+    - If instances or IPs, 1000 targets per target group
+    - If Lambda, 1 target per target group 
+  - https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-limits.html
 
-can use Layer 7 specific features like X-Forwarded and sticky sessions
+### Network LB
 
-can use strict Layer 4 load balancing for TCP
+- Balance TCP/UDP traffic
+- Operates on level 4
+- high performance; millions of requests per second; ultra-low latencies
+- supports 200 targets per Availability Zone
+- You can **terminate TLS connections** on the Network Load Balancer. You must  install an SSL certificate on your load balancer. The load balancer uses this certificate to terminate the connection and then decrypt requests from clients before sending them to targets.
 
-preferably use application LB but classic LB can be cheaper if you want simple round robin LB
+### Classic LB
 
-errors: 504 gateway timeout (application error)
+- balancing HTTP and HTTPS traffic
+- Can use Layer 7 specific features like X-Forwarded and sticky sessions
+- can use strict Layer 4 load balancing for TCP and SSL
+- simple round robin
+- You can terminate SSL on Classic Load Balancers. You must install an SSL certificate on each load balancer. The load balancers use this certificate to terminate the connection and then decrypt requests from clients before sending them to the back-end instances.
 
-X-Forwarded-For Header: all traffic to applications reaches via the load balancer, which means it will log only the load balancer's IP for each request. Instead, it should use the X-Forwarded-For header which will retain the original sender's IP.
+### Gateway LB
+
+- to deploy and run inline virtual appliances where network traffic is not destined for the Gateway Load Balancer itself.
+- transparently passes all Layer 3 traffic through third-party virtual appliances, and is invisible to the source and destination of the traffic
+- Itself does not perform TLS termination and does not maintain any application state. These functions are performed by the third-party virtual appliances it directs traffic to, and receives traffic from.
+- supports 300 targets per Availability Zone
+- Gateway Load Balancer Endpoints is a type of VPC endpoint that uses PrivateLink technology. As network traffic flows from a source (an Internet Gateway, a VPC, etc.) to the Gateway Load Balancer, and back, a Gateway Load Balancer Endpoint ensures private connectivity between the two.
 
 ## lab: Load Balancers and Health Checks
 
-### define classic load balancer
+### Define classic load balancer
 
-load balancer name, VPC to create it inside
+- load balancer name, VPC to create it inside
 
-listener configuration: protocol, port, instance protocol, instance port
+- listener configuration: protocol, port, instance protocol, instance port
 
-security group
+- security group
 
-health check: ping protocol, port, path; response timeout, interval, unhealthy threshold, healthy threshold
+- health check: ping protocol, port, path; response timeout, interval, unhealthy threshold, healthy threshold
 
-add EC2  instances, cross zone LB, connection draining
+- Add EC2 instances, cross zone LB, connection draining
 
-### target groups
 
-Groups of EC2 instances where traffic will be routed to according to certain criteria.
+### Target groups
 
-target group name; target type (instance, IP, lambda function); protocol; port; VPC; related health check 
+- Groups of EC2 instances where traffic will be routed to according to certain criteria.
 
-Add EC2 instances as targets to the target groups
+- target group name; target type (instance, IP, lambda function); protocol; port; VPC; related health check 
 
-### define application load balancer
+- Add EC2 instances as targets to the target groups
 
-name; scheme (internal facing, internal); IP address type
 
-listener: protocol
+### Define application load balancer
 
-AZs
+- name; scheme (internal facing, internal); IP address type
 
-security group
+- listener: protocol
 
-target group
+- AZs
 
-add EC2 instances to registered group of load balancer
+- security group
 
-Rules can be created here with conditions and actions. This is not available in classic load balancers.
+- target group
 
-504 means gateway has timed out, means the application is not responding to the gateway within the timeout configured on the gateway.
+- add EC2 instances to registered group of load balancer
 
-`X-Forwarded-For` header can be used to see the original sender of the request.
+- Rules can be created here with **conditions and actions**. This is not available in classic load balancers.
 
-Instance statuses are `InService` or `OutofService`  
+
+
+
+Instance **statuses** are `InService` or `OutofService`  
 
 Load balancers have their own DNS names and not IP address
 
@@ -2044,8 +2069,11 @@ Load balancers have their own DNS names and not IP address
 
 ### Sticky Sessions
 
-Normally Classic LB will route each request to the the instance with the smallest load. **Sticky sessions** will allow all requests from a user to be sent to the same EC2 instance for that session.
-In application load balancers, the traffic will be sent at the same target group and not individual instances.
+Normally Classic LB will route each request to the the instance with the smallest load. 
+
+**Sticky sessions** will allow all requests from a user to be **sent to the same EC2 instance for that session**.
+
+In application load balancers, the traffic will be sent at the **same target group** and not individual instances.
 
 ### Cross Zone Load balancing
 
@@ -2053,43 +2081,68 @@ Imagine AZ One has 4 instances and AZ Two has 1 instance. Total of 5 instances.
 
 Route 53 will send 50% each to the each of these AZs which means AZ One will divide 50% of the received AZ load between 4 instances and AZ Two will divide 50% of received load between just 1 instance.
 
-Enabling Cross Zone Load Balancing will still make Route 53 divide the load 50% but the load balancers themselves will gang up cross AZ to divide up the load between the 5 instances. That is, load balancer in one AZ can redirect load to an instance in another AZ.
+Enabling Cross Zone Load Balancing will still make Route 53 divide the load 50% but the load balancers themselves will **gang up cross AZ** to divide up the load between the 5 instances. That is, **load balancer in one AZ can redirect load to an instance in another AZ**.
 
 You need not have a load balancer set up on an AZ Two to include instances there into the load balancer targets of AZ One's load balancer.
 
 ### Path patterns
 
-Used to route traffic based on what is in the URL path. Useful for microservices. eg. general requests to one target group, image requests to another, etc.
+Used to route traffic **based on what is in the URL path**. 
+
+Useful for microservices. eg. general requests to one target group, image requests to another, etc.
 
 ## Auto Scaling Theory
 
+https://aws.amazon.com/autoscaling/faqs/
+
+Use **AWS Auto Scaling** to manage scaling for multiple resources across multiple services. AWS Auto Scaling lets you define dynamic scaling policies for multiple EC2 Auto Scaling groups or other resources using predefined scaling strategies. 
+
+You should use **EC2 Auto Scaling** if you only need to scale Amazon EC2 Auto Scaling groups, or if you are only interested in maintaining the health of your EC2 fleet.
+
+### Components
+
 **groups**: logical component i.e web server, application, database group
 
-**configuration templates**: launch template/configuration for EC2 instances in each group. specify information like AMI ID, instance type, key pair, security groups, block device mapping.
+**configuration templates/launch configurations**: launch template/configuration for EC2 instances in each group. specify information like AMI ID, instance type, key pair, security groups, block device mapping.
 
 **scaling options**: ways to scale eg. on conditions or on schedule
 
-### scaling options
+### Scaling Options
 
-#### maintain current instance levels at all times
+#### Maintain current instance levels at all times
 
-maintain a specified number of instances at all time. health check used to detect unhealthy instances, when detected terminate it and bring up a new one.
+Maintain a specified number of instances at all time. 
 
-#### scale manually
+Health check used to detect unhealthy instances, when detected terminate it and bring up a new one.
 
-manually specify the maximum, minimum, desired capacity of the auto scaling group
+#### Manually
 
-#### scale based on schedule
+Manually specify the maximum, minimum, desired capacity of the auto scaling group.
 
-time and date, used when you know exactly when to increase or decrease the number of instances based on a predictable schedule
+#### Based on schedule
 
-#### scale based on demand
+Time and date
 
-scaling policies defined to control scaling process based on load
+Used when you know exactly when to increase or decrease the number of instances based on a predictable schedule
 
-#### Use predictive scaling
+#### Based on demand
 
-Amazon EC2 scaling in combination with AWS Auto Scaling to use predictive (based of history of load) and dynamic (based on real time conditions) methods
+Scaling policies defined to control scaling process based on load.
+
+Most popular.
+
+#### Predictive scaling
+
+Amazon EC2 scaling in combination with AWS Auto Scaling.
+
+Uses following methods:
+
+- **predictive**: based of history of load
+- **dynamic**: based on real time conditions
+
+#### Target Tracking
+
+Select a load metric for your application, such as CPU utilization or  request count, set the target value, and Amazon EC2 Auto Scaling adjusts the number of EC2 instances in your ASG as needed to maintain that  target.
 
 ## lab: launch configurations and auto scaling groups
 
@@ -2117,17 +2170,23 @@ notification
 
 ## HA Architecture
 
-Always design for failure
+Always design and plan for failure.
 
-use multiple AZs and regions wherever possible
+Use multiple AZs and regions wherever possible.
 
-difference between multi-AZ (disaster recovery) and read replicas (performance) for RDS
+S3 storage classes in terms of availability.
 
-difference between scaling out (add ore instances) and scaling up (increases resources on existing instances)
+Consider cost element.
 
-consider cost element
+Difference between following for RDS
 
-S3 storage classes
+- multi-AZ (disaster recovery) 
+- read replicas (performance)
+
+Difference between
+
+- scaling out: add more instances
+- scaling up: increases resources on existing instances
 
 ## lab: HA WordPress site
 
@@ -2163,40 +2222,68 @@ auto scale launch config, auto scaling group
 
 ## lab: cleaning up
 
-## Cloud Formation
+## lab: Cloud Formation
 
 stack: template
 
-completely scripting your cloud environment
+Completely script your cloud environment.
 
-Quick Start is a collection of CloudFormation templates already built by AWS Solution Architects
+Quick Start is a collection of CloudFormation templates already built by AWS Solution Architects.
 
 ## lab: Elastic Beanstalk
 
-Quickly deploy and manage applications in the AWS cloud without worrying about the infrastructure that runs those applications
-
-ELB automatically handles capacity provisioning, load balancing, scaling, and health monitoring.
+Quickly deploy and manage applications in the AWS Cloud without worrying about the infrastructure that runs those applications.
 
 You just upload your application.
+
+ELB automatically handles capacity provisioning, load balancing, scaling, and health monitoring.
 
 ## HA Bastions
 
 #### Option 1
-2 hosts in 2 separate AZs. Use Network Load Balancer with static IP addresses and health checks to fail over from one host to another. Network LB because layer 4, you can't use application load balancer here as it is layer 7.
+2 bastion hosts in 2 separate AZs. 
+
+Use Network Load Balancer with static IP addresses and health checks. Fail over from one bastion host to another. 
+
+Network LB because layer 4, you can't use application load balancer here as it is layer 7.
 
 #### Option 2 
 
-1 host in 1 AZ behind an auto scaling group with health checks and a fixed Elastic IP address. If host fails, the auto scaling group will provision a new EC2 instance in a separate AZ. User data script can be used to configure the same Elastic IP address to the new host. Cheapest but not 100% fault tolerant.
+1 bastion host in 1 AZ behind an auto scaling group with health checks and a fixed Elastic IP address. 
+
+If host fails, the auto scaling group will provision a new EC2 bastion instance in a separate AZ. User data script can be used to configure the same Elastic IP address to the new host. 
+
+Cheapest but not 100% fault tolerant.
 
 ## On Premise Strategies
 
-**Database Migration Service**: AWS db exported out of AWS; heterogenous and homogenous migration
+**Database Migration Service** (DMS): 
 
-**Server Migration Service**: incremental replication of on prem servers to AWS; backup, disaster recovery, etc.
+- allows to move databases to and from AWS
+- heterogenous and homogenous migration
 
-**AWS Application Discovery Service**: install on prem and generate a server utilization and dependency map of your on prem environment; can be used toestimate the total cost of ownership of runnign on AWS; data available on AWS Migration Hub 
+**Server Migration Service** (SMS): 
 
-**VM Import/Export**: migrate existing applications into EC2 or export your AWS VMs to on-prem; 
+- incremental replication of on-prem servers to AWS; 
+- can be used as a back-up tool, disaster recovery tool, multi-site strategy (on and off prem sites)
+
+**AWS Application Discovery Service**: 
+
+- install AWS Application discovery Agentless Connector on-prem 
+  - this is a VMWare virtual machine
+  - used to generate a server utilization and dependency map of your on-prem environment
+  - collected data is in encrypted format
+  - can be exported to CSV
+- Can be used to estimate the total cost of ownership of running on AWS; 
+- data available on AWS Migration Hub where you can 
+  - migrate discovered servers
+  - track their migration
+
+**VM Import/Export**: 
+
+- migrate existing applications into EC2 
+- DR strategy or AWS as a second site
+- export your AWS VMs to on-prem
 
 **Download Amazon Linux 2 as an ISO**
 
