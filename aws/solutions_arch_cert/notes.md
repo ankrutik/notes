@@ -8,7 +8,7 @@ Availability Zone: one or more discrete Data Centers; each with redundant power,
 
 Region: physical locations that contain >=2 AZs
 
-Edge locations: caching content; Amazon CDN
+Edge locations: caching content; Amazon CDN; CloudFront
 
 ```
 n(Region) < n(Availability Zones) < n(Edge Locations)
@@ -34,7 +34,7 @@ PCI DSS certified: certified to store credit cards information
 
 API access can use Identity Federation and MFA.
 
-**Power users** have full access to all AWS resources minus administration of users and groups.
+**Power users** have **full access** to all AWS resources **minus administration** of users and groups.
 
 Users, groups, and policies are universal and not restricted to regions.
 
@@ -61,7 +61,7 @@ User passwords types:
 
 - login password with MFA if enabled (login to web console)
 
-- access key id and secret access key (programmatic access to APIs)
+- access key id and secret access key (programmatic access to APIs); **upto 2 per user**
 
 
 ## Create billing alarm
@@ -77,17 +77,17 @@ Inside CloudWatch, create alarm to check billing/cost
 
 **Object based** storage as against byte modification storage. File size can be **0 bytes to 5 TB**. Unlimited storage. Block based, so can't install OS.
 
+Bittorrent protocol support. Maximum 5GB file size.
+
 ## Bucket
 
 - like a folder
-- needs to be universally unique or unique gobally; universal namespace
+- needs to be **universally unique or unique gobally**; universal namespace
 - URL or web address created for it
 - HTTP 200 code received if upload is successful
-- by default newly created bucket is private. Access can be setup using:
-  - bucket policies (**bucket level**)
-  - Access Control Lists (**object level**)
+- by default newly created bucket is private
 - **Access logs** can be configured to be stored on another bucket in same or different account
-- 100 buckets allowed per account
+- Maximum **100 buckets allowed per account**
 - Restricting bucket access:
   - bucket policies
   - object policies
@@ -95,11 +95,11 @@ Inside CloudWatch, create alarm to check billing/cost
 
 ## Object
 
-- key: name of the object
-- value: content of the object in series of bytes
-- version ID: used for version control
-- metadata
-- subresources: ACL, torrents
+- **key**: name of the object
+- **value**: content of the object in series of bytes
+- **version ID**: used for version control
+- **metadata**
+- **subresources**: ACL, torrents
 
 MFA delete can be enabled.
 
@@ -111,12 +111,19 @@ Read after write for PUTs means
 
 "Eventual consistency" for overwrite PUTs and DELETEs means 
 
-- if you overwrite an object and try to read immediately, you may get old version  
+- if you overwrite or delete an existing object and try to read immediately, you may get old version  
 - takes a little time to propogate
 
 ## Guarantees
 
-99.999..9% (11 x9) durability; Tiered storage; lifecycle management; versioning; encryption; multi factored auth for deletion; access control lists
+ Tiered storage; lifecycle management; versioning; encryption; multi factored auth for deletion; access control lists
+
+In terms of **durability**, all tiers give 99.99999999999% (11 9s) durability.
+
+In terms of **availability**, 
+99.99%: Standard, Glacier Flexible Retrieval, Glacier Deep Archive
+99.9%: Intelligent tiering, Infrequently Accessed, Glacier Instant Retreival
+99.5%: Infrequently Access - One Zone
 
 ## Path Styles
 
@@ -126,7 +133,7 @@ Read after write for PUTs means
     https://bucket-name.s3.Region.amazonaws.com/key-name
     ```
 
-- Path style puts s3 1st and your bucket as a sub domain. Phasing out.
+- Path style puts s3 1st and your bucket as a sub domain. Phasing out. Difference is that **bucket name is in path** instead of domain name.
 
   - ```
     https://s3.Region.amazonaws.com/bucket-name/key-name
@@ -170,15 +177,15 @@ Read after write for PUTs means
 
 **Read S3 FAQ** https://aws.amazon.com/s3/faqs/
 
-**S3 Outposts** provides a single Amazon S3 storage class to keep data close to on-premises applications; uses S3 APIs; redundantly store data across multiple devices/servers; ideal for workloads with local data residency requirements or demanding performance; transfer data to AWS Region with AWS Data Sync
+**S3 Outposts** provides a single Amazon S3 storage class **to keep data close to on-premises applications**; uses S3 APIs; redundantly store data across multiple devices/servers; ideal for workloads with local data residency requirements or demanding performance; transfer data to AWS Region with **AWS Data Sync**
 
 ## Charge criteria
 
 Storage; Requests; storage management pricing; data transfer pricing; 
 
-transfer acceleration: transfer to edge location first then send to S3 bucket via Amazon's backbone network;
+**Transfer Acceleration**: transfer to edge location first then send to S3 bucket via Amazon's backbone network;
 
-cross region replication pricing: replicating buckets across regions for HA or disaster recovery
+**Cross Region Replication** pricing: replicating buckets across regions for HA or disaster recovery
 
 ## lab : Options when creating bucket
 
@@ -200,7 +207,7 @@ Uploading files gives URL which cannot be used till object is made public
 - bucket needs to be made public
 - object needs to be made public
 
-Storage class can be specified at object level
+**Storage class can be specified at object level**
 
 ## Pricing Tiers
 
@@ -228,7 +235,7 @@ same but intelligent tiering gives
 - access to infrequently accessed (IA) which makes IA objects cheaper to store
 - management fee per 1000 objects
 
-Better to use Intelligent Tiering than S3 standard unless you have thousands/millions of objects.
+Better to use Intelligent Tiering than S3 standard unless you have thousands/millions of objects. But availability will be lesser.
 
 ## Encryption
 
@@ -306,7 +313,7 @@ Delete file; the bucket looks empty; toggle on version and you **can see the obj
 
 **lifecycle rule actions**: what to do, to what version of object, at what interval; transition between states, delete, etc.
 
-Timeline summary is displayed as describing what happens to applicable objects as time passes.
+**Timeline summary** is displayed as describing what happens to applicable objects as time passes.
 
 - Automates moving your objects between different storage classes.
 - can be used in conjuction with versioning.
@@ -320,8 +327,8 @@ Locks can be applied on individual objects or entire buckets.
 
 ### Modes
 
-- governance: users with right/permissions can modify object
-- compliance: object can't be modified for the retention period by even the root user; retention period cannot be shortened
+- **governance**: users with right/permissions can modify object
+- **compliance**: object can't be modified for the retention period by even the root user; retention period cannot be shortened
 
 **Retention period** is applied by storing a timestamp on the object's metadata.
 
@@ -352,6 +359,7 @@ If you use **SSE-KMS**, then
 - recommended for files > 100MB
 - required for files > 5GB
 - application will have to handle splitting of the file before multipart uploads
+- can start uploading parts of the file before the entire file is ready 
 
 **Byte range fetches** are download equivalents of above:
 
@@ -414,7 +422,7 @@ Replication only starts working when Replication Rule is turned on. Existing fil
 
 Permissions in source bucket and destination bucket are separate.
 
-Versioning should be enabled on both source and destination buckets.
+**Versioning should be enabled on both source and destination buckets.**
 
 Deleting individual versions or delete markers are not replicated.
 
@@ -423,7 +431,7 @@ Deleting individual versions or delete markers are not replicated.
 - Uses CloudFront Edge Network
 - Upload to Edge location (instead of directly to S3 bucket). Edge location transfers to S3 bucket.
 
-S3 Tranfer accelaration tool to test giving comparison of upload speeds when done via various Edge location against direct S3 upload.
+S3 Transfer accelaration tool to test giving comparison of upload speeds when done via various Edge location against direct S3 upload.
 
 ## AWS DataSync
 
@@ -443,9 +451,9 @@ S3 Tranfer accelaration tool to test giving comparison of upload speeds when don
   - origin of webpage
   - content delivery server
 
-**Edge location**: where content is cache; separate to an AWS region
-
 **Origin**: S3 bucket, EC2 instance, Elastic load balancer, Route53
+
+**Edge location**: where content is cache; separate to an AWS region
 
 **Distribution**: CDN which is a collection of edge locations
 
@@ -537,20 +545,20 @@ Can be a virtual machine image or a physical appliance.
 
 **Tape gateway**: store tapes in virtual tapes and move to cloud; archive data; VTL interface
 
-Connects over Direct Connect.
+Connects over **Direct Connect**.
 
 ## Athena vs Macie
 
 ### Athena
 
 - interactive query service using which you can analyse and query data on S3 using standard SQL
-- serverless; pay per query OR per TB scanned
+- **serverless**; pay per query OR per TB scanned
 - no ETL setup
 - can be use on log files, business reports, AWS cost and usage reports, click-stream data
 
 ### Macie
 
-- Personally Identifiable Information (PII) eg home address, email addres, SSN, phone number, etc
+- **Personally Identifiable Information** (PII) eg home address, email addres, SSN, phone number, etc
 - uses ML and NLP to discover, classify, protect PII
 - works on data on S3
 - analyze CloudTrail logs
@@ -611,21 +619,21 @@ Multiple EC2 Instance types as per your needs.
 
 **GPU instances** work best for applications with massive parallelism such as workloads using thousands of threads. 
 
-**Compute Optimized instances** are designed for applications that benefit  from high compute power. These applications include compute-intensive  applications like high-performance web servers, high-performance  computing (HPC), scientific modelling, distributed analytics and machine learning inference.
+**Compute Optimized instances** are designed for applications that benefit from high compute power. These applications include compute-intensive  applications like high-performance web servers, high-performance  computing (HPC), scientific modelling, distributed analytics and machine learning inference.
 
 Amazon EC2 **Mac instances** are a family that features the macOS operating system, powered by Apple Mac mini hardware, and built on the AWS Nitro System.
 
-Amazon EC2 **A1 instances** are general purpose instances powered by the  first-generation AWS Graviton Processors that are custom designed by  AWS.
+Amazon EC2 **A1 instances** are general purpose instances powered by the first-generation AWS Graviton Processors that are custom designed by AWS.
 
 Amazon EC2 allows you to choose between **Fixed Performance Instances** (e.g. C, M and R instance families) and **Burstable Performance Instances** (e.g. T2). Burstable Performance Instances provide a baseline level of CPU performance with the ability to burst above the baseline if they have accumulated enough CPU credit by staying idle (CPU credits are consumed by when instances are active).
 
 Amazon EC2 **High Memory instances** offer 3, 6, 9, 12, 18, or 24 TiB of memory in a single instance. Offered as both virtualized and bare metal. They use Elastic Network Adapter (ENA) for high speed connectivity.
 
-**Memory-optimized instances** offer large memory size for memory intensive  applications including in-memory applications, in-memory databases, in-memory analytics solutions, High Performance Computing (HPC), scientific computing, and other memory-intensive applications. 
+**Memory-optimized instances** offer large memory size for memory intensive applications including in-memory applications, in-memory databases, in-memory analytics solutions, High Performance Computing (HPC), scientific computing, and other memory-intensive applications. 
 
-**Dense-storage instances** are designed for workloads that require high sequential read and write access to very large data sets, such as Hadoop distributed computing, massively parallel processing data warehousing, and log processing applications.
+**Dense-storage instances** are designed for workloads that require high **sequential** read and write access to very large data sets, such as Hadoop distributed computing, massively parallel processing data warehousing, and log processing applications.
 
-**High I/O instances** use NVMe based local instance storage to deliver very high, low latency, I/O capacity to applications, and are optimized for applications that require millions of IOPS. Like Cluster instances, High I/O instances can be clustered via cluster placement groups for low  latency networking. Used when random memory IO is needed.
+**High I/O instances** use NVMe based local instance storage to deliver very high, low latency, I/O capacity to applications, and are optimized for applications that require millions of IOPS. Like Cluster instances, High I/O instances can be clustered via cluster placement groups for low  latency networking. Used when **random** memory IO is needed.
 
 FIGHTDRMCPXZAU
 
@@ -638,13 +646,17 @@ For example,
 
 #### Storage
 Root volume will be SSD and magnetic. Subsequent volumes can be of more types.
-IPOS: input output per second can be configurable
+IOPS: input output per second can be configurable
 Delete on terminate or not, EBS root volume is deleted by default
 Encrypt or not
 
 #### Termination
 
-Configure what happens when you terminate: stop or terminate
+Configure what happens when you terminate: 
+
+- stop: means can be started again, only EBS backed EC2 instances
+- terminate: instance is stopped and deleted, cannot be started again
+
 Termination Protection (default off) doesn't allow the usual terminate button to work. Will have to disable termination protection to actually terminate.
 
 #### Other
@@ -743,7 +755,7 @@ Snapshots are point in time copies of Volumes. **Incremental** nature i.e. only 
 3. copy AMI to destination region 
 4. launch on another AZ
 
-For root device (device with OS) snapshots, best pratice to stop the instance before taking snapshot.
+For **root device** (device with OS) snapshots, best pratice to stop the instance before taking snapshot.
 
 ## AMI types
 
@@ -776,7 +788,11 @@ By default, all accounts are limited to 5 **public** Elastic IP addresses per re
 
 A small hourly fee is charged when your EC2 instance that uses a public IP is not running.
 
-You do not need an Elastic IP address for all your instances. By default, every instance comes with a private IP address and an internet routable public IP address. The private IP address remains associated with the  network interface when the instance is stopped and restarted, and is  released when the instance is terminated. The public address is  associated exclusively with the instance until it is stopped, terminated or replaced with an Elastic IP address. These IP addresses should be  adequate for many applications where you do not need a long lived  internet routable end point. 
+You do not need an Elastic IP address for all your instances. By default, every instance comes with a private IP address and an internet routable public IP address. 
+
+The private IP address remains associated with the network interface when the instance is stopped and restarted, and is released when the instance is terminated. 
+
+The public address is associated exclusively with the instance until it is stopped, terminated or replaced with an Elastic IP address. These IP addresses should be  adequate for many applications where you do not need a long lived internet routable end point. 
 
 ### ENI vs ENA vs EFA
 
@@ -802,7 +818,7 @@ Snapshots can be shared only when unencrypted.
 
 You should enable **Fast Snapshot Restore** on snapshots if you are concerned about latency of data access when you restore data from a snapshot to a volume and want to avoid the initial performance hit during initialization. Will improve only snapshot restore and not snapshot creation.
 
-Snapshot of an EBS Volume that is used as the root device of a registered AMI cannot be deleted.
+Snapshot of an EBS Volume that is used as the root device of a **registered AMI** cannot be deleted.
 
 ## Spot Instances and Spot Fleets
 
@@ -838,7 +854,7 @@ Will try to maintain target capacity within budget
 
 **What happens on Hibernation**: saves contents of instance RAM into EBS root volume in encrypted form; persists root and data volumes; on restart RAM contents are reloaded, processes are resumed, OS need not restart; **instance ID is retained**; Elastic IP address is retained
 
-Root volumes need to be encrypted to use hibernate.
+**Root volumes need to be encrypted to use hibernate.**
 
 Use cases for hibernate: long running processes; applications that take time to initialise 
 
@@ -864,7 +880,7 @@ In the case of hibernate, your instance gets hibernated and the RAM data persist
   - Storage gateways
   - CloudFront
 
-EC2 is 5 minutes by default (standard), configurable to 1 minute intervals (detailed).
+EC2 is **5 minutes by default** (standard), configurable to **1 minute** intervals (detailed).
 
 CloudWatch alarms can be created to trigger notifications.
 
@@ -959,11 +975,11 @@ FSX for Lustre: for HPC (high performance compute) and ML applications. Can stor
 
 How to place or group EC2 instances?
 
-**Cluster Placement group** is grouping of instances within a single AZ. Applications that need low latency, high n/w thruput. EC2 **very close to each other**. AWS recommends grouping same instance types in cluster placement group.
+**Cluster Placement group** is grouping of instances **within a single AZ.** Applications that need low latency, high n/w thruput. EC2 **very close to each other**. AWS recommends grouping same instance types in cluster placement group.
 
 **Spread Placement Group** are group of instances each placed on **distinct underlying hardware**. Used when you have small number of **critical instances that should be kept separate** from each other. Can be spread across multiple AZs. Maximum of 7 running instances per Availability Zone
 
-**Partitioned Placement groups** divides each **group into logical segment partitions** such that each partition that its **own rack** (each rack has own network and power source). Used for HDFS, HBase, Cassandra. Can be spread across multiple AZs.
+**Partitioned Placement groups** divides each **group into logical segment partitions** such that each partition that its **own rack** (each rack has own network and power source). Used for HDFS, HBase, Cassandra. Can be **spread across multiple AZs**.
 
 Groups cannot be merged.
 
@@ -1642,6 +1658,8 @@ VPC can span multiple AZs.
 
 ### Security groups vs Network ACLs
 
+https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html#VPC_Security_Comparison
+
 | Security Groups                                              | Network ACLs                                                 |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Stateful; if inbound is created for a port, the outbound is created automatically. Stateful filtering tracks the origin of a request and can automatically allow the reply to the request to be returned to the originating computer. | Stateless; inbound and outbound rules need to be defined separately. Stateless filtering only examines the source or destination IP address and the destination port, ignoring whether the traffic is a new request or a reply to a request. |
@@ -2291,20 +2309,30 @@ Cheapest but not 100% fault tolerant.
 
 ## SQS
 
+https://aws.amazon.com/sqs/faqs/
+
 This is a distributed queue system that allows web service applications to *queue messages* that *one component in the application generates to be consumed by another component*.
 
 **Pull based**, not push based.
 
 "**Decouple**" components of an application to run independently.
 
+Amazon SQS Free Tier provides you with 1 million requests per month at no charge.
+
+Amazon SQS stores all message queues and messages within a single, highly-available AWS region with multiple redundant Availability Zones (AZs).
+
+SSE protects the contents of messages in Amazon SQS queues using keys managed in the AWS Key Management Service (AWS KMS). SSE encrypts messages as soon as Amazon SQS receives them. The messages are stored in encrypted form and Amazon SQS decrypts messages only when they are sent to an authorized consumer. SSE encrypts the body of a message in an Amazon SQS queue.
+
+SSE doesn't encrypt the following components: Queue metadata (queue name and attributes), Message metadata (message ID, timestamp, and attributes), Per-queue metrics
+
 ### Messages
 
 - Messages can contain **up to 256 KB of text**.  Any messages going above this limit will be stored in S3 with limit of 2GB.
-- retention period in queue from 1 minute to 14 days; default is 4 days
+- Retention period in queue from 1 minute to 14 days; default is 4 days
 - Can be retrieved programatically using the **Amazon SQS API**
   - **short polling** retrieves messages immediately even if queue is empty
   - **long polling** does not return till a message arrives or the long poll times out
-  - *long polling should be used to avoid constant short polling on an empty queue which leads to unnecessary cost*
+  - **long polling should be used** to avoid constant short polling on an empty queue which leads to unnecessary cost
 
 ### Queue
 
@@ -2320,26 +2348,36 @@ A **queue** is a temporary repository for messages that are waiting to be proces
 - default queue type
 - nearly unlimited number of transactions per second
 - guaranteed to deliver message at least once
-- more than one copy of the message may  be delivered 
+- more than one copy of the message may be delivered 
 - messages may be received out of order
 
 #### FIFO Queue
 
 - messages' order is strictly preserved
+
 - once delivered, a message will stay there till a consumer processes and deletes it
+
 - duplicates are not introduced
+
 - allows multiple ordered message groups within a single queue
+
 - limited to 300 transactions per second
+
+- Messages are grouped into distinct, ordered "bundles" within a FIFO queue. For each message group ID, all messages are sent and received in strict order. However, messages with different message group ID values might be sent and received out of order. You must associate a message group ID with a message. If you don't provide a message group ID, the action fails.
+
+  If multiple hosts (or different threads on the same host) send messages with the same message group ID are sent to a FIFO queue, Amazon SQS delivers the messages in the order in which they arrive for processing. To ensure that Amazon SQS preserves the order in which messages are sent and received, ensure that multiple senders send each message with a unique message group ID.
 
 #### Visibility Timeout
 
 - amount of time that a message is invisible in a queue after a reader has picked it up
 - If reader processes it before the timeout, the message will be deleted
 - If reader does not process it before timeout, the message will become visible again which may be picked up by another reader
-- common cause of same message being delivered twice; increase the visibility timeout
+- common cause of same message being delivered twice; **increase the visibility timeout**
 - maximum of 12 hours
 
 ## Simple Work Flow Service (SWF)
+
+https://aws.amazon.com/swf/faqs/
 
 - co-ordinate work across distributed application components
 - tasks/work can be executable code, web service calls, **human actions**, scripts
@@ -2364,15 +2402,20 @@ A **queue** is a temporary repository for messages that are waiting to be proces
 
 ## Simple Notification Service
 
+https://aws.amazon.com/sns/faqs/
+
 - setup, operate, send notifications from cloud
-- publish messages from application and immediately deliver to subscribers or other applications
-- Messages stored redundantly across multiple AZs.
+- **push** or publish messages from application and immediately deliver to subscribers or other applications
+- Messages stored redundantly across multiple AZs
+- When the delivery of messages to subscribers must be in order (first-in-first-out), and once only, and you want SNS to take care of it, use **SNS FIFO topics**.
+- Publishers can connect to Amazon SNS over HTTPS and publish messages over the SSL channel. Subscribers should register an SSL-enabled end-point as part of the subscription registration, and notifications will be delivered over a SSL channel to that end-point.
+- Upon receiving a publish request, SNS stores multiple copies (to disk) of the message across multiple Availability Zones before acknowledging receipt of the request to the sender. 
 
 ### Destination types
 
 - Apple, Google, Fire OS, Windows devices
 - Android devices in China with Baidu Cloud Push
-- SMS
+- **SMS**
 - email to SQS
 - any HTTP endpoint
 
@@ -2388,7 +2431,7 @@ A **queue** is a temporary repository for messages that are waiting to be proces
 - simple API
 - multiple transport protocols
 - pay as you go; no up front cost
-- Filtering 
+- **Filtering** 
 - AWS Management Console offers point-and-click interface
 
 ## Elastic Transcoder
@@ -2399,15 +2442,20 @@ A **queue** is a temporary repository for messages that are waiting to be proces
 
 ## API Gateway
 
+https://aws.amazon.com/api-gateway/faqs/
+
 - fully managed service for developers to publish, maintain, monitor, and secure APIs at scale
+- supports HTTP, REST, WebSockets
 - expose HTTPS end points to define RESTful API
 - "serverless" connection to Lambda and DynamoDB
 - send each API endpoint to different target
 - low cost; scale effortlessly
 - track and control usage by API key
-- throttle requests to prevent attacks that will impact cost
+- **throttle** requests to prevent attacks that will impact cost
 - connect to CloudWatch to log all requests for monitoring
 - maintain multiple versions of API
+- can monetize your APIs on API Gateway by publishing them as products in AWS Marketplace. 
+- Amazon API Gateway bills per million API calls, plus the cost of data transfer out, in gigabytes. If you choose to provision a cache for your API, hourly rates apply.
 
 ### Configuration
 
@@ -2438,7 +2486,7 @@ To prevent Cross-Site Scripting attacks (XSS), same origin policy is enforced by
 
 But AWS uses different domain names for different services.
 
-CORS (Cross-origin resource sharing) allows restricted resources on a web page to be requested from another domain than from which the web page was served. This is implemented at the server side and not in the client browser code.
+CORS (Cross-origin resource sharing) allows restricted resources on a web page to be requested from another domain than from which the web page was served. **This is implemented at the server side and not in the client browser code.**
 
 #### CORS Flow
 
@@ -2450,7 +2498,7 @@ CORS (Cross-origin resource sharing) allows restricted resources on a web page t
 
 ## Kenesis
 
-**Streaming Data** is data that is 
+**Streaming Data** is 
 
 - generated continuously by 1000s of data sources
 - sent simultanously as data records
@@ -2458,23 +2506,25 @@ CORS (Cross-origin resource sharing) allows restricted resources on a web page t
 
 Examples purchases from online stores, stock prices, game data, social network data, geospatial data, iOT data.
 
-**Amazon Kenesis** is a platform to send streaming data to
+**Amazon Kenesis** is a platform that can receive streaming data to
 
 - load, analyse it
 - build custom applications
 
 ### Kenesis Streams
 
+https://aws.amazon.com/kinesis/data-streams/faqs/
+
 Different producers can stream data to Kenesis Streams.
 
-Streams from each of these producers can be stored in separate Shards. Retention from 24 hours to 7 days.
+Streams from each of these producers can be stored in separate **Shards**. Retention from 24 hours to 7 days.
 
 Consumer applications will read from these shards.
 
 #### Shards
 
-- read: 5 transactions per second; upto max total read rate of 2MB per second
-- write: 1000 records per second; upto max total write rate of 1MB per second (including partition keys)
+- **read**: 5 transactions per second; upto max total read rate of 2MB per second
+- **write**: 1000 records per second; upto max total write rate of 1MB per second (including partition keys)
 - total capacity of the stream is the sum of the capacities of shards
 
 ### Kenesis Firehose
@@ -2491,22 +2541,33 @@ Analyze data on the fly and save it at endpoints like S3, Redshift, Elasticsearc
 
 **Web Identity Federation** lets user get access to AWS resources by authenticating with a web-based identity provider like Google, Facebook, Amazon.
 
-User receives a temporary AWS security credentials.
+User receives a **temporary AWS security credentials**.
 
 **Cognito** is the WIF service by Amazon.
 
-Allows
+Allows:
 
-- sign up and sign in to apps
-- access to guest users
-- sync user data for multiple devices
+- sign **up** and sign **in** to apps
+- access to **guest** users
+- **sync user data** for multiple devices
 - recommended for all AWS mobile apps
 
-Cognito **User Pools** are user directories used to manage sign-up and sign-in functionality for mobile and web applications. Successful auth generates a **JSON Web token** (JWT). *Deals with user names, passwords, registrations, account recovery, initial authentication.*
+Cognito **User Pools** are 
 
-Cognito **Identity Pools** provide temporary AWS credentials to access AWS services like S3 or DynamoDB. *Deals with actual granting of IAM role as part of the authentication.*
+- user directories used to manage sign-up and sign-in functionality for mobile and web applications. 
+- Successful auth generates a **JSON Web token** (JWT). 
+- *Deals with user names, passwords, registrations, account recovery, initial authentication.*
 
-Cognito tracks association between user identity and the various devices that the user has signed in from. Cognito will use **Push Synchronization to push updates and sync a user across multiple devices**. Uses **SNS** to send notification to devices whenever data stored on cloud has changed.
+Cognito **Identity Pools** provide 
+
+- temporary AWS credentials to access AWS services like S3 or DynamoDB. 
+- *Deals with actual granting of IAM role as part of the authentication.*
+
+Cognito tracks association between user identity and the various devices that the user has signed in from. 
+
+Cognito will use **Push Synchronization to push updates and sync a user across multiple devices**. 
+
+Uses **SNS** to send notification to devices whenever data stored on cloud has changed.
 
 # Security
 
@@ -2522,27 +2583,27 @@ Bad actors:
 
 By blocking these, we lower overall costs by eliminating access and also reduce security threats.
 
-NACL (Network Access Control List):
+**NACL (Network Access Control List)**:
 
 - NACL rules can be used to block IPs in outbound or inbound manner.
 - works at layer 4 (Transport layer)
 
-Host based firewall: 
+**Host based firewall**: 
 
 - Linux: firewalld, iptables, uff
 - Windows Firewall
 
-Application Load Balancer (ALB):
+**Application Load Balancer (ALB)**:
 
 - The connection from the bad actor will terminate at the ALB and not at the EC2 instance. So host based firewalls are ineffective.
 
 - The ALB security group (public subnet) can be configured to be the only one that can access the EC2 Security Group (private subnet).
 
-Network Load Balancer (NLB):
+**Network Load Balancer (NLB)**:
 
 - traffic passes thru and thru the NLB to the EC2 instance, so NACL should be used.
 
-Web Application Firewall (WAF):
+**Web Application Firewall (WAF)**:
 
 - attached to load balancer or CloudFront
 - monitor web requests and block/allow according to conditions
@@ -2589,7 +2650,7 @@ AWS Owned CMK: owned by AWS service and used on shared basis across multiple acc
 
 A default key policy is created when a CMK is created via API. This policy grants full access to the keys to the AWS account (root user).
 
-When encrypted objects move between region, the object needs to be decrypted first, then moved and encrypted in the other region with a CMK there.
+When **encrypted objects move between region**, the object needs to be **decrypted first, then moved and encrypted** in the other region with a CMK there.
 
 Key alias is a shortcut to point to multiple keys; help with key rotation as any key within that alias will be used. All alias need to be prefixed with `alias/`
 
@@ -2597,7 +2658,7 @@ Cipher text blob is Base 64 encoded.
 
 ciphertext -> base 64 decode -> decrypt -> base64 decode
 
-Data Encryption Key (DEK) used for encrypting files more than 4KB. When you created one you get the plain text key and cipher text blob of the key which contains metadata. Throw the plain text, store cipher text blob with your encrypted file. the decrypting process wil use the cipher text blob when calling the KMS API to fetch the Data Key and decrypt locally. This avoids unnecessary latency that could have resulted out of sending the entire file over to KMS to decrypt and return.
+**Data Encryption Key (DEK) used for encrypting files more than 4KB.** When you created one you get the plain text key and cipher text blob of the key which contains metadata. Throw the plain text, store cipher text blob with your encrypted file. The decrypting process wil use the cipher text blob when calling the KMS API to fetch the Data Key and decrypt locally. This avoids unnecessary latency that could have resulted out of sending the entire file over to KMS to decrypt and return.
 
 ## CloudHSM
 
@@ -2606,7 +2667,7 @@ Data Encryption Key (DEK) used for encrypting files more than 4KB. When you crea
 - FIPS 140-2 Level 3, physical security mechanisms
 - manage your keys
 - single tenant, multi-AZ cluster dedicated to one customer
-- no accedd to AWS managed component
+- no access to AWS managed component
 - runs within VPC
 - industry standard APIs (PKCS#11, Java Cryptography Extensions - JCE, Microsoft CryptoNG - CNG); no AWS APIs
 - keys irretrievable if lost
@@ -2681,11 +2742,11 @@ When enabled, **Provisioned Concurrency** keeps functions initialized and hyper-
 
 With **Amazon Elastic File System (Amazon EFS) for AWS Lambda**, customers can securely read, write and persist large volumes of data at virtually any scale using a fully managed elastic NFS file system that can scale on demand without the need for provisioning or capacity management. Previously, developers added code to their functions to download data from S3 or databases to local temporary storage, limited to 512MB. Maximum 1 EFS can be used by a Lambda. Lambda will need to be inside the VPC of the EFS mount.
 
-When you update a Lambda function, there will be a brief window of time, typically less than a minute, when requests could be served by either  the old or the new version of your function.
+When you update a Lambda function, there will be a brief window of time, typically less than a minute, when requests could be served by either the old or the new version of your function.
 
-On **exceeding the throttle limit**, AWS Lambda functions being invoked  synchronously will return a throttling error (429 error code). Lambda  functions being invoked asynchronously can absorb reasonable bursts of  traffic for approximately 15-30 minutes, after which incoming events will be rejected as throttled.
+On **exceeding the throttle limit**, AWS Lambda functions being invoked synchronously will return a throttling error (429 error code). Lambda functions being invoked asynchronously can absorb reasonable bursts of traffic for approximately 15-30 minutes, after which incoming events will be rejected as throttled.
 
-On **exceeding the retry policy for asynchronous invocations**, you can  configure a “dead letter queue” (DLQ) into which the event will be  placed; in the absence of a configured DLQ the event may be rejected. On **exceeding the retry policy for stream based invocations**, the data would have already expired and therefore rejected.
+On **exceeding the retry policy for asynchronous invocations**, you can configure a “dead letter queue” (DLQ) into which the event will be  placed; in the absence of a configured DLQ the event may be rejected. On **exceeding the retry policy for stream based invocations**, the data would have already expired and therefore rejected.
 
 Lambda functions provide **access only to a single VPC**. If multiple subnets are specified, they must all be in the same VPC. You can connect to other VPCs by **peering your VPCs**. Access to internet is blocked and must be routed thru a NAT if needed.
 
@@ -2833,8 +2894,8 @@ Cluster {
 - eliminates need to provision and manager servers
 - specify and pay for resources per application
 - works with ECS and EKS
-- each workload runs in its own kernel
-- isolation and security
+- **each workload runs in its own kernel**
+- **isolation and security**
 - choose ec2 instead if:
   - compliance requirements
   - require broader customization
