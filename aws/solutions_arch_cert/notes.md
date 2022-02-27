@@ -1145,7 +1145,7 @@ If you are using Amazon RDS Provisioned IOPS storage with a Microsoft SQL Server
 - MySQL, PostgreSQL, MariaDB, Oracle, Aurora. **Not for SQL Server.**
 - Can be promoted to be their own database. This will break replication.
 - automated backups need to be enabled
-- upto 5 read replicas available
+- Maximum **upto 5 read replicas** available
 - each read replica has its own DNS endpoint
 - A read replica is billed as a standard DB Instance and at the same rates.
 
@@ -1358,7 +1358,7 @@ A **node** is the smallest building block, a fixed-size chunk of secure, network
 
 **Reserved Nodes/Instance (RI)** is an offering that provides you with a significant discount over on-demand usage when you commit to a one-year or three-year term. Cost saved with upfront one time payment.
 
-A **Parameter Group** acts as a "container" for engine configuration values that can be applied to one or more clusters. If you create a cluster without specifying a Parameter Group, a default Parameter Group is used. This default group contains engine defaults and Amazon ElastiCache system defaults optimized for the cluster you are running.
+A **Parameter Group** acts as a "container" for engine configuration values that can be applied to one or more clusters. If you create a cluster without specifying a Parameter Group, a **default Parameter Group is used**. This default group contains engine defaults and Amazon ElastiCache system defaults optimized for the cluster you are running.
 
 **Auto Discovery** is a feature that saves developers time and effort, while reducing complexity of their applications. Auto Discovery enables automatic discovery of cache nodes by clients when they are added to or removed from an Amazon ElastiCache cluster. Until now to handle cluster membership changes, developers must update the list of cache node endpoints manually which may need restarts.
 
