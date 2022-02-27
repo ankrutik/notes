@@ -4,11 +4,11 @@
 
 # 10000ft view
 
-Availability Zone: one or more discrete Data Centers; each with redundant power, network
+**Availability Zone**: one or more discrete Data Centers; each with redundant power, network
 
-Region: physical locations that contain >=2 AZs
+**Region**: physical locations that contain >=2 AZs
 
-Edge locations: caching content; Amazon CDN; CloudFront
+**Edge locations**: caching content; Amazon CDN; CloudFront
 
 ```
 n(Region) < n(Availability Zones) < n(Edge Locations)
@@ -20,9 +20,9 @@ n(Region) < n(Availability Zones) < n(Edge Locations)
 
 **groups**: collection of users. All users of a group inherit the permissions of the group 
 
-**policies**: policy document in json that says what permissions can be applied to users/groups/roles
+**policies**: policy document in **json** that says what permissions can be applied to users/groups/roles
 
-**roles**: assumed by AWS resources and users to define a set of permissions for making AWS service requests
+**roles**: **assumed** by AWS resources and users to define a set of permissions for making AWS service requests
 
 Identity Federation: Use LDAP, Google, LinkedIn, Facebook, etc. for logins
 
@@ -59,17 +59,20 @@ Users credentials can be downloaded to CSV at the time of
 
 User passwords types:
 
-- login password with MFA if enabled (login to web console)
+- **web console**: login password (with MFA if enabled)
 
-- access key id and secret access key (programmatic access to APIs); **upto 2 per user**
+- **programmatic access to APIs**: access key id and secret access key; **upto 2 per user**
 
 
 ## Create billing alarm
 
-Inside CloudWatch, create alarm to check billing/cost
+Inside CloudWatch, create alarm to check billing/cost,
 
 - ran at every configured period
-- static (value as a threshold) or detect anamoly (use a value band as a threshold)
+- threshold to check can be:
+  - static: as a value 
+  - detect anamoly: as a value band
+
 - create SNS (simple notification service) topic
 - go to email and subscribe to that topic
 
@@ -116,7 +119,7 @@ Read after write for PUTs means
 
 ## Guarantees
 
- Tiered storage; lifecycle management; versioning; encryption; multi factored auth for deletion; access control lists
+Tiered storage; lifecycle management; versioning; encryption; multi factored auth for deletion; access control lists
 
 In terms of **durability**, all tiers give 99.99999999999% (11 9s) durability.
 
@@ -127,13 +130,13 @@ In terms of **availability**,
 
 ## Path Styles
 
-- Virtual style puts your bucket name 1st, s3 2nd, and the region 3rd.   
+- Virtual style puts your bucket name in domain name.
 
   - ```
     https://bucket-name.s3.Region.amazonaws.com/key-name
     ```
 
-- Path style puts s3 1st and your bucket as a sub domain. Phasing out. Difference is that **bucket name is in path** instead of domain name.
+- Path style bucket in path. Phasing out. 
 
   - ```
     https://s3.Region.amazonaws.com/bucket-name/key-name
@@ -147,7 +150,7 @@ In terms of **availability**,
 
 1. **Standard**
 
-   99.99% availability, 99.x11 9 durability; stored redundantly across multiple devices/facilities; sustain loss of 2 facilities concurrently
+   99.99% availability, stored redundantly across multiple devices/facilities; sustain loss of 2 facilities concurrently
 
 2. **Infrequently Accessed**
 
@@ -163,15 +166,15 @@ In terms of **availability**,
 
 5. **Glacier Instant Retrieval**
 
-   99.9% availability; 68% cheaper than IA **when accessed once per quarter**; retrieval time is in milliseconds
+   99.9% availability; 68% cheaper than IA **when accessed once per quarter**; retrieval time is in **milliseconds**
 
 6. **Glacier Flexible Retrieval**
 
-   99.99% availability; Low cost archive, 10% cheaper than Glacier Instant Retrieval; store any amount of data; retrieval time configurable from hours to minutes
+   99.99% availability; Low cost archive, 10% cheaper than Glacier Instant Retrieval; store any amount of data; retrieval time configurable from **hours to minutes**
 
 7. **Glacier deep archive**
 
-   99.99% availability; lowest cost archive; retrieval time is 12 hours
+   99.99% availability; lowest cost archive; retrieval time is **12 hours**
 
 **See S3 tier comparison chart** https://aws.amazon.com/s3/storage-classes/#Performance_across_the_S3_Storage_Classes
 
@@ -251,9 +254,7 @@ encrypted when stored; done per object; 2 forms
 
 #### Server side
 
-Amazon helps with encryption
-
-Services
+Amazon helps with encryption using:
 
 - S3 managed keys using AES-256 (SSE-S3)
 - AWS Key Mgmt Service (SSE-KMS)
@@ -269,7 +270,7 @@ client encrypts files before uploading
 
 ## Versioning
 
-stores all versions to restore even if deleted; 
+stores all versions to restore **even if deleted**; 
 
 each object version maintained with permissions, storage tiers;
 
@@ -285,21 +286,19 @@ delete via MFA;
 
 *select bucket* > Properties > Versioning > *enable or suspend*
 
-
-
 Upload a file to this bucket; make object public; it can be accessed via URL.
 
-URL will be with `versionId` query param. Example, `https://<bucket_url>/fileName.txt?versionId=abcversionid123`
+URL will be with `versionId` query param. Example, 
+
+```http
+https://<bucket_url>/fileName.txt?versionId=abcversionid123
+```
 
 Upload file with same name and extension to the bucket; the object is replaced; **but new version of object is no longer public**; need to make it public again to be accesible via URL; **older version will still be public**
 
+In Bucket view, toggle Versions. You can see different versions of the same object with different version IDs. 
 
-
-In Bucket view, toggle Versions. You can see different versions of the same object with different version ids. 
-
-Note that the size used by that bucket is now cumulative size of both versions of the same file. **Versioning will use up full size of each revision unlike git where only difference is saved.**
-
-
+Note that the size used by that bucket is now **cumulative size of both versions** of the same file. **Versioning will use up full size of each revision unlike git where only difference is saved.**
 
 Delete file; the bucket looks empty; toggle on version and you **can see the object and its versions but with a delete marker**
 
@@ -386,7 +385,7 @@ create organizations; add accounts by sending invites;
 
 **Paying account**: use for billing only; no resources deployed here
 
-**Service Control Policies** (SCP) can be used to control access to services on OU or individual accounts. 
+**Service Control Policies** (SCP) can be used to **control access to services** on OU or individual accounts. 
 
 ## lab: Sharing S3 between accounts
 
@@ -523,7 +522,7 @@ Physically transfer files to S3. Import or export.
 
 Snowball has 50 or 80 TB
 
-Snowball Edge has 100TB; gives compute capabilities as well
+Snowball Edge has 100TB; with compute capabilities
 
 Snowmobile has 100PB capacity
 
@@ -589,7 +588,7 @@ Depending on you type of RL you can You can modify the AZ, scope,  network platf
 
 **Standard**: 75% off
 
-**Convertible**: 54%; change instance type
+**Convertible**: 54% off; change instance type
 
 **Scheduled**: time window when capacity will be used
 
@@ -661,18 +660,19 @@ Termination Protection (default off) doesn't allow the usual terminate button to
 
 #### Other
 
-Tags
-Security Groups: what protocol, at what port, and what IP
-Key pair is created
-Console can be access via web-based in browser console, EC2 Instance Connect
+- Tags
 
+- Security Groups: what protocol, at what port, and what IP
 
+- Key pair is created
 
-Connecting via console: 
+- Console can be access via web-based in browser console, EC2 Instance Connect
 
-```
-ssh ec2-username@IPADDRESS_EC2 -i PrivateKey.pem
-```
+- Connecting via console: 
+
+  - ```bash
+    ssh ec2-username@IPADDRESS_EC2 -i PrivateKey.pem
+    ```
 
 ## Security Groups
 
@@ -681,7 +681,6 @@ Virtual firewalls that control traffic to EC2 instance.
 Changes to security group are reflected immediately.
 
 All inbound traffic is blocked by default, all outbound is allowed.
-
 Therefore, only allow rules can be configured, no support for deny rules.
 
 Define which type of connection (eg. HTTP, SSH, etc) , which protocol (eg. TCP), which port (eg. 80, 22) is allowed inbound and outbound on the instance.
@@ -708,11 +707,15 @@ Elastic Block Storage is a hard-disk on the cloud.
 
 Migrating or encrypting non-encrypted EBS volumes will need them to be converted to AMI before they can be re-launched.
 
-EBS volumes can be detached while instance is running only if the volume is not the root volume of that EC2 instance.
+EBS volumes can be **detached while instance is running only if the volume is not the root volume** of that EC2 instance.
 
 You can add multiple volumes to an EC2 instance and then create your own RAID 5/RAID 10/RAID 0 configurations using those volumes.
 
-You can control whether an EBS root volume is deleted when its  associated instance is terminated. The default delete-on-termination  behaviour depends on whether the volume is a root volume, or an  additional volume. By default, the DeleteOnTermination attribute for  root volumes is set to 'true.' However, this attribute may be changed at launch by using either the AWS Console or the command line. For an  instance that is already running, the DeleteOnTermination attribute must be changed using the CLI.
+You can control whether an EBS root volume is deleted when its associated instance is terminated. The default delete-on-termination behaviour depends on whether the volume is a root volume, or an  additional volume. By default, the DeleteOnTermination attribute for root volumes is set to 'true.' However, this attribute may be changed at launch by using either the AWS Console or the command line. For an  instance that is already running, the DeleteOnTermination attribute must be changed using the CLI.
+
+Use SSDs for fast random access; expensive. 
+
+Use HDD for sequential access, cheaper.
 
 ### General Purpose (SSD) - gp2
 
@@ -733,10 +736,6 @@ File servers; **sc1** API; <=250 IOPS
 ### Magnetic - standard
 
 infrequently accessed data; **Standard** API; 40-200 IOPS
-
-Use SSDs for fast random access; expensive. 
-
-Use HDD for sequential access, cheaper.
 
 ## lab: EBS Volumes
 
@@ -784,7 +783,7 @@ For **root device** (device with OS) snapshots, best pratice to stop the instanc
 
 ## Networking
 
-By default, all accounts are limited to 5 **public** Elastic IP addresses per region. 
+By default, all accounts are limited to **5 public Elastic IP addresses per region**. 
 
 A small hourly fee is charged when your EC2 instance that uses a public IP is not running.
 
@@ -904,12 +903,12 @@ Needs programmatic access in IAM
 
 ssh to EC2 instance then use the aws command
 
-```
+```bash
 > aws configure
--- to configure keys
+# to configure keys
 
 > aws s3 ls
--- <aws command> <service> <command>
+# <aws command> <service> <command>
 ```
 
 `.aws` folder contains credentials file. Best practice not to use configure and store in credentials file. See *IAM Roles*.
@@ -983,7 +982,7 @@ How to place or group EC2 instances?
 
 Groups cannot be merged.
 
-Instances must be stopped before moved into different groups.
+**Instances must be stopped before moved into different groups.**
 
 ## HPC (high performance compute) on AWS
 
@@ -1035,9 +1034,9 @@ Actions available: Allow, Deny, Count.
 
 ### Instead
 
-For IP and port level, use Security Groups instead.
+For **IP and port level allow**, use Security Groups instead.
 
-For IP and port level deny, use NACLs instead.
+For **IP and port level deny**, use NACLs instead.
 
 # Databases on AWS
 
@@ -1067,7 +1066,7 @@ For IP and port level deny, use NACLs instead.
 - MemcacheD
 - Redis
 
-A **database parameter group (DB Parameter Group)** acts as a “container”  for engine configuration values that can be applied to one or more DB  Instances. If you create a DB Instance without specifying a DB Parameter Group, a default DB Parameter Group is used. This default group  contains engine defaults and Amazon RDS system defaults optimized for  the DB Instance you are running. 
+A **database parameter group (DB Parameter Group)** acts as a “container” for engine configuration values that can be applied to one or more DB Instances. If you create a DB Instance without specifying a DB Parameter Group, a default DB Parameter Group is used. This default group contains engine defaults and Amazon RDS system defaults optimized for the DB Instance you are running. 
 
 **Enhanced Monitoring for Amazon RDS** gives you deeper visibility into the health of your Amazon RDS instances. Captures instance system level metrics, such as the CPU, memory, file system, and disk I/O among others.
 
@@ -1077,7 +1076,7 @@ A **database parameter group (DB Parameter Group)** acts as a “container”  f
 2. improve **availability** by reducing database failover times by up to 66% and preserving application connections during failovers; 
 3. improve **security** by optionally enforcing AWS IAM authentication to databases and securely storing credentials in AWS Secrets Manager.
 
-If you want your application to check RDS for an error, have it look for an ERROR node in the response from the Amazon RDS API.
+If you want your application to check RDS for an error, have it look for an `ERROR` node in the response from the Amazon RDS API.
 
 MySQL installaton port is 3306.
 
@@ -1088,7 +1087,7 @@ Configure your DB Security Group to talk with application's Security Group when 
 RDS instances 
 
 - run on virtual machines
-- cannot ssh into OS
+- **cannot ssh** into OS
 - patching is Amazon's responsibility
 - cannot be serverless (except Aurora)
 
@@ -1103,15 +1102,9 @@ When these backups are restored, the RDS instance will be a new one with a new D
 
 Encryption is managed using Amazon KMS. Encryption at rest. When encryption is enabled on RDS instance automated backups, snapshots, read replicas are encrypted.
 
-On a single-AZ RDS instance setup, I/O may be briefly suspended while the backup process initializes (typically under a few seconds), and you may experience a brief period of elevated latency.
-
-It is normal to have **1 or 2 more automated DB snapshots than the number of days in your retention period**. One extra automated snapshot is retained to ensure the ability to perform a point in time restore to any time during the retention period.
-
 **No transfer charge is incurred** when replicating data from your primary RDS instance to your secondary RDS instance.
 
 If you are using Amazon RDS Provisioned IOPS storage with a Microsoft SQL Server database engine, 16 TB is the maximum size RDS volume you can have by default.
-
-In RDS, changes to the backup window take effect immediately.
 
 ### Automated Backups
 
@@ -1122,6 +1115,9 @@ In RDS, changes to the backup window take effect immediately.
 - affects IO, so can experience elavated latency
 - deleted when RDS instance is deleted
 - default on with default 7 day retention period
+- On a single-AZ RDS instance setup, while the backup process initializes, I/O may be briefly suspended  (typically under a few seconds) and you may experience a brief period of elevated latency.
+- It is normal to have **1 or 2 more automated DB snapshots than the number of days in your retention period**. One extra automated snapshot is retained to ensure the ability to perform a point in time restore to any time during the retention period.
+- In RDS, changes to the backup window take effect immediately.
 
 ### Database Snapshots
 
