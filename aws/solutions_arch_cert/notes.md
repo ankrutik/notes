@@ -310,7 +310,7 @@ Delete file; the bucket looks empty; toggle on version and you **can see the obj
 
 **rule scope**: filter the objects that this rule applies to or all objects
 
-**lifecycle rule actions**: what to do, to what version of object, at what interval; transition between states, delete, etc.
+**lifecycle rule actions**: what to **do**, to what **version** of object, at what **interval**; **transition** between states, delete, etc.
 
 **Timeline summary** is displayed as describing what happens to applicable objects as time passes.
 
@@ -341,9 +341,9 @@ Vault lock policies can be applied on Glacier vaults which once applied cannot b
 
 S3 has extremely low latency.
 
-PUT/COPY/POST/DELETE at **3500 requests** per second per prefix
+**Writes**: PUT/COPY/POST/DELETE at **3500 requests** per second per prefix
 
-GET/HEAD at **5500 requests** per second per prefix
+**Reads**: GET/HEAD at **5500 requests** per second per prefix
 
 **If you spread out your object in separate prefixes, you can get that much high read rate.**
 
@@ -745,7 +745,8 @@ Volume sizes can be changed, but will take time to reflect. May need to re-parti
 
 Hardware assisted virtualization
 
-Snapshots are point in time copies of Volumes. **Incremental** nature i.e. only changes are stored on S3. First snapshot takes time to create.
+Snapshots are point in time copies of Volumes. 
+**Incremental** nature i.e. only changes are stored on S3. First snapshot takes time to create.
 
 ### Migrating EBS overview 
 
@@ -791,7 +792,7 @@ You do not need an Elastic IP address for all your instances. By default, every 
 
 The private IP address remains associated with the network interface when the instance is stopped and restarted, and is released when the instance is terminated. 
 
-The public address is associated exclusively with the instance until it is stopped, terminated or replaced with an Elastic IP address. These IP addresses should be  adequate for many applications where you do not need a long lived internet routable end point. 
+***Why would you need a public Elastic IP address if a public IP address is anyway allocated?*** The public address is associated exclusively with the instance until it is stopped, terminated or replaced with an Elastic IP address. These IP addresses should be adequate for many applications where you do not need a long lived internet routable end point. 
 
 ### ENI vs ENA vs EFA
 
@@ -836,7 +837,7 @@ Can **save upto 90%** cost of On-Demand instances.
 - maximum price
 - desired number of instances
 - launch specs
-- request type (if application went down due to spot price increase, what to do next time that spot price goes below bid?) :
+- request type (*if application went down due to spot price increase, what to do next time that spot price goes below bid?*) :
   - one time: do nothing
   - persistent: bring application up again
 - valid from and until
@@ -952,6 +953,8 @@ curl http://<169.254.169.254>/latest/user-data
 
 Supports NFSv4
 
+For use with Linux.
+
 **Multiple EC2 instances cannot share an EBS volume** but can share a EFS volume. As of Feb 2020 you can attach certain types of EBS volumes to multiple EC2 instances. https://aws.amazon.com/blogs/aws/new-multi-attach-for-provisioned-iops-io1-amazon-ebs-volumes/
 
 Grows and reduces automatically, no pre-provision of space needed. Pay for only what you use.
@@ -961,8 +964,6 @@ Supports thousands of concurrent NFS connections.
 Data stored across multiple AZs within a region.
 
 Read after write consistency.
-
-Use when Linux is needed.
 
 ## FSX for Windows and FSX for Lustre
 
@@ -1254,7 +1255,7 @@ site-to-site VPN, Direct Connect
 
 IAM policies and Roles
 
-Fine-grained access thru IAM to give access to only specific attributes
+**Fine-grained access thru IAM to give access to only specific attributes**
 
 CloudWatch and CloudTrail
 
@@ -1262,7 +1263,7 @@ VPC endpoints
 
 ## Redshift
 
-petabyte scale data warehouse service
+petabyte scale data **warehouse** service
 
 single node config (160Gb)
 
@@ -1304,7 +1305,7 @@ Starts at 10GB, scales in 10GB increaments, upto 64TB
 
 compute resources upto 32vCPUs and 244GB RAM
 
-2 copies of data in each AZ with minimum 3 AZs; so 6 copies of data
+**2 copies of data in each AZ with minimum 3 AZs**; so 6 copies of data
 
 share snapshots with other AWS accounts
 
@@ -1385,12 +1386,12 @@ Add caching more towards the front to decrease latency.
 
 ## Elastic Map Reduce
 
-Cloud big data platform for data processing, interactive analysis, and machine learning using open source frameworks such as Apache Spark, Apache Hive, and Presto
+Cloud big data platform for **data processing, interactive analysis, and machine learning** using open source frameworks such as **Apache Spark, Apache Hive, and Presto**
 
 Cluster components:
 
-- **Master** node: **manage and track** status of tasks; monitor health of cluster; at least one in each cluster
-- **core** node: runs tasks and stores data on Hadoop Distributed File System
+- **Master** node: **manage and track status of tasks**; monitor health of cluster; at least one in each cluster
+- **core** node: **runs tasks and stores data** on Hadoop Distributed File System
 - **task** node: **only runs tasks** and does not store data; optional
 
 Master node stores log data. 
@@ -1408,8 +1409,8 @@ What are **Active Directories**:
 - on-prem directory service by Microsoft
 - hierarchical database of users, groups, computers; trees, forests
 - apply groups and policies to manager users
-- based on LDAP and DNS protocols 
-- supports LDAP, NTLM, Kerberos Authentication
+- based on **LDAP and DNS protocols** 
+- supports **LDAP, NTLM, Kerberos Authentication**
 
 **AD Trust** is used to extend AWS AD onto your on-prem.
 
@@ -1426,18 +1427,19 @@ What are **Active Directories**:
 -  **AD Connector**
    -  Directory gateway (proxy) for on-prem AD
    -  avoid caching information in the cloud
-   -  allow on-prem users to log into AWS using AD
+   -  **allow on-prem users to log into AWS using AD**
    -  scale across multiple AD connectors
 
 
 ### Non AD compatible Directory Services
 
 - **Cloud Directory**
-  - directory based store intended for developers
+  - directory based **store **
+  - **intended for developers**
   - multiple hierarchies, millions of objects
   - use cases: org charts, course catalogs, device registries
   - fully managed service
-
+  
 - **Amazon Cognito User Pools**
   - managed user directory for SaaS
   - Sign up/in for web or mobile
@@ -1454,14 +1456,14 @@ ARN `arn:partition:service:region:account_id`
 
 - JSON document with that has permission statements as arrays
 - Statement contains
-  - effect: Allow or Deny
-  - action: API
-  - resource: AWS entity
+  - `effect`: Allow or Deny
+  - `action`: API
+  - `resource`: AWS entity
 
 **Policy evaluation logic**
 
-- No in effect till attached to a user or group
-- if not explicitly allowed, it is implicitly denied. By default denied till explicitly allowed
+- No effect till attached to a user or group
+- if not explicitly allowed, it is implicitly denied. **By default denied till explicitly allowed.**
 - AWS joins all applicable policies
 - Any deny will override any allow
 
@@ -1519,9 +1521,9 @@ A **registrar** (Amazon, GoDaddy) assigns domain names under one of the top leve
 
 User enters URL -> Browser goes to top level domain -> TLD returns NS record -> Browser looks up NS record to get SOA record -> SOA record contains DNS records
 
-AWS does not use default TTL for record type. You have to specify.
+AWS **does not use default TTL** for record type. You have to specify.
 
-Route53 propogates changes in 60 seconds.
+Route53 **propogates changes in 60 seconds**.
 
 **NS (name server) record** used by **top level domain servers** to direct traffic to the **content DNS server** which return authorative (SOA) DNS records.
 
@@ -1542,7 +1544,7 @@ Route53 propogates changes in 60 seconds.
 
 ### ELB - Elastic Load Balancer
 
-IPv4 addresses are never shared for ELBs. You have to use a DNS name.
+**IPv4 addresses are never shared for ELBs. You have to use a DNS name.**
 
 ## lab: Register a domain name
 
@@ -1552,7 +1554,7 @@ Can take upto 3 days
 
 _3 EC2 instances were brought up in different regions with different IP addresses and different index.html contents. One domain name was registered (hosted zone). Route 53 was used to configure the 3 different IP address to the same domain name (hosted zone) to try out the following routing policies. Hit the address, wait for DNS flush (TTL) or manually flush, hit again and see if it DNS resolve a different IP address._
 
-50 domain names can be managed using the AWS console but this limit can be increased by contacting AWS support.
+**50 domain names can be managed using the AWS console** but this limit can be increased by contacting AWS support.
 
 Records are created for each IP in Route 53 > Hosted zones.
 
@@ -1635,7 +1637,7 @@ By default, any user-created VPC subnet will not automatically assign public IPv
 
 Until recently customers were not permitted to conduct penetration testing without AWS engagement. However that has changed. There are still conditions though.
 
-Maximum 5 VPCs per region per AWS account.
+**Maximum 5 VPCs per region per AWS account.**
 
 VPC can span multiple AZs.
 
@@ -1733,62 +1735,11 @@ Change security group of DB instance to this new security group.
 
 Copy private key of DB instance into App instance. Then ssh into app instance and then ssh into db instance. Alternative to this is to use bastion hosts.
 
-## lab: NAT instances and NAT Gateways
-
-Network Address Translation
-
-These instances **allow private subnets to communicate to the Internet**. 
-
-Eg when you want to run `yum` to update/patch software within instances on a private subnet.
-
-NAT instance is a single EC2 instance. NAT gateways are multiple instances spread across multiple AZ with high availability.
-
-### NAT Instance
-
-NAT instance must be in a public subnet.
-
-Disable source and destination check. This check is that either source or destination traffic should have the instance, but the NAT instance should not have that check.
-
-Should be a route out of the private subnet to the NAT instance.
-
-Bring up a NAT instance from the one available under Community AMIs. Bring it up under the same VPC. Disable source/destination check.
-
-Create a new Route such that destination is 0.0.0.0/0 (all outbound traffic on all port) and target is our NAT instance.
-
-Behind security group.
-
-**Issues**:
-
-- multiple EC2 instances using the same NAT instance can **overwhelm** it, can increase instance size
-  - can create HA by using autoscaling groups, multiple subnets in different AZs, and script to automate failover
-
-- behind security groups
-
-### NAT Gateway
-
-Create a new Gateway: subnet mention public subnet, create new elastic ip allocation ID
-
-Edit route table: edit main, destination is 0.0.0.0/0 (all outbound traffic on all port) and target is our NAT gateway
-
-NAT gateways cannot span AZs. Redundant inside the AZ.
-
-thruput is 5Gbps to 45Gbps
-
-no need to patch
-
-not associated with security groups
-
-automatically assigned IP addresses
-
-no need to disable source and destination checks
-
-When you have one NAT Gateway being used by instances in multiple AZs, then failure of that NAT gateway's AZ will block others. Better to bring up multiple NAT gateways in multiple AZs.
-
 ## Network Access Control Lists
 
 When a VPC is created, a Network ACL is created by default. 
 
-When you add a subnet to a VPC, it is added to the default NACL. Subnets should always be associated with a NACL.
+When you add a subnet to a VPC, **it is added to the default NACL**. Subnets should always be associated with a NACL.
 
 By default, a NACL denies everything inbound and outbound.
 
@@ -1844,13 +1795,65 @@ Amazon VPC traffic mirroring, provides deeper insight into network traffic by al
 
 ## Bastions Hosts
 
-NAT Gateway/Instance allows EC2 instances in a private subnet to connect to the Internet. On the other hand, a Bastion/Jumpbox is used to connect to the EC2 instance in the private subnet from the Internet via SSH or RDP to securely administer it.
+NAT Gateway/Instance allows EC2 instances in a private subnet to connect to the Internet. 
+On the other hand, a Bastion/Jumpbox is used to connect to the EC2 instance in the private subnet from the Internet **via SSH or RDP** to securely administer it.
 
 Bastion is a special purpose EC2 instance that is hardened which means it is specifically designed and configured to withstand attacks. All services on that instance are brought down to bare essentials to avoid exploits.
 
 NAT gateway cannot be used as a bastion host.
 
 Bastion hosts community AMIs are available.
+
+## lab: NAT instances and NAT Gateways
+
+Network Address Translation
+
+These instances **allow private subnets to communicate to the Internet**. 
+
+Eg when you want to run `yum` to update/patch software within instances on a private subnet.
+
+NAT instance is a single EC2 instance. NAT gateways are multiple instances spread across multiple AZ with high availability.
+
+### NAT Instance
+
+NAT instance must be in a public subnet.
+
+Disable source and destination check. This check is that either source or destination traffic should have the instance, but the NAT instance should not have that check.
+
+Should be a route out of the private subnet to the NAT instance.
+
+Bring up a NAT instance from the one available under Community AMIs. Bring it up under the same VPC. Disable source/destination check.
+
+Create a new Route such that destination is 0.0.0.0/0 (all outbound traffic on all port) and target is our NAT instance.
+
+Behind security group.
+
+**Issues**:
+
+- multiple EC2 instances using the same NAT instance can **overwhelm** it, can increase instance size
+  - can create HA by using autoscaling groups, multiple subnets in different AZs, and script to automate failover
+
+- behind security groups
+
+### NAT Gateway
+
+Create a new Gateway: subnet mention public subnet, create new elastic ip allocation ID
+
+Edit route table: edit main, destination is 0.0.0.0/0 (all outbound traffic on all port) and target is our NAT gateway
+
+NAT gateways cannot span AZs. Redundant inside the AZ.
+
+thruput is 5Gbps to 45Gbps
+
+no need to patch
+
+not associated with security groups
+
+automatically assigned IP addresses
+
+no need to disable source and destination checks
+
+When you have one NAT Gateway being used by instances in multiple AZs, then failure of that NAT gateway's AZ will block others. Better to bring up multiple NAT gateways in multiple AZs.
 
 ## **VPC peering** 
 
@@ -1906,7 +1909,7 @@ What are VPC end points?
 - these are virtual devices
 - used to **privately** connect your VPC to **only certain supported** AWS services and VPC endpoint services
 -  without internet gateway, NAT, VPN, Direct Connect
-- traffic never leaves the Amazon network, Internet is not used
+- **traffic never leaves the Amazon network, Internet is not used**
 
 **Types of endpoints:**
 
@@ -1939,7 +1942,7 @@ Instance in private subnet sends message to VPC endpoint gateway. The gateway th
 
 - service side: network load balancer
 - customer side: Elastic network interface (ENI)
-- Take static IP of network load balancer and open it up on the ENI. 
+- Connect both, take static IP of network load balancer and open it up on the ENI. 
 
 ## AWS Transit Gateway
 
@@ -1947,7 +1950,7 @@ Instance in private subnet sends message to VPC endpoint gateway. The gateway th
 
 Transit gateway is "**hub-spoke**" like topology. All VPCs that need to connect to each other needs to connect to the Transit Gateway.
 
-Transitive peering between 1000s of VPC and on-prem DCs.
+**Transitive peering** between 1000s of VPC and on-prem DCs.
 
 Cross regional
 
@@ -1978,13 +1981,13 @@ Operates over Internet, but customer gateway to AWS VPN CloudHub is encrypted (s
 
 https://aws.amazon.com/elasticloadbalancing/faqs/
 
-Durability: resource will continue to exist until you decide to remove it
+**Durability**: resource will continue to exist until you decide to remove it
 
-resiliency: resource's ability to recover from damage or disruption
+**Resiliency**: resource's ability to recover from damage or disruption
 
-availability: access a resource or service when you need it
+**Availability**: access a resource or service when you need it
 
-reliability: resource will work as designed
+**Reliability**: resource will work as designed
 
 When you receive **504 gateway timeout error**, it means there is an issue with the application and not the load balancer itself.
 
@@ -2075,7 +2078,7 @@ Preferably use application LB but classic LB can be cheaper if you want simple r
 
 Instance **statuses** are `InService` or `OutofService`  
 
-Load balancers have their own DNS names and not IP address
+**Load balancers have their own DNS names and not IP address**
 
 *Read ELB FAQ for Classic Load Balancers*
 
@@ -2313,7 +2316,7 @@ This is a distributed queue system that allows web service applications to *queu
 
 "**Decouple**" components of an application to run independently.
 
-Amazon SQS Free Tier provides you with 1 million requests per month at no charge.
+Amazon SQS Free Tier provides you with **1 million requests per month at no charge**.
 
 Amazon SQS stores all message queues and messages within a single, highly-available AWS region with multiple redundant Availability Zones (AZs).
 
@@ -2344,22 +2347,22 @@ A **queue** is a temporary repository for messages that are waiting to be proces
 - default queue type
 - nearly unlimited number of transactions per second
 - guaranteed to deliver message at least once
-- more than one copy of the message may be delivered 
-- messages may be received out of order
+- **more than one copy** of the message may be **delivered** 
+- messages may be received **out of order**
 
 #### FIFO Queue
 
-- messages' order is strictly preserved
+- messages' **order is strictly preserved**
 
 - once delivered, a message will stay there till a consumer processes and deletes it
 
-- duplicates are not introduced
+- **duplicates are not introduced**
 
 - allows multiple ordered message groups within a single queue
 
 - limited to 300 transactions per second
 
-- Messages are grouped into distinct, ordered "bundles" within a FIFO queue. For each message group ID, all messages are sent and received in strict order. However, messages with different message group ID values might be sent and received out of order. You must associate a message group ID with a message. If you don't provide a message group ID, the action fails.
+- Messages are grouped into distinct, ordered "bundles" within a FIFO queue. For each message group ID, all messages are sent and received in strict order. **However, messages with different message group ID values might be sent and received out of order.** You must associate a message group ID with a message. If you don't provide a message group ID, the action fails.
 
   If multiple hosts (or different threads on the same host) send messages with the same message group ID are sent to a FIFO queue, Amazon SQS delivers the messages in the order in which they arrive for processing. To ensure that Amazon SQS preserves the order in which messages are sent and received, ensure that multiple senders send each message with a unique message group ID.
 
@@ -2378,7 +2381,7 @@ https://aws.amazon.com/swf/faqs/
 - co-ordinate work across distributed application components
 - tasks/work can be executable code, web service calls, **human actions**, scripts
 - used for manual or human tasks involved in a workflow
-- collection of related workflows are refered to as a **domain**
+- **collection of related workflows** are refered to as a **domain**
 
 ### SWF vs SQS
 
@@ -2419,7 +2422,7 @@ https://aws.amazon.com/sns/faqs/
 
 - access point allowing recipients to dynamically subscribe for identical copies of same notification
 - Multiple endpoints eg. group together android, iOS, SMS
-- application can pulbish to a topic, SNS will then send out the notification
+- application can publish to a topic, SNS will then send out the notification
 
 ### Benefits
 
@@ -2441,7 +2444,7 @@ https://aws.amazon.com/sns/faqs/
 https://aws.amazon.com/api-gateway/faqs/
 
 - fully managed service for developers to publish, maintain, monitor, and secure APIs at scale
-- supports HTTP, REST, WebSockets
+- supports **HTTP, REST, WebSockets**
 - expose HTTPS end points to define RESTful API
 - "serverless" connection to Lambda and DynamoDB
 - send each API endpoint to different target
@@ -2449,8 +2452,8 @@ https://aws.amazon.com/api-gateway/faqs/
 - track and control usage by API key
 - **throttle** requests to prevent attacks that will impact cost
 - connect to CloudWatch to log all requests for monitoring
-- maintain multiple versions of API
-- can monetize your APIs on API Gateway by publishing them as products in AWS Marketplace. 
+- **maintain multiple versions of API**
+- can **monetize your APIs on API Gateway by publishing** them as products in AWS Marketplace. 
 - Amazon API Gateway bills per million API calls, plus the cost of data transfer out, in gigabytes. If you choose to provision a cache for your API, hourly rates apply.
 
 ### Configuration
