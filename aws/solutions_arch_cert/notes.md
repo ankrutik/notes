@@ -82,6 +82,16 @@ Inside CloudWatch, create alarm to check billing/cost,
 
 Bittorrent protocol support. Maximum 5GB file size.
 
+The **Amazon S3 notification feature** enables you to receive notifications when certain events happen in your bucket. To enable notifications, you must first add a notification configuration that identifies the events you want Amazon S3 to publish and the destinations where you want Amazon S3 to send the notifications. You store this configuration in the notification subresource that is associated with a bucket.
+
+Amazon S3 supports the following destinations where it can publish events:
+
+- Amazon Simple Notification Service (Amazon SNS) topic
+
+- Amazon Simple Queue Service (Amazon SQS) queue
+
+- AWS Lambda
+
 ## Bucket
 
 - like a folder
@@ -725,6 +735,8 @@ Most workloads; **gp2** API; <=16K IOPS
 
 Databases; **io1** API; <=64K IOPS
 
+*The maximum IOPS and throughput are **guaranteed** only on Instances built on the **Nitro System provisioned with more than 32,000 IOPS**. Other instances guarantee up to 32,000 IOPS only.*
+
 ### Throughput Optimised HDD - st1
 
 Big data, warehouses; **st1** API; <=500 IOPS
@@ -890,6 +902,20 @@ Logs help with aggregate, monitor, and store logs.
 
 Host level metrics like CPU, Network, Disk, status check
 
+**Metrics are readily available** in CloudWatch by default:
+
+- CPU Utilization of an EC2 instance, 
+- Disk Reads activity of an EC2 instance,  
+- Network packets out of an EC2 instance
+
+For the following metrics, you need to prepare a **custom metric using CloudWatch Monitoring Scripts** which is written in Perl and install CloudWatch Agent to collect more system-level metrics from Amazon EC2 instances:
+
+- Memory utilization
+- Disk swap utilization
+- Disk space utilization
+- Page file utilization
+- Log collection
+
 ### CloudTrail (Auditing)
 
 User and resource activity monitored by **recording AWS management** console actions and API calls. Unrelated to CloudWatch.
@@ -954,6 +980,8 @@ curl http://<169.254.169.254>/latest/user-data
 Supports NFSv4
 
 For use with Linux.
+
+POSIX complaint
 
 **Multiple EC2 instances cannot share an EBS volume** but can share a EFS volume. As of Feb 2020 you can attach certain types of EBS volumes to multiple EC2 instances. https://aws.amazon.com/blogs/aws/new-multi-attach-for-provisioned-iops-io1-amazon-ebs-volumes/
 
@@ -1081,6 +1109,10 @@ If you want your application to check RDS for an error, have it look for an `ERR
 
 MySQL installaton port is 3306.
 
+You can **store session state data** on both **DynamoDB and ElastiCache**. These AWS services provide high-performance storage of key-value pairs which can be used to build a highly available web application.
+
+You can authenticate to your DB instance using AWS Identity and Access Management (IAM) **database authentication**. IAM database authentication works with MySQL and PostgreSQL. With this authentication method, you don't need to use a password when you connect to a DB instance. Instead, you use an authentication token.
+
 ## Lab: create RDS instance
 
 Configure your DB Security Group to talk with application's Security Group when creating the RDS instance.
@@ -1168,7 +1200,7 @@ Billing can be on-demand or reserved.
 ## DynamoDB
 
 - No-SQL solution; supports both **documents and key-value** data models
-
+- **Flexible schema** because it can store complex hierarchical data within a single item which, unlike a relational database, does not entail changing multiple related tables. **Suited for needs where schema may need changes or differ for rows.**
 - uses SSDs, single-digit millisecond latency
 - spread across 3 distinct geographic locations
 - Choose between consistency strategies:
@@ -1323,12 +1355,23 @@ Automated backups on by default
 
 Amazon Aurora **Parallel Query** refers to the ability to push down and distribute the computational load of a single query across thousands of CPUs in Aurora’s storage layer. Without Parallel Query, a query issued against an Amazon Aurora database would be executed wholly within one instance of the database cluster; this would be similar to how most databases operate. Not to be turned on always as it may incur hogher IO cost.
 
+You can invoke an AWS Lambda function from an Amazon Aurora MySQL-Compatible Edition DB cluster with a **native function or a stored procedure**. This approach can be useful when you want to integrate your database running on Aurora MySQL with other AWS services. For example, you might want to capture data changes whenever a row in a table is modified in your database.
+Comparing to RDS, **RDS events only provide operational events** such as DB instance events, DB parameter group events, DB security group events, and DB snapshot events. 
+
+A **cluster endpoint** (also known as a writer endpoint) for an Aurora DB cluster simply connects to the current primary DB instance for that DB cluster. This endpoint can perform write operations in the database such as DDL statements
+
 **Cost effective solution** because:
 
 - serverless saves cost to adjust or bring down instances with inactivity
   - Suited for infrequent, intermittent, or unpredictable workloads
 - based on open source
 - implemented like other commercial databases
+
+Aurora Serverless introduces a new `serverless` DB engine mode for Aurora DB clusters. Non-Serverless DB clusters use the `provisioned` DB engine mode.
+
+Aurora Provisioned DB cluster is **not suitable for intermittent, sporadic, and unpredictable transactional workloads**. This model works well when the database workload is predictable because you can adjust capacity manually based on the expected workload. 
+
+Recovery Point Objective (RPO) of 1 second and a Recovery Time Objective (RTO) of less than 1 minute
 
 ## Elasticache
 
@@ -1352,6 +1395,7 @@ Supports following engines:
   - querying
   - persistence
   - multi-AZ and allows back-ups and restores
+  - Using **Redis AUTH command** can improve data security by requiring the user to enter a password before they are granted permission to execute Redis commands on a password-protected Redis server. Hence, the correct answer is: Authenticate the users using Redis AUTH by creating a new Redis Cluster with both the `--transit-encryption-enabled` and `--auth-token` parameters enabled.
 
 A **node** is the smallest building block, a fixed-size chunk of secure, network-attached RAM. A Redis **shard** is a subset of the cluster’s keyspace, that can include a primary node and zero or more read-replicas. The shards add up to form a **cluster**.
 
@@ -1731,6 +1775,11 @@ Security groups are limited to one VPC. Cannot be used in multiple VPCs.
 
 Change security group of DB instance to this new security group.
 
+**Examples**
+
+- Protocol – TCP, Port Range – 22, Source 110.238.98.71/0 : allows the entire network instead of a single IP
+- Protocol – TCP, Port Range – 22, Source 110.238.98.71/32 : The /32 denotes one IP address
+
 ### Using public instance as jumpbox to private instance
 
 Copy private key of DB instance into App instance. Then ssh into app instance and then ssh into db instance. Alternative to this is to use bastion hosts.
@@ -1843,6 +1892,8 @@ Edit route table: edit main, destination is 0.0.0.0/0 (all outbound traffic on a
 
 NAT gateways cannot span AZs. Redundant inside the AZ.
 
+You must create a NAT gateway on a public subnet to enable instances in a private subnet to connect to the Internet or other AWS services, but prevent the Internet from initiating a connection with those instances.
+
 thruput is 5Gbps to 45Gbps
 
 no need to patch
@@ -1854,6 +1905,7 @@ automatically assigned IP addresses
 no need to disable source and destination checks
 
 When you have one NAT Gateway being used by instances in multiple AZs, then failure of that NAT gateway's AZ will block others. Better to bring up multiple NAT gateways in multiple AZs.
+A single NAT Gateway in each availability zone is enough. NAT Gateway is already redundant in nature, meaning, AWS already handles any failures that occur in your NAT Gateway in an availability zone.
 
 ## **VPC peering** 
 
@@ -2160,6 +2212,18 @@ Uses following methods:
 #### Target Tracking
 
 Select a load metric for your application, such as CPU utilization or  request count, set the target value, and Amazon EC2 Auto Scaling adjusts the number of EC2 instances in your ASG as needed to maintain that  target.
+
+## Termination policy
+
+The default termination policy is designed to help ensure that your network architecture spans Availability Zones evenly. With the default termination policy, the behavior of the Auto Scaling group is as follows:
+
+1. If there are instances in multiple Availability Zones, choose the **Availability Zone with the most instances and at least one instance that is not protected from scale in**. If there is more than one Availability Zone with this number of instances, choose the Availability Zone with the instances that use the **oldest launch configuration**.
+
+2. Determine which unprotected instances in the selected Availability Zone use the **oldest launch configuration**. If there is one such instance, terminate it.
+
+3. If there are multiple instances to terminate based on the above criteria, determine which unprotected instances are **closest to the next billing hour**. (This helps you maximize the use of your EC2 instances and manage your Amazon EC2 usage costs.) If there is one such instance, terminate it.
+
+4. If there is more than one unprotected instance closest to the next billing hour, choose one of these instances at **random**.
 
 ## lab: launch configurations and auto scaling groups
 
@@ -2662,7 +2726,6 @@ ciphertext -> base 64 decode -> decrypt -> base64 decode
 ## CloudHSM
 
 - Dedicated "Hardware Secure Modules"
-
 - FIPS 140-2 Level 3, physical security mechanisms
 - manage your keys
 - single tenant, multi-AZ cluster dedicated to one customer
@@ -2673,6 +2736,8 @@ ciphertext -> base 64 decode -> decrypt -> base64 decode
 - operates within its own VPC. Each HSM will project Elastic Network Interfaces into a VPC where your application sits in, your application can then communicate via that ENI. 
 - Not highly available, need to configure one per AZ with its opwn subnet.
 - Have at least 2 so that when one HSM fails, the ENI of the other HSM can be accessed.
+
+The AWS Key Management Service (KMS) custom key store feature combines the controls provided by AWS CloudHSM with the integration and ease of use of AWS KMS. You can configure your own CloudHSM cluster and authorize AWS KMS to use it as a dedicated key store for your keys rather than the default AWS KMS key store. When you create keys in AWS KMS you can choose to generate the key material in your CloudHSM cluster. CMKs that are generated in your custom key store never leave the HSMs in the CloudHSM cluster in plaintext and all AWS KMS operations that use those keys are only performed in your HSMs. Each custom key store is associated with an AWS CloudHSM cluster in your AWS account. Therefore, when you create an AWS KMS CMK in a custom key store, AWS KMS generates and stores the non-extractable key material for the CMK in an AWS CloudHSM cluster that you own and manage. This is also suitable if you want to be able to audit the usage of all your keys independently of AWS KMS or AWS CloudTrail.
 
 ## Systems Manager Parameter Store
 
@@ -2735,7 +2800,7 @@ Can be configured to run upto 15 minutes. **Timeout** is between 1 second and 15
 
 You can enable your Lambda function for tracing with **AWS X-Ray** by adding X-Ray permissions to your Lambda function execution role and changing your function “tracing mode” to “active”.
 
-The Lambda **Runtime Interface Emulator** is a proxy for the Lambda [Runtime API](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-api.html),which allows customers to locally test their Lambda function packaged as a  container image. It is a lightweight web server that converts HTTP  requests to JSON events and emulates the Lambda Runtime API. It allows  you to locally test your functions using familiar tools such as cURL and the Docker CLI.
+The Lambda **Runtime Interface Emulator** is a proxy for the Lambda [Runtime API](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-api.html), which allows customers to locally test their Lambda function packaged as a  container image. It is a lightweight web server that converts HTTP  requests to JSON events and emulates the Lambda Runtime API. It allows  you to locally test your functions using familiar tools such as cURL and the Docker CLI.
 
 When enabled, **Provisioned Concurrency** keeps functions initialized and hyper-ready to respond in double-digit milliseconds. If the concurrency of a function reaches the configured level,  subsequent invocations of the function have the latency and scale  characteristics of regular Lambda functions. You can restrict your  function to only scale up to the configured level.
 
@@ -2747,11 +2812,13 @@ On **exceeding the throttle limit**, AWS Lambda functions being invoked synchron
 
 On **exceeding the retry policy for asynchronous invocations**, you can configure a “dead letter queue” (DLQ) into which the event will be  placed; in the absence of a configured DLQ the event may be rejected. On **exceeding the retry policy for stream based invocations**, the data would have already expired and therefore rejected.
 
-Lambda functions provide **access only to a single VPC**. If multiple subnets are specified, they must all be in the same VPC. You can connect to other VPCs by **peering your VPCs**. Access to internet is blocked and must be routed thru a NAT if needed.
+Lambda functions provide **access only to a single VPC**. If multiple subnets are specified, they must all be in the same VPC. You can connect to other VPCs by **peering your VPCs**. **Access to internet is blocked** and must be **routed thru a NAT** if needed.
 
 **Code Signing for AWS Lambda** offers trust and integrity controls that  enable you to verify that only unaltered code from approved developers  is deployed in your Lambda functions. 
 
 Lambda like EC2 and ECS **supports hyper-threading** on one or more virtual CPUs (if your code supports hyper-threading).
+
+Lambda does provide **encryption functionality of environment variable**s. When you create or update Lambda functions that use environment variables, AWS Lambda encrypts them using the AWS Key Management Service. When your Lambda function is invoked, those values are decrypted and made available to the Lambda code. The first time you create or update Lambda functions that use environment variables in a region, a default service key is created for you automatically within AWS KMS. This key is used to encrypt environment variables. However, if you wish to use **encryption helpers** and use KMS to encrypt environment variables after your Lambda function is created, you must create your own AWS KMS key and choose it instead of the default key. The default key will give errors when chosen. Creating your own key gives you more flexibility, including the ability to create, rotate, disable, and define access controls, and to audit the encryption keys used to protect your data.
 
 ### Used as
 
@@ -2841,9 +2908,21 @@ yaml file with:
 
 The resulting configurations can be viewed in management console.
 
+## Lambda@Edge
+
+Lambda@Edge lets you run Lambda functions to customize the content that CloudFront delivers, executing the functions in AWS locations closer to the viewer. The functions run in response to CloudFront events, without provisioning or managing servers. You can use Lambda functions to change CloudFront requests and responses at the following points:
+
+- After CloudFront receives a request from a viewer (viewer request)
+
+- Before CloudFront forwards the request to the origin (origin request)
+
+- After CloudFront receives the response from the origin (origin response)
+
+- Before CloudFront forwards the response to the viewer (viewer response)
+
 ## Elastic Container Service (ECS)
 
-container: package that contains application; and the  libraries, runtime, tools required to run it
+container: package that contains application; and the libraries, runtime, tools required to run it
 
 containers run on an engine like Docker
 
@@ -2862,20 +2941,22 @@ portable and offer a consistent environment
 - deploy, update, roll back 
 - integration with VPC, security groups, EBS volumes, ELB
 - CloudTrail and CloudWatch
+- Amazon ECS enables you to inject sensitive data into your containers by storing your sensitive data in either AWS Secrets Manager secrets or AWS Systems Manager Parameter Store parameters and then referencing them in your container definition. 
+- Amazon ECS doesn't support resource-based policies. An example of a resource-based policy is the S3 bucket policy. An ECS task assumes an execution role (IAM role) to be able to call other AWS services like AWS Secrets Manager on your behalf.
 
 ### Terminology
 
-Cluster: logical collection of ECS resources (ECS EC2 or Fargate instances)
+**Cluster**: logical collection of ECS resources (ECS EC2 or Fargate instances)
 
-Task Definition: defines your application for running containers in ECS; can contain multiple containers
+**Task Definition**: defines your application for running containers in ECS; can contain multiple containers
 
-Container definition: individual container that a *task* uses; controls CPU, memory allocations, port mappings
+**Container definition**: individual container that a *task* uses; controls CPU, memory allocations, port mappings
 
-Task: single running copy of any containers defined by a *task definition*
+**Task**: single running copy of any containers defined by a *task definition*
 
-Service: allows *task definitions* to be scaled by adding new *tasks*; define max and min values 
+**Service**: allows task definitions to be scaled by adding new tasks; define max and min values 
 
-Registry: storage for container images, used to download images to create containers
+**Registry**: storage for container images, used to download images to create containers
 
 ```
 Cluster { 

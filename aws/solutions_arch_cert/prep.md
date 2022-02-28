@@ -13,11 +13,16 @@ https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS-Certified-
 # Todo
 
 - check if topics covered in Udemy course cover all in syllabus
-- 
 
 # TODO Topics
 
 EC2 Classic
+
+Common API calls and their names for each service
+
+Fargate
+
+Global Tables
 
 # Revise again
 
