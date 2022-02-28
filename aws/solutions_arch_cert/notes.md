@@ -38,6 +38,8 @@ API access can use Identity Federation and MFA.
 
 Users, groups, and policies are universal and not restricted to regions.
 
+AWS Policy Simulator helps check what users will be able to do if certain policies are applied.
+
 https://aws.amazon.com/iam/faqs/
 
 ## IAM dashboard
@@ -56,6 +58,8 @@ Users credentials can be downloaded to CSV at the time of
 - editing password after user is created
 
 ***Credential Report* CSV download will not contain the passwords, so save the password CSV files or else you will have to regenerate them.**
+
+**IAM Access Advisor** helps audit individual users to check if user has used permissions recently.
 
 User passwords types:
 
@@ -84,13 +88,17 @@ Bittorrent protocol support. Maximum 5GB file size.
 
 The **Amazon S3 notification feature** enables you to receive notifications when certain events happen in your bucket. To enable notifications, you must first add a notification configuration that identifies the events you want Amazon S3 to publish and the destinations where you want Amazon S3 to send the notifications. You store this configuration in the notification subresource that is associated with a bucket.
 
-Amazon S3 supports the following destinations where it can publish events:
+**CORS** can be enabled with the `Access-Control-Allow-Origin` attribute.
+
+Amazon S3 supports the following destinations where it can publish **events**:
 
 - Amazon Simple Notification Service (Amazon SNS) topic
-
 - Amazon Simple Queue Service (Amazon SQS) queue
-
 - AWS Lambda
+
+With **S3 Requestor Pays** the requestor pays for the request and data transfer of the S3 object, access to files only if the requestor is authenticated in AWS (cannot be anonymous).
+
+**S3 Analytics helps get recommendations for S3 Lifecycle Rules** by analyzing the optimal number of days to move objects between different storage tiers.
 
 ## Bucket
 
@@ -126,6 +134,17 @@ Read after write for PUTs means
 
 - if you overwrite or delete an existing object and try to read immediately, you may get old version  
 - takes a little time to propogate
+
+**Strong consistency post December 2020**, changes after following are immediately reflected:
+
+- writing new files
+- overwrite or delete of existing files
+
+Read after write consistency
+
+List consistency: subsequent lists are always updated
+
+No additional cost or performance impact.
 
 ## Guarantees
 
@@ -334,6 +353,8 @@ Uses WORM (write once, read many) model where you can lock modification/deletion
 
 Locks can be applied on individual objects or entire buckets.
 
+**Versioning must be enabled.**
+
 ### Modes
 
 - **governance**: users with right/permissions can modify object
@@ -455,18 +476,29 @@ S3 Transfer accelaration tool to test giving comparison of upload speeds when do
 - CDN (content delivery network)
 - distributed servers
 - deliver webpages and other web content
+- caches with TTL
 - optimizes based on 
   - geographic location of user
   - origin of webpage
   - content delivery server
 
-**Origin**: S3 bucket, EC2 instance, Elastic load balancer, Route53
+**Origins**: 
+
+- S3 bucket, 
+  - distributing files and caching them at edge
+  - enhanced security with Origin Access Identity (OAI)
+  - used as ingress to upload files
+- EC2 instance, 
+- Elastic load balancer, 
+- Route53
 
 **Edge location**: where content is cache; separate to an AWS region
 
 **Distribution**: CDN which is a collection of edge locations
 
 User's request is routed to nearest edge location. Content is cached at edge location till time-to-live.
+
+Geoprotection
 
 Distribution types:
 
@@ -476,6 +508,37 @@ Distribution types:
 Read and write(Transfer Accelaration) on edge locations.
 
 Cache can be cleared but you will be charged.
+
+### Price classes
+
+- Price Class All: All regions, best performance
+- Price Class 200: most regions except for most expensive
+- Price Class 100: only least expensive regions
+
+### Multiple Origin
+
+Based on 
+
+- content type
+- path pattern
+
+### Origin Group
+
+create primary and secondary
+
+failover
+
+### Field level Encryption
+
+Protect user sensitive information on its way from client to server
+
+additional layer to security to HTTPS
+
+sensitive information encrypted at edge close to user
+
+uses assymmetric encryption, public key to encrypt
+
+POST requests, upto 10 fields
 
 ## lab: create a CloudFront distribution
 
@@ -521,7 +584,7 @@ contains:
 
 ### S3 signed URLs
 
-- issue request as IAM user who has presigned it; all permissions as that IAM user
+- issue request as IAM user who has presigned it; all permissions as that IAM user including writing
 - limited lifetime
 
 *If user doesn't have direct access to S3, S3 signed URL cannot be used. Use CloudFront signed URLs instead.*
@@ -711,7 +774,7 @@ Traffice cannot be controlled by what is in request. Use WAF instead.
 
 The data stored on a **local instance store will persist only as long as that instance is alive**. However, data that is stored on an Amazon EBS volume will persist independently of the life of the instance. 
 
-Normally, EBS volumes can only be attached to one EC2 instance. As of Feb 2020 you can attach certain types of EBS volumes to multiple EC2 instances. https://aws.amazon.com/blogs/aws/new-multi-attach-for-provisioned-iops-io1-amazon-ebs-volumes/
+Normally, **EBS volumes can only be attached to one EC2 instance**. Except, as of Feb 2020, you can attach io1 and io2 EBS volumes to multiple EC2 instances. https://aws.amazon.com/blogs/aws/new-multi-attach-for-provisioned-iops-io1-amazon-ebs-volumes/
 
 Elastic Block Storage is a hard-disk on the cloud.
 
@@ -771,6 +834,10 @@ For **root device** (device with OS) snapshots, best pratice to stop the instanc
 
 ## AMI types
 
+AMIs are built for a specific AWS Region, they're unique for each AWS Region. You **can't launch an EC2 instance using an AMI in another AWS Region**, but you can **copy the AMI to the target AWS Region** and then use it to create your EC2 instances.
+
+**Golden AMI** is an image that contains all your software installed and configured so that future EC2 instances can boot up quickly from that AMI.
+
 ### Selection criteria
 
 - region
@@ -807,6 +874,12 @@ The private IP address remains associated with the network interface when the in
 ***Why would you need a public Elastic IP address if a public IP address is anyway allocated?*** The public address is associated exclusively with the instance until it is stopped, terminated or replaced with an Elastic IP address. These IP addresses should be adequate for many applications where you do not need a long lived internet routable end point. 
 
 ### ENI vs ENA vs EFA
+
+ENI is like a virtual network card that lets EC2 instance to connect to the network.
+You can attach multiple ENIs to one EC2 instance, each with their own private and public IPs.
+ENI can be moved from one EC2 instance to another EC2 instance.
+
+ENIs cannot be moved outside the AZ.
 
 | criteria | ENI                                             | ENA                                                          | EFA                                                          |
 | -------- | ----------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -878,6 +951,25 @@ Available for On-Demand and Reserved instances
 
 In the case of hibernate, your instance gets hibernated and the RAM data persisted. In the case of Stop, your instance gets shutdown and RAM is cleared. Hibernated instances are in ‘Stopped’ state.
 
+## EC2 Nitro
+
+Underlying platform for next generation EC2 instances.
+
+Better at: 
+
+- networking 
+  - support for IPv6  
+  - enhanced networking
+  - HPC
+- **to get 64k IOPS on IOPS Provisioned EBS** (otherwise you will get 32k max)
+- better underlying security
+
+### vCPU
+
+Each thread is considered a vCPU. 
+
+So if your instance is allocated 4 CPU cores each having capability of 2 threads, then you have 8 vCPUs.
+
 ## CloudWatch
 
 **Monitoring performance** of:
@@ -940,6 +1032,8 @@ ssh to EC2 instance then use the aws command
 
 `.aws` folder contains credentials file. Best practice not to use configure and store in credentials file. See *IAM Roles*.
 
+**AWS Cloud Shell** offers in browser shell.
+
 ## lab: IAM Roles
 
 On individual EC2 instances, **Roles are more secure** **and easy to manage** than string access keys and secret access keys .
@@ -954,7 +1048,9 @@ AWS Console can be used to add a role to an EC2 instance after that instance has
 
 ## lab: Using Boot Strap Scripts
 
-Configure instance details > Advanced Details > user data
+**EC2 User Data** is used to bootstrap your EC2 instances using a bash script. This script can contain commands such as installing software/packages, download files from the Internet, or anything you want. 
+
+Configure instance details > Advanced Details > User Data
 
 ```bash
 #!/bin/bash
@@ -975,7 +1071,7 @@ curl http://<169.254.169.254>/latest/meta-data
 curl http://<169.254.169.254>/latest/user-data
  ```
 
-## lab: Elastic File System
+## lab: EFS Elastic File System
 
 Supports NFSv4
 
@@ -989,9 +1085,36 @@ Grows and reduces automatically, no pre-provision of space needed. Pay for only 
 
 Supports thousands of concurrent NFS connections.
 
-Data stored across multiple AZs within a region.
+Data stored across **multiple AZs** within a region.
 
 Read after write consistency.
+
+Comes in performance(general purpose) and high-thruput(provisioned) modes.
+
+x3 more expensive than EBS
+
+But with **EFS you are billed for what you use**, for EBS youwill have to provision that storage.
+
+### Tiers
+
+- Standard
+- Infrequent Accessed: lower price
+
+## AWS Transfer Family
+
+Supports following protocols:
+
+- FTP
+- FTPS: FTP over SSL
+- SFTP
+
+Multi-AZ
+
+Authentication over LDAP, Cognito, Okta, etc
+
+Bill: provisioned endpoints by hour + transfer fee per GB
+
+Use case: FTP interface to connect to S3
 
 ## FSX for Windows and FSX for Lustre
 
@@ -1111,7 +1234,7 @@ MySQL installaton port is 3306.
 
 You can **store session state data** on both **DynamoDB and ElastiCache**. These AWS services provide high-performance storage of key-value pairs which can be used to build a highly available web application.
 
-You can authenticate to your DB instance using AWS Identity and Access Management (IAM) **database authentication**. IAM database authentication works with MySQL and PostgreSQL. With this authentication method, you don't need to use a password when you connect to a DB instance. Instead, you use an authentication token.
+You can authenticate to your DB instance using AWS Identity and Access Management (IAM) **database authentication**. **IAM database authentication works with MySQL and PostgreSQL.** With this authentication method, you don't need to use a password when you connect to a DB instance. Instead, you use an authentication token.
 
 ## Lab: create RDS instance
 
@@ -1166,6 +1289,7 @@ If you are using Amazon RDS Provisioned IOPS storage with a Microsoft SQL Server
 - you can force failover from one AZ to another by rebooting RDS instance
 - Available for Oracle, SQL Server, MySQL, PostgreSQL, MariaDB. **Not needed for Aurora** since it is fault tolerant by design.
 - if you are running a Multi-AZ deployment, **automated backups and DB Snapshots are simply taken from the standby** to avoid I/O suspension on the primary.
+- same connection string regardless of which database is up
 
 ### Read Replicas
 
@@ -1358,7 +1482,13 @@ Amazon Aurora **Parallel Query** refers to the ability to push down and distribu
 You can invoke an AWS Lambda function from an Amazon Aurora MySQL-Compatible Edition DB cluster with a **native function or a stored procedure**. This approach can be useful when you want to integrate your database running on Aurora MySQL with other AWS services. For example, you might want to capture data changes whenever a row in a table is modified in your database.
 Comparing to RDS, **RDS events only provide operational events** such as DB instance events, DB parameter group events, DB security group events, and DB snapshot events. 
 
-A **cluster endpoint** (also known as a writer endpoint) for an Aurora DB cluster simply connects to the current primary DB instance for that DB cluster. This endpoint can perform write operations in the database such as DDL statements
+**Endpoints**:
+
+- A **cluster endpoint** (also known as a **writer endpoint**) for an Aurora DB cluster simply connects to the current primary DB instance for that DB cluster. This endpoint can perform write operations in the database such as DDL statements.
+- **Reader endpoint** receives read requests. Auto scaling can be configured to extend these reader endpoints when read requests increase.
+- **Custom endpoints** can be configured to perform analytical queries.
+
+Aurora **Multi-Master** can specify all nodes as read-write instances for high-availability and immediate failover.
 
 **Cost effective solution** because:
 
@@ -1373,6 +1503,16 @@ Aurora Provisioned DB cluster is **not suitable for intermittent, sporadic, and 
 
 Recovery Point Objective (RPO) of 1 second and a Recovery Time Objective (RTO) of less than 1 minute
 
+**Global Aurora**:
+
+- 1 primary region for read and write
+- upto 5 secondary regions for read
+  - upto 16 read replicas in each region
+- replication lag is < 1 second
+- disaster recovery via promoting secondary as primary is < 1 minute
+
+**Aurora Machine Learning** allows machine learning predictions via SQL using Amazon SageMaker and Comprehend.
+
 ## Elasticache
 
 web service to deploy, operate, and scale in-memory cache in the cloud
@@ -1382,19 +1522,22 @@ Amazon ElastiCache manages the work involved:
 - in **setting up** a distributed in-memory environment, from provisioning the server resources you request to installing the software. 
 - automating common **administrative tasks** such as failure detection and recovery, and software patching.
 - in **detailed monitoring** metrics associated with your nodes, enabling you to diagnose and react to issues very quickly. 
+- Elasticache does not support IAM authentication. IAM policies are only for AWS API level security.
 
 Supports following engines:
 
 - **Memcached**: 
   - simple, multithreaded performance
   - multi-AZ available
-
+  - SASL based authentication is possible
+  
 - **Redis**: 
   - advanced data types
   - sorting
   - querying
   - persistence
   - multi-AZ and allows back-ups and restores
+  - Redis Sorted Set allows uniqueness and element ordering
   - Using **Redis AUTH command** can improve data security by requiring the user to enter a password before they are granted permission to execute Redis commands on a password-protected Redis server. Hence, the correct answer is: Authenticate the users using Redis AUTH by creating a new Redis Cluster with both the `--transit-encryption-enabled` and `--auth-token` parameters enabled.
 
 A **node** is the smallest building block, a fixed-size chunk of secure, network-attached RAM. A Redis **shard** is a subset of the cluster’s keyspace, that can include a primary node and zero or more read-replicas. The shards add up to form a **cluster**.
@@ -1406,6 +1549,8 @@ A **node** is the smallest building block, a fixed-size chunk of secure, network
 A **Parameter Group** acts as a "container" for engine configuration values that can be applied to one or more clusters. If you create a cluster without specifying a Parameter Group, a **default Parameter Group is used**. This default group contains engine defaults and Amazon ElastiCache system defaults optimized for the cluster you are running.
 
 **Auto Discovery** is a feature that saves developers time and effort, while reducing complexity of their applications. Auto Discovery enables automatic discovery of cache nodes by clients when they are added to or removed from an Amazon ElastiCache cluster. Until now to handle cluster membership changes, developers must update the list of cache node endpoints manually which may need restarts.
+
+**Storing Session Data in ElastiCache** is a common pattern to ensuring different EC2 instances can retrieve your user's state if needed. This avoids enabling Sticky Sessions.
 
 ## Database Migration Service
 
@@ -1441,6 +1586,25 @@ Cluster components:
 Master node stores log data. 
 
 Replication can be configured to replicate log data every 5 mintues on S3; can only be set up during initial creation.
+
+## Ports to remember
+
+Important ports:
+
+    FTP: 21
+    SSH: 22
+    SFTP: 22 (same as SSH)
+    HTTP: 80
+    HTTPS: 443 
+
+RDS Databases ports:
+
+    PostgreSQL: 5432
+    MySQL: 3306
+    Oracle RDS: 1521
+    MSSQL Server: 1433
+    MariaDB: 3306 (same as MySQL)
+    Aurora: 5432 (if PostgreSQL compatible) or 3306 (if MySQL compatible)
 
 # Advanced IAM
 
@@ -1549,7 +1713,7 @@ centrally manage access to AWS accounts and business applications
 
 SAML for SSO
 
-# Route53
+# Route 53
 
 ## DNS 101
 
@@ -1565,11 +1729,15 @@ A **registrar** (Amazon, GoDaddy) assigns domain names under one of the top leve
 
 User enters URL -> Browser goes to top level domain -> TLD returns NS record -> Browser looks up NS record to get SOA record -> SOA record contains DNS records
 
-AWS **does not use default TTL** for record type. You have to specify.
+AWS **does not use default TTL** for record type. You have to specify. Each DNS record has a TTL (Time To Live) which orders clients for how long to cache these values and not overload the DNS Resolver with DNS requests. The TTL value should be set to strike a balance between how long the value should be cached vs. how many requests should go to the DNS Resolver.
 
 Route53 **propogates changes in 60 seconds**.
 
 **NS (name server) record** used by **top level domain servers** to direct traffic to the **content DNS server** which return authorative (SOA) DNS records.
+
+**Public Hosted Zones** are meant to be used for people requesting your website through the Internet. Finally, NS records must be updated on the 3rd party Registrar.
+
+Route 53 health checks can monitor other health checks.
 
 **SOA (start of authority) record** stores:
 
@@ -1936,11 +2104,17 @@ Helps reduce network costs, increase bandwidth, improve latency.
 
 ## Global Accelerator
 
+Unicast IP: all servers has their individual IP, usual
+
+Anycast IP: multiple servers have the same IP, traffic routed to nearest one.
+
+Global Accelarator uses Anycast IP to send it to the closest Edge location.
+
 **Directs traffic to the optimal endpoint in terms of proximity to client, health, endpoint weights**.
 
 **Components**:
 
-- static ip addresses: AWS brings 2 IPs or you can bring your own
+- **static ip addresses: AWS brings 2 IPs or you can bring your own**
 - accelerator
 - DNS name: assigns you a DNS name
 - network zone: isolated unit with own physical infrastructure
@@ -1948,9 +2122,11 @@ Helps reduce network costs, increase bandwidth, improve latency.
 - endpoint group: regions with **traffic dials**
 - endpoint: the EC2 instance or application load balancer or network load balance or Elastic IP address, **weights**
 
-Disable, wait for some time, delete
+Disable, wait for some time, delete.
 
-*TODO How is this different than a multivalue load balancer?*
+Uses AWS Shield for DDOS protection.
+
+***How is this different than a multivalue load balancer?** Uses AnyCast IP.*
 
 ## VPC endpoints
 
@@ -2047,6 +2223,16 @@ When you receive **504 gateway timeout error**, it means there is an issue with 
 
 Preferably use application LB but classic LB can be cheaper if you want simple round robin LB.
 
+Load balancers cannot be configured to be redirected to other load balancers.
+
+The following **cookie names are reserved** by the ELB :
+
+```
+AWSALB, AWSALBAPP, AWSALBTG
+```
+
+In both Application Load Balancers and Network Load Balancers, **Server Name Indication (SNI)** allows you to load multiple SSL certificates on one listener. Allows you to expose multiple HTTPS  applications each with its own SSL certificate on the same listener. 
+
 ### Application LB
 
 - Balancing HTTP and HTTPS traffic
@@ -2068,6 +2254,7 @@ Preferably use application LB but classic LB can be cheaper if you want simple r
 - high performance; millions of requests per second; ultra-low latencies
 - supports 200 targets per Availability Zone
 - You can **terminate TLS connections** on the Network Load Balancer. You must  install an SSL certificate on your load balancer. The load balancer uses this certificate to terminate the connection and then decrypt requests from clients before sending them to targets.
+- Network Load Balancer has one static IP address per AZ and you can attach an Elastic IP address to it. 
 
 ### Classic LB
 
@@ -2130,7 +2317,7 @@ Preferably use application LB but classic LB can be cheaper if you want simple r
 
 Instance **statuses** are `InService` or `OutofService`  
 
-**Load balancers have their own DNS names and not IP address**
+**Load balancers have their own DNS names and not IP address**. Except for Network LB. Network Load  Balancer has one static IP address per AZ and you can attach an Elastic  IP address to it. Application Load Balancers and Classic Load Balancers  have a static DNS name.
 
 *Read ELB FAQ for Classic Load Balancers*
 
@@ -2160,6 +2347,16 @@ Used to route traffic **based on what is in the URL path**.
 
 Useful for microservices. eg. general requests to one target group, image requests to another, etc.
 
+### Connection Draining
+
+- With CLB, this is called connection draining
+- With ALB and NLB, this is called deregistration delay.
+- Mark a EC2 instance to be draining.
+- During this draining time:
+  - in-flight requests will be allowed to be completed
+  - all new requests will go to other non-draining instances
+-  Draining time is minimum 0 to maximum 3600 seconds, default 300 seconds
+
 ## Auto Scaling Theory
 
 https://aws.amazon.com/autoscaling/faqs/
@@ -2177,6 +2374,10 @@ You should use **EC2 Auto Scaling** if you only need to scale Amazon EC2 Auto Sc
 **scaling options**: ways to scale eg. on conditions or on schedule
 
 ### Scaling Options
+
+### Step scaling
+
+When a threshold is crossed above or below, reduce or increase by number of instances.
 
 #### Maintain current instance levels at all times
 
@@ -2206,12 +2407,32 @@ Amazon EC2 scaling in combination with AWS Auto Scaling.
 
 Uses following methods:
 
-- **predictive**: based of history of load
+- **predictive**: based of history of load and forecasts
 - **dynamic**: based on real time conditions
 
 #### Target Tracking
 
 Select a load metric for your application, such as CPU utilization or  request count, set the target value, and Amazon EC2 Auto Scaling adjusts the number of EC2 instances in your ASG as needed to maintain that  target.
+
+## Cooldown time
+
+This is the time during which auto scaling will not spin up any new instances even though conditions are satisfied for scaling.
+
+This is so that the metrics on which the scaling depends on need some time to stabilize.
+
+Defaut 300 seconds.
+
+## Lifecycle hooks
+
+Allows you to perform actions during the [ transitions ] of EC2 instances being scaled out or scaled in.
+
+#### While scaling out
+
+Pending -> [ Pending: wait -> Pending: proceed ] -> In Service
+
+#### While scaling in
+
+In Service -> [ Terminating: wait -> Terminating: proceed ] -> Terminated
 
 ## Termination policy
 
@@ -2236,6 +2457,14 @@ name, IAM role, boot strap script, IP address type, Kernel ID, RAM disk ID
 storage
 
 security group
+
+Use **launch templates** instead  of launch configurations, since:
+
+- newer
+- do not have to recreate it for every change like launch configurations have to 
+- can be versioned
+- provision combination of on-demand and spot instances
+- T2 unlimited burst feature
 
 ### auto scaling group
 
@@ -2318,6 +2547,18 @@ Quickly deploy and manage applications in the AWS Cloud without worrying about t
 You just upload your application.
 
 ELB automatically handles capacity provisioning, load balancing, scaling, and health monitoring.
+
+### Components
+
+- **application**: elastic beanstalk components
+- **application version**: iteration of application code
+- **environment**
+  - AWS **resources** running a particular version of the code, only 1 version at a time
+  - **tiers**: 
+    - **web server** environment: EC2 instances behind an auto scaling group connected to an ELB 
+    - **worker** environment: EC2 instances behind an auto scaling group connected to SQS
+    - both can be used together, web server pushing messages to SQS on worker environment
+  - multiple environments like dev, prod, stage
 
 ## HA Bastions
 
@@ -2557,7 +2798,7 @@ CORS (Cross-origin resource sharing) allows restricted resources on a web page t
 - server responds with the list of domains allowed to call the URL
 - If you get error "Origin policy cannot be read at the remote resource", then enable CORS on API gateway.
 
-***TODO How is this different than CloudFront CDN?***
+***How is this different than CloudFront CDN?** Cloudfront performs "caching". This is not caching as the use case is that a page that was loaded from one host (origin) wants to load a resource, say a jpg image, from another host. Should the other host allow this or not?*
 
 ## Kenesis
 
