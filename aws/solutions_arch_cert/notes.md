@@ -581,6 +581,7 @@ contains:
 - key-pair is account wide; managed by root user
 - caching
 - filter by date, path, IP, expiration, etc.
+- **IP address restrictions** possible
 
 ### S3 signed URLs
 
@@ -984,11 +985,43 @@ So if your instance is allocated 4 CPU cores each having capability of 2 threads
   - Storage gateways
   - CloudFront
 
-EC2 is **5 minutes by default** (standard), configurable to **1 minute** intervals (detailed).
+Data collection intervals for EC2 are :
 
-CloudWatch alarms can be created to trigger notifications.
+- **standard**: 5 minutes
+- **detailed**: 1 minute
 
-Events help to respond to state changes.
+**Agents**, to send data to CloudWatch logs:
+
+- **CloudWatch Logs agents**: older version
+- **CloudWatch Unified agents**: additional metrics at granular details
+
+**CloudWatch Alarms**:
+
+- can be created to trigger notifications
+- Alarm states: `OK, INSUFFICIENT_DATA, TRIGGERED`
+- Targets:
+  - EC2 instance: stop, terminate, recover, reboot
+  - SNS
+  - Auto Scaling Action
+
+**EC2 Instance Recovery** can be set to:
+
+- check Instance or System status
+- recover to public, private, elastic, placement group, etc
+
+**CloudWatch Events**:
+
+- help to respond to state changes, specify **Event patterns**
+- many types of targets
+- creates JSON data to send to target
+
+**AWS EventBridge**:
+
+- builds upon CloudWatch events
+- **default event bus** is written to by AWS services
+- **partner event bus** receives events from SaaS
+- **custom even bus** receives from you custom applications
+- anaytics events from bus and **infer schema** that can be versioned
 
 Logs help with aggregate, monitor, and store logs.
 
@@ -1008,13 +1041,29 @@ For the following metrics, you need to prepare a **custom metric using CloudWatc
 - Page file utilization
 - Log collection
 
+High-Resolution Custom Metrics can have a **minimum resolution of 1 second**.
+
+If you set an alarm on a **high-resolution custom metric**, you can specify a high-resolution alarm with a period of **10 seconds or 30 seconds**, or you can set a regular alarm with a period of any multiple of 60 seconds.
+
 ### CloudTrail (Auditing)
 
 User and resource activity monitored by **recording AWS management** console actions and API calls. Unrelated to CloudWatch.
 
+**CloudTrail Insights** to detect unusual activity.
+
 ## lab: CloudWatch
 
 Dashboards, Alarms, Events, Logs
+
+## AWS Config
+
+- audit and record complaince of AWS resources
+- per region service; can be aggregated
+- results stored to S3; can use Athena over this data
+- **Rules** can be evaluated or triggered at config change or scheduled
+- Rules do not deny action
+- automate **remediation** of non-complaint resources using SSM Automation Document
+- notifications to EventBridge or SNS
 
 ## lab: AWS Command Line
 
@@ -1104,7 +1153,7 @@ But with **EFS you are billed for what you use**, for EBS youwill have to provis
 
 Supports following protocols:
 
-- FTP
+- FTP (only within VPC)
 - FTPS: FTP over SSL
 - SFTP
 
@@ -1324,14 +1373,21 @@ Billing can be on-demand or reserved.
 ## DynamoDB
 
 - No-SQL solution; supports both **documents and key-value** data models
+- The maximum size of an item in a DynamoDB table is 400KB
 - **Flexible schema** because it can store complex hierarchical data within a single item which, unlike a relational database, does not entail changing multiple related tables. **Suited for needs where schema may need changes or differ for rows.**
-- uses SSDs, single-digit millisecond latency
-- spread across 3 distinct geographic locations
+- Uses SSDs, single-digit millisecond latency
+- Spread across 3 distinct geographic locations
 - Choose between consistency strategies:
   - **eventually consistent reads**: default option; consistency across all copies reached within 1 second; might not return recently successful write
   - **strongly consistent reads**: returns result that reflects all writes that received successful response prior to read; sub 1 second
   - **ACID** transactions: atomicity, consistency, isolation, and durability 
 - DynamoDB **Standard-IA** helps you reduce your DynamoDB total costs for tables that store infrequently accessed data such as applications’ logs, old social media posts, e-commerce order history, and past gaming achievements. 
+- RCU and WCU are decoupled, so you can increase/decrease each value separately.
+- Querying allowed only on primary key
+  - **Primary Key** is made up of:
+    - Partition Key
+    - Sort Key
+
 
 ## Advanced DynamoDB
 
@@ -1389,15 +1445,15 @@ combine with lambda functions for functionality like stored procedures
 
 ### Global Tables
 
-globally distributed applications
+Globally distributed applications
 
-multi region redundancy for DR or HA
+**Multi-region** redundancy for DR or HA
 
-no application rewrites
+No application rewrites
 
-replication latency under 1 second
+Replication latency under 1 second
 
-needs streams enabled
+**Needs streams enabed**. DynamoDB Streams enable DynamoDB to get a changelog and use that changelog to replicate data across replica tables in other AWS Regions.
 
 ### Database migration service (DMS)
 
@@ -1417,11 +1473,23 @@ CloudWatch and CloudTrail
 
 VPC endpoints
 
+### DynamoDB Indexes
+
+DynamoDB allows queries on primary keys only.
+
+Creating secondary indexes allows querying on other columns.
+
+- Global Secondary Indexes
+
+- Local Secondary Indexes
+
 ## Redshift
 
 petabyte scale data **warehouse** service
 
 single node config (160Gb)
+
+No Multi-AZ; Only available in 1 AZ currently
 
 Multi-node configuration
 
@@ -1432,26 +1500,26 @@ Individual columns are compressed
 
 Massively parallel processing
 
-Backups:
+**Enhanced VPC Routing** forces all COPY and UNLOAD traffic moving between your cluster and data repositories through your VPCs.
+
+**Backups**:
 
 - enabled by default
 - default 1 day retention, maximum retention of 35 days
 - maintains at least 3 copies of data
 - async replicate your snapshots to S3 in another region
 
-Pricing:
+**Pricing**:
 
 - compute node hours: 1 unit per node per hour; leader node is not charged
 - backup
 - data transfer
 
-Security
+**Security**:
 
 - ssl in transit
 - aes-256 encryption at rest
 - KMS
-
-Only available in 1 AZ currently
 
 ## Aurora
 
@@ -1587,6 +1655,46 @@ Master node stores log data.
 
 Replication can be configured to replicate log data every 5 mintues on S3; can only be set up during initial creation.
 
+## AWS Glue
+
+**Extract Transform Load**
+
+Serverless to write to Redshift warehouse
+
+**Glue Data Catalog**: 
+
+- catalog of dataset that you have
+- built by **AWS Glue Data Crawler** finds out by looking at the databases you have.
+- can be used by **Glue Jobs** to perform ETL
+
+## AWS Neptune
+
+**Graph database**
+
+Used for high relationship data like social network connections and Wikipedia with links
+
+HA upto 3 AZ, 15 read replicas
+
+Point in time recovery; continuous back up to S3
+
+Support from KMS for encryption at rest; HTTPS supported
+
+## Amazon OpenSearch (erstwhile ElasticSearch)
+
+Dynamodb allows finds on exact matches on primary key or indexes.
+
+Opensearch allows search on fields even with partial matches.
+
+**Indexing and search capability**
+
+Used as complement on another database
+
+Can be used with BigData applications, petabyte scale
+
+Provision cluster of instances
+
+Comes with Kibana for visualization and LogStash for logs ingestion. (ELK stack)
+
 ## Ports to remember
 
 Important ports:
@@ -1607,6 +1715,17 @@ RDS Databases ports:
     Aurora: 5432 (if PostgreSQL compatible) or 3306 (if MySQL compatible)
 
 # Advanced IAM
+
+## Policy Evaluation Logic
+
+Actions allowed are permissions that are intersect of following:
+
+- Explicit Deny
+- Organization SCP
+- Resource based policy
+- Permission boundary
+- Session policy
+- Identity based policy
 
 ## AWS Directory Service
 
@@ -1712,6 +1831,23 @@ Only some services can be shared via RAM.
 centrally manage access to AWS accounts and business applications
 
 SAML for SSO
+
+## STS
+
+Simple Token Service
+
+Grant limited and temporary access to AWS resource
+
+Valid upto 1 hour
+
+APIs:
+
+- AssumeRole
+- AssumeRoleWithSAML
+- AssumeRoleWithWebIdentity
+- GetSessionToken
+
+Cross Account Access possible
 
 # Route 53
 
@@ -1841,6 +1977,12 @@ CIDR blocks: 10.0.0.0/16 subnet is the largest allowed. 10.0.0.0/28 is the small
 
 (CIDR, Classless Inter-Domain Routing is a method for allocating IP addresses and for IP routing)
 
+Example:
+
+- /28 means 16 IPs
+- 2^(32-28) = 2^4 = 16
+- Formula `2^(32-n)`
+
 An **AWS Site-to-Site VPN connection** connects your VPC to your datacenter over an encrypted VPN connection. An internet gateway is not required to establish an AWS Site-to-Site VPN connection. 
 
 A **default VPC** is a logically isolated virtual network in the AWS cloud that is automatically created for your AWS account the **first time you provision Amazon EC2 resources**. When you launch an instance without specifying a subnet-ID, your instance will be launched in your default VPC. **Default VPC will be assigned 1 private and 1 public IP address.**
@@ -1857,6 +1999,10 @@ VPC can span multiple AZs.
 
 - you can't have 1 subnet stretch over multiple AZs
 - 1 AZ can have multiple subnets
+
+**Classic Link** is used to connect EC2 classic to VPC without using public IP or ElasticIP. **Depracated**.
+
+Only S3 and Dynamodb have a **VPC Gateway Endpoint**, all the other ones have an Interface endpoint (powered by Private Link - means a private IP).
 
 ### Connectivity options from Amazon VPC 
 
@@ -1919,6 +2065,8 @@ name, VPC
 Best practice, keep main route table private.
 
 Edit routes and connect outbound IPv4(0.0.0.0/0) and IPv6(::/0) to required Internet Gateway.
+
+Router + Route Table are used to connect the EC2 instance to the IGW
 
 ### Subnet association
 
@@ -2090,6 +2238,8 @@ A single NAT Gateway in each availability zone is enough. NAT Gateway is already
 
 Helps reduce network costs, increase bandwidth, improve latency.
 
+Hosted Direct Connect connection supports 50Mbps, 500Mbps, up to 10Gbps.
+
 ### Setting up Direct Connect
 
 - create **public virtual interface** in DC console
@@ -2202,6 +2352,40 @@ Operates over Internet, but customer gateway to AWS VPN CloudHub is encrypted (s
 
 - Use private IP address over public IP address to save costs. This uses AWS backbone network.
 - To cut network costs, have all your EC2 instances in the same availability zone and use private IP address. 100% cost free but has **single point of failure issues**.
+
+## DNS Resolution
+
+enableDnsSupport: decides if Route 53 Resolver server is used for DNS resolution of VPC
+
+enableDnsHostNames: if true along with enableDnsSupport and subnet has public IPv4 address, then subnet gets a public hostname
+
+## VPC Reachability Analyzer
+
+Network diagnostics tools
+
+Builds network model to understand connectivity between endpoints
+
+When reachable, gives hop-by-hop details of network path.
+
+When not reachable, gives blocking component.
+
+## VPC Traffic Mirroring
+
+Capture and inspect network traffic in your VPC
+
+Capture all packets or packets of interest
+
+Source and Destination can be in same or different VPCs
+
+## Egress Only IGW
+
+Only for IPv6
+
+Allows only outbound traffic to the Internet
+
+Done via updating route tables
+
+
 
 # HA Architecture
 
@@ -2625,6 +2809,8 @@ Amazon SQS Free Tier provides you with **1 million requests per month at no char
 
 Amazon SQS stores all message queues and messages within a single, highly-available AWS region with multiple redundant Availability Zones (AZs).
 
+Scales automatically.
+
 SSE protects the contents of messages in Amazon SQS queues using keys managed in the AWS Key Management Service (AWS KMS). SSE encrypts messages as soon as Amazon SQS receives them. The messages are stored in encrypted form and Amazon SQS decrypts messages only when they are sent to an authorized consumer. SSE encrypts the body of a message in an Amazon SQS queue.
 
 SSE doesn't encrypt the following components: Queue metadata (queue name and attributes), Message metadata (message ID, timestamp, and attributes), Per-queue metrics
@@ -2714,6 +2900,8 @@ https://aws.amazon.com/sns/faqs/
 - When the delivery of messages to subscribers must be in order (first-in-first-out), and once only, and you want SNS to take care of it, use **SNS FIFO topics**.
 - Publishers can connect to Amazon SNS over HTTPS and publish messages over the SSL channel. Subscribers should register an SSL-enabled end-point as part of the subscription registration, and notifications will be delivered over a SSL channel to that end-point.
 - Upon receiving a publish request, SNS stores multiple copies (to disk) of the message across multiple Availability Zones before acknowledging receipt of the request to the sender. 
+- upto 1,25,00,000 subscribers
+- upto 1,00,000 topics
 
 ### Destination types
 
@@ -2738,6 +2926,20 @@ https://aws.amazon.com/sns/faqs/
 - **Filtering** 
 - AWS Management Console offers point-and-click interface
 
+## SNS+SQS Fan Out
+
+Writing to many SQS queues is problematic.
+
+Write to SNS. Make SQS listen to SNS.
+
+You can use S3, Dynamodb events to write to SNS and later publish on SQS.
+
+SNS FIFO can be used to guarantee ordering.
+
+SNS FIFO + SQS FIFO for fan out, ordering, deduplication
+
+SNS allows message filtering
+
 ## Elastic Transcoder
 
 - media transcoder in the cloud ie convert media files to different formats to play on smartphones, tablets, PCs, etc
@@ -2760,6 +2962,7 @@ https://aws.amazon.com/api-gateway/faqs/
 - **maintain multiple versions of API**
 - can **monetize your APIs on API Gateway by publishing** them as products in AWS Marketplace. 
 - Amazon API Gateway bills per million API calls, plus the cost of data transfer out, in gigabytes. If you choose to provision a cache for your API, hourly rates apply.
+- An **Edge-Optimized API Gateway** is best for geographically distributed clients. API requests are routed to the **nearest CloudFront Edge Location** which improves latency. The **API Gateway still lives in one AWS Region**.
 
 ### Configuration
 
@@ -2798,9 +3001,28 @@ CORS (Cross-origin resource sharing) allows restricted resources on a web page t
 - server responds with the list of domains allowed to call the URL
 - If you get error "Origin policy cannot be read at the remote resource", then enable CORS on API gateway.
 
+### Security
+
+*How to authorize calls to API Gateway?*
+
+- **IAM Permissions**: 
+  - Users and Roles; 
+  - Sig v4 capability where IAM credentials come as part of header
+
+- **Lambda Authenticators**: 
+  - custom code to validate authentication or tokens
+  - allows **third party authentication** like OAUTH, SAML, etc.
+  - must return IAM policy
+
+- **Cognito User Pools**
+  - Client will first obtain token from Cognito, then use this token to call API Gateway
+  - no custom code needed
+
 ***How is this different than CloudFront CDN?** Cloudfront performs "caching". This is not caching as the use case is that a page that was loaded from one host (origin) wants to load a resource, say a jpg image, from another host. Should the other host allow this or not?*
 
-## Kenesis
+
+
+## Kinesis
 
 **Streaming Data** is 
 
@@ -2810,36 +3032,65 @@ CORS (Cross-origin resource sharing) allows restricted resources on a web page t
 
 Examples purchases from online stores, stock prices, game data, social network data, geospatial data, iOT data.
 
-**Amazon Kenesis** is a platform that can receive streaming data to
+**Amazon Kinesis** is a platform that can receive streaming data to
 
 - load, analyse it
 - build custom applications
 
-### Kenesis Streams
+### Kinesis Streams
 
 https://aws.amazon.com/kinesis/data-streams/faqs/
 
-Different producers can stream data to Kenesis Streams.
+Different producers can stream data to Kinesis Streams.
 
-Streams from each of these producers can be stored in separate **Shards**. Retention from 24 hours to 7 days.
+Streams from each of these producers can be stored in separate **Shards**. Retention from 1 to 365 days.
 
 Consumer applications will read from these shards.
+
+Kinesis Data Stream uses the **partition key associated with each data record to determine which shard a given data record belongs to**. In case of user wise data, when you use the identity of each user as the partition key, this ensures the data for each user is ordered hence sent to the same shard.
 
 #### Shards
 
 - **read**: 5 transactions per second; upto max total read rate of 2MB per second
 - **write**: 1000 records per second; upto max total write rate of 1MB per second (including partition keys)
 - total capacity of the stream is the sum of the capacities of shards
+- ordered
+- The capacity limits of a Kinesis data stream are defined by the number of shards within the data stream. The limits can be exceeded by either data throughput or the number of reading data calls, `ProvisionedThroughputExceeded` exception. Each shard allows for 1 MB/s incoming data and 2 MB/s outgoing data. You should increase the number of shards within your data stream to provide enough capacity.
 
-### Kenesis Firehose
+Standard: pull data; 2MB per shard
 
-No persistence (storage), needs to be processed immediately.
+Enhanced fanout: push data; 2MB per shard per consumer
 
-### Kenesis Analytics
+### Kinesis Firehose
+
+- No persistence (storage), needs to be processed immediately.
+- supports custom data transformations using AWS Lambda.
+- Kinesis Data Firehose is now supported as subscriber to SNS, but not Kinesis Data Streams.
+
+### Kinesis Analytics
 
 Works with both Streams and Firehose.
 
 Analyze data on the fly and save it at endpoints like S3, Redshift, Elasticsearch Cluster.
+
+## Amazon MQ
+
+SNS and SQS are "cloud native" and use proprietary protocols.
+
+On-prem applications can be currently using industry-standard
+
+- protocols like MQTT, AMQP, OpenWire, WebSocket, STOMP
+- APIs such as JMS and NMS
+
+"Managed Apache ActiveMQ" helps not rewriting applications when moved to AWS.
+
+Needs to be provisioned.
+
+Doesn't scale as much as SNS SQS.
+
+ActiveMQ supports both topics and queues.
+
+HA with failover; Amazon EFS as backend storage; stand-by broker will point to this EFS on failover
 
 ## Cognito (Web Identity Federation)
 
@@ -2866,6 +3117,11 @@ Cognito **Identity Pools** provide
 
 - temporary AWS credentials to access AWS services like S3 or DynamoDB. 
 - *Deals with actual granting of IAM role as part of the authentication.*
+
+Cognito **Sync** is
+
+- used to sync data from devices to Cognito
+- deprecated and replaced by App Sync
 
 Cognito tracks association between user identity and the various devices that the user has signed in from. 
 
@@ -2964,9 +3220,21 @@ ciphertext -> base 64 decode -> decrypt -> base64 decode
 
 **Data Encryption Key (DEK) used for encrypting files more than 4KB.** When you created one you get the plain text key and cipher text blob of the key which contains metadata. Throw the plain text, store cipher text blob with your encrypted file. The decrypting process wil use the cipher text blob when calling the KMS API to fetch the Data Key and decrypt locally. This avoids unnecessary latency that could have resulted out of sending the entire file over to KMS to decrypt and return.
 
+## Rotation
+
+Keys can be auto rotated or manually rotated.
+
+Only content of keys changes, the ID remains the same.
+
+Use aliases when referring to keys in your code.
+
+When you enable Automatic Rotation on your KMS Key, the backing key is rotated every 1 year.
+
 ## CloudHSM
 
-- Dedicated "Hardware Secure Modules"
+- Dedicated "Hardware Secure Modules" i.e. AWS will provision the hardware required for encryption. KMS is the software required for encryption.
+- Good option for SSE-C
+- CloudSHM Client needs to be used
 - FIPS 140-2 Level 3, physical security mechanisms
 - manage your keys
 - single tenant, multi-AZ cluster dedicated to one customer
@@ -2979,6 +3247,16 @@ ciphertext -> base 64 decode -> decrypt -> base64 decode
 - Have at least 2 so that when one HSM fails, the ENI of the other HSM can be accessed.
 
 The AWS Key Management Service (KMS) custom key store feature combines the controls provided by AWS CloudHSM with the integration and ease of use of AWS KMS. You can configure your own CloudHSM cluster and authorize AWS KMS to use it as a dedicated key store for your keys rather than the default AWS KMS key store. When you create keys in AWS KMS you can choose to generate the key material in your CloudHSM cluster. CMKs that are generated in your custom key store never leave the HSMs in the CloudHSM cluster in plaintext and all AWS KMS operations that use those keys are only performed in your HSMs. Each custom key store is associated with an AWS CloudHSM cluster in your AWS account. Therefore, when you create an AWS KMS CMK in a custom key store, AWS KMS generates and stores the non-extractable key material for the CMK in an AWS CloudHSM cluster that you own and manage. This is also suitable if you want to be able to audit the usage of all your keys independently of AWS KMS or AWS CloudTrail.
+
+## Secrets Manager
+
+Newer service
+
+Lambda used for automatic rotation
+
+Secret encrypted with KMS
+
+Integration with Amazon RDS
 
 ## Systems Manager Parameter Store
 
@@ -3006,6 +3284,64 @@ The AWS Key Management Service (KMS) custom key store feature combines the contr
   - name as the URL; standard tier since values less that 4KB; specify KMS
   - paramter can be String;  Secure String; String List
 - configure test event for lambda to test
+
+## AWS Shield
+
+To protected against DDOS
+
+Standard is 
+
+- activated for all customers
+- free
+
+Advanced is 
+
+- used for protection against more advanced attacks
+- Access to 24/7 DDOS response team
+- if DDOS occurs, all fees are waived
+
+## Guard Duty
+
+Intelligent threat discovery service
+
+ML on following to detect anamolies:
+
+- CloudTrail
+- VPC Flow
+- DNS logs
+
+CloudWatch Events can be setup up for notification or Lambda invocations.
+
+Dedicated "finding" for protection against cryptocurrency attacks.
+
+## Inspector
+
+Automatic security assessment for **EC2 instances only**
+
+Inspector Agent must be installed on OS on EC2 instance
+
+Analytics against:
+
+- known vulnerabilities on running OS (agent based)
+- unintended network accessibility (agent less)
+
+Report can be notified using SNS
+
+## AWS Firewall Manager
+
+AWS Firewall Manager is a security management service that allows you to centrally **configure and manage firewall rules** across your accounts and applications in AWS Organizations. 
+
+It is integrated with AWS Organizations so you can 
+
+- enable AWS WAF rules, 
+- AWS Shield Advanced protection, 
+- security groups, 
+- AWS Network Firewall rules, 
+- and Amazon Route 53 Resolver DNS Firewall rules.
+
+## Shared Responsibility Model
+
+
 
 # Serverless
 
@@ -3151,7 +3487,9 @@ The resulting configurations can be viewed in management console.
 
 ## Lambda@Edge
 
-Lambda@Edge lets you run Lambda functions to customize the content that CloudFront delivers, executing the functions in AWS locations closer to the viewer. The functions run in response to CloudFront events, without provisioning or managing servers. You can use Lambda functions to change CloudFront requests and responses at the following points:
+Lambda@Edge lets you run Lambda functions on each regions served as part of CloudFront.\
+
+Used to customize the content that CloudFront delivers, executing the functions in AWS locations closer to the viewer. The functions run in response to CloudFront events, without provisioning or managing servers. You can use Lambda functions to change CloudFront requests and responses at the following points:
 
 - After CloudFront receives a request from a viewer (viewer request)
 
@@ -3189,35 +3527,37 @@ portable and offer a consistent environment
 
 **Cluster**: logical collection of ECS resources (ECS EC2 or Fargate instances)
 
+**Service**: allows task definitions to be scaled by adding new tasks; define max and min values 
+
 **Task Definition**: defines your application for running containers in ECS; can contain multiple containers
 
 **Container definition**: individual container that a *task* uses; controls CPU, memory allocations, port mappings
-
-**Task**: single running copy of any containers defined by a *task definition*
-
-**Service**: allows task definitions to be scaled by adding new tasks; define max and min values 
-
-**Registry**: storage for container images, used to download images to create containers
 
 ```
 Cluster { 
 	Service { 
 		Task Definition { 
 			Container Definition 
-		} 
-	} 
-}
+} } }
 ```
+
+
+
+**Task**: single running copy of any containers defined by a *task definition*
+
+**Registry**: storage for container images, used to download images to create containers
+
+**Task Role**: ECS Task Role is the IAM Role used by the ECS task itself. Use when your container wants to call other AWS services like S3, SQS, etc.
 
 ### Fargate
 
 - serverless container engine
-- eliminates need to provision and manager servers
+- AWS Fargate allows you to run your containers on AWS without managing any servers.
 - specify and pay for resources per application
 - works with ECS and EKS
 - **each workload runs in its own kernel**
 - **isolation and security**
-- choose ec2 instead if:
+- choose EC2 instead if:
   - compliance requirements
   - require broader customization
   - require GPUs
