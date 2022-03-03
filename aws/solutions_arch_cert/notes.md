@@ -103,6 +103,8 @@ With **S3 Requestor Pays** the requestor pays for the request and data transfer 
 
 **S3 Analytics** helps **get recommendations for S3 Lifecycle Rules** by analyzing the optimal number of days to move objects between different storage tiers.
 
+**S3 Batch Operations** runs multiple S3 operations in a single request.
+
 ## Bucket
 
 - like a folder
@@ -359,6 +361,8 @@ Delete file; the bucket looks empty; toggle on version and you **can see the obj
 **rule scope**: filter the objects that this rule applies to or all objects
 
 **lifecycle rule actions**: what to **do**, to what **version** of object, at what **interval**; **transition** between states, delete, etc.
+
+Objects must be stored **at least 30 days** in the current storage class before you can transition them to STANDARD_IA or ONEZONE_IA.
 
 **Timeline summary** is displayed as describing what happens to applicable objects as time passes.
 
@@ -681,6 +685,8 @@ Here are the prerequisites for routing traffic to a website that is hosted in an
 
 Amazon Elastic Compute Cloud (EC2) will begin rolling out a change to **restrict email traffic over port 25** by default to protect customers and other recipients from spam and email abuse. 
 
+Maximum 20 EC2 instances per region
+
 ### Models
 
 #### On demand
@@ -812,6 +818,8 @@ Define which type of connection (eg. HTTP, SSH, etc) , which protocol (eg. TCP),
 1 Security Group can be assigned to many instances. 1 EC2 instance can have many Security Groups.
 
 No way to blacklist. Only whitelist.
+
+When there are 2 rules for the same IP, then the most permissive rule is applied.
 
 #### Instead
 
@@ -1103,6 +1111,8 @@ On a **high-resolution custom metric**, you can specify
 User and resource activity monitored by **recording AWS management console actions and API calls**. Unrelated to CloudWatch.
 
 **CloudTrail Insights** to detect unusual activity.
+
+**Logs are encrypted.**
 
 ## lab: CloudWatch
 
@@ -2131,6 +2141,8 @@ VPC can span multiple AZs.
 
 IPv4 and IPv6 communication are independent of each other. You **cannot disable IPv4** support for your VPC and subnets since this is the default IP addressing system for Amazon VPC and Amazon EC2. **IPv6 can be turned on optionally.**
 
+You can have a VPC with just private subnets. But if they need to communicate out via a NAT gateway, you will need a public subnet on which the NAT instance or gateway will run.
+
 ### Connectivity options from Amazon VPC 
 
 - The internet (via an internet gateway)
@@ -2293,7 +2305,9 @@ Can be applied at following levels:
 
 Amazon VPC traffic mirroring, provides deeper insight into network traffic by allowing you to **analyze actual traffic content, including payload**, and is targeted for use-cases when you need to analyze the actual packets to determine the root cause a performance issue, reverse-engineer a sophisticated network attack, or detect and stop insider abuse or compromised workloads.
 
-## Bastions Hosts
+## Connect to private subnets from Internet
+
+### Bastions Hosts
 
 NAT Gateway/Instance allows EC2 instances in a private subnet to connect to the Internet. 
 On the other hand, a Bastion/Jumpbox is used to connect to the EC2 instance in the private subnet from the Internet **via SSH or RDP** to securely administer it.
@@ -2304,7 +2318,9 @@ NAT gateway cannot be used as a bastion host.
 
 Bastion hosts community AMIs are available.
 
-## lab: NAT instances and NAT Gateways
+## Connect private subnets to Internet
+
+### lab: NAT instances and NAT Gateways
 
 Network Address Translation
 
@@ -2314,7 +2330,7 @@ Eg when you want to run `yum` to update/patch software within instances on a pri
 
 NAT instance is a single EC2 instance. NAT gateways are multiple instances spread across multiple AZ with high availability.
 
-### NAT Instance
+#### NAT Instance
 
 NAT instance must be in a public subnet.
 
@@ -2335,7 +2351,7 @@ Behind security group.
 
 - behind security groups
 
-### NAT Gateway
+#### NAT Gateway
 
 Create a new Gateway: subnet mention public subnet, create new elastic ip allocation ID
 
@@ -2358,7 +2374,9 @@ no need to disable source and destination checks
 When you have one NAT Gateway being used by instances in multiple AZs, then failure of that NAT gateway's AZ will block others. Better to bring up multiple NAT gateways in multiple AZs.
 A single NAT Gateway in each availability zone is enough. NAT Gateway is already redundant in nature, meaning, AWS already handles any failures that occur in your NAT Gateway in an availability zone.
 
-## **VPC peering** 
+## Connect AWS resources to each other
+
+### **VPC peering** 
 
 **Allows direct network route between VPCs in 2 different regions and/or AWS accounts.**
 
@@ -2368,7 +2386,33 @@ A single NAT Gateway in each availability zone is enough. NAT Gateway is already
 
 *You have five VPCs in a 'hub and spoke' configuration, with VPC 'A' in the center and individually paired with VPCs 'B', 'C', 'D', and 'E', which make up the 'spokes'. There are no other VPC connections. Which of the following VPCs can VPC 'B' communicate with directly?* ***VPC 'A'. As transitive peering is not allowed, VPC 'B' can communicate directly only with VPC 'A'.***
 
-## Direct Connect 
+### VPC endpoints
+
+**Privately connect your VPC to only certain supported AWS services and VPC endpoint services.**
+
+What are VPC end points?
+
+- these are virtual devices
+- used to **privately** connect your VPC to **only certain supported** AWS services and VPC endpoint services
+- **without Internet Gateway, NAT, VPN, Direct Connect**
+- **traffic never leaves the Amazon network, Internet is not used**
+- VPC endpoints are **region-specific only** and do not support inter-region communication.
+
+**Types of endpoints:**
+
+- **VPC interface endpoint**
+  - provide private connectivity to services powered by PrivateLink, being AWS services, your own services or SaaS solutions, and supports connectivity over Direct Connect
+- **VPC gateway endpoint**
+  - only for AWS  **S3 and DynamoDB**
+  - routes traffic via Amazon's private network
+
+No public IP needed.
+
+Instance in private subnet sends message to VPC endpoint gateway. The gateway then sends the message  to the AWS service.
+
+## Connect AWS to on-prem
+
+### Direct Connect 
 
 **Private connection between AWS and your DC/office/colocation environment.** 
 
@@ -2376,17 +2420,84 @@ Helps reduce network costs, increase bandwidth, improve latency.
 
 Hosted Direct Connect connection supports 50Mbps, 500Mbps, up to 10Gbps.
 
-### Setting up Direct Connect
+#### Setting up Direct Connect
 
 - create **public virtual interface** in DC console
 - VPC > VPN connections > create **customer gateway**
 - create **virtual private gateway**
   - attach virtual private gateway to desired VPC
-
 - VPC > VPN connections > create new **VPN connection**
   - select virtual private gateway and customer gateway
-
 - once VPN is available, setup VPN on customer gateway/firewall
+
+### VPN Options
+
+The maximum tunnel for a VPN connection is two. You cannot increase this beyond its limit.
+
+#### **AWS Site-to-Site VPN**  
+
+- creates an IPsec VPN connection between your VPC and your remote network. 
+- On the AWS side of the Site-to-Site VPN connection, a **virtual private gateway** or **transit gateway** provides two VPN endpoints (tunnels) for automatic failover.
+
+#### **AWS Client VPN** 
+
+- a managed client-based VPN service that provides secure TLS VPN connections between your AWS resources and on-premises networks.
+
+#### **AWS VPN CloudHub** 
+
+- capable of wiring multiple AWS Site-to-Site VPN connections together on a virtual private gateway. 
+- This is useful if you want to enable communication between different remote networks that uses a Site-to-Site VPN connection. 
+- Uses "**Hub-spoke**" model
+- Operates over Internet, but customer gateway to AWS VPN CloudHub is encrypted (since it's a VPN).
+
+#### **Third-party software VPN appliance** 
+
+- You can create a VPN connection to your remote network by using an Amazon E**C2 instance** in your VPC that's running a third party software VPN appliance.
+
+## Connect AWS to on-prem and/or AWS
+
+### AWS PrivateLink
+
+**Allows direct network route between VPCs in 2 different regions and/or AWS accounts.**
+
+Also allows VPCs and AWS services to connect to on prem networks.
+
+**Other ways to connect to other VPC:**
+
+- open up to Internet via **Internet Gateway**: problems with security, have to setup firewall, etc.
+- use **VPC peering**: will have to create that many star config connections and gets hard to manage for large number of peers
+
+**What PrivateLink offers:**
+
+- none of the problems of Internet Gateways and Peering
+- No need to configure VPC peering, NAT, Internet gateways, route tables, etc.
+- connect your VPC to 10s, 100s, 1000s of customer VPCs
+
+**What PrivateLink needs:**
+
+- service side: network load balancer
+- customer side: Elastic network interface (ENI)
+- Connect both, take static IP of network load balancer and open it up on the ENI. 
+
+### AWS Transit Gateway
+
+**Simplifies complicated network topologies**
+
+Transit gateway is "**hub-spoke**" like topology. All VPCs that need to connect to each other needs to connect to the Transit Gateway.
+
+**Transitive peering** between 1000s of VPC and on-prem DCs.
+
+Cross regional
+
+Across multiple AWS accounts using Resource Access Manager.
+
+Use route tables to limit communication.
+
+Works with Direct Connect, VPN.
+
+Supports **IP multicast** (not supported by any other AWS service).
+
+AWS Transit Gateway also enables you to scale the IPsec VPN throughput with equal-cost multi-path (ECMP) routing support over multiple VPN tunnels.
 
 ## Global Accelerator
 
@@ -2413,90 +2524,6 @@ Disable, wait for some time, delete.
 Uses AWS Shield for DDOS protection.
 
 ***How is this different than a multivalue load balancer?** Uses AnyCast IP.*
-
-## VPC endpoints
-
-**Privately connect your VPC to only certain supported AWS services and VPC endpoint services.**
-
-What are VPC end points?
-
-- these are virtual devices
-- used to **privately** connect your VPC to **only certain supported** AWS services and VPC endpoint services
--  without internet gateway, NAT, VPN, Direct Connect
-- **traffic never leaves the Amazon network, Internet is not used**
-
-**Types of endpoints:**
-
-- **VPC interface endpoint**
-  - provide private connectivity to services powered by PrivateLink, being AWS services, your own services or SaaS solutions, and supports connectivity over Direct Connect
-- **VPC gateway endpoint**
-  - only for AWS services including S3 and DynamoDB
-  - routes traffic via Amazon's private network
-
-No public IP needed.
-
-Instance in private subnet sends message to VPC endpoint gateway. The gateway then sends the message  to the AWS service.
-
-## AWS PrivateLink
-
-**Allows direct network route between VPCs in 2 different regions and/or AWS accounts.**
-
-**Other ways to connect to other VPC:**
-
-- open up to Internet via **Internet Gateway**: problems with security, have to setup firewall, etc.
-- use **VPC peering**: will have to create that many star config connections and gets hard to manage for large number of peers
-
-**What PrivateLink offers:**
-
-- none of the problems of Internet Gateways and Peering
-- No need to configure VPC peering, NAT, Internet gateways, route tables, etc.
-- connect your VPC to 10s, 100s, 1000s of customer VPCs
-
-**What PrivateLink needs:**
-
-- service side: network load balancer
-- customer side: Elastic network interface (ENI)
-- Connect both, take static IP of network load balancer and open it up on the ENI. 
-
-## AWS Transit Gateway
-
-**Simplifies complicated network topologies**
-
-Transit gateway is "**hub-spoke**" like topology. All VPCs that need to connect to each other needs to connect to the Transit Gateway.
-
-**Transitive peering** between 1000s of VPC and on-prem DCs.
-
-Cross regional
-
-Across multiple AWS accounts using Resource Access Manager.
-
-Use route tables to limit communication.
-
-Works with Direct Connect, VPN.
-
-Supports **IP multicast** (not supported by any other AWS service).
-
-## VPN Options
-
-### **AWS Site-to-Site VPN**  
-
-- creates an IPsec VPN connection between your VPC and your remote network. 
-- On the AWS side of the Site-to-Site VPN connection, a **virtual private gateway** or **transit gateway** provides two VPN endpoints (tunnels) for automatic failover.
-
-### **AWS Client VPN** 
-
-- a managed client-based VPN service that provides secure TLS VPN connections between your AWS resources and on-premises networks.
-
-### **AWS VPN CloudHub** 
-
-- capable of wiring multiple AWS Site-to-Site VPN connections together on a virtual private gateway. 
-- This is useful if you want to enable communication between different remote networks that uses a Site-to-Site VPN connection. 
-- Uses "**Hub-spoke**" model
-- Operates over Internet, but customer gateway to AWS VPN CloudHub is encrypted (since it's a VPN).
-
-### **Third-party software VPN appliance** 
-
-- You can create a VPN connection to your remote network by using an Amazon E**C2 instance** in your VPC that's running a third party software VPN appliance.
 
 ## AWS Network Costs
 
@@ -3227,7 +3254,7 @@ Different producers can stream data to Kinesis Streams.
 
 Streams from each of these producers can be stored in separate **Shards**. 
 
-**Retention from 1 to 365 days.**
+**Retention from 1 to 365 days**, default 24 hours
 
 Consumer applications will read from these shards.
 
@@ -3247,6 +3274,7 @@ Kinesis Data Stream uses the **partition key associated with each data record to
 
 ### Kinesis Firehose
 
+- Streaming ETL
 - capture, transform, and load streaming data into Amazon S3, Amazon Redshift, Amazon Elasticsearch Service, and Splunk
 - supports custom data transformations using AWS Lambda.
 - Kinesis Data Firehose can subscribe to SNS. Kinesis Data Streams cannot.
@@ -3446,13 +3474,13 @@ Integration with Amazon RDS
 ## Systems Manager Parameter Store
 
 - AWS Systems manager (SSM)
-
 - Used to securely store secret keys, passwords, connections strings, configurations, license codes, API keys, etc. instead of maintaining the same in code base.
 - serverless storage
 - encrypted (KMS) or plaintext
 - store in hierarchies; can be addressed via URL; max 15 level deep
 - track versions
 - TTL expiry for configurations like passwords
+- AWS **Systems Manager Run Command** lets you remotely and securely manage the configuration of your managed instances. A managed instance is any **Amazon EC2 instance** or **on-premises machine in your hybrid environment** that has been configured for Systems Manager. Run Command enables you to **automate common administrative tasks and perform ad hoc configuration changes at scale**. You can use Run Command from the AWS console, the AWS Command Line Interface, AWS Tools for Windows PowerShell, or the AWS SDKs. Run Command is offered at no additional cost.
 
 ### lab:
 
@@ -3748,6 +3776,7 @@ Cluster {
 
 - **serverless container engine**
 - AWS Fargate allows you to run **your containers** on AWS without managing any servers.
+- Much less options than ECS
 - specify and pay for resources per application
 - works with ECS and EKS
 - **each workload runs in its own kernel**
@@ -3856,20 +3885,18 @@ All steps above are orchestrated using **AWS CodePipeline**
 
 ## CloudFormation
 
-CloudFormation templates are uploaded to S3.
-
-These templates are then referenced in CloudFormation.
+CloudFormation templates are uploaded to S3 which are then referenced in CloudFormation.
 
 Stacks are identified by name.
 
 **Template Components:**
 
-- Resources
-- Parameters: dynamic inputs to template
-- Mappings: static inputs to template
-- Outputs: reference to what is created
-- Conditionals to perform resource creation
-- Metadata
+- **Resources**
+- **Parameters**: dynamic inputs to template
+- **Mappings**: static inputs to template
+- **Outputs**: reference to what is created
+- **Conditionals** to perform resource creation
+- **Metadata**
 
 **Template Helpers**:
 
@@ -3884,7 +3911,7 @@ Stacks are identified by name.
 
 ## AWS Opsworks
 
-Managed Chef and Puppet
+Managed **Chef** and **Puppet**
 
 Used for automatic server configuration or repetitive actions
 
@@ -3898,9 +3925,9 @@ Has similar feature set as SSM, CloudFormation, Beanstalk but is based on open s
 
 ## AWS Workspaces
 
-Give you secure and managed access to desktops (Windows/Linux)
+Give you secure and managed access to **desktops (Windows/Linux)**
 
-Virtual Desktop Interface
+**Virtual Desktop Interface**
 
 Integrated with Microsoft AD
 
@@ -3916,13 +3943,13 @@ Visualize, understand, and managed AWS cost and usage over time
 
 Custom reports to analytics cost and usage data
 
-Allows to choose optimal savings plan
+Allows to choose **optimal savings plan**
 
-Forecast upto 12 months based on previous usage
+**Forecast** upto 12 months based on previous usage
 
 ## AWS DLM
 
-Data Lifecycle Manager to automate the creation, retention, and deletion of EBS snapshots and EBS-backed AMIs. 
+Data Lifecycle Manager to automate the creation, retention, and deletion of **EBS snapshots and EBS-backed AMIs**. 
 
 When you automate snapshot and AMI management, it helps you to:
 
@@ -3934,7 +3961,7 @@ When you automate snapshot and AMI management, it helps you to:
 
 ## ACM
 
-**AWS Certificate Manager** is a service that lets you easily provision, manage, and deploy public and private Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificates for use with AWS services and your internal connected resources.
+**AWS Certificate Manager** is a service that lets you easily **provision, manage, and deploy public and private Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificates** for use with AWS services and your internal connected resources.
 
 Both public and private certificates help customers identify resources on networks and secure communication between these resources. Public certificates identify resources on the public Internet, whereas private certificates do the same for private networks. 
 
@@ -3943,4 +3970,32 @@ Both public and private certificates help customers identify resources on networ
 - backup your application data across AWS services in the AWS Cloud 
 - protect your AWS storage volumes, databases, file systems, EC2, S3
 - central place where you can configure and audit the AWS resources you want to backup, automate backup scheduling, set retention policies, and monitor all recent backup and restore activity.
-- retention time can go beyond the backup options inherent to individual services. For exa,ple, Aurora DB RDS back is maxed at 35 days, but with AWS Backup you can configure to 90 days
+- **retention time can go beyond the backup options inherent to individual services.** For example, Aurora DB RDS back is maxed at 35 days, but with AWS Backup you can configure to 90 days
+
+## AWS X-Ray
+
+- to trace and analyze user requests as they travel through your Amazon API Gateway APIs to the underlying services. 
+- API Gateway supports AWS X-Ray tracing for all API Gateway endpoint types: regional, edge-optimized, and private. 
+- End-to-end view of an entire request, so you can **analyze latencies** in your APIs and their backend services. **X-Ray service map** to view the latency of an entire request and that of the downstream services that are integrated with X-Ray. 
+- configure **sampling rules** to tell X-Ray which requests to record, at what sampling rates, according to criteria that you specify. 
+- If you call an API Gateway API from a service that's already being traced, API Gateway passes the trace through, even if X-Ray tracing is not enabled on the API.
+
+## AWS Batch
+
+- set of batch management capabilities that enables developers, scientists, and engineers to easily and efficiently run hundreds of thousands of batch computing jobs on AWS. 
+- dynamically provisions the optimal quantity and type of compute resources (e.g., CPU or memory optimized compute resources) based on the volume and specific resource requirements of the batch jobs submitted. 
+- AWS Batch plans, schedules, and executes your batch computing workloads using Amazon EC2 (available with Spot Instances) and AWS compute resources with AWS Fargate or Fargate Spot.
+- You should run your jobs on Fargate when
+  -  you want AWS Batch to handle provisioning of compute completely abstracted from EC2 infrastructure. 
+  - Fargate jobs will start faster in the case of initial scale-out of work, as there is no need to wait for EC2 instance to launch.
+- You should run your jobs on EC2 if 
+  - you need access to particular instance configurations (particular processors, GPUs, or architecture) or for very-large scale workloads.
+
+## AWS Trusted Advisor
+
+AWS Trusted Advisor is an online tool that provides you **real-time guidance** to help you provision your resources following AWS best practices. It inspects your AWS environment and makes recommendations for saving money, improving system performance and reliability, or closing security gaps.
+
+## AWS Budgets
+
+AWS Budgets is incorrect because it simply gives you the ability to **set custom budgets that alert** you when your costs or usage exceed (or are forecasted to exceed) your budgeted amount. You can also use AWS Budgets to **set reservation utilization or coverage targets and receive alerts when your utilization drops below the threshold you define.**
+
