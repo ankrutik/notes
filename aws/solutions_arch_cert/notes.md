@@ -106,10 +106,10 @@ With **S3 Requestor Pays** the requestor pays for the request and data transfer 
 ## Bucket
 
 - like a folder
-- needs to be **universally unique or unique gobally**; universal namespace
+- needs to be **universally unique or unique globally**; universal namespace
 - URL or web address created for it
 - HTTP 200 code received if upload is successful
-- by default, **newly created bucket is private**
+- by default, **newly created bucket is private**; can be made public
 - **Access logs** can be configured to be stored on another bucket in same or different account
 - Maximum **100 buckets allowed per account**
 - Restricting bucket access:
@@ -230,6 +230,13 @@ Storage; Requests; storage management pricing; data transfer pricing;
 - then send to S3 bucket via Amazon's backbone network;
 
 **Cross Region Replication** pricing: replicating buckets **across regions** for HA or disaster recovery
+
+## Data Retrieval with Amazon Glacier
+
+**Expedited retrievals** allow you to quickly access your data when occasional urgent requests for a subset of archives are required. 
+To make an Expedited, Standard, or Bulk retrieval, set the Tier parameter in the Initiate Job (POST jobs) REST API request to the option you want, or the equivalent in the AWS CLI or AWS SDKs. 
+
+**Provisioned capacity** ensures that your retrieval capacity for expedited retrievals is available when you need it. Each unit of capacity provides that at least three expedited retrievals can be performed every five minutes and provides up to 150 MB/s of retrieval throughput. You should purchase provisioned retrieval capacity if your workload requires highly reliable and predictable access to a subset of your data in minutes. Without provisioned capacity Expedited retrievals are accepted, except for rare situations of unusually high demand. However, if you require access to Expedited retrievals under all circumstances, you must purchase provisioned retrieval capacity.
 
 ## lab : Options when creating bucket
 
@@ -415,6 +422,8 @@ If you use **SSE-KMS**, then
 
 **Glacier Select**: Same as above but on Glacier. Used for customer that need storage compliance.
 
+Redshift Spectrum can be used to query S3 data as well.
+
 ## AWS Organizations and Consolidated Billing
 
 Multiple AWS accounts can be consolidated into an **AWS organization**. Access to services can be given to orgs which will trickle down to accounts.
@@ -462,7 +471,7 @@ Few configurables:
 - encrypt with KMS
 - replicate delete markers (deletion operations are replicated, lifecycle rules do not apply)
 
-Replication only starts working when Replication Rule is turned on. Existing files, if any, are not replicated.
+Replication **only starts working when Replication Rule is turned on. Existing files, if any, are not replicated.**
 
 Permissions in source bucket and destination bucket are separate.
 
@@ -604,17 +613,17 @@ contains:
 
 ## Snowcone
 
-AWS Snowcone is the smallest member of the AWS Snow Family of **edge computing, edge storage, and data transfer devices**. Weighing in at 4.5 pounds (2.1 kg), AWS Snowcone is equipped with 8 terabytes of usable storage, while AWS Snowcone **Solid State Drive (SSD) support 14 terabyte**s of usable storage.
+AWS Snowcone is the smallest member of the AWS Snow Family of **edge computing, edge storage, and data transfer devices**. Weighing in at 4.5 pounds (2.1 kg), AWS Snowcone is equipped with **8 terabytes** of usable storage, while AWS Snowcone **Solid State Drive (SSD) support 14 terabyte**s of usable storage.
 
 ## Snowball
 
 Physically transfer files to S3. Import or export.
 
-Snowball has 50 or 80 TB
+**Snowball** has **50 or 80 TB**
 
-Snowball Edge has 100TB; with compute capabilities
+**Snowball Edge** has **100TB**; with compute capabilities
 
-Snowmobile has 100PB capacity
+**Snowmobile** has **100PB** capacity
 
 Consider using these capabilities according to your network speeds to upload/download from S3.
 
@@ -654,6 +663,16 @@ Connects over **Direct Connect**.
 - gives dashboards, alerts, reports
 - PCI-DSS compliance; prevent ID theft
 
+## Website hosting on S3
+
+Here are the prerequisites for routing traffic to a website that is hosted in an Amazon S3 Bucket:
+
+- An S3 bucket that is configured to host a static website. The **bucket must have the same name as your domain or subdomain**. For example, if you want to use the subdomain portal.tutorialsdojo.com, the name of the bucket must be portal.tutorialsdojo.com.
+
+- A **registered domain name**. You can use Route 53 as your domain registrar, or you can use a different registrar.
+
+- **Route 53 as the DNS service** for the domain. If you register your domain name by using Route 53, we automatically configure Route 53 as the DNS service for the domain.
+
 # EC2
 
 - resizable compute capability in the cloud
@@ -670,6 +689,15 @@ fixed rate by the hour/second; trying things out; no long term commitments
 
 Amazon EC2 is transitioning On-Demand Instance limits from the **current instance count-based limits to the new vCPU-based limits** to simplify the limit management experience for AWS customers. Usage toward the vCPU-based limit is measured in terms of number of vCPUs (virtual central processing units) for the Amazon EC2 Instance Types to launch any combination of instance types that meet your application needs.
 
+You will **not be billed** if:
+
+- your instance is in pending state
+- it is in stopping state preparing to stop 
+
+You will **be billed** if:
+
+- it is in stopping state preparing to hibernate
+
 #### Reserved
 
 capacity reservation; significant discount on hourly charge; 1 or 3 years terms
@@ -681,6 +709,10 @@ Depending on you type of RL you can You can modify the AZ, scope,  network platf
 **Convertible**: 54% off; change instance type
 
 **Scheduled**: time window when capacity will be used
+
+Only **Amazon EC2 Standard Reserved Instances** can be sold in the **Reserved Instance Marketplace**. Amazon EC2 Convertible Reserved Instances cannot be sold. 
+
+You will be billed if your instance is in terminated state.
 
 #### Spot
 
@@ -807,6 +839,8 @@ Use SSDs for fast random access; expensive.
 
 Use HDD for sequential access, cheaper.
 
+When you create an EBS volume in an Availability Zone, it is **automatically replicated within that zone to prevent data loss** due to a failure of any single hardware component. **Not replicated across region.**
+
 ### General Purpose (SSD) - gp2
 
 Most workloads; **gp2** API; <=16K IOPS
@@ -831,23 +865,23 @@ infrequently accessed data; **Standard** API; 40-200 IOPS
 
 ## lab: EBS Volumes
 
-Volume will be in the same AZ as the EC2 instance.
+Volume will be in the **same AZ as the EC2 instance**.
 
-Volume sizes can be changed, but will take time to reflect. May need to re-partition the drive to detect the added size.
+Volume sizes **can be changed**, but will take time to reflect. May need to re-partition the drive to detect the added size.
 
 Hardware assisted virtualization
 
-Snapshots are point in time copies of Volumes. 
+**Snapshots** are point-in-time copies of Volumes. 
 **Incremental** nature i.e. only changes are stored on S3. First snapshot takes time to create.
+
+For **root device** (device with OS) snapshots, best pratice to stop the instance before taking snapshot.
 
 ### Migrating EBS overview 
 
 1. Volumes to snapshots
 2. snapshots to AMI (Amazon Machine Image) 
 3. copy AMI to destination region 
-4. launch on another AZ
-
-For **root device** (device with OS) snapshots, best pratice to stop the instance before taking snapshot.
+4. launch AMI  as EBS instance on another AZ
 
 ## AMI types
 
@@ -1045,9 +1079,9 @@ Host level metrics like CPU, Network, Disk, status check
 
 **Metrics are readily available** in CloudWatch by default:
 
-- CPU Utilization of an EC2 instance, 
-- Disk Reads activity of an EC2 instance,  
-- Network packets out of an EC2 instance
+- **CPU** Utilization of an EC2 instance, 
+- **Disk** Reads activity of an EC2 instance,  
+- **Network** packets out of an EC2 instance
 
 For the following metrics, you need to prepare a **custom metric using CloudWatch Monitoring Scripts** which is written in Perl and install CloudWatch Agent to collect more system-level metrics from Amazon EC2 instances:
 
@@ -1066,7 +1100,7 @@ On a **high-resolution custom metric**, you can specify
 
 ### CloudTrail (Auditing)
 
-User and resource activity monitored by **recording AWS management** console actions and **API calls**. Unrelated to CloudWatch.
+User and resource activity monitored by **recording AWS management console actions and API calls**. Unrelated to CloudWatch.
 
 **CloudTrail Insights** to detect unusual activity.
 
@@ -1076,7 +1110,7 @@ Dashboards, Alarms, Events, Logs
 
 ## AWS Config
 
-- audit and record complaince of AWS resources
+- audit and record **complaince** of AWS resources
 - per region service; **can be aggregated**
 - results stored to S3; can use Athena over this data
 - **Rules** can be evaluated or triggered at config change or scheduled
@@ -1151,7 +1185,8 @@ POSIX complaint
 
 **Multiple EC2 instances cannot share an EBS volume** but can share a EFS volume. As of Feb 2020 you can attach certain types (io1, io2) of EBS volumes to multiple EC2 instances. https://aws.amazon.com/blogs/aws/new-multi-attach-for-provisioned-iops-io1-amazon-ebs-volumes/
 
-Grows and reduces automatically, **no pre-provision of space** needed. Pay for only what you use.
+**Grows and reduces automatically**, **no pre-provision of space** needed. Pay for only what you use.
+Contrast: EBS volumes need to be provisioned for space though they can be increased without restarting.
 
 Supports thousands of concurrent NFS connections.
 
@@ -1247,6 +1282,16 @@ Firewall on what IP addresses should be allowed or what query parameters should 
 
 Actions available: Allow, Deny, Count.
 
+Can be used for **protection against DDOS** via rate-based rules. AWS Shield provides DDOS protection as well.
+
+HIPAA Complaint
+
+1$ per rule per month
+
+**Rate-based Rules** allow you to specify the **number of web requests** that are **allowed by a client IP** in a trailing, continuously updated, **5 minute period**. If an IP address breaches the configured limit, new requests will be blocked until the request rate falls below the configured threshold. **Useful for DDOS protection.**
+
+**Managed Rules** are an easy way to deploy pre-configured rules to protect your applications common threats like application vulnerabilities like OWASP, bots, or Common Vulnerabilities and Exposures (CVE). AWS Managed Rules for AWS WAF are managed by AWS, whereas Managed Rules from AWS Marketplace is managed by third-party security sellers.
+
 ### Conditions to check in request
 
 - IP addresses
@@ -1305,11 +1350,17 @@ If you want your application to check RDS for an error, have it look for an `ERR
 
 You can **store session state data** on both **DynamoDB and ElastiCache**. These AWS services provide high-performance storage of key-value pairs which can be used to build a highly available web application.
 
+In RDS, you still have to **manually scale up your resources** and create Read Replicas to improve scalability while in DynamoDB, this is automatically done.
+
 **IAM database authentication**:
 
 - authenticate to your DB instance using AWS IAM
 - **IAM database authentication works with MySQL and PostgreSQL.** 
 - Instead of password, use an authentication token to connect to database instance.
+
+**Other:**
+
+- **Mongodb** can be deployed as node that is connected to EBS storage
 
 ## Lab: create RDS instance
 
@@ -1369,6 +1420,7 @@ If you are using Amazon RDS Provisioned IOPS storage with a Microsoft SQL Server
 - Available for Oracle, SQL Server, MySQL, PostgreSQL, MariaDB. **Not needed for Aurora** since it is fault tolerant by design.
 - if you are running a Multi-AZ deployment, **automated backups and DB Snapshots are simply taken from the standby** to avoid I/O suspension on the primary.
 - same connection string regardless of which database is up
+- When failing over, Amazon RDS simply **flips the canonical name record (CNAME) for your DB instance to point at the standby**, which is in turn promoted to become the new primary.
 
 ### Read Replicas
 
@@ -1399,6 +1451,19 @@ Billing can be on-demand or reserved.
 - once term ends, revert back to on-demand pricing
 - purchased and can be reserved **only in a specific region**
 - **read replicas can be reserved instances**
+- Reserved Instances for AWS services other than EC2, such as Amazon RDS and Amazon ElastiCache, **cannot be sold.**
+
+### Storage Auto Scaling
+
+Under-provisioning could result in application downtime, and over-provisioning could result in underutilized resources and higher costs. 
+
+With RDS Storage Auto Scaling, you simply set your **desired maximum storage limit**, and Auto Scaling **automatically scales storage capacity** in response to growing database workloads, with zero downtime.
+
+RDS Storage Auto Scaling **continuously monitors** actual storage consumption, and scales capacity up automatically when actual utilization approaches provisioned storage capacity. 
+
+Auto Scaling works with new and existing database instances. You can enable Auto Scaling with just a few clicks in the AWS Management Console. 
+
+There is no additional cost for RDS Storage Auto Scaling. You pay only for the RDS resources needed to run your applications.
 
 ## DynamoDB
 
@@ -1593,8 +1658,8 @@ Comparing to RDS, **RDS events only provide operational events** such as DB inst
 **Endpoints**:
 
 - A **cluster endpoint** (also known as a **writer endpoint**) for an Aurora DB cluster simply connects to the current primary DB instance for that DB cluster. This endpoint can perform write operations in the database such as DDL statements.
-- **Reader endpoint** receives read requests. Auto scaling can be configured to extend these reader endpoints when read requests increase.
-- **Custom endpoints** can be configured to perform analytical queries.
+- **Reader endpoint** receives read requests. **Auto scaling** can be configured to extend these reader endpoints when read requests increase. If the cluster contains one or more Aurora Replicas, the reader endpoint **load-balances** each connection request among the Aurora Replicas.
+- **Custom endpoints** can be configured to perform **analytical queries.**
 
 Aurora **Multi-Master** can specify all nodes as read-write instances for high-availability and immediate failover.
 
@@ -1698,6 +1763,20 @@ Serverless to write to Redshift warehouse
 - catalog of dataset that you have
 - built by **AWS Glue Data Crawler** finds out by looking at the databases you have.
 - can be used by **Glue Jobs** to perform ETL
+
+## Redshift Spectrum
+
+Efficiently **query** and **retrieve structured and semistructured data** from files in Amazon S3 **without having to load the data into Amazon Redshift tables.** 
+
+Redshift Spectrum queries employ **massive parallelism** to run very fast against large datasets. 
+
+Much of the processing occurs in the Redshift Spectrum layer, and most of the data remains in Amazon S3. Multiple clusters can concurrently query the same dataset in Amazon S3 without the need to make copies of the data for each cluster.
+
+Only available in region where Redshift is available.
+
+Redshift Cluster and S3 bucket needs to be in same region.
+
+GLue Data Crawler crawls databases while Redshift Spectrum queries S3.
 
 ## AWS Neptune
 
@@ -1889,7 +1968,7 @@ DNS is used to convert human readable domain names to IPv4 (32 bits) or IPv6 (12
 
 .com .edu .co.uk is top level domain name
 
-Elastic Load balancers do not have pre-defined IPv4 addresses, you resolve them using a DNS name
+Elastic Load balancers do not have pre-defined IPv4 addresses, you resolve them using a DNS name. Except NLB where you can BYOIP (bring your own IP).
 
 **Top level domain names** controlled by Internet Assigned Numbers Authority (IANA)
 
@@ -1917,8 +1996,10 @@ Route53 **propogates changes in 60 seconds**.
 **DNS Record types**
 
 - **"A" Record**: Address record; used to convert name of domain to an IP address
+  - **"AAAA" Record**: Exactly like "A" Record but supports IPv6.
+
 - **PTR records** are used to look up domain names for IP addresses. Reverse of "A" record.
-- **CName (canonical name) Record**: Used to resolve one domain to another; instead of using multiple IP address, use one IP and have 2 domain names on it. CNAME can't be used for naked domain name (`http://google.com`). It must be either an "A" record or alias.
+- **CName (canonical name) Record**: Used to resolve one domain to another; instead of using multiple IP address, use one IP and have 2 domain names on it. CNAME can't be used for naked domain name or the top node of a DNS namespace, also known as the zone apex. For example, (`http://google.com`). It must be either an "A" record or alias. 
 - **Alias records** are used to map resource records sets in your hosted zone to ELB, CloudFront distributions, or S3 buckets. Alias records are like CNAME records.
 - **MX** records are used for mail
 
@@ -1986,6 +2067,12 @@ Health checks can be configured for each IP; can configure notifications.
 - Same as **simple routing policy with health checks**
 - Health check associated with each record. This policy will return only those records that are healthy.
 
+## Fail over Configuration
+
+Active-Active: all primary and secondary resources are considered for redirection by Route 53
+
+Active-Passive: secondary resources are considered for redirection only when Route 53 finds primary resources to be inactive
+
 ## Route 53 Resolver
 
 Amazon Route 53 is both an **Authoritative** DNS service and **Recursive** DNS service. 
@@ -2040,7 +2127,9 @@ VPC can span multiple AZs.
 
 **Classic Link** is used to connect EC2 classic to VPC without using public IP or ElasticIP. **Depracated**.
 
-Only S3 and Dynamodb have a **VPC Gateway Endpoint**, all the other ones have an Interface endpoint (powered by Private Link - means a private IP).
+**Only S3 and Dynamodb** have a **VPC Gateway Endpoint**, all the other ones have an **Interface endpoint** (powered by Private Link - means a private IP).
+
+IPv4 and IPv6 communication are independent of each other. You **cannot disable IPv4** support for your VPC and subnets since this is the default IP addressing system for Amazon VPC and Amazon EC2. **IPv6 can be turned on optionally.**
 
 ### Connectivity options from Amazon VPC 
 
@@ -2067,6 +2156,14 @@ https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html#VPC_Security_
 Remember using this diagram.
 
 ![vpc-overview](notes.assets/vpc-overview.png)
+
+**Important points:**
+
+- If a subnet's traffic is routed to an **Internet gateway**, the subnet is known as a **public subnet**.
+- Every subnet that you create is **automatically connected to the main route table**.
+- Each subnet maps to a single Availability Zone.
+- When you create a subnet, you specify the CIDR block for the subnet, which is a **subset of the VPC CIDR block.** 
+- Allowed block size in VPC is between a **/16 netmask** (65,536 IP addresses) and **/28 netmask** (16 IP addresses)
 
 Go to *Networking > VPC*
 
@@ -2146,7 +2243,7 @@ When you add a subnet to a VPC, **it is added to the default NACL**. Subnets sho
 
 By default, a NACL denies everything inbound and outbound.
 
-A subnet can be associated with only one NACL at any given time. But a NACL can have multiple subnets associated with it.
+**A subnet can be associated with only one NACL at any given time. But a NACL can have multiple subnets associated with it.**
 
 NACL > Edit Subnet associations:  to add or remove subnets from NACL
 
@@ -2166,7 +2263,7 @@ When provisioning a Load Balancer, you need at least 2 public subnets.
 
 ## lab: VPC Flow Logs 
 
-logs information on IP traffic going to and from your network interfaces
+logs information on **IP traffic going to and from** your network interfaces
 
 logs data using Amazon CloudWatch
 
@@ -2252,7 +2349,7 @@ thruput is 5Gbps to 45Gbps
 
 no need to patch
 
-not associated with security groups
+**not associated with security groups**
 
 automatically assigned IP addresses
 
@@ -2265,8 +2362,8 @@ A single NAT Gateway in each availability zone is enough. NAT Gateway is already
 
 **Allows direct network route between VPCs in 2 different regions and/or AWS accounts.**
 
-- uses private IP addresses so VPCs talk as if on the same private network
-- Uses star configuration (1 central with *n* others) 
+- uses **private IP addresses** so VPCs talk as if on the same private network
+- Uses **star** configuration (1 central with *n* others) 
 - Not transitive
 
 *You have five VPCs in a 'hub and spoke' configuration, with VPC 'A' in the center and individually paired with VPCs 'B', 'C', 'D', and 'E', which make up the 'spokes'. There are no other VPC connections. Which of the following VPCs can VPC 'B' communicate with directly?* ***VPC 'A'. As transitive peering is not allowed, VPC 'B' can communicate directly only with VPC 'A'.***
@@ -2293,9 +2390,9 @@ Hosted Direct Connect connection supports 50Mbps, 500Mbps, up to 10Gbps.
 
 ## Global Accelerator
 
-Unicast IP: all servers has their individual IP, usual
+**Unicast IP**: all servers has their individual IP, usual
 
-Anycast IP: multiple servers have the same IP, traffic routed to nearest one.
+**Anycast IP**: multiple servers have the same IP, **traffic routed to nearest one**.
 
 Global Accelarator uses Anycast IP to send it to the closest Edge location.
 
@@ -2330,9 +2427,9 @@ What are VPC end points?
 
 **Types of endpoints:**
 
-- interface
+- **VPC interface endpoint**
   - provide private connectivity to services powered by PrivateLink, being AWS services, your own services or SaaS solutions, and supports connectivity over Direct Connect
-- gateway
+- **VPC gateway endpoint**
   - only for AWS services including S3 and DynamoDB
   - routes traffic via Amazon's private network
 
@@ -2379,13 +2476,27 @@ Works with Direct Connect, VPN.
 
 Supports **IP multicast** (not supported by any other AWS service).
 
-## AWS VPN CloudHub - conn sites in different VPNs
+## VPN Options
 
-**Connects multiple sites each with its own VPN.**
+### **AWS Site-to-Site VPN**  
 
-Uses "**Hub-spoke**" model
+- creates an IPsec VPN connection between your VPC and your remote network. 
+- On the AWS side of the Site-to-Site VPN connection, a **virtual private gateway** or **transit gateway** provides two VPN endpoints (tunnels) for automatic failover.
 
-Operates over Internet, but customer gateway to AWS VPN CloudHub is encrypted (since it's a VPN).
+### **AWS Client VPN** 
+
+- a managed client-based VPN service that provides secure TLS VPN connections between your AWS resources and on-premises networks.
+
+### **AWS VPN CloudHub** 
+
+- capable of wiring multiple AWS Site-to-Site VPN connections together on a virtual private gateway. 
+- This is useful if you want to enable communication between different remote networks that uses a Site-to-Site VPN connection. 
+- Uses "**Hub-spoke**" model
+- Operates over Internet, but customer gateway to AWS VPN CloudHub is encrypted (since it's a VPN).
+
+### **Third-party software VPN appliance** 
+
+- You can create a VPN connection to your remote network by using an Amazon E**C2 instance** in your VPC that's running a third party software VPN appliance.
 
 ## AWS Network Costs
 
@@ -2396,7 +2507,7 @@ Operates over Internet, but customer gateway to AWS VPN CloudHub is encrypted (s
 
 enableDnsSupport: decides if Route 53 Resolver server is used for DNS resolution of VPC
 
-enableDnsHostNames: if true along with enableDnsSupport and subnet has public IPv4 address, then subnet gets a public hostname
+enableDnsHostNames: if true along with enableDnsSupport and subnet has public IPv4 address, then **subnet gets a public hostname**
 
 ## VPC Reachability Analyzer
 
@@ -2426,7 +2537,7 @@ Done via updating route tables
 
 # HA Architecture
 
-## Load Balancers
+## Elastics Load Balancers - ELB
 
 https://aws.amazon.com/elasticloadbalancing/faqs/
 
@@ -2459,6 +2570,7 @@ AWSALBTG
 - load multiple SSL certificates on one listener
 - expose multiple HTTPS applications each with its own SSL certificate on the same listener
 - with Application Load Balancers and Network Load Balancers
+- Not available with Classic Load Balancer
 
 ### Application Load Balancer
 
@@ -2481,7 +2593,7 @@ AWSALBTG
 - high performance; millions of requests per second; ultra-low latencies
 - per Availability Zone, 200 targets
 - You can **terminate TLS connections** on the Network Load Balancer. You must  install an SSL certificate on your load balancer. The load balancer uses this certificate to terminate the connection and then decrypt requests from clients before sending them to targets.
-- Network Load Balancer has one static IP address per AZ and you can attach an Elastic IP address to it. 
+- **Network Load Balancer has one static IP address per AZ** and you can **attach an Elastic IP address** to it. 
 
 ### Classic Load Balancer
 
@@ -2490,6 +2602,7 @@ AWSALBTG
 - can use strict Layer 4 load balancing for TCP and SSL
 - simple round robin
 - You can terminate SSL on Classic Load Balancers. You must install an SSL certificate on each load balancer. The load balancers use this certificate to terminate the connection and then decrypt requests from clients before sending them to the back-end instances.
+- SNI not supported
 
 ### Gateway Load Balancer
 
@@ -2520,10 +2633,9 @@ AWSALBTG
 ### Target groups
 
 - Groups of EC2 instances where traffic will be routed to according to certain criteria.
-
 - target group name; target type (instance, IP, lambda function); protocol; port; VPC; related health check 
-
 - Add EC2 instances as targets to the target groups
+- Target groups are used in ELBs and not in Auto Scaling. 
 
 
 ### Define Application Load Balancer
@@ -2595,6 +2707,8 @@ Use **AWS Auto Scaling** to manage scaling for multiple resources across multipl
 
 You should use **EC2 Auto Scaling** if you only need to scale Amazon EC2 Auto Scaling groups, or if you are only interested in maintaining the health of your EC2 fleet.
 
+Auto Scaling will **launch additional EC2 instances to the remaining Availability Zone/s** in the event of an Availability Zone outage in the region. 
+
 ### Components
 
 **groups**: logical component i.e web server, application, database group
@@ -2653,7 +2767,7 @@ This is the time during which auto scaling will not spin up any new instances ev
 
 This is so that the metrics on which the scaling depends on need some time to stabilize.
 
-**Defaut 300 seconds**.
+**Defaut 300 seconds** or 5 minutes.
 
 ## Lifecycle hooks
 
@@ -2712,6 +2826,8 @@ keep group at initial size or use scaling policy
 scaling policy: min and max instances; name; metric type (average CPU utilization, etc); target value (of metric); warm up seconds for instance
 
 notification
+
+Target groups are used in ELBs and **not in Auto Scaling**. 
 
 ## HA Architecture
 
@@ -2786,8 +2902,8 @@ ELB automatically handles capacity provisioning, load balancing, scaling, and he
 ### Components
 
 - **Application**: elastic beanstalk components
-- **Epplication Version**: iteration of application code
-- **environment**
+- **Application Version**: iteration of application code
+- **Environment**
   - AWS **resources** running a particular version of the code, only 1 version at a time
   - **tiers**: 
     - **web server** environment: EC2 instances behind an auto scaling group **connected to an ELB** 
@@ -2924,6 +3040,9 @@ https://aws.amazon.com/swf/faqs/
 - tasks/work can be executable code, web service calls, **human actions**, scripts
 - used for manual or human tasks involved in a workflow
 - **collection of related workflows** are refered to as a **domain**
+- Uses EC2 instance, not serverless
+- SWF is not supported any more. Use AWS Step functions instead.
+- "decouple"
 
 ### SWF vs SQS
 
@@ -2940,6 +3059,8 @@ https://aws.amazon.com/swf/faqs/
 **Deciders**: control flow of activity tasks; if something has finished/failed, this will decide what to do next
 
 **Activity Workers**: carry out the activity tasks
+
+
 
 ## Simple Notification Service
 
@@ -3086,8 +3207,17 @@ Examples purchases from online stores, stock prices, game data, social network d
 
 **Amazon Kinesis** is a platform that can receive streaming data to
 
-- load, analyse it
+- load, analyse it in real time
 - build custom applications
+
+Amazon Kinesis is the streaming data platform of AWS and has **four distinct services** under it: 
+
+- Kinesis Data Firehose, 
+- Kinesis Data Streams, 
+- Kinesis Video Streams, and 
+- Amazon Kinesis Data Analytics. 
+
+Used in real-time Analytics uses cases. Redshift on the other hand is datawarehousing.
 
 ### Kinesis Streams
 
@@ -3095,7 +3225,9 @@ https://aws.amazon.com/kinesis/data-streams/faqs/
 
 Different producers can stream data to Kinesis Streams.
 
-Streams from each of these producers can be stored in separate **Shards**. Retention from 1 to 365 days.
+Streams from each of these producers can be stored in separate **Shards**. 
+
+**Retention from 1 to 365 days.**
 
 Consumer applications will read from these shards.
 
@@ -3115,9 +3247,10 @@ Kinesis Data Stream uses the **partition key associated with each data record to
 
 ### Kinesis Firehose
 
-- No persistence (storage), needs to be processed immediately.
+- capture, transform, and load streaming data into Amazon S3, Amazon Redshift, Amazon Elasticsearch Service, and Splunk
 - supports custom data transformations using AWS Lambda.
 - Kinesis Data Firehose can subscribe to SNS. Kinesis Data Streams cannot.
+- Mainly just for loading streaming data into data stores and analytics tools
 
 ### Kinesis Analytics
 
@@ -3613,7 +3746,7 @@ Cluster {
 
 ### Fargate
 
-- serverless container engine
+- **serverless container engine**
 - AWS Fargate allows you to run **your containers** on AWS without managing any servers.
 - specify and pay for resources per application
 - works with ECS and EKS
@@ -3681,3 +3814,133 @@ Review
 | availability in registry | N/A                   | may not be able to invoke if deleted from registry           |
 | patching containers      | automatically patched | customer's responsibility to patch containers maintained in registry |
 
+## AWS Step Functions
+
+Visual way to look at serverless Lambda workflows
+
+Represents flow as a **JSON state machine**
+
+Allows to design sequential, parallel, conditions, error handling, etc.
+
+Maximum execution time of 1 year
+
+Humal approval can be incorporated
+
+**AWS SWF is similar except that it runs on EC2 instances**
+
+# Other Services
+
+## CICD
+
+For **code**:
+
+- Github
+- CodeCommit
+
+For **build** and **test**:
+
+- Jenkins
+- CodeBuild
+
+For **Deploy**:
+
+- ElasticBeanstalk
+- CodeDeploy
+
+For **Provision**:
+
+- ElasticBeanstalk
+- CloudFormation scripts to manage EC2 fleets
+
+All steps above are orchestrated using **AWS CodePipeline**
+
+## CloudFormation
+
+CloudFormation templates are uploaded to S3.
+
+These templates are then referenced in CloudFormation.
+
+Stacks are identified by name.
+
+**Template Components:**
+
+- Resources
+- Parameters: dynamic inputs to template
+- Mappings: static inputs to template
+- Outputs: reference to what is created
+- Conditionals to perform resource creation
+- Metadata
+
+**Template Helpers**:
+
+- References
+- Functions
+
+**CloudFormation StackSets**:
+
+- Used to CRUD stacks across accounts and regions in a single operation
+- **Administrator account** to create StackSets
+- **Trusted account** to CRUD instances managed in a StackSet
+
+## AWS Opsworks
+
+Managed Chef and Puppet
+
+Used for automatic server configuration or repetitive actions
+
+Alternative to SSM
+
+Managing configuration as code and having consistent deployments
+
+Use recipes and manifests
+
+Has similar feature set as SSM, CloudFormation, Beanstalk but is based on open source librarys (Chef/Puppet)
+
+## AWS Workspaces
+
+Give you secure and managed access to desktops (Windows/Linux)
+
+Virtual Desktop Interface
+
+Integrated with Microsoft AD
+
+## AWS AppSync
+
+Store/sync data across mobile and web applications in real time
+
+Uses GraphQL
+
+## Cost Explorer
+
+Visualize, understand, and managed AWS cost and usage over time
+
+Custom reports to analytics cost and usage data
+
+Allows to choose optimal savings plan
+
+Forecast upto 12 months based on previous usage
+
+## AWS DLM
+
+Data Lifecycle Manager to automate the creation, retention, and deletion of EBS snapshots and EBS-backed AMIs. 
+
+When you automate snapshot and AMI management, it helps you to:
+
+- Protect valuable data by enforcing a **regular backup schedule**.
+- Create standardized AMIs that can be refreshed at regular intervals.
+- **Retain backups** as required by auditors or internal compliance.
+- Reduce storage costs by deleting outdated backups.
+- Create **disaster recovery backup policies** that back up data to isolated accounts
+
+## ACM
+
+**AWS Certificate Manager** is a service that lets you easily provision, manage, and deploy public and private Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificates for use with AWS services and your internal connected resources.
+
+Both public and private certificates help customers identify resources on networks and secure communication between these resources. Public certificates identify resources on the public Internet, whereas private certificates do the same for private networks. 
+
+## AWS Backup
+
+- backup your application data across AWS services in the AWS Cloud 
+- protect your AWS storage volumes, databases, file systems, EC2, S3
+- central place where you can configure and audit the AWS resources you want to backup, automate backup scheduling, set retention policies, and monitor all recent backup and restore activity.
+- retention time can go beyond the backup options inherent to individual services. For exa,ple, Aurora DB RDS back is maxed at 35 days, but with AWS Backup you can configure to 90 days
