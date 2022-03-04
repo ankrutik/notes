@@ -687,6 +687,8 @@ Amazon Elastic Compute Cloud (EC2) will begin rolling out a change to **restrict
 
 Maximum 20 EC2 instances per region
 
+Within Amazon EC2, when using a Linux instance, the device name /dev/sda1 is reserved for the root device.
+
 ### Models
 
 #### On demand
@@ -858,6 +860,8 @@ Most workloads; **gp2** API; <=16K IOPS
 Databases; **io1** API; <=64K IOPS
 
 *The maximum IOPS and throughput are **guaranteed** only on Instances built on the **Nitro System provisioned with more than 32,000 IOPS**. Other instances guarantee up to 32,000 IOPS only.*
+
+As per AWS SLA if the instance is attached to an EBS-Optimized instance, then the Provisioned IOPS volumes are designed to **deliver within 10% of the provisioned IOPS performance 99.9% of the time** in a given year. Thus, if the user has created a volume of 1000 IOPS, the user will get a minimum 900 IOPS 99.9% time of the year.
 
 ### Throughput Optimised HDD - st1
 
@@ -1164,6 +1168,8 @@ AWS Console can be used to add a role to an EC2 instance after that instance has
 
 This script can contain commands such as installing software/packages, download files from the Internet, or anything you want. 
 
+By default, user data scripts and cloud-init directives **run only during the boot cycle when you first launch an instance**. You can **update your configuration** to ensure that your user data scripts and cloud-init directives **run every time you restart your instance**.
+
 Configure instance details > Advanced Details > User Data
 
 ```bash
@@ -1246,7 +1252,7 @@ How to place or group EC2 instances?
 
 **Cluster Placement group** is grouping of instances **within a single AZ.** Applications that need low latency, high n/w thruput. EC2 **very close to each other**. AWS recommends grouping same instance types in cluster placement group.
 
-**Spread Placement Group** are group of instances each placed on **distinct underlying hardware**. Used when you have small number of **critical instances that should be kept separate** from each other. Can be spread across multiple AZs. Maximum of 7 running instances per Availability Zone
+**Spread Placement Group** are group of instances each placed on **distinct underlying hardware**. Used when you have small number of **critical instances that should be kept separate** from each other. Can be spread across multiple AZs. Maximum of 7 running instances per Availability Zone. **Spread evenly across AZs.**
 
 **Partitioned Placement groups** divides each **group into logical segment partitions** such that each partition that its **own rack** (each rack has own network and power source). Used for HDFS, HBase, Cassandra. Can be **spread across multiple AZs**.
 
@@ -1382,6 +1388,8 @@ RDS instances
 - **cannot ssh** into OS
 - patching is Amazon's responsibility
 - cannot be serverless (except Aurora)
+
+If you want to **force SSL, use the rds.force_ssl parameter**. By default, the rds.force_ssl parameter is set to false. Set the rds.force_ssl parameter to true to force connections to use SSL. The rds.force_ssl parameter is static, so after you change the value, you must reboot your DB instance for the change to take effect.
 
 ## Back Ups, Multi-AZ, and read replicas
 
@@ -1825,6 +1833,7 @@ Important ports:
     SFTP: 22 (same as SSH)
     HTTP: 80
     HTTPS: 443 
+    RDP: 3389 (Remote Desktop Protocol)
 
 RDS Databases ports:
 
@@ -1936,6 +1945,8 @@ ARN `arn:partition:service:region:account_id`
 Resource sharing between AWS accounts.
 
 Only some services can be shared via RAM.
+
+**VPC sharing (part of Resource Access Manager)** allows multiple AWS accounts to create their application resources such as EC2 instances, RDS databases, Redshift clusters, and Lambda functions, into shared and centrally-managed Amazon Virtual Private Clouds (VPCs). To set this up, the account that owns the VPC (owner) shares one or more subnets with other accounts (participants) that belong to the same organization from AWS Organizations. After a subnet is shared, the participants can view, create, modify, and delete their application resources in the subnets shared with them. Participants cannot view, modify, or delete resources that belong to other participants or the VPC owner.
 
 **Steps**:
 
@@ -2374,6 +2385,8 @@ no need to disable source and destination checks
 When you have one NAT Gateway being used by instances in multiple AZs, then failure of that NAT gateway's AZ will block others. Better to bring up multiple NAT gateways in multiple AZs.
 A single NAT Gateway in each availability zone is enough. NAT Gateway is already redundant in nature, meaning, AWS already handles any failures that occur in your NAT Gateway in an availability zone.
 
+**No support for port forwarding and bastion host.**
+
 ## Connect AWS resources to each other
 
 ### **VPC peering** 
@@ -2497,7 +2510,7 @@ Works with Direct Connect, VPN.
 
 Supports **IP multicast** (not supported by any other AWS service).
 
-AWS Transit Gateway also enables you to scale the IPsec VPN throughput with equal-cost multi-path (ECMP) routing support over multiple VPN tunnels.
+AWS Transit Gateway also enables you to scale the IPsec VPN throughput with equal-cost multi-path (ECMP) routing support over multiple VPN tunnels. ECMP in transit gateway uses 5-tuple hash (protocol number, source IP address, destination IP address, source port number, destination port number) to make packets take one of the paths or VPN tunnels. 
 
 ## Global Accelerator
 
@@ -2522,6 +2535,8 @@ Global Accelarator uses Anycast IP to send it to the closest Edge location.
 Disable, wait for some time, delete.
 
 Uses AWS Shield for DDOS protection.
+
+**Blue/green deployment** is a technique for releasing applications by  shifting traffic between two identical environments running different  versions of the application: "Blue" is the currently running version and "green" the new version. This type of deployment allows you to test  features in the green environment without impacting the currently  running version of your application. When you’re satisfied that the  green version is working properly, you can gradually reroute the traffic from the old blue environment to the new green environment. Blue/green  deployments can mitigate common risks associated with deploying  software, such as downtime and rollback capability.
 
 ***How is this different than a multivalue load balancer?** Uses AnyCast IP.*
 
@@ -3039,6 +3054,8 @@ A **queue** is a temporary repository for messages that are waiting to be proces
 
 - messages' **order is strictly preserved**
 
+- The name of a FIFO queue **must end with the .fifo suffix**. The suffix counts towards the 80-character queue name limit. To determine whether a queue is FIFO, you can check whether the queue name ends with the suffix.
+
 - once delivered, a message will stay there till a consumer processes and deletes it
 
 - **duplicates are not introduced**
@@ -3512,6 +3529,8 @@ Advanced is
 - used for protection against more advanced attacks
 - Access to 24/7 DDOS response team
 - if DDOS occurs, all fees are waived
+
+If your organization has multiple AWS accounts, then you can subscribe multiple AWS Accounts to AWS Shield Advanced by individually enabling it on each account using the AWS Management Console or API. You will pay the monthly fee once as long as the AWS accounts are all under a single consolidated billing, and you own all the AWS accounts and resources in those accounts.
 
 ## Guard Duty
 
@@ -3999,3 +4018,27 @@ AWS Trusted Advisor is an online tool that provides you **real-time guidance** t
 
 AWS Budgets is incorrect because it simply gives you the ability to **set custom budgets that alert** you when your costs or usage exceed (or are forecasted to exceed) your budgeted amount. You can also use AWS Budgets to **set reservation utilization or coverage targets and receive alerts when your utilization drops below the threshold you define.**
 
+## AWS Connect
+
+Amazon Connect is an omnichannel **cloud contact center**. You can set up a contact center in a few steps, add agents who are located anywhere, and start engaging with your customers.
+
+You can create personalized experiences for your customers using omnichannel communications. For example, you can dynamically offer chat and voice contact, based on such factors as customer preference and estimated wait times. Agents, meanwhile, conveniently handle all customers from just one interface. For example, they can chat with customers, and create or respond to tasks as they are routed to them.
+
+Amazon Connect is an open platform that you can integrate with other enterprise applications, such as Salesforce. In addition, you can take advantage of the AWS ecosystem to innovate new experiences for your customers. 
+
+## Amazon SES
+
+Simple Email Service
+
+can only use Amazon SES to send email from addresses or domains that you own.
+
+To prove that you own an email address or domain, you have to verify it.
+
+Sizes of 10MB to 40MB
+
+Limits are:
+
+- Sending quota: the maximum number of recipients that you can send email to in a 24-hour period.
+- Maximum send rate: the maximum number of recipients that you can send email per second.
+
+Supports SPF and DKIM.
