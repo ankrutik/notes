@@ -1770,6 +1770,9 @@ Master node stores log data.
 
 Replication can be configured to replicate log data every 5 mintues on S3; can only be set up during initial creation.
 
+The different cluster states of an Amazon EMR cluster are listed below. STARTING — The cluster provisions, starts, and configures EC2 instances. BOOTSTRAPPING — Bootstrap actions are being executed on the cluster. RUNNING — A step for the cluster is currently being run.
+WAITING — The cluster is currently active, but has no steps to run. TERMINATING - The cluster is in the process of shutting down. TERMINATED - The cluster was shut down without error. TERMINATED_W|TH_ERRORS - The cluster was shut down with errors.
+
 ## AWS Glue
 
 **Extract Transform Load**
