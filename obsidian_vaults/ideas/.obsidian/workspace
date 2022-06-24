@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "literature/Zettelkasten Smart Notes Step by Step with Obsidian by Martin Adams.md",
-            "mode": "preview"
+            "file": "fleeting/fleeting.md",
+            "mode": "source"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "literature/Zettelkasten Smart Notes Step by Step with Obsidian by Martin Adams.md",
+                "file": "fleeting/fleeting.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,12 +88,12 @@
   },
   "active": "b7174baf827e6f89",
   "lastOpenFiles": [
+    "fleeting/fleeting.md",
+    "permanent/Zettelkasten/Map of Content.md",
+    "permanent/Zettelkasten/Fleeting Notes.md",
     "literature/Zettelkasten Smart Notes Step by Step with Obsidian by Martin Adams.md",
     "fleeting/Zettelkasten Smart Notes Step by Step with Obsidian by Martin Adams.md",
-    "permanent/Zettelkasten/Map of Content.md",
-    "fleeting/fleeting.md",
     "template/note.md",
-    "permanent/Zettelkasten/Fleeting Notes.md",
     "Fleeting Notes.md"
   ]
 }

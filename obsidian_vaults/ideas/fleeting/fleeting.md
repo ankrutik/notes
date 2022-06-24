@@ -25,3 +25,8 @@
 Revising from notes is much faster/convenient than re-watching a video.
 
 Spent Zettelasten time first and foiremost on your profession/study than other things.
+
+
+## things to check in obsidian
+admonition
+pull notes clone on Bhag's laptop and see if plugins come installed in the ideas vault
