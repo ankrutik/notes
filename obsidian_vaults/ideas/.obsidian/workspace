@@ -1,0 +1,99 @@
+{
+  "main": {
+    "id": "9fc0f827135ce8e2",
+    "type": "split",
+    "children": [
+      {
+        "id": "b7174baf827e6f89",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "literature/Zettelkasten Smart Notes Step by Step with Obsidian by Martin Adams.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7fcca8cd4a9076a1",
+    "type": "split",
+    "children": [
+      {
+        "id": "12cc52288b525626",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7c4d6a1815a1690a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "89251c61720c1dc1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 209
+  },
+  "right": {
+    "id": "5c9c4587d5c2ecec",
+    "type": "split",
+    "children": [
+      {
+        "id": "82176fafcafa3086",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "46c05f8d9d592ceb",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "literature/Zettelkasten Smart Notes Step by Step with Obsidian by Martin Adams.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "b7174baf827e6f89",
+  "lastOpenFiles": [
+    "literature/Zettelkasten Smart Notes Step by Step with Obsidian by Martin Adams.md",
+    "fleeting/Zettelkasten Smart Notes Step by Step with Obsidian by Martin Adams.md",
+    "permanent/Zettelkasten/Map of Content.md",
+    "fleeting/fleeting.md",
+    "template/note.md",
+    "permanent/Zettelkasten/Fleeting Notes.md",
+    "Fleeting Notes.md"
+  ]
+}
