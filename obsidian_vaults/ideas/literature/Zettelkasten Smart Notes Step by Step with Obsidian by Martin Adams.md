@@ -63,4 +63,4 @@ For each topic in the MOC, you can:
 
 
 #### References
-[[fleeting/Zettelkasten Smart Notes Step by Step with Obsidian by Martin Adams]]
+[[fleeting/converted/Zettelkasten Smart Notes Step by Step with Obsidian by Martin Adams]]

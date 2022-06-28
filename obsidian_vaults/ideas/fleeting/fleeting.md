@@ -30,3 +30,6 @@ Spent Zettelasten time first and foiremost on your profession/study than other t
 ## things to check in obsidian
 admonition
 pull notes clone on Bhag's laptop and see if plugins come installed in the ideas vault
+
+
+Was car insurance created for more adoption of cars?
