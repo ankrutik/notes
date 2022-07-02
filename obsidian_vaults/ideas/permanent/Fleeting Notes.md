@@ -7,10 +7,15 @@
 - thing we see on the web
 - quick ideas/thoughts of our own
 
+## How to take them?
+These can be copy pastes.
+These should not be corrected for typos or formatting.
 
-![[How to take fleeting notes]]
+No need to stick to Obsidian for this. These can be taken as:
+- Google Keep Notes
+- handwritten notes on slips of paper
+- paper notebooks when you want to have the pen-paper experience
 
-![[When not to take Fleeting notes and gray areas]]
 
 ## What to do with them?
 They are reviewed and go directly into your permanent notes.

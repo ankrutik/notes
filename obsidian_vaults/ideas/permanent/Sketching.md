@@ -1,7 +1,8 @@
-# {{title}}
+# Sketching
 
 
 #### Links
+[[Art]]
 
 #### Tags
 

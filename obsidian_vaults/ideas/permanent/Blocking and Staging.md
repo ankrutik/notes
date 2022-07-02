@@ -1,3 +1,12 @@
+## Blocking
+*How are the characters arranged in the scene/shot?*
+
+## Staging
+*How is the camera placed in relation to the blocking?*
+
+
+## How do they work together?
+
 Film scenes are mostly about characters interacting with each other, mostly using dialogue. 
 
 The simplest approach can be to have, say 2, characters sitting next to each other and having a conversation while the camera shoots them.

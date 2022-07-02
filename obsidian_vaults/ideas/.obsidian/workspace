@@ -4,13 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "de3b4ab965c3731e",
+        "id": "ab011ee16f8027ff",
         "type": "leaf",
-        "pinned": true,
         "state": {
           "type": "graph",
-          "state": {},
-          "pinned": true
+          "state": {}
         }
       }
     ],
@@ -51,8 +49,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 249,
-    "collapsed": true
+    "width": 377
   },
   "right": {
     "id": "5c9c4587d5c2ecec",
@@ -93,17 +90,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "de3b4ab965c3731e",
+  "active": "ab011ee16f8027ff",
   "lastOpenFiles": [
-    "permanent/Literature Notes.md",
-    "permanent/When not to take Fleeting notes and gray areas.md",
-    "permanent/Fleeting Notes.md",
-    "permanent/Blocking and Staging.md",
-    "literature/Zettelkasten Smart Notes Step by Step with Obsidian by Martin Adams.md",
-    "literature/Zettelkasten Note-Taking Method Simply Explained by Shu Omi.md",
-    "literature/Zettelkasten Method Explained A Beginner's Guide by Vicky Beeamp.md",
-    "fleeting/converted/Zettelkasten Note-Taking Method Simply Explained by Shu Omi.md",
-    "fleeting/converted/Zettelkasten Method Explained A Beginner's Guide by Vicky Beeamp.md",
-    "permanent/Reading.md"
+    "tech_learning/Path.md",
+    "tech_learning/permanent/Viewpoints and Views.md",
+    "tech_learning/permanent/Software Architecture.md",
+    "tech_learning/literature/Software Systems Architecture Rozanski Nick, Woods Eoin.md",
+    "fleeting/fleeting.md",
+    "permanent/Observing.md",
+    "permanent/Painting.md",
+    "permanent/Art.md",
+    "permanent/Watercolour.md",
+    "permanent/Washes.md"
   ]
 }

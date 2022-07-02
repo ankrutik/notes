@@ -1,30 +1,4 @@
-# My criteria of a good note taking system
-- Why markdown?
-	- free
-	- doesn't need fancy editors like Word, I can simply use notepad or vim if I have to
-	- renderer does work of fancy painting, I don't bother
-	- no need to touch mouse for formatting
-	- formatting is quick
-	- can be exported to multiple formats like PDF, HTML, etc.
-	- can be version controlled in git
-	- can be synced between devices because I can use git
-	- can be collaborated
-	- can be "hosted"
-- why git?
-	- free VCS (version control system)
-	- can be used from command line
-	- very very fast
-- should not be propreitary
-- should not be heavy to use
-- should be able to sync between devices
-- should be able to see version history
-- should be able to export to various forms with various themes
-- should be able to be organized
-
-
-Revising from notes is much faster/convenient than re-watching a video.
-
-Spent Zettelasten time first and foiremost on your profession/study than other things.
+Alternate approach: Write to permanent notes first, then move content to literature notes.
 
 
 ## things to check in obsidian
@@ -33,3 +7,8 @@ pull notes clone on Bhag's laptop and see if plugins come installed in the ideas
 
 
 Was car insurance created for more adoption of cars?
+
+
+https://github.com/viraptor/reverse-interview/
+
+https://twitter.com/svpino/status/1541753295529660417
