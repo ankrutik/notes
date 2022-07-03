@@ -76,6 +76,72 @@ Deployment:
 Operational:
 - how will the system be installed, operated, administered, supported on prod
 
+## Architectural Perspectives
+Activities, guidelines, tactics to ensure that a system exhibits certain quality properties across multiple views.
+
+Systemizing:
+- determine required quality properties
+- assess and review architectural models to ensure that architecture exhibits properties
+- identify, prototype, test, select tactics to ensure properties where they are missing
+
+Tactics are not design patterns:
+- they do not mandate a particular software structure
+- general guidelines on how to design a particular aspect
+
+Apply perspectives earlier in design to avoid going into architectural blind alleys where implementation
+- ... is functionally correct
+- ... but does not offer quality properties like performance and availability
+
+### Some important perspectives
+- Security 
+	- controlled access to sensitive system resources
+- Performance and Scalability 
+	- meeting required performance profile  
+	- handling increasing workloads satisfactorily
+- Availability and Resilience 
+	- available when required
+	- coping with failures that will affect availabilty
+- Evolution 
+	- cope with likely changes
+- Regulations
+	- confirm to laws, regulations, company policies, rules, standards
+
+### How to use architectural perspectives in different situations
+- when working with new area? typical concerns, problems, solutions are not familiar?
+	- use as a guide
+- need to review models for particular quality property without absorbing new details?
+	- use as a store of knowledge
+- familiar with environment but don't want to forget anything important?
+	- use as a memory aid
+
+### Apply perspectives to views
+Architecture Views describs the architecture while Architecture Perspectives guide you thru analysis/modification to ensure quality properties are met.
+
+You can apply all perspectives to all views but you might not always do that.
+
+Create a 2x2 grid, views by perspectives.
+
+See Table 4-1 for *Typical View and Perspective Applicability*
+
+Leads to:
+- insights
+- improvements
+- artifacts: should be preserved
+
+Pitfalls and what to balance:
+- applying multiple perspectives to the same view can lead to conflicts
+	- multiple quality properties might not be satisfied
+- different stakeholders may value one quality property over another
+- perspectives contain generalized, established concepts
+	-  tweak and apply as per what is relevant to your situation as per relevance and feasiblity
+
+
+Prioritize and apply only the most relevant perspectives to your architecture.
+Selection criteria:
+- needs of the stakeholders
+- relative importance of quality perspectives to them
+- experience and judgement
+
 
 #### Resources
 https://www.viewpoints-and-perspectives.info/home/resources/
