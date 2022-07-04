@@ -143,6 +143,15 @@ Selection criteria:
 - experience and judgement
 
 
+## Role of the software architect
+
+> Do not think about the solution till you have understood the problem.
+
+Stakeholders will want to think of solutions from day one. An architect has to manage that.
+
+
+
+
 #### Resources
 https://www.viewpoints-and-perspectives.info/home/resources/
 See:
