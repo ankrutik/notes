@@ -4,14 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "ab011ee16f8027ff",
+        "id": "c0376065192ba4ef",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "tech_learning/literature/Software Systems Architecture Rozanski Nick, Woods Eoin.md",
-            "mode": "source"
-          }
+          "type": "empty",
+          "state": {}
+        }
+      },
+      {
+        "id": "51867694067cc51f",
+        "type": "leaf",
+        "pinned": true,
+        "state": {
+          "type": "graph",
+          "state": {},
+          "pinned": true
         }
       }
     ],
@@ -52,7 +59,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 377,
+    "width": 238.5,
     "collapsed": true
   },
   "right": {
@@ -69,7 +76,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tech_learning/literature/Software Systems Architecture Rozanski Nick, Woods Eoin.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,17 +101,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ab011ee16f8027ff",
+  "active": "c0376065192ba4ef",
   "lastOpenFiles": [
-    "tech_learning/literature/Software Systems Architecture Rozanski Nick, Woods Eoin.md",
-    "fleeting/fleeting.md",
-    "tech_learning/Path.md",
-    "tech_learning/permanent/Viewpoints and Views.md",
-    "tech_learning/permanent/Software Architecture.md",
-    "permanent/Observing.md",
-    "permanent/Painting.md",
-    "permanent/Art.md",
-    "permanent/Watercolour.md",
-    "permanent/Washes.md"
+    "permanent/Tone and Contrast.md",
+    "permanent/Perspective.md",
+    "literature/Watercolor Peter Wooley.md",
+    "literature/Watercolour Teoh Yi Chie.md",
+    "literature/Painting in Watercolour by Kate Gwynn.md",
+    "[Contrast.md",
+    "permanent/Contrast.md",
+    "permanent/Wash and Line.md",
+    "permanent/Line and Wash.md",
+    "tech_learning/permanent/Records.md"
   ]
 }

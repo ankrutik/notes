@@ -1,4 +1,5 @@
-# Watercolour
+
+ # Watercolour
 For highlights, leave the part of the paper blank.
 Bright tones -> mid tones -> dark tones -> shadow tones. Apply paint in that order. 
 
