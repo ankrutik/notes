@@ -9,5 +9,5 @@ Take the same colour photograph, increase the contrast. You will see details wil
 [[Ansel Adams Zone System]]
 
 #### Tags
-
+#art
 #### References

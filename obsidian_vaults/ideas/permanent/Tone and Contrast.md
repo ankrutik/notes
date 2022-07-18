@@ -15,10 +15,20 @@ Best way to understand this is to paint a scene in a single colour:
 - Don't increase the tone too much too fast.
 - Objective is to make the scene more understandable or legible in each pass using contrast.
 
+### Detemining tones
+Observe hues for the highlights, bright, mid, dark, shadow tones. 
+
+Example, process of the rhino I painted:
+- On first look, the rhino looks gray.
+- On looking further, you see it is a mix of brown and gray.
+- Went to my paint set. I took Vandyke Brown, but it was too brown. 
+- Took Ivory Black and mixed very little in the Vandyke Brown. Tested on a rough paper. 
+- Found it too black, mixed more Vandyke Brown into it to dominate the brown. Tested again and turned out fine.
+
 #### Links
 [[Watercolour]]
 
 #### Tags
-
+#art
 #### References
 [[Watercolor Peter Wooley]]

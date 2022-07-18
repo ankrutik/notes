@@ -7,9 +7,10 @@ The level of modification of these properties shows how thick the atmosphere can
 
 
 #### Links
-[[Painting]]
+[[Watercolour]]
 
 #### Tags
+#art
 
 #### References
 [[Painting in Watercolour by Kate Gwynn]]

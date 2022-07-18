@@ -1,4 +1,9 @@
 # Watercolor Techniques
+
+## Roles of tone and value
+What you do with tone is give an idea of the colour. 
+What you do with value is give an idea of shape and shadow.
+
 ## Glaze
 Glaze for soft edges:
 1. Apply base colour, let it dry. 
@@ -18,12 +23,19 @@ Apply paint.
 
 Same when done with tissue paper, is called blotting.
 
+### Overlapping layers to increase value
+Multiple layering of wash makes areas darker
+
+
+
 Check for scrubber brushes.
 
 #### Links
 [[Watercolour]]
+[[Portraiture]]
 
 #### Tags
+#art
 
 #### References
 https://www.youtube.com/watch?v=_58Eyyhv0gs

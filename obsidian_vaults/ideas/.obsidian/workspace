@@ -4,15 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "c0376065192ba4ef",
-        "type": "leaf",
-        "state": {
-          "type": "empty",
-          "state": {}
-        }
-      },
-      {
-        "id": "51867694067cc51f",
+        "id": "f32662f40aadbe26",
         "type": "leaf",
         "pinned": true,
         "state": {
@@ -46,7 +38,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#film",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -55,11 +47,12 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 238.5,
+    "width": 346.5,
     "collapsed": true
   },
   "right": {
@@ -101,17 +94,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c0376065192ba4ef",
+  "active": "f32662f40aadbe26",
   "lastOpenFiles": [
+    "permanent/Watching Films.md",
+    "permanent/Film Concepts.md",
+    "permanent/Atmospheric Perspective.md",
+    "permanent/Scene Perspective.md",
+    "permanent/Measuring.md",
+    "permanent/Observing.md",
+    "permanent/Watercolour.md",
+    "permanent/Watercolor Techniques.md",
     "permanent/Tone and Contrast.md",
-    "permanent/Perspective.md",
-    "literature/Watercolor Peter Wooley.md",
-    "literature/Watercolour Teoh Yi Chie.md",
-    "literature/Painting in Watercolour by Kate Gwynn.md",
-    "[Contrast.md",
-    "permanent/Contrast.md",
-    "permanent/Wash and Line.md",
-    "permanent/Line and Wash.md",
-    "tech_learning/permanent/Records.md"
+    "permanent/Portraiture.md"
   ]
 }

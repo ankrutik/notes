@@ -9,9 +9,9 @@
 - what other colour is seen with this colour
 
 #### Links
-[[Painting]]
+[[Watercolour]]
 
 #### Tags
-
+#art
 #### References
 [[Painting in Watercolour by Kate Gwynn]]

@@ -1,7 +1,8 @@
 
- # Watercolour
+# Watercolour
 For highlights, leave the part of the paper blank.
 Bright tones -> mid tones -> dark tones -> shadow tones. Apply paint in that order. 
+Learn when to stop. 
 
 ## Try this
 Mark with pencil and sketch directly with watercolour.
@@ -31,9 +32,8 @@ Keep uniform. Wash may appear inconsistent when wet, wait for it to dry.
 Add or reduce water on brush as you keep moving along the gradient.
 
 #### Links
-[[Painting]]
-
+[[Art]]
 #### Tags
-
+#art
 #### References
 [[Painting in Watercolour by Kate Gwynn]]

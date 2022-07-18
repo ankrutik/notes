@@ -9,5 +9,5 @@ Then heavy shadow and lines for finishing.
 [[Watercolour]]
 
 #### Tags
-
+#art
 #### References

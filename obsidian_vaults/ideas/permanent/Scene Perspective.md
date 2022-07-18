@@ -1,4 +1,4 @@
-# Perspective
+# Scene Perspective
 Where is the eye level? 
 - Observe the scene for any lines that are descending
 - Observe the scene for any lines that are ascending
@@ -6,7 +6,9 @@ Where is the eye level?
 
 #### Links
 [[Sketching]]
+
 #### Tags
+#art
 
 #### References
 [[Watercolor Peter Wooley]]

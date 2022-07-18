@@ -5,6 +5,7 @@ Pace and energy to montages can be achieved by editing to scores of other films.
 [[Film Concepts]]
 
 #### Tags
-
+#art
+#film
 #### References
 https://lifestyle.livemint.com/news/big-story/anurag-kashyap-on-gangs-of-wasseypur-a-decade-later-111651828868755.html

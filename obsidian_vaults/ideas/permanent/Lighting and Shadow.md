@@ -1,3 +1,4 @@
+# Lighting and Shadow
 *How is the scene lit?*
 
 Notice the following:
@@ -7,5 +8,11 @@ Notice the following:
 - highlights
 - shadows
 
-## Tags
+#### Links
 [[Film Concepts]]
+
+#### Tags
+#art
+#film
+
+#### References

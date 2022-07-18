@@ -1,5 +1,5 @@
 # Inking
-The following notes are of Sumi E ink.
+The following notes are for Sumi E ink.
 
 This ink is permanent but can be picked-up/wiped-off to some extent immediately after applying.
 
@@ -14,7 +14,7 @@ Topographical features:
 Applying ink and dabbing off can be used as technique when you don't want the highlight standing out.
 
 #### Links
-[[Painting]]
+[[Sketching]]
 #### Tags
-
+#art
 #### References
