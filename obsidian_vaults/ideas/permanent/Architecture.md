@@ -1,4 +1,5 @@
 # Architecture
+Tags: #art #watercolour #watercolour/techniques 
 
 ## Examples
 ### Illustration style
@@ -25,9 +26,9 @@ https://www.youtube.com/watch?v=CnH1yxXsJB8&t=505s
 https://www.youtube.com/watch?v=Izsx9k7nfPI
 
 #### Links
-[[Watercolor Techniques]]
+
 
 #### Tags
-#art 
+#art #watercolour 
 
 #### References

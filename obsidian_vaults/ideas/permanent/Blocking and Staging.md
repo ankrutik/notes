@@ -1,4 +1,6 @@
 # Blocking and Staging
+Tags: #film 
+
 ## Blocking
 *How are the characters arranged in the scene/shot?*
 
@@ -31,10 +33,6 @@ On a film set, a typical blocking/staging workflow would be as following:
 
 #### Links
 [[Film Concepts]]
-
-#### Tags
-#art
-#film
 
 #### References
 

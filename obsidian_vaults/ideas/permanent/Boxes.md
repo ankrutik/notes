@@ -1,4 +1,5 @@
 # Boxes
+Tags: #notes
 
 Reference Box
 - contains literature notes

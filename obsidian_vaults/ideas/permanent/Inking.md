@@ -1,4 +1,6 @@
 # Inking
+Tags: #art
+
 The following notes are for Sumi E ink.
 
 This ink is permanent but can be picked-up/wiped-off to some extent immediately after applying.

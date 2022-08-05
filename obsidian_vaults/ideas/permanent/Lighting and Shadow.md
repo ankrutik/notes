@@ -1,4 +1,6 @@
 # Lighting and Shadow
+Tags: #film 
+
 *How is the scene lit?*
 
 Notice the following:
@@ -10,9 +12,5 @@ Notice the following:
 
 #### Links
 [[Film Concepts]]
-
-#### Tags
-#art
-#film
 
 #### References

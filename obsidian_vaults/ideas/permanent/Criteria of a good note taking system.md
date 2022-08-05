@@ -1,4 +1,6 @@
 # My criteria of a good note taking system
+Tags: #notes
+
 - Why markdown?
 	- free
 	- doesn't need fancy editors like Word, I can simply use notepad or vim if I have to
@@ -23,4 +25,3 @@
 
 ## Links
 
-[[Note Taking]]

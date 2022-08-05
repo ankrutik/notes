@@ -1,4 +1,6 @@
 # Sketching anatomy
+Tags: #art
+
 Look for anatomy references for your subjects like there are general rules/guideline for the human face.
 
 ## Portraiture

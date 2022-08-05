@@ -1,4 +1,6 @@
 # Scene Perspective
+Tags: #art
+
 Where is the eye level? 
 - Observe the scene for any lines that are descending
 - Observe the scene for any lines that are ascending

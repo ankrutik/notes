@@ -1,4 +1,6 @@
-## Why to take notes?
+## Why take notes?
+Tags: #notes
+
 Revising from notes is much faster/convenient than re-watching a video.
 
 ## Pit falls 

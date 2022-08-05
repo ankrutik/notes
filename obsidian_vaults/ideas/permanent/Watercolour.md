@@ -1,5 +1,7 @@
 
 # Watercolour
+Tags: #art
+
 For highlights, leave the part of the paper blank.
 Bright tones -> mid tones -> dark tones -> shadow tones. Apply paint in that order. 
 Learn when to stop. 
@@ -32,7 +34,8 @@ Keep uniform. Wash may appear inconsistent when wet, wait for it to dry.
 Add or reduce water on brush as you keep moving along the gradient.
 
 #### Links
-[[Art]]
+[[Creating art]]
+[[Learnings from experience]]
 #### Tags
 #art
 #### References

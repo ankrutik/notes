@@ -1,4 +1,6 @@
 ## Deciding tone
+Tags: #art
+
 - squint eyes to see brightness value [[Ansel Adams Zone System]]
 - is the colour?
 	- warm

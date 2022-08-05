@@ -1,8 +1,6 @@
 # {{title}}
-
+Tags: 
 
 #### Links
-
-#### Tags
 
 #### References

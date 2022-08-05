@@ -1,4 +1,6 @@
 # Permanent Notes
+Tags: #notes
+
 These are the output of reviewing your fleeting and literature notes.
 
 ## Designing and Structuring

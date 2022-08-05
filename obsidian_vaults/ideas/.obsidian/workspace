@@ -4,13 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "f32662f40aadbe26",
+        "id": "cf14f663813979d7",
         "type": "leaf",
-        "pinned": true,
         "state": {
-          "type": "graph",
-          "state": {},
-          "pinned": true
+          "type": "markdown",
+          "state": {
+            "file": "literature/Trees and how to paint them in watercolour.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -38,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#film",
+                "query": "tag:#watercolour",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -47,12 +49,11 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 346.5,
+    "width": 218.5,
     "collapsed": true
   },
   "right": {
@@ -69,6 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "literature/Trees and how to paint them in watercolour.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,25 +88,58 @@
               "type": "review-queue-list-view",
               "state": {}
             }
+          },
+          {
+            "id": "20a04b5f1cf66fab",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "literature/Trees and how to paint them in watercolour.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "b83fd7f45e805af0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "literature/Trees and how to paint them in watercolour.md"
+              }
+            }
+          },
+          {
+            "id": "f3f411dce6f343d7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 253.5,
     "collapsed": true
   },
-  "active": "f32662f40aadbe26",
+  "active": "cf14f663813979d7",
   "lastOpenFiles": [
-    "permanent/Watching Films.md",
-    "permanent/Film Concepts.md",
-    "permanent/Atmospheric Perspective.md",
-    "permanent/Scene Perspective.md",
-    "permanent/Measuring.md",
-    "permanent/Observing.md",
+    "permanent/Learnings from experience.md",
+    "literature/Trees and how to paint them in watercolour.md",
     "permanent/Watercolour.md",
-    "permanent/Watercolor Techniques.md",
-    "permanent/Tone and Contrast.md",
+    "literature/Painting in Watercolour by Kate Gwynn.md",
+    "literature/Watercolor Peter Wooley.md",
+    "permanent/Choosing what to sketch.md",
+    "permanent/Sketching.md",
+    "permanent/Foliage.md",
+    "permanent/Line and Wash.md",
     "permanent/Portraiture.md"
   ]
 }

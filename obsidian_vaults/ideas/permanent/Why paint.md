@@ -1,4 +1,6 @@
 # Why paint
+Tags: #art
+
 *Why do I paint and what keeps me interested in developing this skill?* 
 It's a deliberate practice for me in developing something.
 

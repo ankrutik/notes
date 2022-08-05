@@ -1,6 +1,6 @@
-# Art
+# Creating art
+Tags: #art 
 
-## Creating art
 The output/end result really doesn't matter. The process of it is very relaxing and rewarding:
 - figuring out proportions and scales
 - figuring out distances between parts of the sketch
@@ -17,6 +17,4 @@ Do not read more than a certain amount. It is more important to **DO**.
 
 #### Links
 
-#### Tags
-#art
 #### References

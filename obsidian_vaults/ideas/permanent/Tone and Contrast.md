@@ -1,4 +1,6 @@
 # Tone and Contrast
+Tags: #art
+
 Observe the tonal properties of a scene before painting to understand contrast to bring out the details.
 
 A prelim study sketch in pencil helps understand:
@@ -15,7 +17,7 @@ Best way to understand this is to paint a scene in a single colour:
 - Don't increase the tone too much too fast.
 - Objective is to make the scene more understandable or legible in each pass using contrast.
 
-### Detemining tones
+### Determining tones
 Observe hues for the highlights, bright, mid, dark, shadow tones. 
 
 Example, process of the rhino I painted:

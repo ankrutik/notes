@@ -1,4 +1,5 @@
 # Literature Notes
+Tags: #notes
 
 ## Where/When to take them?
 When consuming literature like:

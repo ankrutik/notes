@@ -1,4 +1,5 @@
 # Fleeting Notes
+Tags: #notes
 
 ## When/Where can they occur?
 - shower thoughts
