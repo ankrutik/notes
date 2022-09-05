@@ -15,11 +15,11 @@
   "newFileFolderPath": "permanent",
   "newLinkFormat": "relative",
   "mobileToolbarCommands": [
+    "editor:toggle-code",
     "editor:insert-wikilink",
     "editor:insert-embed",
     "editor:insert-tag",
     "editor:attach-file",
-    "editor:toggle-code",
     "editor:set-heading",
     "editor:toggle-highlight",
     "editor:toggle-bold",

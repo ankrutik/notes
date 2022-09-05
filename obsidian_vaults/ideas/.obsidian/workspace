@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "permanent/Blocking and Staging.md",
-            "mode": "source",
+            "file": "permanent/Using git on Android.md",
+            "mode": "preview",
             "backlinks": true,
             "source": false
           }
@@ -70,7 +70,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "permanent/Blocking and Staging.md",
+            "file": "permanent/Using git on Android.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -87,7 +87,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "permanent/Blocking and Staging.md",
+            "file": "permanent/Using git on Android.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -99,7 +99,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "permanent/Blocking and Staging.md"
+            "file": "permanent/Using git on Android.md"
           }
         }
       },
@@ -116,8 +116,8 @@
   },
   "active": "cf14f663813979d7",
   "lastOpenFiles": [
-    "permanent/Lord of the Rings Rings of Power.md",
     "permanent/Blocking and Staging.md",
+    "permanent/Lord of the Rings Rings of Power.md",
     "permanent/Editing.md",
     "permanent/Watching films analytically.md",
     "permanent/Oracle.md",
