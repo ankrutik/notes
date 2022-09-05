@@ -37,5 +37,6 @@
     "editor:toggle-keyboard",
     "editor:configure-toolbar",
     "obsidian-admonition:insert-callout"
-  ]
+  ],
+  "fileSortOrder": "byModifiedTime"
 }

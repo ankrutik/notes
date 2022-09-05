@@ -9,9 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "permanent/Using git on Android.md",
+            "file": "tech_learning/permanent/Records.md",
             "mode": "source",
-            "backlinks": true,
             "source": false
           }
         }
@@ -37,7 +36,7 @@
         "state": {
           "type": "search",
           "state": {
-            "query": "tag:#tv",
+            "query": "tag:#news-media",
             "matchingCase": false,
             "explainSearch": false,
             "collapseAll": false,
@@ -70,7 +69,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "permanent/Using git on Android.md",
+            "file": "tech_learning/permanent/Records.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -87,9 +86,9 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "permanent/Using git on Android.md",
+            "file": "tech_learning/permanent/Records.md",
             "linksCollapsed": false,
-            "unlinkedCollapsed": true
+            "unlinkedCollapsed": false
           }
         }
       },
@@ -99,7 +98,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "permanent/Using git on Android.md"
+            "file": "tech_learning/permanent/Records.md"
           }
         }
       },
@@ -112,19 +111,19 @@
         }
       }
     ],
-    "currentTab": 0
+    "currentTab": 2
   },
   "active": "cf14f663813979d7",
   "lastOpenFiles": [
-    "permanent/Blocking and Staging.md",
-    "permanent/Lord of the Rings Rings of Power.md",
-    "permanent/Editing.md",
-    "permanent/Watching films analytically.md",
-    "permanent/Oracle.md",
-    "permanent/TV and Film Review Resources.md",
-    "template/note.md",
-    "literature/Atomic Habits by James Clear.md",
-    "literature/Trees and how to paint them in watercolour.md",
-    "permanent/Learnings from experience.md"
+    "permanent/Simple answers over complex explanations.md",
+    "tech_learning/permanent/Records.md",
+    "literature/politics/How 'Idgah Maidan' became Karnataka’s mini-Ayodhya.md",
+    "permanent/How corporates took over news media in India.md",
+    "permanent/High Salaries vs Company profit.md",
+    "permanent/Evaluating a Company when looking for jobs.md",
+    "tech_learning/literature/Software Systems Architecture Rozanski Nick, Woods Eoin.md",
+    "permanent/2022-09-05.md",
+    "permanent/Using git on Android.md",
+    "permanent/Blocking and Staging.md"
   ]
 }
