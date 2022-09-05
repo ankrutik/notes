@@ -29,6 +29,7 @@ $ git config --global user.email "ankrutik@gmail.com"
 $ git config --global user.name "Krutik Arekar"
 
 $ git config --global credential.helper store
+```
 
 ## Clone
 ```shell
