@@ -9,8 +9,9 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "literature/Trees and how to paint them in watercolour.md",
+            "file": "permanent/Blocking and Staging.md",
             "mode": "source",
+            "backlinks": true,
             "source": false
           }
         }
@@ -19,127 +20,110 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "7fcca8cd4a9076a1",
-    "type": "split",
+    "id": "f33e045290fd3dbd",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "12cc52288b525626",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "7c4d6a1815a1690a",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {}
-            }
-          },
-          {
-            "id": "89251c61720c1dc1",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "tag:#watercolour",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              }
-            }
+        "id": "91b4ffccfe93ff4b",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "b9b20da77b942c34",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "tag:#tv",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
           }
-        ]
+        }
+      },
+      {
+        "id": "5be44bf2b50df91b",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
       }
-    ],
-    "direction": "horizontal",
-    "width": 218.5,
-    "collapsed": true
+    ]
   },
   "right": {
-    "id": "5c9c4587d5c2ecec",
-    "type": "split",
+    "id": "0c4afa5efb87434b",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "82176fafcafa3086",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "46c05f8d9d592ceb",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "literature/Trees and how to paint them in watercolour.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
-              }
-            }
-          },
-          {
-            "id": "91b9b8f0eae90efe",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {}
-            }
-          },
-          {
-            "id": "20a04b5f1cf66fab",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "literature/Trees and how to paint them in watercolour.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": false
-              }
-            }
-          },
-          {
-            "id": "b83fd7f45e805af0",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "literature/Trees and how to paint them in watercolour.md"
-              }
-            }
-          },
-          {
-            "id": "f3f411dce6f343d7",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
-              }
-            }
+        "id": "83b9f7125fda2f35",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "permanent/Blocking and Staging.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": false
           }
-        ]
+        }
+      },
+      {
+        "id": "dfa9b6c135891bbb",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "permanent/Blocking and Staging.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "691fa076fd9e6cb1",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "permanent/Blocking and Staging.md"
+          }
+        }
+      },
+      {
+        "id": "4e79c763b2738fce",
+        "type": "leaf",
+        "state": {
+          "type": "review-queue-list-view",
+          "state": {}
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 253.5,
-    "collapsed": true
+    "currentTab": 0
   },
-  "active": "cf14f663813979d7",
+  "active": "83b9f7125fda2f35",
   "lastOpenFiles": [
-    "permanent/Learnings from experience.md",
+    "permanent/Lord of the Rings Rings of Power.md",
+    "permanent/Blocking and Staging.md",
+    "permanent/Editing.md",
+    "permanent/Watching films analytically.md",
+    "permanent/Oracle.md",
+    "permanent/TV and Film Review Resources.md",
+    "template/note.md",
+    "literature/Atomic Habits by James Clear.md",
     "literature/Trees and how to paint them in watercolour.md",
-    "permanent/Watercolour.md",
-    "literature/Painting in Watercolour by Kate Gwynn.md",
-    "literature/Watercolor Peter Wooley.md",
-    "permanent/Choosing what to sketch.md",
-    "permanent/Sketching.md",
-    "permanent/Foliage.md",
-    "permanent/Line and Wash.md",
-    "permanent/Portraiture.md"
+    "permanent/Learnings from experience.md"
   ]
 }
