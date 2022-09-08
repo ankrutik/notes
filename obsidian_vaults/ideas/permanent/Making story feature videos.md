@@ -16,6 +16,10 @@ When recording screen captures, apart from the subject itself, following points 
 
 Maintain unified theme across video when using text overlays or chapters. 
 
+> [!tip] Opinion on voice over
+> If making feature videos is not part of your primary job and just something additional to programming, making text-only feature videos might be a quicker option than audio. The practice of watching video has changed from sitting in front of a TV to consuming videos in awkward places like in bed, bathroom, meeting rooms, commutes, etc where audio might not be an option. I prefer conveying information visually using text and graphics than speech. This overcomes problems of recording equipment, ambient/background noise, accents, diction, etc. 
+> 
+
 
 #### Links
 See [[Video Editing Tools]]
