@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "permanent/Making story feature videos.md",
+            "file": "literature/Atomic Habits by James Clear.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "permanent/Making story feature videos.md",
+            "file": "literature/Atomic Habits by James Clear.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -86,7 +86,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "permanent/Making story feature videos.md",
+            "file": "literature/Atomic Habits by James Clear.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": false
           }
@@ -98,7 +98,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "permanent/Making story feature videos.md"
+            "file": "literature/Atomic Habits by James Clear.md"
           }
         }
       },
@@ -115,6 +115,8 @@
   },
   "active": "cf14f663813979d7",
   "lastOpenFiles": [
+    "permanent/Gol Maal (1979).md",
+    "permanent/Amol Palekar.md",
     "permanent/Making story feature videos.md",
     "permanent/Video Editing Tools.md",
     "permanent/ShotCut.md",
@@ -122,8 +124,6 @@
     "permanent/Flood Risk Map.md",
     "permanent/Zettelkasten.md",
     "permanent/Lord of the Rings Rings of Power.md",
-    "permanent/Evaluating a Company when looking for jobs.md",
-    "tech_learning/permanent/Records.md",
-    "permanent/Simple answers over complex explanations.md"
+    "permanent/Evaluating a Company when looking for jobs.md"
   ]
 }
