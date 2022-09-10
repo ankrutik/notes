@@ -1,6 +1,6 @@
 # Portraiture
 
-Tags: #art #watercolour/techniques 
+Tags: #watercolour/techniques 
 
 Don't do hair to dark. Watery black is black and not gray.
 

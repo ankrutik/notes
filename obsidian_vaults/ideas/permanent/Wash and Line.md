@@ -8,8 +8,6 @@ Then next level of value. Outline to support with more details.
 Then heavy shadow and lines for finishing.
 
 #### Links
-[[Watercolour]]
 
-#### Tags
-#art
+
 #### References

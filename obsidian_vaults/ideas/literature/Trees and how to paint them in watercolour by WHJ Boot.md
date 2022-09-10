@@ -1,4 +1,4 @@
-# Trees and how to paint them in watercolour
+# Trees and how to paint them in watercolour by WHJ Boot
 Tags: #watercolour 
 
 Traits needed:
@@ -30,11 +30,13 @@ pleasant greens: cobalt and raw sienna; cobalt and yellow ochre; varied with tou
 1. Draw a rough outline and structure with a light pencil.
 2. Draw leaves in the strongest light first.
 	1. Round size 8 brush, **brought to a pointed tip**. 
-	2. Dab little leaves for outline, draw mass. Detached sprays of foliage.
+	2. Stroke can be to push the pointed tip upwards on the paper to create individual leaves.
+	3. Dab such little leaves for outline, then connect a bunch of them with a local wash to draw mass. Create such detached sprays of foliage.
 3. After it has dried, draw branches and twigs. Connect detached spray of foliage. 
 	1. Shadow on lower side of branches and where the branch disappears into the foliage.
-4. After branches have dried, go about the darker parts. 
-	1. Mass Foliage in some places, details in others. Similarly dab little leaves.
+4. After branches have dried, go about the darker parts.
+	1. Similar approach as in step 2.
+	2. Mass Foliage in some places, details in others.
 
 ## Overall Approach
 Do not pursue painting part that are not visible due to overlap. Continue the part where it reappears after the overlap.
@@ -51,3 +53,4 @@ Plan for highlights. If you want to apply after a wash, lift off the colour or u
 
 #### References
 From an original book by W.H.J. Boot 1883
+https://babel.hathitrust.org/cgi/pt?id=gri.ark:/13960/t5t74xb44&view=1up&seq=1

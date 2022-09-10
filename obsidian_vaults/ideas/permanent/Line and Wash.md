@@ -1,5 +1,5 @@
 # Line and Wash
-Tags: #art #watercolour/techniques 
+Tags: #watercolour/techniques 
 
 Line comes first for the outlines
 Wash comes later.

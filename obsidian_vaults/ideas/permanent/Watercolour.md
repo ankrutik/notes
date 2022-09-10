@@ -1,6 +1,6 @@
 
 # Watercolour
-Tags: #art
+Tags: #art #watercolour 
 
 For highlights, leave the part of the paper blank.
 Bright tones -> mid tones -> dark tones -> shadow tones. Apply paint in that order. 
@@ -35,7 +35,7 @@ Add or reduce water on brush as you keep moving along the gradient.
 
 #### Links
 [[Creating art]]
-[[Learnings from experience]]
+[[Self Learnings in Watercolour]]
 #### Tags
 #art
 #### References
