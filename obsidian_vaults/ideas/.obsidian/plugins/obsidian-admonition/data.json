@@ -1,5 +1,19 @@
 {
-  "userAdmonitions": {},
+  "userAdmonitions": {
+    "formula": {
+      "type": "formula",
+      "color": "100, 197, 48",
+      "icon": {
+        "name": "anchor",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Formula",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    }
+  },
   "syntaxHighlight": false,
   "copyButton": false,
   "version": "9.0.3",
@@ -13,9 +27,12 @@
     "admonitions": true,
     "icons": true,
     "other": true,
-    "advanced": false
+    "advanced": true
   },
-  "icons": [],
+  "icons": [
+    "octicons",
+    "rpg"
+  ],
   "useFontAwesome": true,
   "rpgDownloadedOnce": false,
   "msDocConverted": false,

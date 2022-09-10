@@ -21,6 +21,6 @@ When above problems are encountered, check the following:
 
 #### Links
 [[Self Learnings in Watercolour]]
-[[Reading]]
+[[Reading Manifesto]]
 
 #### References

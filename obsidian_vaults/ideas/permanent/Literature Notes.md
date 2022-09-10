@@ -37,4 +37,4 @@ Sometimes you might not have the time to take notes in your own words, as is exp
 
 [[literature/Zettelkasten Note-Taking Method Simply Explained by Shu Omi]]
 
-[[Reading]]
+[[Reading Manifesto]]

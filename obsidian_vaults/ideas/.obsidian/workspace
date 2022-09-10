@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "cf14f663813979d7",
+        "id": "22c4aa7d35b0dad3",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "literature/Atomic Habits by James Clear.md",
+            "file": "permanent/Reading Manifesto.md",
             "mode": "source",
             "source": false
           }
@@ -19,111 +19,126 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "f33e045290fd3dbd",
-    "type": "mobile-drawer",
+    "id": "0d7872708ea0ffd4",
+    "type": "split",
     "children": [
       {
-        "id": "91b4ffccfe93ff4b",
-        "type": "leaf",
-        "state": {
-          "type": "file-explorer",
-          "state": {}
-        }
-      },
-      {
-        "id": "b9b20da77b942c34",
-        "type": "leaf",
-        "state": {
-          "type": "search",
-          "state": {
-            "query": "",
-            "matchingCase": false,
-            "explainSearch": false,
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical"
+        "id": "33879ecaa96e3259",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d3457f378ffc1b61",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "79f2c69b5da24721",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
           }
-        }
-      },
-      {
-        "id": "5be44bf2b50df91b",
-        "type": "leaf",
-        "state": {
-          "type": "tag",
-          "state": {
-            "sortOrder": "frequency",
-            "useHierarchy": true
-          }
-        }
+        ]
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300
   },
   "right": {
-    "id": "0c4afa5efb87434b",
-    "type": "mobile-drawer",
+    "id": "1c8dd24eee5d4f82",
+    "type": "split",
     "children": [
       {
-        "id": "83b9f7125fda2f35",
-        "type": "leaf",
-        "state": {
-          "type": "backlink",
-          "state": {
-            "file": "literature/Atomic Habits by James Clear.md",
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical",
-            "showSearch": false,
-            "searchQuery": "",
-            "backlinkCollapsed": false,
-            "unlinkedCollapsed": false
+        "id": "062763237f46d2cf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4bd504cf54744ea1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "permanent/Reading Manifesto.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "71294fe9f0be529c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "permanent/Reading Manifesto.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8e0520e485d37cd0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "5f8ba06c45144184",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "permanent/Reading Manifesto.md"
+              }
+            }
+          },
+          {
+            "id": "9adbb5b87a6f1359",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
           }
-        }
-      },
-      {
-        "id": "dfa9b6c135891bbb",
-        "type": "leaf",
-        "state": {
-          "type": "outgoing-link",
-          "state": {
-            "file": "literature/Atomic Habits by James Clear.md",
-            "linksCollapsed": false,
-            "unlinkedCollapsed": false
-          }
-        }
-      },
-      {
-        "id": "691fa076fd9e6cb1",
-        "type": "leaf",
-        "state": {
-          "type": "outline",
-          "state": {
-            "file": "literature/Atomic Habits by James Clear.md"
-          }
-        }
-      },
-      {
-        "id": "4e79c763b2738fce",
-        "type": "leaf",
-        "state": {
-          "type": "review-queue-list-view",
-          "state": {}
-        }
+        ],
+        "currentTab": 3
       }
     ],
-    "currentTab": 2
+    "direction": "horizontal",
+    "width": 300
   },
-  "active": "cf14f663813979d7",
+  "active": "22c4aa7d35b0dad3",
   "lastOpenFiles": [
+    "literature/Atomic Habits by James Clear.md",
+    "permanent/Reading Manifesto.md",
+    "permanent/Learning thought process.md",
+    "template/note.md",
     "permanent/Gol Maal (1979).md",
     "permanent/Amol Palekar.md",
     "permanent/Making story feature videos.md",
     "permanent/Video Editing Tools.md",
     "permanent/ShotCut.md",
-    "permanent/OBS Studio.md",
-    "permanent/Flood Risk Map.md",
-    "permanent/Zettelkasten.md",
-    "permanent/Lord of the Rings Rings of Power.md",
-    "permanent/Evaluating a Company when looking for jobs.md"
+    "permanent/OBS Studio.md"
   ]
 }
