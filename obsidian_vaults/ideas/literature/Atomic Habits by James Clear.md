@@ -20,6 +20,8 @@ List down all habits or involuntary actions you take during a routine. For examp
 
 Mark them as +, -, = to indicate positive, negative, neutral. 
 
+Habits should not be looked at as positive or negative". Only judge them on their effectiveness in the long run. For example, smoking might calm your nerves immediately but does harm to your lungs in the long run. 
+
 Habits should not be looked at as positive or negative. All habits serve you, only some solve problems for you. Judge habits on their effectiveness in the long run. 
 For example, smoking might calm your nerves immediately but does harm to your lungs in the long run. 
 
