@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "permanent/Reading Manifesto.md",
+            "file": "permanent/Household Manifesto.md",
             "mode": "source",
             "source": false
           }
@@ -19,126 +19,111 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "0d7872708ea0ffd4",
-    "type": "split",
+    "id": "532c80fcf336cb8a",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "33879ecaa96e3259",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "d3457f378ffc1b61",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {}
-            }
-          },
-          {
-            "id": "79f2c69b5da24721",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              }
-            }
+        "id": "4f825cc09e9ae714",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "62fa89fd60a0bc73",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "Analysis",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
           }
-        ]
+        }
+      },
+      {
+        "id": "2508529a9b2402af",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 300
+    "currentTab": 0
   },
   "right": {
-    "id": "1c8dd24eee5d4f82",
-    "type": "split",
+    "id": "722fa969915dd1cd",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "062763237f46d2cf",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "4bd504cf54744ea1",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "permanent/Reading Manifesto.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "71294fe9f0be529c",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "permanent/Reading Manifesto.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "8e0520e485d37cd0",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
-              }
-            }
-          },
-          {
-            "id": "5f8ba06c45144184",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "permanent/Reading Manifesto.md"
-              }
-            }
-          },
-          {
-            "id": "9adbb5b87a6f1359",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {}
-            }
+        "id": "5b38757d0533560a",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "permanent/Household Manifesto.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": false
           }
-        ],
-        "currentTab": 3
+        }
+      },
+      {
+        "id": "af2e08c0754abebf",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "permanent/Household Manifesto.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "75b021d45faf97ee",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "permanent/Household Manifesto.md"
+          }
+        }
+      },
+      {
+        "id": "70eeb96595829cc5",
+        "type": "leaf",
+        "state": {
+          "type": "review-queue-list-view",
+          "state": {}
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 300
+    "currentTab": 0
   },
   "active": "22c4aa7d35b0dad3",
   "lastOpenFiles": [
-    "literature/Atomic Habits by James Clear.md",
-    "permanent/Reading Manifesto.md",
-    "permanent/Learning thought process.md",
-    "template/note.md",
-    "permanent/Gol Maal (1979).md",
-    "permanent/Amol Palekar.md",
-    "permanent/Making story feature videos.md",
-    "permanent/Video Editing Tools.md",
-    "permanent/ShotCut.md",
-    "permanent/OBS Studio.md"
+    "permanent/Presentism.md",
+    "literature/Untitled.md",
+    "permanent/Riots.md",
+    "permanent/Watching films analytically.md",
+    "tech_learning/permanent/Records.md",
+    "permanent/Atomic variables.md",
+    "permanent/volatile.md",
+    "fleeting/fleeting.md",
+    "permanent/Mise-en-scene.md",
+    "permanent/Habit.md"
   ]
 }

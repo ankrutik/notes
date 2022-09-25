@@ -7,8 +7,8 @@ Used for
 - only the most fundamental methods such as constructors and accessors are enough
 
 #### Links
-[[Java]]
-#### Tags
 
+#### Tags
+#java 
 #### References
 https://docs.oracle.com/en/java/javase/14/language/records.html

@@ -1,3 +1,9 @@
+
+
+Options to publish notes. See Obsidian extensions. 
+
+Like a dragon has time based actions that determine success of the job. In grooming sessions, we also determine the point of effort. Heuristic: getting the read of the situation in time to take next steps. 
+
 Alternate approach: Write to permanent notes first, then move content to literature notes.
 
 
