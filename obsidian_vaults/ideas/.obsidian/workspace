@@ -4,14 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "22c4aa7d35b0dad3",
+        "id": "9049662474cc8b8d",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "permanent/Household Manifesto.md",
+            "file": "tech_learning/permanent/Records.md",
             "mode": "source",
-            "source": false
+            "backlinks": true,
+            "source": true
           }
         }
       }
@@ -19,111 +20,128 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "532c80fcf336cb8a",
-    "type": "mobile-drawer",
+    "id": "0d7872708ea0ffd4",
+    "type": "split",
     "children": [
       {
-        "id": "4f825cc09e9ae714",
-        "type": "leaf",
-        "state": {
-          "type": "file-explorer",
-          "state": {}
-        }
-      },
-      {
-        "id": "62fa89fd60a0bc73",
-        "type": "leaf",
-        "state": {
-          "type": "search",
-          "state": {
-            "query": "Analysis",
-            "matchingCase": false,
-            "explainSearch": false,
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical"
+        "id": "33879ecaa96e3259",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d3457f378ffc1b61",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "79f2c69b5da24721",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "Records",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
           }
-        }
-      },
-      {
-        "id": "2508529a9b2402af",
-        "type": "leaf",
-        "state": {
-          "type": "tag",
-          "state": {
-            "sortOrder": "frequency",
-            "useHierarchy": true
-          }
-        }
+        ],
+        "currentTab": 1
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300
   },
   "right": {
-    "id": "722fa969915dd1cd",
-    "type": "mobile-drawer",
+    "id": "1c8dd24eee5d4f82",
+    "type": "split",
     "children": [
       {
-        "id": "5b38757d0533560a",
-        "type": "leaf",
-        "state": {
-          "type": "backlink",
-          "state": {
-            "file": "permanent/Household Manifesto.md",
-            "collapseAll": false,
-            "extraContext": false,
-            "sortOrder": "alphabetical",
-            "showSearch": false,
-            "searchQuery": "",
-            "backlinkCollapsed": false,
-            "unlinkedCollapsed": false
+        "id": "062763237f46d2cf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4bd504cf54744ea1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "tech_learning/permanent/Records.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "71294fe9f0be529c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "tech_learning/permanent/Records.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8e0520e485d37cd0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "5f8ba06c45144184",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "tech_learning/permanent/Records.md"
+              }
+            }
+          },
+          {
+            "id": "9adbb5b87a6f1359",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
           }
-        }
-      },
-      {
-        "id": "af2e08c0754abebf",
-        "type": "leaf",
-        "state": {
-          "type": "outgoing-link",
-          "state": {
-            "file": "permanent/Household Manifesto.md",
-            "linksCollapsed": false,
-            "unlinkedCollapsed": true
-          }
-        }
-      },
-      {
-        "id": "75b021d45faf97ee",
-        "type": "leaf",
-        "state": {
-          "type": "outline",
-          "state": {
-            "file": "permanent/Household Manifesto.md"
-          }
-        }
-      },
-      {
-        "id": "70eeb96595829cc5",
-        "type": "leaf",
-        "state": {
-          "type": "review-queue-list-view",
-          "state": {}
-        }
+        ],
+        "currentTab": 3
       }
     ],
-    "currentTab": 0
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
   },
-  "active": "22c4aa7d35b0dad3",
+  "active": "9049662474cc8b8d",
   "lastOpenFiles": [
-    "permanent/Presentism.md",
-    "literature/Untitled.md",
-    "permanent/Riots.md",
-    "permanent/Watching films analytically.md",
-    "tech_learning/permanent/Records.md",
-    "permanent/Atomic variables.md",
-    "permanent/volatile.md",
-    "fleeting/fleeting.md",
-    "permanent/Mise-en-scene.md",
-    "permanent/Habit.md"
+    "permanent/Web vs Application servers.md",
+    "permanent/Installing SSL Cert in Tomcat.md",
+    "permanent/Creating SSL Cert.md",
+    "permanent/Servlets.md",
+    "permanent/Tomcat.md",
+    "literature/Zettelkasten Smart Notes Step by Step with Obsidian by Martin Adams.md",
+    "permanent/Zettelkasten.md",
+    "permanent/Roles of tone and value.md",
+    "permanent/Overlapping layers to increase value.md",
+    "permanent/Lifting.md"
   ]
 }

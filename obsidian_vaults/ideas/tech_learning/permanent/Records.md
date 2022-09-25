@@ -1,4 +1,6 @@
 # Records
+Tags: #java 
+
 Final classes with final members that have public accessors.
 
 Used for 
@@ -6,9 +8,8 @@ Used for
 - contain data not meant to be altered 
 - only the most fundamental methods such as constructors and accessors are enough
 
-#### Links
+# Links
 
-#### Tags
-#java 
-#### References
+# References
 https://docs.oracle.com/en/java/javase/14/language/records.html
+
