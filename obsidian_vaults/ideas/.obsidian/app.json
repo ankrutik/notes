@@ -15,9 +15,9 @@
   "newFileFolderPath": "permanent",
   "newLinkFormat": "relative",
   "mobileToolbarCommands": [
+    "editor:toggle-code",
     "editor:toggle-bold",
     "editor:toggle-italics",
-    "editor:toggle-code",
     "editor:insert-wikilink",
     "editor:insert-tag",
     "editor:set-heading",
@@ -39,7 +39,10 @@
     "note-composer:extract-heading",
     "note-composer:split-file",
     "editor:toggle-keyboard",
-    "editor:configure-toolbar"
+    "editor:configure-toolbar",
+    "editor:cut",
+    "editor:copy",
+    "editor:paste"
   ],
-  "fileSortOrder": "alphabetical"
+  "fileSortOrder": "byModifiedTime"
 }

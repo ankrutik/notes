@@ -4,15 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "9049662474cc8b8d",
+        "id": "13d92f3b707c2206",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "tech_learning/permanent/Records.md",
+            "file": "permanent/Simple answers over complex explanations.md",
             "mode": "source",
             "backlinks": true,
-            "source": true
+            "source": false
           }
         }
       }
@@ -20,128 +20,111 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "0d7872708ea0ffd4",
-    "type": "split",
+    "id": "51c3ee8532844e02",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "33879ecaa96e3259",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "d3457f378ffc1b61",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {}
-            }
-          },
-          {
-            "id": "79f2c69b5da24721",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "Records",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              }
-            }
+        "id": "608f8e637517aeea",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {}
+        }
+      },
+      {
+        "id": "f5b4f3d61bf971a1",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "#mental",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
           }
-        ],
-        "currentTab": 1
+        }
+      },
+      {
+        "id": "9c8120556d91ae74",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 300
+    "currentTab": 0
   },
   "right": {
-    "id": "1c8dd24eee5d4f82",
-    "type": "split",
+    "id": "c0c5d3b312df1ebb",
+    "type": "mobile-drawer",
     "children": [
       {
-        "id": "062763237f46d2cf",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "4bd504cf54744ea1",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "tech_learning/permanent/Records.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "71294fe9f0be529c",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "tech_learning/permanent/Records.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "8e0520e485d37cd0",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
-              }
-            }
-          },
-          {
-            "id": "5f8ba06c45144184",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "tech_learning/permanent/Records.md"
-              }
-            }
-          },
-          {
-            "id": "9adbb5b87a6f1359",
-            "type": "leaf",
-            "state": {
-              "type": "review-queue-list-view",
-              "state": {}
-            }
+        "id": "374cdd5d2bf5b07b",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "permanent/Simple answers over complex explanations.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
           }
-        ],
-        "currentTab": 3
+        }
+      },
+      {
+        "id": "3ea8b8a2d4a4a691",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "permanent/Simple answers over complex explanations.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "94be533d9f35636a",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "permanent/Simple answers over complex explanations.md"
+          }
+        }
+      },
+      {
+        "id": "10286bf5450830b9",
+        "type": "leaf",
+        "state": {
+          "type": "review-queue-list-view",
+          "state": {}
+        }
       }
     ],
-    "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "currentTab": 0
   },
-  "active": "9049662474cc8b8d",
+  "active": "13d92f3b707c2206",
   "lastOpenFiles": [
-    "permanent/Web vs Application servers.md",
-    "permanent/Installing SSL Cert in Tomcat.md",
-    "permanent/Creating SSL Cert.md",
-    "permanent/Servlets.md",
-    "permanent/Tomcat.md",
-    "literature/Zettelkasten Smart Notes Step by Step with Obsidian by Martin Adams.md",
-    "permanent/Zettelkasten.md",
-    "permanent/Roles of tone and value.md",
-    "permanent/Overlapping layers to increase value.md",
-    "permanent/Lifting.md"
+    "literature/politics/How 'Idgah Maidan' became Karnataka’s mini-Ayodhya.md",
+    "permanent/Simple answers over complex explanations.md",
+    "permanent/RMM for REST.md",
+    "permanent/Fascism.md",
+    "permanent/Majoritarian Politics.md",
+    "literature/Like A Dragon.md",
+    "fleeting/fleeting.md",
+    "permanent/Blocking and Staging.md",
+    "tech_learning/permanent/Records.md",
+    "permanent/Web vs Application servers.md"
   ]
 }

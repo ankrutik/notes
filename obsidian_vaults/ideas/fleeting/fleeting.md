@@ -1,3 +1,14 @@
+https://twitter.com/Momentswithbren/status/1574075649362370562?t=Fe8Rs0vgeXEM_XJS1Fv05g&s=19
+
+Look for examples of good tech docs. Use that experience to read between the lines in all docs. 
+
+Jetty server
+Tomcat server run book
+Junit 5
+Hibernate
+Oauth
+Microservices
+Spring boot
 
 
 Options to publish notes. See Obsidian extensions. 
