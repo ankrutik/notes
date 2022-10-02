@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "permanent/Simple answers over complex explanations.md",
-            "mode": "source",
+            "file": "permanent/TV and Film Review Resources.md",
+            "mode": "preview",
             "backlinks": true,
             "source": false
           }
@@ -37,7 +37,7 @@
         "state": {
           "type": "search",
           "state": {
-            "query": "#mental",
+            "query": "Review",
             "matchingCase": false,
             "explainSearch": false,
             "collapseAll": false,
@@ -58,7 +58,7 @@
         }
       }
     ],
-    "currentTab": 0
+    "currentTab": 1
   },
   "right": {
     "id": "c0c5d3b312df1ebb",
@@ -70,7 +70,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "permanent/Simple answers over complex explanations.md",
+            "file": "permanent/TV and Film Review Resources.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -87,7 +87,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "permanent/Simple answers over complex explanations.md",
+            "file": "permanent/TV and Film Review Resources.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -99,7 +99,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "permanent/Simple answers over complex explanations.md"
+            "file": "permanent/TV and Film Review Resources.md"
           }
         }
       },
@@ -116,15 +116,15 @@
   },
   "active": "13d92f3b707c2206",
   "lastOpenFiles": [
-    "literature/politics/How 'Idgah Maidan' became Karnataka’s mini-Ayodhya.md",
+    "fleeting/fleeting.md",
+    "literature/Like A Dragon.md",
+    "permanent/Noise Pollution Rules.md",
+    "permanent/Flood Risk Map.md",
     "permanent/Simple answers over complex explanations.md",
+    "literature/politics/How 'Idgah Maidan' became Karnataka’s mini-Ayodhya.md",
     "permanent/RMM for REST.md",
     "permanent/Fascism.md",
     "permanent/Majoritarian Politics.md",
-    "literature/Like A Dragon.md",
-    "fleeting/fleeting.md",
-    "permanent/Blocking and Staging.md",
-    "tech_learning/permanent/Records.md",
-    "permanent/Web vs Application servers.md"
+    "permanent/Blocking and Staging.md"
   ]
 }
