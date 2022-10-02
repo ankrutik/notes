@@ -4,6 +4,7 @@
     "type": "split",
     "children": [
       {
+
         "id": "13d92f3b707c2206",
         "type": "leaf",
         "state": {
@@ -24,6 +25,7 @@
     "type": "mobile-drawer",
     "children": [
       {
+
         "id": "608f8e637517aeea",
         "type": "leaf",
         "state": {
@@ -65,6 +67,7 @@
     "type": "mobile-drawer",
     "children": [
       {
+
         "id": "374cdd5d2bf5b07b",
         "type": "leaf",
         "state": {
