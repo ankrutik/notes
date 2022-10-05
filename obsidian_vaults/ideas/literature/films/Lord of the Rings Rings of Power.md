@@ -1,4 +1,4 @@
-# Lord of the Rings Rings of Power
+# Lord of the Rings Rings of Power (2022-)
 Tags: #tv #film/notes
 
 Extraordinary among recent releases. 
