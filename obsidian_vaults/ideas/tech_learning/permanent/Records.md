@@ -1,7 +1,9 @@
 # Records
 Tags: #java 
 
+Java 14 feature
 Final classes with final members that have public accessors.
+`final` modifier is implicitly applied.
 
 Used for 
 - plain data carriers
