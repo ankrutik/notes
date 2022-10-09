@@ -14,9 +14,10 @@ Occasionally, evaluate the quality of your reading. *Can you explain or even rec
 At most, mark a line in the side to points where you'd want to return. It's your own book, use a pencil or a pen. Ballpoint is better as it won't bleed thru the paper.
 
 ## Second pass
-Make [[Literature Notes]] or [[Permanent Notes]]
-
-Make literature notes only if the article seems to be recorded on its own. Otherwise take snippets directly into permanent notes.
+Choosing to make [[Literature Notes]] or [[Permanent Notes]]
+- Make literature notes only if the article/book/film seems to be recorded on its own.
+	*- Pull out points to make consolidated, permanent notes in later passes.*
+- Otherwise take snippets directly into permanent notes.
 
 Consider marking those notes for review later in a third pass.
 
@@ -29,6 +30,8 @@ Go thru notes and see if you can do any of the following:
 - remove entire parts if they are redundant due to notes added later
 - will it help if this note popped up when looking at some other note? Find and add links.
 - Pull out rules and format them as callouts or admonitions.
+
+**Pull out sections to make consolidated permanent notes.**
 
 Do you need to schedule spaced repetitions?
 
