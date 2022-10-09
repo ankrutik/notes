@@ -21,6 +21,9 @@ Key Results
 	- when OKRs are not met, they are probably not designed properly
 - 3 to 5 objectives are adequate to reach the KR. More than that can dilute the focus.
 
+
+
+
 Problems with traditional Goals:
 - narrow focus
 - unethical behaviour
@@ -71,8 +74,8 @@ After OKRs are committed for the quarter, any add-on objectives or key results m
 OKRs provide focus. When you commit to something, you are forfeiting something else. Inevitable consequence of allocating finite resources. **If we focus on everything, we focus on nothing.**
 
 The art of management lies in:
-**- you will have many activities of seemingly comparable significance**
-**- need to select 2-3 that provides leverage well beyond others**
+- **you will have many activities of seemingly comparable significance**
+- **need to select 2-3 that provides leverage well beyond others**
 - focus on these selected activities
 
 On a personal front too you need to select a 2-3 objectives and focus only on them.

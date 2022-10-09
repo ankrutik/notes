@@ -1,5 +1,9 @@
 [
   "obsidian-admonition",
   "cm-editor-syntax-highlight-obsidian",
-  "obsidian-spaced-repetition"
+  "obsidian-spaced-repetition",
+  "obsidian-outliner",
+  "sliding-panes-obsidian",
+  "obsidian-zoom",
+  "dataview"
 ]
