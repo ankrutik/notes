@@ -1,0 +1,141 @@
+{
+  "main": {
+    "id": "9fc0f827135ce8e2",
+    "type": "split",
+    "children": [
+      {
+        "id": "dfd5da74a84a8d67",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "427d224c7c7e1ffa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "permanent/HTTP Response Codes.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "51c3ee8532844e02",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "608f8e637517aeea",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "byModifiedTime"
+          }
+        }
+      },
+      {
+        "id": "f5b4f3d61bf971a1",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "Miche",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "9c8120556d91ae74",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "c0c5d3b312df1ebb",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "374cdd5d2bf5b07b",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "permanent/HTTP Response Codes.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "3ea8b8a2d4a4a691",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "permanent/HTTP Response Codes.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "94be533d9f35636a",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "permanent/HTTP Response Codes.md"
+          }
+        }
+      },
+      {
+        "id": "10286bf5450830b9",
+        "type": "leaf",
+        "state": {
+          "type": "review-queue-list-view",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "ribbon": {
+    "mostRecentAction": "Insert template"
+  },
+  "active": "427d224c7c7e1ffa",
+  "lastOpenFiles": [
+    "permanent/Troubleshooting web servers.md",
+    "permanent/HTTP Response Codes.md",
+    "permanent/Buying new products.md",
+    "permanent/Watching Chupke Chupke on the large screen.md",
+    "literature/random/Michelin star and India.md",
+    "literature/Atomic Habits by James Clear.md",
+    "literature/Trees and how to paint them in watercolour by WHJ Boot.md",
+    "literature/Measure What Matters.md",
+    "permanent/Tomcat.md",
+    "literature/Like A Dragon.md"
+  ]
+}

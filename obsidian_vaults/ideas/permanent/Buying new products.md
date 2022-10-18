@@ -1,0 +1,11 @@
+- Are there any consumables?
+	- Availability
+	- Cost
+	- Life time
+- Warranty
+- Service centers
+- Repairability
+	- How large is the part to be replaced when a smaller component of it seems to be likely to wear out soon?
+- Long term reviews
+- Early adoption issues
+- 24 hour realisation of uselessness

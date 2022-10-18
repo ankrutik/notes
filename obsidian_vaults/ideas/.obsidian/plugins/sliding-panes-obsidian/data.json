@@ -1,12 +1,12 @@
 {
-  "headerWidth": 32,
+  "headerWidth": 40,
   "leafDesktopWidth": 700,
   "leafMobileWidth": 350,
   "leafAutoWidth": false,
   "disabled": false,
   "rotateHeaders": true,
   "headerAlt": false,
-  "orienation": "mixed",
-  "stackingEnabled": true,
+  "orienation": "sideway",
+  "stackingEnabled": false,
   "smoothAnimation": true
 }
