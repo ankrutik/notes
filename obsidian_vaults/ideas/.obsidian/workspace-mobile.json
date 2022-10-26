@@ -19,8 +19,35 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "0cfff316c8d537ea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "permanent/Plants Routine.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c107019a7522ead3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "literature/politics/Supreme Court's Exasperation Against Hate Speech is Tip of the Iceberg.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -45,7 +72,7 @@
         "state": {
           "type": "search",
           "state": {
-            "query": "Miche",
+            "query": "Plant",
             "matchingCase": false,
             "explainSearch": false,
             "collapseAll": false,
@@ -66,7 +93,7 @@
         }
       }
     ],
-    "currentTab": 0
+    "currentTab": 1
   },
   "right": {
     "id": "c0c5d3b312df1ebb",
@@ -78,7 +105,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "permanent/HTTP Response Codes.md",
+            "file": "literature/politics/Supreme Court's Exasperation Against Hate Speech is Tip of the Iceberg.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -95,7 +122,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "permanent/HTTP Response Codes.md",
+            "file": "literature/politics/Supreme Court's Exasperation Against Hate Speech is Tip of the Iceberg.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -107,7 +134,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "permanent/HTTP Response Codes.md"
+            "file": "literature/politics/Supreme Court's Exasperation Against Hate Speech is Tip of the Iceberg.md"
           }
         }
       },
@@ -125,17 +152,17 @@
   "ribbon": {
     "mostRecentAction": "Insert template"
   },
-  "active": "427d224c7c7e1ffa",
+  "active": "c107019a7522ead3",
   "lastOpenFiles": [
-    "permanent/Troubleshooting web servers.md",
+    "permanent/Plants Routine.md",
     "permanent/HTTP Response Codes.md",
+    "permanent/Troubleshooting web servers.md",
     "permanent/Buying new products.md",
     "permanent/Watching Chupke Chupke on the large screen.md",
     "literature/random/Michelin star and India.md",
     "literature/Atomic Habits by James Clear.md",
     "literature/Trees and how to paint them in watercolour by WHJ Boot.md",
     "literature/Measure What Matters.md",
-    "permanent/Tomcat.md",
-    "literature/Like A Dragon.md"
+    "permanent/Tomcat.md"
   ]
 }
