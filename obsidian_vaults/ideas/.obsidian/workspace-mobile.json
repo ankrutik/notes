@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "literature/politics/Supreme Court's Exasperation Against Hate Speech is Tip of the Iceberg.md",
+                "file": "fleeting/Film Watch List.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -72,7 +72,7 @@
         "state": {
           "type": "search",
           "state": {
-            "query": "Plant",
+            "query": "",
             "matchingCase": false,
             "explainSearch": false,
             "collapseAll": false,
@@ -93,7 +93,7 @@
         }
       }
     ],
-    "currentTab": 1
+    "currentTab": 0
   },
   "right": {
     "id": "c0c5d3b312df1ebb",
@@ -105,7 +105,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "literature/politics/Supreme Court's Exasperation Against Hate Speech is Tip of the Iceberg.md",
+            "file": "fleeting/Film Watch List.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "literature/politics/Supreme Court's Exasperation Against Hate Speech is Tip of the Iceberg.md",
+            "file": "fleeting/Film Watch List.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -134,7 +134,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "literature/politics/Supreme Court's Exasperation Against Hate Speech is Tip of the Iceberg.md"
+            "file": "fleeting/Film Watch List.md"
           }
         }
       },
@@ -154,6 +154,8 @@
   },
   "active": "c107019a7522ead3",
   "lastOpenFiles": [
+    "fleeting/fleeting.md",
+    "literature/politics/Supreme Court's Exasperation Against Hate Speech is Tip of the Iceberg.md",
     "permanent/Plants Routine.md",
     "permanent/HTTP Response Codes.md",
     "permanent/Troubleshooting web servers.md",
@@ -161,8 +163,6 @@
     "permanent/Watching Chupke Chupke on the large screen.md",
     "literature/random/Michelin star and India.md",
     "literature/Atomic Habits by James Clear.md",
-    "literature/Trees and how to paint them in watercolour by WHJ Boot.md",
-    "literature/Measure What Matters.md",
-    "permanent/Tomcat.md"
+    "literature/Trees and how to paint them in watercolour by WHJ Boot.md"
   ]
 }
