@@ -38,8 +38,8 @@
     "editor:toggle-bullet-list",
     "editor:toggle-checklist-status",
     "editor:attach-file",
-    "editor:toggle-numbered-list",
     "note-composer:extract-heading",
+    "editor:toggle-numbered-list",
     "note-composer:split-file",
     "editor:toggle-keyboard",
     "editor:configure-toolbar"

@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fleeting/Film Watch List.md",
+                "file": "literature/films/All quiet on the western front.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -105,7 +105,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "fleeting/Film Watch List.md",
+            "file": "literature/films/All quiet on the western front.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "fleeting/Film Watch List.md",
+            "file": "literature/films/All quiet on the western front.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -134,7 +134,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "fleeting/Film Watch List.md"
+            "file": "literature/films/All quiet on the western front.md"
           }
         }
       },
@@ -149,11 +149,10 @@
     ],
     "currentTab": 0
   },
-  "ribbon": {
-    "mostRecentAction": "Insert template"
-  },
   "active": "c107019a7522ead3",
   "lastOpenFiles": [
+    "literature/Principal Upanisads.md",
+    "fleeting/Film Watch List.md",
     "fleeting/fleeting.md",
     "literature/politics/Supreme Court's Exasperation Against Hate Speech is Tip of the Iceberg.md",
     "permanent/Plants Routine.md",
@@ -161,8 +160,6 @@
     "permanent/Troubleshooting web servers.md",
     "permanent/Buying new products.md",
     "permanent/Watching Chupke Chupke on the large screen.md",
-    "literature/random/Michelin star and India.md",
-    "literature/Atomic Habits by James Clear.md",
-    "literature/Trees and how to paint them in watercolour by WHJ Boot.md"
+    "literature/random/Michelin star and India.md"
   ]
 }
