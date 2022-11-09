@@ -9,10 +9,14 @@ Tags: #plants #routine
 > Avoid disturbing the position of the plants as much as possible. 
 
 
-**Aerate soil** by using a small trowel 
-- in a pull up motion along the sides of the pot 
-- away from the main root as much as possible
-- be gentle
+**Aerate soil** 
+- when using plastic pots, press the pots to loosen the soil within
+- by using a small trowel 
+	- use this as sparingly as possible, I've hurt roots of plants
+	- use this once a month
+	- in a pull up motion along the sides of the pot 
+	- away from the main root as much as possible
+	- be gentle
 
 **Observe roots** 
 	- to be white and healthy

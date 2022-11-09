@@ -11,14 +11,6 @@
             "id": "3e2698990c8140e0",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "39bafba588246146",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
                 "file": "literature/films/All Quiet on the Western Front.md",
@@ -28,8 +20,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -146,17 +137,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "39bafba588246146",
+  "active": "3e2698990c8140e0",
   "lastOpenFiles": [
+    "permanent/Watching films analytically.md",
+    "permanent/Plants Routine.md",
+    "literature/films/All Quiet on the Western Front.md",
     "template/plant notes.md",
     "template/film notes.md",
     "template/note.md",
-    "literature/films/All Quiet on the Western Front.md",
     "literature/podcasts/The Seen and the Unseen by Amit Verma.md",
     "permanent/punctuation.md",
     "permanent/technosolutionism.md",
-    "permanent/Untitled.md",
-    "literature/Deep Work by Cal Newport.md",
-    "literature/Untitled.md"
+    "permanent/Untitled.md"
   ]
 }
