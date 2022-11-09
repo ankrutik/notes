@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "literature/podcasts/The Seen and the Unseen by Amit Verma.md",
+                "file": "literature/films/All Quiet on the Western Front.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "literature/podcasts/The Seen and the Unseen by Amit Verma.md",
+                "file": "literature/films/All Quiet on the Western Front.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "literature/podcasts/The Seen and the Unseen by Amit Verma.md",
+                "file": "literature/films/All Quiet on the Western Front.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "literature/podcasts/The Seen and the Unseen by Amit Verma.md"
+                "file": "literature/films/All Quiet on the Western Front.md"
               }
             }
           },
@@ -148,15 +148,15 @@
   },
   "active": "39bafba588246146",
   "lastOpenFiles": [
+    "template/plant notes.md",
+    "template/film notes.md",
+    "template/note.md",
+    "literature/films/All Quiet on the Western Front.md",
+    "literature/podcasts/The Seen and the Unseen by Amit Verma.md",
     "permanent/punctuation.md",
     "permanent/technosolutionism.md",
-    "literature/podcasts/The Seen and the Unseen by Amit Verma.md",
     "permanent/Untitled.md",
     "literature/Deep Work by Cal Newport.md",
-    "literature/Untitled.md",
-    "permanent/Archiving Personal Data.md",
-    "template/note.md",
-    "template/film notes.md",
-    "template/plant notes.md"
+    "literature/Untitled.md"
   ]
 }

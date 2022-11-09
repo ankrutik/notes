@@ -1,4 +1,3 @@
-# All quiet on the western front
 Tags: #film/notes 
 Director:
 Cinematographer: 

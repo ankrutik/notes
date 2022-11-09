@@ -1,4 +1,3 @@
-# {{title}}
 Tags: #film/notes 
 Director:
 Cinematographer: 

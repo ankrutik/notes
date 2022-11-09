@@ -1,4 +1,3 @@
-# {{title}}
 Tags: #plants
 
 ## Light
