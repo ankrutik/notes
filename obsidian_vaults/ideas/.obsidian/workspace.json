@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "literature/films/All Quiet on the Western Front.md",
+                "file": "fleeting/Film Watch List.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "literature/films/All Quiet on the Western Front.md",
+                "file": "fleeting/Film Watch List.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "literature/films/All Quiet on the Western Front.md",
+                "file": "fleeting/Film Watch List.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "literature/films/All Quiet on the Western Front.md"
+                "file": "fleeting/Film Watch List.md"
               }
             }
           },
@@ -139,9 +139,9 @@
   },
   "active": "3e2698990c8140e0",
   "lastOpenFiles": [
+    "literature/films/All Quiet on the Western Front.md",
     "permanent/Watching films analytically.md",
     "permanent/Plants Routine.md",
-    "literature/films/All Quiet on the Western Front.md",
     "template/plant notes.md",
     "template/film notes.md",
     "template/note.md",
