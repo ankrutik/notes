@@ -1,5 +1,5 @@
 Tags: #film/notes 
-Director:
+Director: Edward Berger 
 Cinematographer: 
 Editor:
 
