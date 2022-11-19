@@ -39,15 +39,36 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "literature/films/All quiet on the western front.md",
+                "file": "fleeting/Film Watch List.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
+          },
+          {
+            "id": "ac37415c07cd3724",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "permanent/Kanshi Ram.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ad5388a4cdf40f1c",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -105,7 +126,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "literature/films/All quiet on the western front.md",
+            "file": "permanent/Kanshi Ram.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -122,7 +143,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "literature/films/All quiet on the western front.md",
+            "file": "permanent/Kanshi Ram.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -134,7 +155,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "literature/films/All quiet on the western front.md"
+            "file": "permanent/Kanshi Ram.md"
           }
         }
       },
@@ -149,17 +170,17 @@
     ],
     "currentTab": 0
   },
-  "active": "c107019a7522ead3",
+  "active": "ac37415c07cd3724",
   "lastOpenFiles": [
+    "permanent/Activism.md",
+    "literature/Anarchist Cook Book by Aakar Patel.md",
+    "permanent/Kanshi Ram.md",
+    "Literature/podcasts/Anurag Minus Verma.md",
+    "Permanent Notes/Activism.md",
     "fleeting/Film Watch List.md",
     "literature/films/All quiet on the western front.md",
     "literature/Principal Upanisads.md",
     "fleeting/fleeting.md",
-    "literature/politics/Supreme Court's Exasperation Against Hate Speech is Tip of the Iceberg.md",
-    "permanent/Plants Routine.md",
-    "permanent/HTTP Response Codes.md",
-    "permanent/Troubleshooting web servers.md",
-    "permanent/Buying new products.md",
-    "permanent/Watching Chupke Chupke on the large screen.md"
+    "literature/politics/Supreme Court's Exasperation Against Hate Speech is Tip of the Iceberg.md"
   ]
 }

@@ -12,7 +12,7 @@ Watched on 20221108 at home on Netflix
 - Production design
 	- Makes you wonder how big a studio Netflix is, who funds these things
 	- Amazing level of details in the trenches 
-	- Large cinematic battlefields 
+	- Large cineau.gaafa;#@& fumfafmatic battlefields 
 - Camera work
 	- Amazing atmospheric shots of flares, night time
 	- Watch this film with the correct colour reproduction in a dark room
@@ -22,7 +22,7 @@ Watched on 20221108 at home on Netflix
 - Edit
 	- Transitions and establishing scenes are very nicely done. 
 	- Use of cuts in edit between scenes are not wasted. Used in a deliberate way to show contrast. 
-- Heinrick is used and discarded from memory and replaced with another
+- Heinrick is used and discarded 9jfrom memory and replaced with another
 	- Clothes washed, tags taken off, and reused casually
 - The kids are so eager simply because the oratory and propaganda
 	- Makes them seem powerful and Paris is achievable

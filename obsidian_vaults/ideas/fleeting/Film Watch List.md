@@ -21,3 +21,11 @@ Portrait of a lady on fire
 
 Causeway 
 Louis Armstrong black and blue 
+
+Papermoon
+Weird al
+Portrait of a lady on fire
+Aftersun
+Monica Oh my darling
+
+
