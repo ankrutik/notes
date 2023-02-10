@@ -1,0 +1,232 @@
+{
+  "main": {
+    "id": "9fc0f827135ce8e2",
+    "type": "split",
+    "children": [
+      {
+        "id": "aa08f041617072d4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "13d92f3b707c2206",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "permanent/Guitar Strings.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bc325f96a887aa9a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "permanent/Guitar Practice.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d25b74cfe89acf3f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "permanent/Watercolour paper.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b5265e49e7a5fcca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "permanent/Guitar Amps.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6606efc94912cc73",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "permanent/Pondicherry and Auroville.md",
+                "mode": "preview",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9a63cc9ec82aaf00",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "permanent/Roles of tone and value.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d2ecad50d1cc2b0f",
+    "type": "split",
+    "children": [
+      {
+        "id": "369dffe5f27fb91d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7d6f6e7734426bee",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byModifiedTime"
+              }
+            }
+          },
+          {
+            "id": "dfc28c2941334b5d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag: #coffee",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "db413ef16fc796ca",
+    "type": "split",
+    "children": [
+      {
+        "id": "85cdab7fa0a88768",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e5677ba939d533bf",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "permanent/Pondicherry and Auroville.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "b26b814176dc1930",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "permanent/Pondicherry and Auroville.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "0678957583ac9931",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "4867bfe4a9986007",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "permanent/Pondicherry and Auroville.md"
+              }
+            }
+          },
+          {
+            "id": "01e3c8c1807068fe",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false
+    }
+  },
+  "active": "6606efc94912cc73",
+  "lastOpenFiles": [
+    "permanent/Guitar Amps.md",
+    "permanent/Watercolour paper.md",
+    "permanent/Guitar Practice.md",
+    "permanent/Guitar Strings.md",
+    "permanent/Roles of tone and value.md",
+    "permanent/Servlets.md",
+    "literature/films/All quiet on the western front.md",
+    "permanent/Aeropress.md",
+    "tech_learning/literature/Software Systems Architecture Rozanski Nick, Woods Eoin.md",
+    "tech_learning/permanent/Software Architecture.md"
+  ]
+}

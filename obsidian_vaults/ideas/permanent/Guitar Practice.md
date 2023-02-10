@@ -1,0 +1,1 @@
+https://www.leadguitarlessons.com/guitar-lessons/scales/the-combined-scale.htm
