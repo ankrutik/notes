@@ -1,5 +1,5 @@
 # Architecture
-Tags: #watercolour/techniques 
+Tags: #watercolour/subjects  
 
 ## Examples
 ### Illustration style

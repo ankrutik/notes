@@ -1,3 +1,5 @@
+Take photographs differently when used as reference for art
+
 Tags: #coffee
 
 Grind size (clicks on Timemore C2 Max): 16

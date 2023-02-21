@@ -1,8 +1,12 @@
-# Foliage
-Tags: #watercolour/techniques 
+Tags: #watercolour/subjects  
+
+## Simple approach
+- Apply lighter green in strokes
+- Strokes should be as per the foliage
+- Let the paint dry a little till it is wet-ish. Then apply dabs of darker green.
+	- this is to merge
 
 ## General points
-
 - Do not use green hues straight out of the tube, they do not look natural. 
 - There needs to be a minimum of 3 hue variations. Do not put too much contrast between the hues. Maintain harmony.
 - Fan out when doing tree foliage.
@@ -58,6 +62,7 @@ This is the best and most satisfying approach so far.
 	1. Similar approach as in step 2.
 	2. Masses of foliage in some places.
 	3. Use individual dabs to do details in other places.
+
 
 ## Color mixes
 brightest green: Antwerp blue, gambol

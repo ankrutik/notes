@@ -1,0 +1,11 @@
+{
+  "includeFirstLineAsNoteHeading": false,
+  "excludeFirstLineInNote": true,
+  "headingFormat": "#",
+  "newFileLocation": 2,
+  "customFolder": "permanent",
+  "fileNamePrefix": "",
+  "transcludeByDefault": false,
+  "noteLinkTemplate": "",
+  "refactoredNoteTemplate": "Tags: \n\n{{new_note_content}}\n\n# Links\n{{link}}\n\n# References"
+}

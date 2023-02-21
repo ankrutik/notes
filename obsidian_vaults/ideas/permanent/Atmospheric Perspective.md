@@ -1,11 +1,9 @@
-# Atmospheric Perspective
 Tags: #watercolour/techniques 
 
-Atmospheric perspective is a way to show depth in a painting by showing the effect of the atmosphere on objects in the fore, mid, and background.
-
-Objects in foreground will retain their details,  colour, tonal values in full. Object farther away will have the same properties modified.
-
-The level of modification of these properties shows how thick the atmosphere can be.
+- way to show depth in a painting by showing the effect of the atmosphere on objects in the fore, mid, and background.
+- Objects in foreground will retain their details, colour, tonal values in full.
+- Object farther away will have the same properties modified.
+- The level of modification of these properties shows how thick the atmosphere can be.
 
 
 #### Links
