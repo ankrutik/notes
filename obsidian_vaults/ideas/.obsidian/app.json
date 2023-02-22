@@ -17,6 +17,7 @@
   "mobileToolbarCommands": [
     "editor:indent-list",
     "editor:unindent-list",
+    "editor:toggle-bullet-list",
     "editor:toggle-code",
     "editor:toggle-bold",
     "editor:toggle-italics",
@@ -35,7 +36,6 @@
     "editor:toggle-strikethrough",
     "editor:toggle-blockquote",
     "editor:insert-embed",
-    "editor:toggle-bullet-list",
     "editor:toggle-checklist-status",
     "editor:attach-file",
     "note-composer:extract-heading",
