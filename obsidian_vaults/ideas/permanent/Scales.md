@@ -22,3 +22,5 @@ Tags: #guitar
 # Links
 
 # References
+https://www.guitarscale.org/
+https://www.leadguitarlessons.com/guitar-lessons/scales/the-combined-scale.htm
