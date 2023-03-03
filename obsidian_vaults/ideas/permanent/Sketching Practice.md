@@ -16,6 +16,9 @@ Tags: #routine #sketching
 	- then draw the major blocks as shapes in proportion to each other
 	- then observe the reference/subject and detail each shape part by part
 
+## Look up
+- Gesture drawing: quick 15 second without need to "finish"
+
 ## Inspirations
 [Paul Heaston draws an art class](https://twitter.com/paulheaston/status/1621289279296249857)
 [Sketching Scottie Blind Contour Drawing](https://youtu.be/WxXBHG90CRE)

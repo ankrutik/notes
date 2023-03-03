@@ -1,0 +1,3 @@
+- 60 to 70 gms of coffee per liter of water
+	- N gm water, 0.06xN gm coffee
+	- N gm coffee, 

@@ -1,5 +1,13 @@
 Tags: #guitar 
 
+- When practicing, focus on
+	- Shape 
+	- Where are the root notes?
+	- Intervals formula
+- Refer to
+	- Degrees
+
+
 ## Minor Pentatonic
 ![[attachments/a_pentatonic_minor.png]]
 
@@ -23,4 +31,4 @@ Tags: #guitar
 
 # References
 https://www.guitarscale.org/
-https://www.leadguitarlessons.com/guitar-lessons/scales/the-combined-scale.htm
+https://www.leadguitarlessons.com/guitar-lessons/scales/
