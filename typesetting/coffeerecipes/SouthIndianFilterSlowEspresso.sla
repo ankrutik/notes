@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SCRIBUSUTF8NEW Version="1.5.8">
-    <DOCUMENT ANZPAGES="6" PAGEWIDTH="595.28" PAGEHEIGHT="841.89" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" PRESET="0" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" ORIENTATION="0" PAGESIZE="A4" FIRSTNUM="1" BOOK="0" AUTOSPALTEN="1" ABSTSPALTEN="11" UNITS="0" DFONT="Arial Regular" DSIZE="12" DCOL="1" DGAP="0" TabFill="" TabWidth="36" TextDistLeft="0" TextDistRight="0" TextDistBottom="0" TextDistTop="0" FirstLineOffset="0" AUTHOR="" COMMENTS="" KEYWORDS="" PUBLISHER="" DOCDATE="" DOCTYPE="" DOCFORMAT="" DOCIDENT="" DOCSOURCE="" DOCLANGINFO="" DOCRELATION="" DOCCOVER="" DOCRIGHTS="" DOCCONTRIB="" TITLE="" SUBJECT="" VHOCH="33" VHOCHSC="66" VTIEF="33" VTIEFSC="66" VKAPIT="75" BASEGRID="14.4" BASEO="0" AUTOL="100" UnderlinePos="-1" UnderlineWidth="-1" StrikeThruPos="-1" StrikeThruWidth="-1" GROUPC="1" HCMS="1" DPSo="0" DPSFo="0" DPuse="1" DPgam="0" DPbla="1" DPPr="Fogra27L CMYK Coated Press" DPIn="sRGB display profile (ICC v2.2)" DPInCMYK="Fogra27L CMYK Coated Press" DPIn2="sRGB display profile (ICC v2.2)" DPIn3="Fogra27L CMYK Coated Press" DISc="1" DIIm="0" ALAYER="0" LANGUAGE="en_US" AUTOMATIC="1" AUTOCHECK="0" GUIDELOCK="0" SnapToGuides="0" SnapToGrid="0" SnapToElement="0" MINGRID="20" MAJGRID="100" SHOWGRID="1" SHOWGUIDES="1" showcolborders="1" SHOWFRAME="1" SHOWControl="0" SHOWLAYERM="1" SHOWMARGIN="1" SHOWBASE="0" SHOWPICT="1" SHOWLINK="0" rulerMode="1" showrulers="1" showBleed="1" rulerXoffset="0" rulerYoffset="0" GuideRad="10" GRAB="4" POLYC="4" POLYF="0.5" POLYR="0" POLYIR="0" POLYCUR="0" POLYOCUR="0" POLYS="0" arcStartAngle="30" arcSweepAngle="300" spiralStartAngle="0" spiralEndAngle="1080" spiralFactor="1.2" AutoSave="1" AutoSaveTime="600000" AutoSaveCount="1" AutoSaveKeep="0" AUtoSaveInDocDir="1" AutoSaveDir="" ScratchBottom="20" ScratchLeft="100" ScratchRight="100" ScratchTop="20" GapHorizontal="0" GapVertical="40" StartArrow="0" EndArrow="0" PEN="Black" BRUSH="None" PENLINE="d" PENTEXT="Black" StrokeText="Black" TextBackGround="None" TextLineColor="None" TextBackGroundShade="100" TextLineShade="100" TextPenShade="100" TextStrokeShade="100" STIL="1" STILLINE="1" WIDTH="1" WIDTHLINE="1" PENSHADE="100" LINESHADE="100" BRUSHSHADE="100" CPICT="None" PICTSHADE="100" CSPICT="None" PICTSSHADE="100" PICTSCX="1" PICTSCY="1" PSCALE="1" PASPECT="1" EmbeddedPath="0" HalfRes="1" dispX="10" dispY="10" constrain="15" MINORC="#00ff00" MAJORC="#00ff00" GuideC="#000080" BaseC="#c0c0c0" renderStack="0 1 2 3 4" GridType="0" PAGEC="#ffffff" MARGC="#0000ff" RANDF="0" currentProfile="PostScript" calligraphicPenFillColor="Black" calligraphicPenLineColor="Black" calligraphicPenFillColorShade="100" calligraphicPenLineColorShade="100" calligraphicPenLineWidth="1" calligraphicPenAngle="0" calligraphicPenWidth="10" calligraphicPenStyle="1">
+    <DOCUMENT ANZPAGES="6" PAGEWIDTH="595.28" PAGEHEIGHT="841.89" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" PRESET="0" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" ORIENTATION="0" PAGESIZE="A4" FIRSTNUM="1" BOOK="0" AUTOSPALTEN="1" ABSTSPALTEN="11" UNITS="0" DFONT="Arial Regular" DSIZE="12" DCOL="1" DGAP="0" TabFill="" TabWidth="36" TextDistLeft="0" TextDistRight="0" TextDistBottom="0" TextDistTop="0" FirstLineOffset="0" AUTHOR="" COMMENTS="" KEYWORDS="" PUBLISHER="" DOCDATE="" DOCTYPE="" DOCFORMAT="" DOCIDENT="" DOCSOURCE="" DOCLANGINFO="" DOCRELATION="" DOCCOVER="" DOCRIGHTS="" DOCCONTRIB="" TITLE="" SUBJECT="" VHOCH="33" VHOCHSC="66" VTIEF="33" VTIEFSC="66" VKAPIT="75" BASEGRID="14.4" BASEO="0" AUTOL="100" UnderlinePos="-1" UnderlineWidth="-1" StrikeThruPos="-1" StrikeThruWidth="-1" GROUPC="2" HCMS="1" DPSo="0" DPSFo="0" DPuse="1" DPgam="0" DPbla="1" DPPr="Fogra27L CMYK Coated Press" DPIn="sRGB display profile (ICC v2.2)" DPInCMYK="Fogra27L CMYK Coated Press" DPIn2="sRGB display profile (ICC v2.2)" DPIn3="Fogra27L CMYK Coated Press" DISc="1" DIIm="0" ALAYER="0" LANGUAGE="en_US" AUTOMATIC="1" AUTOCHECK="0" GUIDELOCK="0" SnapToGuides="0" SnapToGrid="0" SnapToElement="0" MINGRID="20" MAJGRID="100" SHOWGRID="1" SHOWGUIDES="1" showcolborders="1" SHOWFRAME="1" SHOWControl="0" SHOWLAYERM="1" SHOWMARGIN="1" SHOWBASE="0" SHOWPICT="1" SHOWLINK="0" rulerMode="1" showrulers="1" showBleed="1" rulerXoffset="0" rulerYoffset="0" GuideRad="10" GRAB="4" POLYC="4" POLYF="0.5" POLYR="0" POLYIR="0" POLYCUR="0" POLYOCUR="0" POLYS="0" arcStartAngle="30" arcSweepAngle="300" spiralStartAngle="0" spiralEndAngle="1080" spiralFactor="1.2" AutoSave="1" AutoSaveTime="600000" AutoSaveCount="1" AutoSaveKeep="0" AUtoSaveInDocDir="1" AutoSaveDir="" ScratchBottom="20" ScratchLeft="100" ScratchRight="100" ScratchTop="20" GapHorizontal="0" GapVertical="40" StartArrow="0" EndArrow="0" PEN="Black" BRUSH="None" PENLINE="d" PENTEXT="Black" StrokeText="Black" TextBackGround="None" TextLineColor="None" TextBackGroundShade="100" TextLineShade="100" TextPenShade="100" TextStrokeShade="100" STIL="1" STILLINE="1" WIDTH="1" WIDTHLINE="1" PENSHADE="100" LINESHADE="100" BRUSHSHADE="100" CPICT="None" PICTSHADE="100" CSPICT="None" PICTSSHADE="100" PICTSCX="1" PICTSCY="1" PSCALE="1" PASPECT="1" EmbeddedPath="0" HalfRes="1" dispX="10" dispY="10" constrain="15" MINORC="#00ff00" MAJORC="#00ff00" GuideC="#000080" BaseC="#c0c0c0" renderStack="0 1 2 3 4" GridType="0" PAGEC="#ffffff" MARGC="#0000ff" RANDF="0" currentProfile="PostScript" calligraphicPenFillColor="Black" calligraphicPenLineColor="Black" calligraphicPenFillColorShade="100" calligraphicPenLineColorShade="100" calligraphicPenLineWidth="1" calligraphicPenAngle="0" calligraphicPenWidth="10" calligraphicPenStyle="1">
         <CheckProfile Name="PDF 1.3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="0" checkFontIsOpenType="0" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
         <CheckProfile Name="PDF 1.4" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="0" checkFontIsOpenType="0" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
         <CheckProfile Name="PDF 1.5" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkPartFilledImageFrames="0" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkNotCMYKOrSpot="0" checkDeviceColorsAndOutputIntent="0" checkFontNotEmbedded="0" checkFontIsOpenType="0" checkAppliedMasterDifferentSide="1" checkEmptyTextFrames="1"/>
@@ -76,6 +76,8 @@
         <PDF firstUse="0" Thumbnails="0" Articles="0" Bookmarks="0" Compress="1" CMethod="0" Quality="0" EmbedPDF="0" MirrorH="0" MirrorV="0" Clip="0" rangeSel="0" rangeTxt="" RotateDeg="0" PresentMode="0" RecalcPic="0" FontEmbedding="0" Grayscale="0" RGBMode="1" UseProfiles="0" UseProfiles2="0" Binding="0" PicRes="300" Resolution="300" Version="14" Intent="1" Intent2="0" SolidP="sRGB display profile (ICC v2.2)" ImageP="sRGB display profile (ICC v2.2)" PrintP="Fogra27L CMYK Coated Press" InfoString="" BTop="0" BLeft="0" BRight="0" BBottom="0" useDocBleeds="1" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" docInfoMarks="0" markLength="1" markOffset="0" ImagePr="0" PassOwner="" PassUser="" Permissions="-4" Encrypt="0" UseLayers="0" UseLpi="0" UseSpotColors="1" doMultiFile="0" displayBookmarks="0" displayFullscreen="0" displayLayers="0" displayThumbs="0" hideMenuBar="0" hideToolBar="0" fitWindow="0" openAfterExport="0" PageLayout="0" openAction="">
             <Subset Name="Arial Regular"/>
             <Subset Name="FOT-NewCinemaA Std D"/>
+            <Subset Name="ITC Clearface Std Regular"/>
+            <Subset Name="NYTImperial Regular"/>
             <LPI Color="" Frequency="10" Angle="0" SpotFunction="0"/>
             <LPI Color="Black" Frequency="133" Angle="45" SpotFunction="3"/>
             <LPI Color="Cyan" Frequency="133" Angle="105" SpotFunction="3"/>
@@ -237,7 +239,7 @@
         <PAGEOBJECT XPOS="101" YPOS="369" OwnPage="0" ItemID="189871968" PTYPE="4" WIDTH="198.333333333333" HEIGHT="13.4924515645263" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L198.333 0 L198.333 13.4925 L0 13.4925 L0 0 Z" copath="M0 0 L198.333 0 L198.333 13.4925 L0 13.4925 L0 0 Z" gXpos="0.499999999999972" gYpos="228" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle ALIGN="1" LINESPMode="1" FCOLOR="Caribbean Green"/>
-                <ITEXT FONT="FOT-NewCinemaA Std D" FONTSIZE="13" FCOLOR="Caribbean Green" CH="Pour, over spoon"/>
+                <ITEXT FONT="FOT-NewCinemaA Std D" FONTSIZE="13" FCOLOR="Caribbean Green" CH="Pour slowly, over spoon"/>
                 <trail ALIGN="1" LINESPMode="1"/>
             </StoryText>
         </PAGEOBJECT>
@@ -258,7 +260,7 @@
         <PAGEOBJECT XPOS="100.998774513485" YPOS="406" OwnPage="0" ItemID="189869136" PTYPE="4" WIDTH="198.666666666667" HEIGHT="29.3811796694709" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L198.667 0 L198.667 29.3812 L0 29.3812 L0 0 Z" copath="M0 0 L198.667 0 L198.667 29.3812 L0 29.3812 L0 0 Z" gXpos="0.49877451348485" gYpos="265" gWidth="0" gHeight="0" PSTYLE="Default Paragraph Style" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle PARENT="Default Paragraph Style" ALIGN="1" LINESP="15" FCOLOR="Maroon"/>
-                <ITEXT FONT="FOT-NewCinemaA Std D" FONTSIZE="13" FCOLOR="Maroon" CH="Swirl few times "/>
+                <ITEXT FONT="FOT-NewCinemaA Std D" FONTSIZE="13" FCOLOR="Maroon" CH="Swirl 1-2 times "/>
                 <para PARENT="Default Paragraph Style" ALIGN="1" LINESP="15"/>
                 <ITEXT FONT="FOT-NewCinemaA Std D" FONTSIZE="13" FCOLOR="Maroon" CH="Lid on"/>
                 <trail PARENT="Default Paragraph Style" ALIGN="1" LINESP="15"/>
@@ -510,7 +512,7 @@
                 <DefaultStyle PARENT="Coffee Recipe Grind Notes"/>
                 <ITEXT CH="Grinder notes:"/>
                 <para PARENT="Coffee Recipe Grind Notes"/>
-                <ITEXT CH="Timemore C2 Max, 19 clicks"/>
+                <ITEXT CH="Timemore C2 Max, 18-19 clicks"/>
                 <trail PARENT="Coffee Recipe Grind Notes"/>
             </StoryText>
         </PAGEOBJECT>
@@ -667,9 +669,15 @@
                 <DefaultStyle PARENT="Coffee Recipe Water Measure" LINESP="17" ParagraphEffectOffset="0" ParagraphEffectIndent="0" DROP="0" Bullet="1" BulletStr="•" Numeration="0"/>
                 <ITEXT CH="Prepare coffee bed in upper chamber away from lower collection chamber to avoid grounds falling in."/>
                 <para ALIGN="0" LINESP="17"/>
+                <ITEXT CH="Move chopstick in grid patterns across the coffee, disturbing the length and depth of the coffee mass. End with a spiral motion to level the coffee bed. Make holes in a grid manner with fork."/>
+                <para ALIGN="0" LINESP="17"/>
                 <ITEXT CH="When assembling chambers and lid, do not fit them tightly."/>
                 <para ALIGN="0" LINESP="17"/>
+                <ITEXT CH="Keep spoon as close as possible to the coffee bed, pour slowly,"/>
+                <para ALIGN="0" LINESP="17"/>
                 <ITEXT CH="When pouring brew into a cup, minimize movement as much as possible to avoid stirring up any settled grounds. Keep a watch on the pour if any grounds at the bottom are flowing into your cup."/>
+                <ITEXT Unicode="25"/>
+                <ITEXT Unicode="25"/>
                 <para ALIGN="0" LINESP="17"/>
             </StoryText>
         </PAGEOBJECT>
@@ -1342,7 +1350,7 @@
                 <trail LINESPMode="0" LINESP="22"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="141" YPOS="4470.66666666667" OwnPage="5" ItemID="214406032" PTYPE="4" WIDTH="514.666666666667" HEIGHT="58.7833333333328" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L514.667 0 L514.667 58.7833 L0 58.7833 L0 0 Z" copath="M0 0 L514.667 0 L514.667 58.7833 L0 58.7833 L0 0 Z" gXpos="141" gYpos="4470.66666666667" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="141" YPOS="4470.66666666667" OwnPage="5" ItemID="214406032" PTYPE="4" WIDTH="514.666666666667" HEIGHT="50.9333333333307" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L514.667 0 L514.667 50.9333 L0 50.9333 L0 0 Z" copath="M0 0 L514.667 0 L514.667 50.9333 L0 50.9333 L0 0 Z" gXpos="141" gYpos="4470.66666666667" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle ALIGN="0" OpticalMargins="0" FONTFEATURES="" SCALEH="100" KERN="0"/>
                 <ITEXT FONT="ITC Clearface Std Regular" FONTSIZE="50" FONTFEATURES="" SCALEH="100" KERN="0" CH="Coffee Best Brewed With"/>
@@ -1352,18 +1360,18 @@
         <PAGEOBJECT XPOS="139" YPOS="4543" OwnPage="5" ItemID="214408864" PTYPE="4" WIDTH="260" HEIGHT="36.4499999999998" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L260 0 L260 36.45 L0 36.45 L0 0 Z" copath="M0 0 L260 0 L260 36.45 L0 36.45 L0 0 Z" gXpos="139" gYpos="4543" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle ALIGN="0" FEATURES="inherit"/>
-                <ITEXT FONT="ITC Clearface Std Regular" FONTSIZE="28" FEATURES="inherit" CH="Profile"/>
+                <ITEXT FONT="ITC Clearface Std Regular" FONTSIZE="32" FEATURES="inherit" CH="Profile"/>
                 <trail ALIGN="0"/>
             </StoryText>
         </PAGEOBJECT>
         <PAGEOBJECT XPOS="399" YPOS="4543" OwnPage="5" ItemID="214389040" PTYPE="4" WIDTH="256.33151425216" HEIGHT="36.4499999999998" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L256.332 0 L256.332 36.45 L0 36.45 L0 0 Z" copath="M0 0 L256.332 0 L256.332 36.45 L0 36.45 L0 0 Z" gXpos="399" gYpos="4543" gWidth="0" gHeight="0" ALIGN="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle ALIGN="0" FEATURES="inherit"/>
-                <ITEXT FONT="ITC Clearface Std Regular" FONTSIZE="28" FEATURES="inherit" CH="Brewer"/>
+                <ITEXT FONT="ITC Clearface Std Regular" FONTSIZE="32" FEATURES="inherit" CH="Brewer"/>
                 <trail ALIGN="0"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="139" YPOS="4599" OwnPage="5" ItemID="214386208" PTYPE="4" WIDTH="260" HEIGHT="79.4499999999998" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L260 0 L260 79.45 L0 79.45 L0 0 Z" copath="M0 0 L260 0 L260 79.45 L0 79.45 L0 0 Z" gXpos="139" gYpos="4599" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="139" YPOS="4608" OwnPage="5" ItemID="214386208" PTYPE="4" WIDTH="260" HEIGHT="79.4499999999998" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L260 0 L260 79.45 L0 79.45 L0 0 Z" copath="M0 0 L260 0 L260 79.45 L0 79.45 L0 0 Z" gXpos="139" gYpos="4608" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle/>
                 <ITEXT FONT="ITC Clearface Std Regular" FONTSIZE="20" CH="Light Roast"/>
@@ -1377,7 +1385,7 @@
                 <trail ALIGN="0"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="399" YPOS="4599" OwnPage="5" ItemID="214425856" PTYPE="4" WIDTH="255.569609490255" HEIGHT="79.4499999999998" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L255.57 0 L255.57 79.45 L0 79.45 L0 0 Z" copath="M0 0 L255.57 0 L255.57 79.45 L0 79.45 L0 0 Z" gXpos="399" gYpos="4599" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="399" YPOS="4608" OwnPage="5" ItemID="214425856" PTYPE="4" WIDTH="255.569609490255" HEIGHT="79.4499999999998" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L255.57 0 L255.57 79.45 L0 79.45 L0 0 Z" copath="M0 0 L255.57 0 L255.57 79.45 L0 79.45 L0 0 Z" gXpos="399" gYpos="4608" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle FONT="ITC Clearface Std Regular" FONTSIZE="15"/>
                 <para ALIGN="0"/>
@@ -1388,9 +1396,9 @@
                 <trail ALIGN="0"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="139.398180918827" YPOS="4688.4" OwnPage="5" ItemID="214414528" PTYPE="5" WIDTH="516.8" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Cool Black" PLINEART="4" path="" gXpos="143.798180918827" gYpos="4688.4" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="139.398180918827" YPOS="4700.4" OwnPage="5" ItemID="214414528" PTYPE="5" WIDTH="516.8" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Cool Black" PLINEART="4" path="" gXpos="143.798180918827" gYpos="4700.4" gWidth="0" gHeight="0" LAYER="0"/>
         <PAGEOBJECT XPOS="138.398180918827" YPOS="4585.4" OwnPage="5" ItemID="214431520" PTYPE="5" WIDTH="516.8" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Cool Black" PLINEART="2" path="" gXpos="142.798180918827" gYpos="4585.4" gWidth="0" gHeight="0" LAYER="0"/>
-        <PAGEOBJECT XPOS="138" YPOS="4700" OwnPage="5" ItemID="214423024" PTYPE="4" WIDTH="260" HEIGHT="79.4499999999998" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L260 0 L260 79.45 L0 79.45 L0 0 Z" copath="M0 0 L260 0 L260 79.45 L0 79.45 L0 0 Z" gXpos="138" gYpos="4700" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="138" YPOS="4712" OwnPage="5" ItemID="214423024" PTYPE="4" WIDTH="260" HEIGHT="79.4499999999998" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L260 0 L260 79.45 L0 79.45 L0 0 Z" copath="M0 0 L260 0 L260 79.45 L0 79.45 L0 0 Z" gXpos="138" gYpos="4712" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle/>
                 <ITEXT FONT="ITC Clearface Std Regular" FONTSIZE="20" CH="Medium Roast"/>
@@ -1404,7 +1412,7 @@
                 <trail ALIGN="0"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="398" YPOS="4700" OwnPage="5" ItemID="214417360" PTYPE="4" WIDTH="255.569609490255" HEIGHT="79.4499999999998" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L255.57 0 L255.57 79.45 L0 79.45 L0 0 Z" copath="M0 0 L255.57 0 L255.57 79.45 L0 79.45 L0 0 Z" gXpos="398" gYpos="4700" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="398" YPOS="4712" OwnPage="5" ItemID="214417360" PTYPE="4" WIDTH="255.569609490255" HEIGHT="79.4499999999998" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L255.57 0 L255.57 79.45 L0 79.45 L0 0 Z" copath="M0 0 L255.57 0 L255.57 79.45 L0 79.45 L0 0 Z" gXpos="398" gYpos="4712" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle FONT="ITC Clearface Std Regular" FONTSIZE="15"/>
                 <para ALIGN="0"/>
@@ -1415,8 +1423,8 @@
                 <para ALIGN="0"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="138.398180918827" YPOS="4789.4" OwnPage="5" ItemID="214420192" PTYPE="5" WIDTH="516.8" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Cool Black" PLINEART="4" path="" gXpos="142.798180918827" gYpos="4789.4" gWidth="0" gHeight="0" LAYER="0"/>
-        <PAGEOBJECT XPOS="139" YPOS="4799" OwnPage="5" ItemID="214434352" PTYPE="4" WIDTH="260" HEIGHT="79.4499999999998" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L260 0 L260 79.45 L0 79.45 L0 0 Z" copath="M0 0 L260 0 L260 79.45 L0 79.45 L0 0 Z" gXpos="139" gYpos="4799" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="138.398180918827" YPOS="4801.4" OwnPage="5" ItemID="214420192" PTYPE="5" WIDTH="516.8" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Cool Black" PLINEART="4" path="" gXpos="142.798180918827" gYpos="4801.4" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="139" YPOS="4811" OwnPage="5" ItemID="214434352" PTYPE="4" WIDTH="260" HEIGHT="79.4499999999998" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L260 0 L260 79.45 L0 79.45 L0 0 Z" copath="M0 0 L260 0 L260 79.45 L0 79.45 L0 0 Z" gXpos="139" gYpos="4811" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle/>
                 <ITEXT FONT="ITC Clearface Std Regular" FONTSIZE="20" CH="Dark Roast"/>
@@ -1430,7 +1438,7 @@
                 <trail ALIGN="0"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="399" YPOS="4799" OwnPage="5" ItemID="214428688" PTYPE="4" WIDTH="255.569609490255" HEIGHT="79.4499999999998" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L255.57 0 L255.57 79.45 L0 79.45 L0 0 Z" copath="M0 0 L255.57 0 L255.57 79.45 L0 79.45 L0 0 Z" gXpos="399" gYpos="4799" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+        <PAGEOBJECT XPOS="399" YPOS="4811" OwnPage="5" ItemID="214428688" PTYPE="4" WIDTH="255.569609490255" HEIGHT="79.4499999999998" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L255.57 0 L255.57 79.45 L0 79.45 L0 0 Z" copath="M0 0 L255.57 0 L255.57 79.45 L0 79.45 L0 0 Z" gXpos="399" gYpos="4811" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
             <StoryText>
                 <DefaultStyle FONT="ITC Clearface Std Regular" FONTSIZE="15"/>
                 <para ALIGN="0"/>
@@ -1441,6 +1449,202 @@
                 <para ALIGN="0"/>
             </StoryText>
         </PAGEOBJECT>
-        <PAGEOBJECT XPOS="139.398180918827" YPOS="4888.4" OwnPage="5" ItemID="221389216" PTYPE="5" WIDTH="516.8" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Cool Black" PLINEART="4" path="" gXpos="143.798180918827" gYpos="4888.4" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="139.398180918827" YPOS="4900.4" OwnPage="5" ItemID="221389216" PTYPE="5" WIDTH="516.8" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR2="Cool Black" PLINEART="4" path="" gXpos="143.798180918827" gYpos="4900.4" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="100" YPOS="3667.55007317802" OwnPage="4" ItemID="221403376" PTYPE="4" WIDTH="200" HEIGHT="12.8499268219803" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L200 0 L200 12.8499 L0 12.8499 L0 0 Z" copath="M0 0 L200 0 L200 12.8499 L0 12.8499 L0 0 Z" gXpos="0.3239233579543" gYpos="-0.00992682198011607" gWidth="207.410293858992" gHeight="368.83816761993" PSTYLE="Coffee Recipe Coffee Bean Step" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Coffee Recipe Coffee Bean Step"/>
+                <ITEXT FONTSIZE="12" CH="Coffee"/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="99.9622233377485" YPOS="3685.56" OwnPage="4" ItemID="221400544" PTYPE="4" WIDTH="100.037776662252" HEIGHT="14.4782806389965" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L100.038 0 L100.038 14.4783 L0 14.4783 L0 0 Z" copath="M0 0 L100.038 0 L100.038 14.4783 L0 14.4783 L0 0 Z" gXpos="0.286146695702797" gYpos="18" gWidth="207.410293858992" gHeight="368.83816761993" PSTYLE="Coffee Recipe Water Measure" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Coffee Recipe Water Measure"/>
+                <ITEXT FONTSIZE="12" CH="16gm"/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="100" YPOS="3710.56000000002" OwnPage="4" ItemID="221397712" PTYPE="5" WIDTH="198.001122331276" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="359.807085646467" PWIDTH="1.00000000000015" PCOLOR2="Plum" PLINEART="2" path="" endArrowIndex="8" gXpos="0.3239233579543" gYpos="43" gWidth="207.410293858992" gHeight="368.83816761993" LAYER="0"/>
+        <PAGEOBJECT XPOS="99.9622233377485" YPOS="3719.56" OwnPage="4" ItemID="221406208" PTYPE="4" WIDTH="199.435957581078" HEIGHT="14.04" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L199.436 0 L199.436 14.04 L0 14.04 L0 0 Z" copath="M0 0 L199.436 0 L199.436 14.04 L0 14.04 L0 0 Z" gXpos="0.286146695702797" gYpos="52" gWidth="207.410293858992" gHeight="368.83816761993" PSTYLE="Coffee Recipe Water Step" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Coffee Recipe Water Step"/>
+                <ITEXT FONTSIZE="12" CH="Heat water, 100 degrees"/>
+                <para/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="99.9622233377485" YPOS="3739.56" OwnPage="4" ItemID="221380720" PTYPE="4" WIDTH="100.037776662252" HEIGHT="14.4782806389965" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L100.038 0 L100.038 14.4783 L0 14.4783 L0 0 Z" copath="M0 0 L100.038 0 L100.038 14.4783 L0 14.4783 L0 0 Z" gXpos="0.286146695702797" gYpos="72" gWidth="207.410293858992" gHeight="368.83816761993" PSTYLE="Coffee Recipe Water Measure" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Coffee Recipe Water Measure"/>
+                <ITEXT FONTSIZE="12" CH="250gm"/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="100" YPOS="3760.56000000003" OwnPage="4" ItemID="221409040" PTYPE="5" WIDTH="200.332919953451" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="359.785361193139" PWIDTH="1.00000000000015" PCOLOR2="Plum" PLINEART="2" path="" endArrowIndex="8" gXpos="0.3239233579543" gYpos="93" gWidth="207.410293858992" gHeight="368.83816761993" LAYER="0"/>
+        <PAGEOBJECT XPOS="99.9622233377485" YPOS="3768.56" OwnPage="4" ItemID="221383552" PTYPE="4" WIDTH="199.763230308351" HEIGHT="12.8945454545456" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L199.763 0 L199.763 12.8945 L0 12.8945 L0 0 Z" copath="M0 0 L199.763 0 L199.763 12.8945 L0 12.8945 L0 0 Z" gXpos="0.286146695702797" gYpos="101" gWidth="207.410293858992" gHeight="368.83816761993" PSTYLE="Coffee Recipe Water Step" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Coffee Recipe Water Step"/>
+                <ITEXT FONTSIZE="12" CH="Pour all water, spiral"/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="100" YPOS="3819.56000000004" OwnPage="4" ItemID="221386384" PTYPE="5" WIDTH="198.001122331276" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="359.807085646467" PWIDTH="1.00000000000015" PCOLOR2="Plum" PLINEART="2" path="" endArrowIndex="8" gXpos="0.3239233579543" gYpos="152" gWidth="207.410293858992" gHeight="368.83816761993" LAYER="0"/>
+        <PAGEOBJECT XPOS="99.676076642046" YPOS="3784.94394032681" OwnPage="4" ItemID="221423200" PTYPE="4" WIDTH="199.323923357954" HEIGHT="28.1227263398569" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L199.324 0 L199.324 28.1227 L0 28.1227 L0 0 Z" copath="M0 0 L199.324 0 L199.324 28.1227 L0 28.1227 L0 0 Z" gXpos="2.98427949019242e-13" gYpos="117.38394032681" gWidth="207.410293858992" gHeight="368.83816761993" PSTYLE="Coffee Recipe Misc Step" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Coffee Recipe Misc Step"/>
+                <ITEXT FONTSIZE="12" CH="Do not cover, "/>
+                <para/>
+                <ITEXT FONTSIZE="12" CH="wait 4 minutes "/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="199.962223337748" YPOS="3685.56" OwnPage="4" ItemID="221414704" PTYPE="4" WIDTH="100.037776662252" HEIGHT="14.4782806389965" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L100.038 0 L100.038 14.4783 L0 14.4783 L0 0 Z" copath="M0 0 L100.038 0 L100.038 14.4783 L0 14.4783 L0 0 Z" gXpos="100.286146695703" gYpos="18" gWidth="207.410293858992" gHeight="368.83816761993" PSTYLE="Coffee Recipe Water Measure" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Coffee Recipe Water Measure"/>
+                <ITEXT FONTSIZE="12" CH="32gm"/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="199.962223337748" YPOS="3739.56" OwnPage="4" ItemID="221443024" PTYPE="4" WIDTH="100.037776662252" HEIGHT="14.4782806389965" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L100.038 0 L100.038 14.4783 L0 14.4783 L0 0 Z" copath="M0 0 L100.038 0 L100.038 14.4783 L0 14.4783 L0 0 Z" gXpos="100.286146695703" gYpos="72" gWidth="207.410293858992" gHeight="368.83816761993" PSTYLE="Coffee Recipe Water Measure" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Coffee Recipe Water Measure"/>
+                <ITEXT FONTSIZE="12" CH="500gm"/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="100.676076642046" YPOS="3828.94394032681" OwnPage="4" ItemID="221474176" PTYPE="4" WIDTH="199.323923357954" HEIGHT="27.4196960368267" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L199.324 0 L199.324 27.4197 L0 27.4197 L0 0 Z" copath="M0 0 L199.324 0 L199.324 27.4197 L0 27.4197 L0 0 Z" gXpos="1.0000000000003" gYpos="161.38394032681" gWidth="207.410293858992" gHeight="368.83816761993" PSTYLE="Coffee Recipe Misc Step" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Coffee Recipe Misc Step"/>
+                <ITEXT FONTSIZE="12" CH="Sink crust by stirring"/>
+                <ITEXT CH=","/>
+                <para/>
+                <ITEXT CH="Scoop out foam and bits"/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="99.676076642046" YPOS="3864.94394032681" OwnPage="4" ItemID="221477008" PTYPE="4" WIDTH="199.323923357954" HEIGHT="42.3501773202493" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L199.324 0 L199.324 42.3502 L0 42.3502 L0 0 Z" copath="M0 0 L199.324 0 L199.324 42.3502 L0 42.3502 L0 0 Z" gXpos="2.98427949019242e-13" gYpos="197.38394032681" gWidth="207.410293858992" gHeight="368.83816761993" PSTYLE="Coffee Recipe Misc Step" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Coffee Recipe Misc Step"/>
+                <ITEXT FONTSIZE="12" CH="Lid on in closed position, "/>
+                <para/>
+                <ITEXT CH="Plunger up,"/>
+                <para/>
+                <ITEXT FONTSIZE="12" CH="wait 5-8 minutes "/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="100" YPOS="3917.56000000004" OwnPage="4" ItemID="221460016" PTYPE="5" WIDTH="198.001122331276" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="359.807085646467" PWIDTH="1.00000000000015" PCOLOR2="Plum" PLINEART="2" path="" endArrowIndex="8" gXpos="0.3239233579543" gYpos="250" gWidth="207.410293858992" gHeight="368.83816761993" LAYER="0"/>
+        <PAGEOBJECT XPOS="100.676076642046" YPOS="3927.94394032681" OwnPage="4" ItemID="221465680" PTYPE="4" WIDTH="199.323923357954" HEIGHT="42.3501773202493" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L199.324 0 L199.324 42.3502 L0 42.3502 L0 0 Z" copath="M0 0 L199.324 0 L199.324 42.3502 L0 42.3502 L0 0 Z" gXpos="1.0000000000003" gYpos="260.38394032681" gWidth="207.410293858992" gHeight="368.83816761993" PSTYLE="Coffee Recipe Misc Step" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Coffee Recipe Misc Step"/>
+                <ITEXT FONTSIZE="12" CH="Turn lid to open position, "/>
+                <para/>
+                <ITEXT CH="Plunger down till surface,"/>
+                <para/>
+                <ITEXT FONTSIZE="12" CH="Pour "/>
+                <trail/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="352" YPOS="3756.56" OwnPage="4" ItemID="221437360" PTYPE="4" WIDTH="47" HEIGHT="21.8193360463665" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L47 0 L47 21.8193 L0 21.8193 L0 0 Z" copath="M0 0 L47 0 L47 21.8193 L0 21.8193 L0 0 Z" gXpos="251.5" gYpos="88" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" LINESPMode="0" LINESP="12" ParagraphEffectOffset="0" ParagraphEffectIndent="0" DROP="0" DROPLIN="2" Bullet="0" BulletStr="•" Numeration="0" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1" FONTSIZE="9" FCOLOR="Maroon"/>
+                <ITEXT FONT="FOT-NewCinemaA Std D" FONTSIZE="9" FCOLOR="Maroon" CH="Start "/>
+                <para ALIGN="1" LINESPMode="0" LINESP="12" ParagraphEffectOffset="0" ParagraphEffectIndent="0" DROP="0" DROPLIN="2" Bullet="0" BulletStr="•" Numeration="0" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1"/>
+                <ITEXT FONT="FOT-NewCinemaA Std D" FONTSIZE="9" FCOLOR="Maroon" CH="timer"/>
+                <trail ALIGN="1" LINESPMode="0" LINESP="12" ParagraphEffectOffset="0" ParagraphEffectIndent="0" DROP="0" DROPLIN="2" Bullet="0" BulletStr="•" Numeration="0" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="349.946294584938" YPOS="3660.13142857143" OwnPage="4" ItemID="221445856" PTYPE="5" WIDTH="321.201909251715" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="89.9904200643092" PWIDTH="1" PCOLOR2="Maroon" PLINEART="9" path="" startArrowIndex="17" endArrowIndex="8" gXpos="349" gYpos="238" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="351.097088235731" YPOS="3908.56" OwnPage="4" ItemID="221420368" PTYPE="4" WIDTH="47.9029117642687" HEIGHT="13.3117294130725" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L47.9029 0 L47.9029 13.3117 L0 13.3117 L0 0 Z" copath="M0 0 L47.9029 0 L47.9029 13.3117 L0 13.3117 L0 0 Z" gXpos="250.597088235731" gYpos="240" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" LINESPMode="1" ParagraphEffectOffset="0" ParagraphEffectIndent="0" DROP="0" DROPLIN="2" Bullet="0" BulletStr="•" Numeration="0" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1" FONTSIZE="9" FCOLOR="Maroon"/>
+                <ITEXT FONT="FOT-NewCinemaA Std D" FONTSIZE="9" FCOLOR="Maroon" CH="9-11m"/>
+                <trail ALIGN="1" LINESPMode="1" ParagraphEffectOffset="0" ParagraphEffectIndent="0" DROP="0" DROPLIN="2" Bullet="0" BulletStr="•" Numeration="0" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="301" YPOS="3757.56" OwnPage="4" ItemID="221448688" PTYPE="4" WIDTH="47" HEIGHT="14" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L47 0 L47 14 L0 14 L0 0 Z" copath="M0 0 L47 0 L47 14 L0 14 L0 0 Z" gXpos="200.5" gYpos="89" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" LINESPMode="1" ParagraphEffectOffset="0" ParagraphEffectIndent="0" DROP="0" DROPLIN="2" Bullet="0" BulletStr="•" Numeration="0" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1" FONTSIZE="9" FCOLOR="Maroon"/>
+                <ITEXT FONT="FOT-NewCinemaA Std D" FONTSIZE="9" FCOLOR="Maroon" CH="Tare"/>
+                <trail ALIGN="1" LINESPMode="1" ParagraphEffectOffset="0" ParagraphEffectIndent="0" DROP="0" DROPLIN="2" Bullet="0" BulletStr="•" Numeration="0" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="302.297088235731" YPOS="3812.56" OwnPage="4" ItemID="221451520" PTYPE="4" WIDTH="45.6" HEIGHT="20" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L45.6 0 L45.6 20 L0 20 L0 0 Z" copath="M0 0 L45.6 0 L45.6 20 L0 20 L0 0 Z" gXpos="201.797088235731" gYpos="144" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" LINESPMode="1" ParagraphEffectOffset="0" ParagraphEffectIndent="0" DROP="0" DROPLIN="2" Bullet="0" BulletStr="•" Numeration="0" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1" FONTSIZE="8" FCOLOR="Maroon"/>
+                <ITEXT FONT="FOT-NewCinemaA Std D" FONTSIZE="8" FCOLOR="Maroon" CH="250/500"/>
+                <para ALIGN="1" LINESPMode="1" ParagraphEffectOffset="0" ParagraphEffectIndent="0" DROP="0" DROPLIN="2" Bullet="0" BulletStr="•" Numeration="0" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1"/>
+                <ITEXT FONT="FOT-NewCinemaA Std D" FONTSIZE="8" FCOLOR="Maroon" CH="gm"/>
+                <trail ALIGN="1" LINESPMode="1" ParagraphEffectOffset="0" ParagraphEffectIndent="0" DROP="0" DROPLIN="2" Bullet="0" BulletStr="•" Numeration="0" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="322.282802521446" YPOS="3659.84571428571" OwnPage="4" ItemID="221462848" PTYPE="2" WIDTH="11.4285714285714" HEIGHT="11" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.229166666666667" LOCALSCY="0.229166666666667" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/weight_FILL0_wght400_GRAD0_opsz48.png" PRFILE="sRGB display profile (ICC v2.2)" IRENDER="0" EMBEDDED="0" path="M0 0 L11.4286 0 L11.4286 11 L0 11 L0 0 Z" copath="M0 0 L11.4286 0 L11.4286 11 L0 11 L0 0 Z" gXpos="322.282802521446" gYpos="132.285714285714" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="362.282802521446" YPOS="3659.84571428571" OwnPage="4" ItemID="221479840" PTYPE="2" WIDTH="11.4285714285714" HEIGHT="11" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.229166666666667" LOCALSCY="0.229166666666667" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/timer_FILL0_wght400_GRAD0_opsz48.png" PRFILE="sRGB display profile (ICC v2.2)" IRENDER="0" EMBEDDED="0" path="M0 0 L11.4286 0 L11.4286 11 L0 11 L0 0 Z" copath="M0 0 L11.4286 0 L11.4286 11 L0 11 L0 0 Z" gXpos="362.282802521446" gYpos="132.285714285714" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="324.795047419405" YPOS="3748.8979501385" OwnPage="4" ItemID="221499664" PTYPE="7" WIDTH="10.0020408163265" HEIGHT="6.46204986149587" FRTYPE="3" CLIPEDIT="1" PWIDTH="1" PCOLOR2="Cyan" PLINEART="6" path="M10.002 0.0620499 C-0.397959 -0.73795 0.00204082 6.46205 0.00204082 6.46205 " copath="M10.8 -0.541 C0.4 -1.341 2.8 5.459 2.8 5.459 L10.8 -0.541 Z" endArrowIndex="8" gXpos="324.795047419405" gYpos="221.337950138504" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="331" YPOS="3745.56" OwnPage="4" ItemID="221496832" PTYPE="4" WIDTH="34.9999999999997" HEIGHT="9.44444444444446" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L35 0 L35 9.44444 L0 9.44444 L0 0 Z" copath="M0 0 L35 0 L35 9.44444 L0 9.44444 L0 0 Z" gXpos="230.5" gYpos="77" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" LINESPMode="1" ParagraphEffectOffset="0" ParagraphEffectIndent="0" DROP="0" DROPLIN="2" Bullet="0" BulletStr="•" Numeration="0" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1" FONTSIZE="9" FCOLOR="Cyan"/>
+                <ITEXT FONT="FOT-NewCinemaA Std D" FONTSIZE="9" FCOLOR="Cyan" CH="Brew"/>
+                <trail ALIGN="1" LINESPMode="1" ParagraphEffectOffset="0" ParagraphEffectIndent="0" DROP="0" DROPLIN="2" Bullet="0" BulletStr="•" Numeration="0" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="324.795047419405" YPOS="3675.8979501385" OwnPage="4" ItemID="221494000" PTYPE="7" WIDTH="10.0020408163265" HEIGHT="6.46204986149587" FRTYPE="3" CLIPEDIT="1" PWIDTH="1" PCOLOR2="Cyan" PLINEART="6" path="M10.002 0.0620499 C-0.397959 -0.73795 0.00204082 6.46205 0.00204082 6.46205 " copath="M10.8 -0.541 C0.4 -1.341 2.8 5.459 2.8 5.459 L10.8 -0.541 Z" endArrowIndex="8" gXpos="324.795047419405" gYpos="148.337950138504" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="331" YPOS="3672.56" OwnPage="4" ItemID="221502496" PTYPE="4" WIDTH="34.9999999999997" HEIGHT="9.44444444444446" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L35 0 L35 9.44444 L0 9.44444 L0 0 Z" copath="M0 0 L35 0 L35 9.44444 L0 9.44444 L0 0 Z" gXpos="230.5" gYpos="4" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" LINESPMode="1" ParagraphEffectOffset="0" ParagraphEffectIndent="0" DROP="0" DROPLIN="2" Bullet="0" BulletStr="•" Numeration="0" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1" FONTSIZE="9" FCOLOR="Cyan"/>
+                <ITEXT FONT="FOT-NewCinemaA Std D" FONTSIZE="9" FCOLOR="Cyan" CH="Prep"/>
+                <trail ALIGN="1" LINESPMode="1" ParagraphEffectOffset="0" ParagraphEffectIndent="0" DROP="0" DROPLIN="2" Bullet="0" BulletStr="•" Numeration="0" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="345" YPOS="3684.27428571429" OwnPage="4" ItemID="221505328" PTYPE="2" WIDTH="19" HEIGHT="20.0952380952381" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.037109375" LOCALSCY="0.037109375" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/coffee_manual-grinder.png" PRFILE="sRGB display profile (ICC v2.2)" IRENDER="0" EMBEDDED="0" path="M0 0 L19 0 L19 20.0952 L0 20.0952 L0 0 Z" copath="M0 0 L19 0 L19 20.0952 L0 20.0952 L0 0 Z" gXpos="345" gYpos="156.714285714286" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="339" YPOS="3720.75047619048" OwnPage="4" ItemID="221488336" PTYPE="2" WIDTH="20.9018501404933" HEIGHT="19.8095238095238" FRTYPE="0" CLIPEDIT="1" FLIPPEDH="1" PWIDTH="1" PLINEART="1" LOCALSCX="0.0386904761904762" LOCALSCY="0.0386904761904762" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/kettle1.png" PRFILE="sRGB display profile (ICC v2.2)" IRENDER="0" EMBEDDED="0" path="M20.9019 0 L-4.98595e-05 0 L-4.98595e-05 19.8095 L20.9019 19.8095 L20.9019 0 Z" copath="M0 0 L20.9019 0 L20.9019 19.8095 L0 19.8095 L0 0 Z" gXpos="339" gYpos="193.190476190476" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="351" YPOS="3733.39072851069" OwnPage="4" ItemID="221491168" PTYPE="2" WIDTH="9.87321750656758" HEIGHT="9.16927148930881" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.0179087333775563" LOCALSCY="0.0179087333775563" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/fire.png" PRFILE="sRGB display profile (ICC v2.2)" IRENDER="0" EMBEDDED="0" path="M0 0 L9.87322 0 L9.87322 9.16927 L0 9.16927 L0 0 Z" copath="M0 0 L9.87322 0 L9.87322 9.16927 L0 9.16927 L0 0 Z" gXpos="351" gYpos="1087.72072851069" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="326.866653453123" YPOS="3789.85680938038" OwnPage="4" ItemID="256991280" PTYPE="2" WIDTH="16.9021537958217" HEIGHT="17.022651090823" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.0330120191324643" LOCALSCY="0.0330120191324643" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/foam.png" PRFILE="Embedded GIMP built-in sRGB" IRENDER="0" EPROF="Embedded GIMP built-in sRGB" path="M0 0 L16.9022 0 L16.9022 17.0227 L0 17.0227 L0 0 Z" copath="M0 0 L16.9022 0 L16.9022 17.0227 L0 17.0227 L0 0 Z" gXpos="326.866653453123" gYpos="262.296809380375" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="339.945702460816" YPOS="3787.69617865129" OwnPage="4" ItemID="256996944" PTYPE="2" WIDTH="23.7808870064046" HEIGHT="22.7147392505868" FRTYPE="0" CLIPEDIT="1" ROT="315" FLIPPEDH="1" PWIDTH="1" PLINEART="1" LOCALSCX="0.0443647250988023" LOCALSCY="0.0443647250988023" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/kettle1.png" PRFILE="sRGB display profile (ICC v2.2)" IRENDER="0" EMBEDDED="0" path="M0 0 L23.7809 0 L23.7809 22.7147 L0 22.7147 L0 0 Z" copath="M0 0 L23.7809 0 L23.7809 22.7147 L0 22.7147 L0 0 Z" gXpos="339.945702460816" gYpos="260.136178651292" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="353.097088235731" YPOS="3812.56" OwnPage="4" ItemID="256999776" PTYPE="4" WIDTH="47.9029117642687" HEIGHT="13.3117294130725" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L47.9029 0 L47.9029 13.3117 L0 13.3117 L0 0 Z" copath="M0 0 L47.9029 0 L47.9029 13.3117 L0 13.3117 L0 0 Z" gXpos="252.597088235731" gYpos="144" gWidth="0" gHeight="0" ALIGN="1" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle ALIGN="1" LINESPMode="1" ParagraphEffectOffset="0" ParagraphEffectIndent="0" DROP="0" DROPLIN="2" Bullet="0" BulletStr="•" Numeration="0" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1" FONTSIZE="9" FCOLOR="Maroon"/>
+                <ITEXT FONT="FOT-NewCinemaA Std D" FONTSIZE="9" FCOLOR="Maroon" CH="4m"/>
+                <trail ALIGN="1" LINESPMode="1" ParagraphEffectOffset="0" ParagraphEffectIndent="0" DROP="0" DROPLIN="2" Bullet="0" BulletStr="•" Numeration="0" NumerationFormat="0" NumerationName="&lt;local block&gt;" NumerationLevel="0" NumerationPrefix="" NumerationSuffix="." NumerationStart="1" NumerationOther="1" NumerationHigher="1"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="101" YPOS="3978.67" OwnPage="4" ItemID="257005440" PTYPE="5" WIDTH="198.001122331275" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="359.807085646467" PWIDTH="1" PCOLOR2="Plum" PLINEART="2" path="" endArrowIndex="8" gXpos="100" gYpos="1322" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="100.962223337748" YPOS="3986.67" OwnPage="4" ItemID="257030928" PTYPE="4" WIDTH="201.545694958221" HEIGHT="46.6347664173595" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L201.546 0 L201.546 46.6348 L0 46.6348 L0 0 Z" copath="M0 0 L201.546 0 L201.546 46.6348 L0 46.6348 L0 0 Z" gXpos="100.962223337748" gYpos="2222.89" gWidth="0" gHeight="0" PSTYLE="Coffee Recipe Grind Notes" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Coffee Recipe Grind Notes"/>
+                <ITEXT CH="Grinder notes:"/>
+                <para PARENT="Coffee Recipe Grind Notes"/>
+                <ITEXT CH="Timemore C2 Max, 21 clicks"/>
+                <trail PARENT="Coffee Recipe Grind Notes"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="340.801191755023" YPOS="3854.89627804707" OwnPage="4" ItemID="256982784" PTYPE="2" WIDTH="19.9726808988315" HEIGHT="20.9726808988312" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="0.0390091423805303" LOCALSCY="0.0390091423805303" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="0" RATIO="1" Pagenumber="0" PFILE="images/stir.png" PRFILE="sRGB display profile (ICC v2.2)" IRENDER="0" EMBEDDED="0" path="M0 0 L19.9727 0 L19.9727 20.9727 L0 20.9727 L0 0 Z" copath="M0 0 L19.9727 0 L19.9727 20.9727 L0 20.9727 L0 0 Z" gXpos="340.801191755023" gYpos="1209.22627804707" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1"/>
+        <PAGEOBJECT XPOS="409.451955761214" YPOS="3587.1724179007" OwnPage="4" ItemID="257053584" PTYPE="5" WIDTH="761.517881860589" HEIGHT="1" FRTYPE="0" CLIPEDIT="0" ROT="89.9587657423057" PWIDTH="1" PCOLOR="Maroon" SHADE="0" PCOLOR2="Maroon" PLINEART="5" path="" gXpos="409.451955761214" gYpos="941.502417900701" gWidth="0" gHeight="0" LAYER="0"/>
+        <PAGEOBJECT XPOS="419.913756084046" YPOS="3612.56" OwnPage="4" ItemID="257056416" PTYPE="4" WIDTH="240.086243915954" HEIGHT="322.448604276343" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L240.086 0 L240.086 322.449 L0 322.449 L0 0 Z" copath="M0 0 L240.086 0 L240.086 322.449 L0 322.449 L0 0 Z" gXpos="419.913756084045" gYpos="966.89" gWidth="0" gHeight="0" PSTYLE="Coffee Recipe Water Measure" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Coffee Recipe Water Measure" LINESP="17" ParagraphEffectOffset="0" ParagraphEffectIndent="0" DROP="0" Bullet="1" BulletStr="•" Numeration="0"/>
+                <ITEXT CH="Use between 15 to 17gm of coffee for 150gm water. Start with 16gm."/>
+                <para ALIGN="0"/>
+                <ITEXT CH="Don't grind super-coarse. Grind medium."/>
+                <para ALIGN="0"/>
+                <ITEXT CH="Plunger should be pushed down only till the surface of the water."/>
+                <para ALIGN="0"/>
+                <ITEXT CH="When pouring out to a cup, minimize handling the French Press to avoid stirring up any grinds at the bottom. "/>
+                <trail ALIGN="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="420.179999100645" YPOS="3588.0977560532" OwnPage="4" ItemID="257047920" PTYPE="4" WIDTH="238.818181818182" HEIGHT="19.9928219327683" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L238.818 0 L238.818 19.9928 L0 19.9928 L0 0 Z" copath="M0 0 L238.818 0 L238.818 19.9928 L0 19.9928 L0 0 Z" gXpos="420.179999100645" gYpos="942.427756053202" gWidth="0" gHeight="0" PSTYLE="Coffee Recipe Header" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle PARENT="Coffee Recipe Header" LINESPMode="0"/>
+                <ITEXT CH="Notes"/>
+                <trail LINESPMode="0"/>
+            </StoryText>
+        </PAGEOBJECT>
+        <PAGEOBJECT XPOS="138.998180918827" YPOS="4519.6" OwnPage="5" ItemID="257050752" PTYPE="4" WIDTH="516.001819081173" HEIGHT="13.5999999999995" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PLINEART="1" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" LOCALROT="0" PICART="1" SCALETYPE="1" RATIO="1" COLUMNS="1" COLGAP="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" VAlign="0" FLOP="0" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" path="M0 0 L516.002 0 L516.002 13.6 L0 13.6 L0 0 Z" copath="M0 0 L516.002 0 L516.002 13.6 L0 13.6 L0 0 Z" gXpos="138.998180918827" gYpos="4519.6" gWidth="0" gHeight="0" LAYER="0" NEXTITEM="-1" BACKITEM="-1">
+            <StoryText>
+                <DefaultStyle/>
+                <ITEXT FONT="NYTImperial Regular" CH="by Marc's Cafe, Auroville, Puducherry"/>
+                <trail ALIGN="1"/>
+            </StoryText>
+        </PAGEOBJECT>
     </DOCUMENT>
 </SCRIBUSUTF8NEW>
