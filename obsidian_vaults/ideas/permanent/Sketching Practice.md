@@ -1,5 +1,6 @@
 Tags: #routine #sketching 
 
+- Practice anything irrespective of the result. Any practice teaches you something.
 - Use a pencil first, detail using pen
 - Maintain loose pencil grip
 - Contour drawing to get basic large shapes
