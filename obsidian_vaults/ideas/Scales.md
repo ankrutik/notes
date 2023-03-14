@@ -9,23 +9,23 @@ Tags: #guitar
 
 
 ## Minor Pentatonic
-![[attachments/a_pentatonic_minor.png]]
+![[a_pentatonic_minor.png]]
 
 ## Blues
-![[attachments/a_blues.png]]
+![[a_blues.png]]
 
 
 ## Major
 
-![[attachments/a_major.png]]
+![[a_major.png]]
 
 ## Minor
 
-![[attachments/a_minor.png]]
+![[a_minor.png]]
 
 ## Phrygian
 
-![[attachments/a_phrygian.png]]
+![[a_phrygian.png]]
 
 # Links
 

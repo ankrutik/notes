@@ -4,7 +4,7 @@ Tags: #politics #personalities
 - Bahujan leader
 
 # Links
-[[permanent/Activism]]
+[[Activism]]
 
 
 
