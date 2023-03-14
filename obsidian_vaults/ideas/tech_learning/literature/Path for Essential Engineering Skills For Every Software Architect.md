@@ -1,4 +1,5 @@
-# Path for Essential Engineering Skills For Every Software Architect
+#tech 
+
 ## Software Engineering and Architecture, Design Patterns
 -   Software Architecture Essentials and Documentation:
 	-   [guided approach for formulating software architecture](https://vedcraft.com/architecture/introduction-to-software-architecture/) 
