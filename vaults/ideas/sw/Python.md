@@ -1,4 +1,46 @@
-Tags: #tech/language 
+Tags: #tech/language/python 
+
+[[Python Standard Type Hierarchy]]
+
+## Import
+- Apart from import statement, the following can be used
+	- `importlib.import_module()`
+	- `__import__()`
+- **modules** are of only 1 kind
+	- **packages** are created to differentiate and have hierarchy
+	- package is a module with `__path__` attribute
+- **regular** package
+	- uses `__init__.py` file in the directory
+- **namespace** package
+	- doesn't use `__init__.py` file
+	- performs search for **portions** in zip files, network, or virtual modules
+- For any given package like `foo.bar.baz`, packages will be imported in following order:
+	- `foo`, `bar`, `baz`
+- import mechanism
+	- `sys.modules`
+		- mapping that acts as a cache for previously imported modules
+		- `foo`, `foo.bar`, `foo.bar.baz` will have separate keys
+	- **loaders**
+		- actually load the module
+	- **finders**
+		- implementations are called **importers**
+		- return **module spec** when they can resolve a import
+			- module spec will contain **loader**
+		- import hooks
+			- meta hooks
+				- add finders to `sys.meta_path`
+				- overrides `sys.path` processing
+				- Default Finders
+					- first: built in modules
+					- second: frozen modules
+					- third: import path
+			- import hooks
+				- add finders to `sys.path_hooks`
+				- part of `sys.path` processing
+	- Order of checking
+		- `sys.modules`, 
+		- `sys.meta_path`, 
+		- `sys.path_hooks`
 
 ## Data and Expressions
 
@@ -52,6 +94,11 @@ while condition:
 ```
 
 ## Collections
+
+**Containers**
+- Objects that contain reference to other objects as their values. 
+- Dictionaries, tuples, lists.
+
 ### List
 linear data structure, variable length, mixed-typed, mutable, zero-based indexing.
 
@@ -487,3 +534,10 @@ for row in cur:
 cur.close()
 conn..close()
 ```
+
+
+# References
+- [Lexical Analysis](https://docs.python.org/3/reference/lexical_analysis.html)
+	- indentation rules
+	- variable naming rules
+- 

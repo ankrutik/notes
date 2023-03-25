@@ -7,7 +7,6 @@
 # Overview
 
 Typical structure of jazz
-
 - melody/theme played a few times
 - each musician will improvise solos over harmonies/chords of the melody
 - melody/theme played at the end
