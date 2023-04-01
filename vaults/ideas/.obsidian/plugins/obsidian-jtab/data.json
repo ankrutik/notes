@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "colors": {
+    "className": "jtab-colors-custom",
+    "customColors": {
+      "background": "#f1f0f4",
+      "lines": "#000000",
+      "text": "#504d66",
+      "chordDot": "#000000",
+      "chordDotText": "#FFFFFF"
+    },
+    "text": "#504d66",
+    "background": "#f1f0f4"
+  }
+}
