@@ -1,3 +1,5 @@
+Tags: #guitar/tech 
+
 Candidates
 - Orange Crush 20
 	- Don't but the RT version. Can purchase reverb pedal later.

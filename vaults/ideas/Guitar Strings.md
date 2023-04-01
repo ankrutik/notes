@@ -1,4 +1,4 @@
-Tags: #guitar
+Tags: #guitar/tech
 
 # Acoustic Guitar
 D'Addario EJ16 Acoustic 12-53 Light

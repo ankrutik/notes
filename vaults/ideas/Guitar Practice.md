@@ -1,4 +1,4 @@
-Tags: #routine #guitar 
+Tags: #routine #guitar/practice  
 
 Use metronome for all exercises
 

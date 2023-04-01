@@ -1,4 +1,4 @@
-Tags: #guitar 
+Tags: #guitar/practice 
 
 ## Stretches
 - Hold elbow with arm inside
@@ -36,6 +36,33 @@ Tags: #guitar
 		- Move hand in deliberate way, see how John does it
 	- Chord progression
 		- A C E C# G B F#
+- Both hands
+	- Go down the fret board. Finger order: 1 2 3 4
+	  ```jtab
+	  $6.1 $4.2 $3.3 $1.4 $1.1 $3.2 $4.3 $6.4
+	  ```
+	- Come up the fret board. Finger order: 4 3 2 1
+	  ```jtab
+	  $1.15 $3.14 $4.13 $6.12 $6.15 $4.14 $3.13 $1.12
+	  ```
+	- Go down the fret board. Finger order: 1 3 4 2
+	  ```jtab
+	  $6.1 $3.3 $1.4 $4.2 $1.1 $4.3 $6.4 $3.2
+		```
+	- Come up the fret board. Finger order: 4 2 1 3
+	  ```jtab 1 4 6 3
+	  $1.15 $4.13 $6.12 $3.14 $6.15 $3.13 $1.12 $4.14
+		```
+- Time Signatures
+	- Terms
+		- *Bar* is made up of *Beats*.
+		- *Subdivisions* will say how many *notes* in between 2 beats
+	- When playing a subdivision...
+		- Optional. First play notes on a muted string to get the rhythm.
+		- Accent first note that falls on a beat.
+			- eg. In subdivision: accent first note, then fifth note
+	- Practice major scale with following subdivisions
+		- 4/2, 4/3, 4/4
 
 
 

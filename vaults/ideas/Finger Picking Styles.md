@@ -1,4 +1,4 @@
-Tags: #guitar 
+Tags: #guitar/technique 
 
 # Chords
 Preferably use acoustic Guitar
