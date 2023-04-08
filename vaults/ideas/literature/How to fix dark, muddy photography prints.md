@@ -8,7 +8,7 @@ Tags: #photography #print
 - lower brightness of display, turn off auto-brightness
 	- matte displays over glossy
 	- hold sheet of paper next to screen to get same ball park brightness
-	- expensive option is to use a display caliberator
+	- expensive option is to use a display calibrator
 - type of papers
 	- reflective: gloss, semi-glossy, metallic
 		- tonal range similar to screen
