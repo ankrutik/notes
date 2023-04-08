@@ -72,10 +72,10 @@ Tags: #guitar/concepts
 	- Arpeggiate on chord shapes.
 	- Deliberately play other notes to see how they do not fit.
 - Method 2
-	- End phrases on the chords.
+	- End phrases on the notes of the chords.
 - Method 3
-	- Start and end phrases on the chords.
-- Practice 4
+	- Start and end phrases on the notes of the chords.
+- Method 4
 	- Walk over scale. When you hit a note that fits, jump over next few notes to another notes that fits.
 
 # Links

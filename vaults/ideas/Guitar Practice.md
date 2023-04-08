@@ -13,15 +13,10 @@ Use metronome for all exercises
 	1. [[Finger Picking Styles# Chords]]
 		1. Each open chord with every other
 	2. [[Finger Picking Styles# Flamenco]]
-5. [[Scales]]
-	1. Excercises (66bpm where not mentioned)
-		1. Sub-divisions of 1, 2, 3, 4 of 66bpm
-		2. Down, Up Position 1 
-		3. Down, Up Position 2
-		4. Down Position 1, Up Position 2
-		5. Down Position 1 while sliding to Position 2
-		6. Sub-shapes
-	2. Improvise
+5. Scales
+	1. [[Scales#Excercises]]
+	2. [[Harmony#Practice]]
+	3. Improvise
 		1. Steps
 			1. Optional. Listen to tracks
 			2. Improvise over backing track or metronome
