@@ -17,7 +17,52 @@ Tags: #politics
 	- all overreaches will be justified as nationalism
 	- no evident of regression can alarm their supporters
 	- even private demurring becomes difficult, please are scared or talk in hushed voices 
-	- institutionally and psychologically we are already inhabiting a tyranny although the violence might not be in your face
+	- institutionally and psychologically we are already inhabiting a tyranny although the violence might not be in your face 
+- https://www.newyorker.com/news/q-and-a/has-modi-pushed-indian-democracy-past-its-breaking-point
+	- Imo, why is Rahul Gandhi considered "leader of the opposition"? Do all other smaller or regional parties see him as the leader of the collective opposition?  
+	- BJP's popularity
+		- BJP controls only half the states, not popular with non-Hindi speaking states
+		- global approval rating is probably considering the NRI diaspora as well, electoral support within India says otherwise
+	- India's political transformation
+		- 2014
+				- de-facto ethnic democracy
+				- elections, media, judiciary not very impacted
+		- 2014-2017
+			- life gets difficult for minorities
+			- unchecked vigilantism; cow slaughter and love jihad
+		- 2019
+			- elections
+			- CAA: only non-Muslim refugees from Bangladesh, Afghanistan, Pakistan elig for citizenship
+			- Article 370
+			- laws resisting to inter-religious marriages
+			- going towarfs de jure ethnic democracy
+			- authoritarianism
+	- transformation of judiciary
+		- BJP wants to change the way judges are elected, judiciary resisted
+		- center sits on appointment of judges leading to vacancies
+		- judiciary stops nominating judges that center will not appoint 
+		- validates any law that center passes, not taking a stand
+	- scenarios
+		- political upheaval due to opposition leader
+		- public protests due to strong civil society
+		- they get away with it
+			- more likely this because both civil society and judiciary is weak
+	- big question is how thing will go forth after Modi leaves
+	- push factor: Partition, Pakistan's support of jihadists, bomb blast
+	- pull factor: Hindu-ization of society
+	- emergence of middle class, their search for identity and gurus, BJP co-opting both identity and gurus
+	- no face for the Prime Minister on the opposition side 
+- https://www.lrb.co.uk/the-paper/v45/n08/pankaj-mishra/the-big-con
+	- simple timeline of the effects of Hindenburg reveal of Adani 
+	- Modi was banned from visiting EU and US, businessmen recoiled from him, Adani helped with that
+	- 
+
+
+
+
+
+
+
 
 
 
