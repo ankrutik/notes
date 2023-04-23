@@ -52,11 +52,23 @@ Tags: #politics
 	- pull factor: Hindu-ization of society
 	- emergence of middle class, their search for identity and gurus, BJP co-opting both identity and gurus
 	- no face for the Prime Minister on the opposition side 
+- [It’s Okay to Like Good Art by Bad People by Judith Shulevitz](https://www.theatlantic.com/magazine/archive/2023/05/separate-art-from-artist-cancel-culture-monsters-book/673497/)
+	- *We don’t come to the movies as blank slates; we bring ourselves and our history.*
+	- *When _our guy_ is the target, what also becomes apparent is that the retributive process is ugly. If we must incorporate a prescriptive morality into our reception of art, at least let it rest on epistemological rigor—on doing our due diligence. Twitter hordes all too often demand that we repudiate our idols in an instant, without second thoughts, before the murk of rumor and uncertainty has been cleared up and contexts understood. Have we paused to examine the evidence? And even if guilt has been established, behavioral norms are changing fast. Maybe we should be less dogmatic about our operative definitions of right and wrong.*
+	- *An ethics that is casual about proof and doesn’t question the assumptions of the moment looks disturbingly like mob justice.* 
+- https://indianexpress.com/article/opinion/columns/justice-rekha-sharma-writes-bail-not-jail-should-be-the-rule-for-all-not-a-privileged-few-8549341/
+	- "bail, not jail" should be the norm for people across all backgrounds/privileges
+	- As of December 2021, out of 5.4L around 4.7L prisoners are undertrial
+	- experimental interim bail given to accused in Lakhimpur Kheri violence
+
+# TO Read
 - https://www.lrb.co.uk/the-paper/v45/n08/pankaj-mishra/the-big-con
 	- simple timeline of the effects of Hindenburg reveal of Adani 
 	- Modi was banned from visiting EU and US, businessmen recoiled from him, Adani helped with that
-	- 
-
+- https://www.nytimes.com/2023/04/12/opinion/international-world/singapore-autocracy-democracy.html
+- https://www.quantamagazine.org/the-unpredictable-abilities-emerging-from-large-ai-models-20230316/
+- https://indianexpress.com/article/opinion/columns/pratap-bhanu-mehta-opposition-social-justice-8569145/
+- https://www.washingtonpost.com/opinions/2023/04/20/india-backsliding-democracy-modi-school-textbooks/
 
 
 

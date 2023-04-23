@@ -1,7 +1,12 @@
 Tags: #routine #guitar/practice  
 
-Use metronome for all exercises
+# General Guidelines
+- Use metronome for all exercises
+	- Use looper pedal with 1 bar of 4 muted string notes
+- Skip particular warmups or exercise if they feel redundant or impractical
+- Aim is to play music, so focus on reaching the improvisation part.
 
+# Routine
 1. Physical prep
 	1. [[John Petrucci's Rock Discipline# Stretches]]
 	2. [[John Petrucci's Rock Discipline# Massages]]
@@ -25,6 +30,8 @@ Use metronome for all exercises
 			2. Spanish 
 
 ### Look up
+- Diatonic arpeggios
+	- https://jenslarsen.nl/diatonic-arpeggios-use-practice/
 - Guitar intonation, action, etc.
 	- [How to Setup Action, Neck Relief, Pickup Height, & Intonation IBanez](https://www.youtube.com/watch?v=VQQ-P7gB4GM)
 - Chords and variants
