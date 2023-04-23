@@ -1,9 +1,23 @@
-# REST Guidelines
 Tags: #tech #web 
 
+# Implementation
+- Methods
+	- GET: Retreive
+	- POST: create new
+	- PUT: update
+	- DELETE: delete
+- Status codes
+	- 2xx: success
+	- 4xx: client error
+	- 5xx: server error
+
+# Best Practices
+- Flexible content format negotiation
+	- support JSON or XML by implementing multiple (de)serializers
+
+# Design Abstracts
 - Uniform Interface
-	- Identification of resources
-		- each URI should be uniquely identified
+	- each URI should be uniquely identified
 	- Manipulation of resources thru representation
 		- uniform representation in responses
 	- Self descriptive messages
