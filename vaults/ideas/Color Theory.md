@@ -1,4 +1,3 @@
-# Color Theory
 Tags: #art
 
 Hue described the colour itself.

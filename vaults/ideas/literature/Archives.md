@@ -59,7 +59,30 @@ Tags: #politics
 - https://indianexpress.com/article/opinion/columns/justice-rekha-sharma-writes-bail-not-jail-should-be-the-rule-for-all-not-a-privileged-few-8549341/
 	- "bail, not jail" should be the norm for people across all backgrounds/privileges
 	- As of December 2021, out of 5.4L around 4.7L prisoners are undertrial
-	- experimental interim bail given to accused in Lakhimpur Kheri violence
+	- experimental interim bail given to accused in Lakhimpur Kheri violence 
+- https://m.thewire.in/article/media/democracy-media-china-model-josh-kurlantzick 
+	- #china #news-media #politics 
+	- major powers will always have influence networks in other countries and regions 
+		- what matters is if they are used to 
+			- subvert democracy
+				- influence elections 
+				- confuse information consumers
+	- China's influence is much more in other south East Asian countries around India than India itself 
+		- attempts greatly increased in Xi's regime 
+	- paper Global Times 
+		- used by China to send out information about its policies or discourse to world and see the response it garners 
+	- China wanted to develop its own Al Jazeera with English news outlet like Sixth Tone 
+		- even hired good journalists 
+			- but couldn't develop it because of how stifling it is generally 
+	- not made progress with soft power like entertainment and software too because of the same stifling approaches 
+	- news outlet Xinhua has been China's most effective information tool 
+	- US approach to banning tiktok 
+		- most of tiktok's problems are problems that any social media app would have mostly with regards to user privacy 
+		- it'd be better to introduce better laws to govern all social media apps than single out and ban one 
+		- tiktok data is stored on servers on China is a problem since US laws might not have influence on how that data is used 
+	- Chinese and Russian media are know to collaborate to spread misinformation 
+	- the more a country fails as a democracy, the more China's authoritarianism will seem appealing to its people 
+		- if governments start labelling certain news outlets as unreliable then Chinese and Russian news outlets can gain following because people can't differentiate on which media outlet to trust
 
 # TO Read
 - https://www.lrb.co.uk/the-paper/v45/n08/pankaj-mishra/the-big-con
