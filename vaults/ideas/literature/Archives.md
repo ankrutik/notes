@@ -101,16 +101,30 @@ Tags: #politics
 		- #watchlist/politics Will it be beneficial for Congress to allow this to happen and wait and watch while the BJP explodes/implodes?
 - https://m.thewire.in/article/politics/narendra-modi-coalition-cracks-bjp
 	- #politics 
-	- constituencies of Modi
+	- #quickref constituencies of Modi
 		1. modernists that were Manmohan Singh's 1991 constituency; technocracy; want a _strong_ leader to deal with _messiness_ of democracy
 		2. corporate leaders, cronies, crooks
-		- traditionalists, conservatives excited by the idea of Hindu rashtra and revival 
-		- nationalists 
-		- caste and sub castes and sub sub castes
-		- anti-Gandhi family
-	
+		3. traditionalists, conservatives excited by the idea of Hindu rashtra and revival
+		4. nationalists
+		5. caste and sub castes and sub sub castes
+		6. anti-Gandhi family
+- https://youtu.be/J-Mq22DyjuU
+	- #politics 
+	- Interview with Yashwant Sinha
+		- former minister of finance as part of BJP
+		- currently with TMC
+	- 2019 was a stolen verdict in terms of how BJP made governments in states
+	- Pulwama was the only reason Modi won in 2019
+	- #politics/strategy For 2024, points for opposition 
+		- should not bother too much wwith "unity" in opposition because
+			- overheads
+			- media will question who will be PM candidate leading to more rifts
+		- most voters focus on local issues
+		- focus regionally with state-wise strategy
+		- focus at booth level
+		- figure out PM candidate after mandate
 
-# TO Read
+# TO READ
 - https://www.lrb.co.uk/the-paper/v45/n08/pankaj-mishra/the-big-con
 	- simple timeline of the effects of Hindenburg reveal of Adani 
 	- Modi was banned from visiting EU and US, businessmen recoiled from him, Adani helped with that
