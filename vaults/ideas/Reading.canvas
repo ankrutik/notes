@@ -2,22 +2,22 @@
 	"nodes":[
 		{"id":"70eb9ba21d6ddb22","x":-600,"y":-100,"width":250,"height":60,"type":"text","text":"Before you read"},
 		{"id":"3e523933a10e6d37","x":-1020,"y":-220,"width":250,"height":60,"type":"text","text":"**Context**\n*when and where was it written?*"},
-		{"type":"text","text":"*So you want to read?*","id":"6d0528dce39d1c81","x":-240,"y":-220,"width":250,"height":60},
-		{"type":"text","text":"While you read","id":"a978bc0fe1863478","x":-240,"y":-100,"width":250,"height":60},
+		{"id":"6d0528dce39d1c81","x":-240,"y":-220,"width":250,"height":60,"color":"4","type":"text","text":"*So you want to read?*"},
+		{"id":"a978bc0fe1863478","x":-240,"y":-100,"width":250,"height":60,"type":"text","text":"While you read"},
 		{"id":"1882a13c152595db","x":-350,"y":47,"width":250,"height":60,"type":"text","text":"Keep asking yourself *\"What have you just read?\"*"},
 		{"id":"51eb871864a0ca1b","x":-60,"y":47,"width":368,"height":103,"type":"file","file":"Annotating.md"},
-		{"type":"file","file":"Reading Manifesto.md","id":"20412bed33c71ef6","x":-860,"y":-420,"width":335,"height":100},
+		{"id":"20412bed33c71ef6","x":-860,"y":-420,"width":335,"height":100,"type":"file","file":"Reading Manifesto.md"},
 		{"id":"340dfc5c8b69470d","x":-1020,"y":-140,"width":250,"height":100,"type":"text","text":"**Setting** \n*When, where, who is the content about?*"},
 		{"id":"fb4f9a5395880eaf","x":-1020,"y":-5,"width":250,"height":82,"type":"text","text":"**Reading Strategy**\nskim, analytical, literature"},
 		{"id":"737acc37d984df01","x":-895,"y":150,"width":250,"height":60,"type":"text","text":"*Do you want to recap previous annotations?*"}
 	],
 	"edges":[
-		{"id":"543942ba953b8265","fromNode":"6d0528dce39d1c81","fromSide":"bottom","toNode":"a978bc0fe1863478","toSide":"top"},
+		{"id":"543942ba953b8265","fromNode":"6d0528dce39d1c81","fromSide":"bottom","toNode":"a978bc0fe1863478","toSide":"top","label":"2"},
 		{"id":"574cb7033572c1fc","fromNode":"6d0528dce39d1c81","fromSide":"top","toNode":"20412bed33c71ef6","toSide":"right","label":"Revise occasionally or when in doubt"},
 		{"id":"eb5b51ccde21a90a","fromNode":"70eb9ba21d6ddb22","fromSide":"left","toNode":"fb4f9a5395880eaf","toSide":"right"},
 		{"id":"72c1e41b011f3f09","fromNode":"70eb9ba21d6ddb22","fromSide":"left","toNode":"3e523933a10e6d37","toSide":"right"},
 		{"id":"ee9eef68e3a3442b","fromNode":"a978bc0fe1863478","fromSide":"bottom","toNode":"1882a13c152595db","toSide":"top"},
-		{"id":"c0bb934a1c8d6c54","fromNode":"6d0528dce39d1c81","fromSide":"left","toNode":"70eb9ba21d6ddb22","toSide":"top"},
+		{"id":"c0bb934a1c8d6c54","fromNode":"6d0528dce39d1c81","fromSide":"left","toNode":"70eb9ba21d6ddb22","toSide":"top","label":"1"},
 		{"id":"291df5f5d4f7558d","fromNode":"a978bc0fe1863478","fromSide":"bottom","toNode":"51eb871864a0ca1b","toSide":"top"},
 		{"id":"380c83d42ddcc738","fromNode":"70eb9ba21d6ddb22","fromSide":"bottom","toNode":"737acc37d984df01","toSide":"top"}
 	]
