@@ -82,7 +82,33 @@ Tags: #politics
 		- tiktok data is stored on servers on China is a problem since US laws might not have influence on how that data is used 
 	- Chinese and Russian media are know to collaborate to spread misinformation 
 	- the more a country fails as a democracy, the more China's authoritarianism will seem appealing to its people 
-		- if governments start labelling certain news outlets as unreliable then Chinese and Russian news outlets can gain following because people can't differentiate on which media outlet to trust
+		- if governments start labelling certain news outlets as unreliable then Chinese and Russian news outlets can gain following because people can't differentiate on which media outlet to trust 
+- https://www.mid-day.com/news/opinion/article/rahuls-ideological-win-over-modi-23286562
+	- #politics 
+	- congress is still not publically clear on its ideology like the BJP is
+		- possibly because BJP has a simplified and hardlined ideology whereas Congress has to be subtle
+	- but still a long way from the time Rahul Gandhi tried appeasement by performing Puja and wearing a janeu
+	- #watchlist/politics after Congress win in Karnataka 2023, will Congress go ahead with following actions that may go against the Hindu base in the state and others in North
+		- ban Bajrang Dal
+		- revoke ban on Hijab 
+		- release caste census of 2015
+- https://youtu.be/NUeuk0gLFss
+	- #politics 
+	- After electoral loss in KarnatakaBJP supporters and spokepersons have gone beserk 
+		- on media and news. 
+		- In other states, they are intensifying their right leanings.
+		- many discussions of giving up on Modi
+		- #watchlist/politics Will it be beneficial for Congress to allow this to happen and wait and watch while the BJP explodes/implodes?
+- https://m.thewire.in/article/politics/narendra-modi-coalition-cracks-bjp
+	- #politics 
+	- constituencies of Modi
+		1. modernists that were Manmohan Singh's 1991 constituency; technocracy; want a _strong_ leader to deal with _messiness_ of democracy
+		2. corporate leaders, cronies, crooks
+		- traditionalists, conservatives excited by the idea of Hindu rashtra and revival 
+		- nationalists 
+		- caste and sub castes and sub sub castes
+		- anti-Gandhi family
+	
 
 # TO Read
 - https://www.lrb.co.uk/the-paper/v45/n08/pankaj-mishra/the-big-con
