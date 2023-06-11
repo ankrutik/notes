@@ -1,8 +1,8 @@
 {
 	"nodes":[
-		{"type":"file","file":"vaults/ideas/sw/UUID.md","id":"3b4d13b0d7045ddd","x":339,"y":-187,"width":250,"height":60},
+		{"type":"file","file":"sw/UUID.md","id":"3b4d13b0d7045ddd","x":339,"y":-187,"width":250,"height":60},
 		{"type":"text","text":"Primary Key","id":"932b8ae88d9f8c5b","x":94,"y":-300,"width":250,"height":60},
-		{"id":"3d41ac0b5e73c0fd","x":339,"y":-40,"width":250,"height":100,"type":"file","file":"vaults/ideas/sw/Sequential Primary Keys.md"}
+		{"type":"file","file":"sw/Sequential Primary Keys.md","id":"3d41ac0b5e73c0fd","x":339,"y":-40,"width":250,"height":100}
 	],
 	"edges":[
 		{"id":"347a53b04c30b796","fromNode":"932b8ae88d9f8c5b","fromSide":"bottom","toNode":"3b4d13b0d7045ddd","toSide":"left"},
