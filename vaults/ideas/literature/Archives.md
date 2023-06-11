@@ -1,4 +1,4 @@
-Tags: #politics 
+Tags: #archives 
 
 - https://m.thewire.in/article/politics/why-rahul-gandhis-disqualification-may-be-a-turning-point
 - https://m.thewire.in/article/rights/anand-teltumbde-explains-the-genesis-of-his-articles-on-bhima-koregaon
@@ -123,6 +123,20 @@ Tags: #politics
 		- focus regionally with state-wise strategy
 		- focus at booth level
 		- figure out PM candidate after mandate
+- https://indianexpress.com/article/opinion/columns/pratap-bhanu-mehta-opposition-social-justice-8569145/
+	- #politics #socialjustice
+	- post Mandal, the idea of social justice has reduced to formulaic distribution of government largesse based on officially recognised castes
+		- whereas, the focus should have been discrimination, inclusive economic growth, public institutions
+	- social justice does not always require caste data first. Instead general improvements can help too like...
+		- quality education for all
+		- public goods for all
+		- welfare/cash support
+		- subsidies
+		- good economy
+	- _Ambedkar’s lesson that to effectively attack caste you have to (for the most part) strongly but indirectly attack the range of material deprivations that make its logic so insidious_
+	- "compulsory identity"
+		- officially sanctioned categories
+		- smaller caste groups fight over little resources
 
 # TO READ
 - https://www.lrb.co.uk/the-paper/v45/n08/pankaj-mishra/the-big-con
@@ -130,17 +144,3 @@ Tags: #politics
 	- Modi was banned from visiting EU and US, businessmen recoiled from him, Adani helped with that
 - https://www.nytimes.com/2023/04/12/opinion/international-world/singapore-autocracy-democracy.html
 - https://www.quantamagazine.org/the-unpredictable-abilities-emerging-from-large-ai-models-20230316/
-- https://indianexpress.com/article/opinion/columns/pratap-bhanu-mehta-opposition-social-justice-8569145/
-- https://www.washingtonpost.com/opinions/2023/04/20/india-backsliding-democracy-modi-school-textbooks/
-
-
-
-
-
-
-
-
-
-# Links
-
-# References
