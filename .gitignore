@@ -1,9 +1,9 @@
-vaults/ideas/.obsidian/workspace
-vaults/ideas/.obsidian/graph.json
-vaults/ideas/.obsidian/appearance.json
-vaults/ideas/.obsidian/workspace.json
-vaults/ideas/.obsidian/app.json
-vaults/ideas/.obsidian/workspace-mobile.json
+.obsidian/workspace
+.obsidian/graph.json
+.obsidian/appearance.json
+.obsidian/workspace.json
+.obsidian/app.json
+.obsidian/workspace-mobile.json
 .DS_Store
-typesetting/*/.ScribusThumbs/*
-vaults/ideas/.trash/*
+other/typesetting/*/.ScribusThumbs/*
+.trash/*
