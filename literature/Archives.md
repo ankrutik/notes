@@ -137,7 +137,60 @@ Tags: #archives
 	- "compulsory identity"
 		- officially sanctioned categories
 		- smaller caste groups fight over little resources
-
+- https://www.thenewsminute.com/article/dravidian-plus-how-understand-bjp-s-new-expansionist-strategy-tamil-nadu-160415
+	- History of BJP and RSS and VHP attempts to make inroads into Tamil Nadu
+	- BJP currently has alliance with AIADMK
+	- BJP is always seen as an non-Tamil, outsider party due to which it and RSS could not get support
+	- Dravidian Plus will be a new approach by the BJP in Tamil Nadu #watchlist 
+- https://article-14.com/post/in-india-world-s-internet-shutdown-capital-blockades-undermine-livelihood-food-security-human-rights--64892c096a39a
+	- Internet shutdowns 
+		- impact the poorer the most
+		- Impacts innocents trying to survive difficult situations
+	- government pushes for digitisation and moving process to the Internet, but frequent shutdowns brings replaced process to a halt
+	- *A [January 2020 judgement](https://indiankanoon.org/doc/82461587/) of the Supreme Court laid down procedural safeguards on internet shutdowns and ordered that suspension orders would be published, would be ”lawful, necessary, proportionate, and limited in scope”, not indefinite, and would be overseen by a review committee every seven working days.*
+- https://sabrangindia.in/in-case-of-a-uniform-civil-code-how-should-muslims-respond/
+	- UCC appears to be against Muslims but Muslim personal law is the only one left to adopt modern ideas
+	- Article lists points that which will change for Muslims which are actually progressive practices already default and taken-for-granted in other religions
+- https://www.mid-day.com/news/opinion/article/surpanakhas-shambuk-23292936
+	- when reading an epic, important to be aware who is telling the story
+	- Difference between myth and mythological fiction
+- https://www.thenewsminute.com/article/17-opposition-parties-decide-fight-2024-polls-together-nextt-meeting-shimla-178888
+	- #watchlist/politics 
+	- List of opposition party who have decided to work together
+- https://www.theatlantic.com/international/archive/2023/06/russia-civil-war-wagner-putin-coup/674517/
+	- Russia faces a coup from a mercenary force which seems to be supported by a few commanders and generals 
+	- The Wagner force commanded by Prigozhin
+	- Prigozhin 
+		- is a convicted thief who goes by criminal law in Russia
+		- He mutinied because his forces were knowingly starved of resources
+		- He blames the military leadership for mismanaging this war
+		- Was praised by Putin just a month ago
+	- Russia has seen similar failed mutinies/revolutions in the past
+		- after World War 1 in 1917
+		- After war with Japan in 1905
+	- no mainstream media anymore in Russia, just state propaganda
+		- Few journalists and bloggers in exile
+		- “Open-source intelligence”
+- https://www.thequint.com/news/politics/opposition-meet-parties-turn-blind-eye-to-differences-focus-on-commonalities
+	- #watchlist/politics 
+	- 15 political parties met in Patna, next meeting in Shimla
+	- Notable absences
+		- Mayawati’s BSP
+		- Naveen Patnaik’s BJD
+		- Andhra Pradesh parties like TRS, TDS
+	- AAP’s issue with 
+		- Needed Congress to oppose the Center’s ordinance for Delhi in Parliament
+		- Congress insisted on a separate 1:1 discussion
+		- AAP did not attend presser as a response
+		- made a statement it would be difficult for them to participate further
+- https://www.forbesindia.com/article/technology/the-ai-risks-we-should-be-worried-about/86037/1
+	- AI being used by law enforcement agencies 
+	- Accuracy is a concern, needs constant training
+	- Acquired by Delhi Police in 2017 for facial recognition as directed by Delhi High court to find missing children
+	- EU regulation to evaluate AI use cases as a threat to fundamental rights of individual
+	- In India, NITI Ayog developing frameworks
+- [Sanjay Jha’s 5 point game plan for an united Opposition](https://indianexpress.com/article/opinion/columns/sanjay-jha-united-opposition-strategy-modi-bjp-2024-8683837/)
+- 
 # TO READ
 - https://www.lrb.co.uk/the-paper/v45/n08/pankaj-mishra/the-big-con
 	- simple timeline of the effects of Hindenburg reveal of Adani 
