@@ -190,10 +190,56 @@ Tags: #archives
 	- EU regulation to evaluate AI use cases as a threat to fundamental rights of individual
 	- In India, NITI Ayog developing frameworks
 - [Sanjay Jha’s 5 point game plan for an united Opposition](https://indianexpress.com/article/opinion/columns/sanjay-jha-united-opposition-strategy-modi-bjp-2024-8683837/)
-- 
-# TO READ
+- https://twitter.com/sandeep_pt/status/1679798880416743424?s=46
+	- Cheetahs have always been imported in India. Those that existed in the wild were run away ferals. 
+	- Cheetah have almost never attacked man. Historical have been companions of hunting and have been domesticated. 
+	- Issues with reintroduction in India
+		- Uneven land that hampers fast running and escape
+		- Hunters like lions, tigers, wild dogs, leopards and even vultures that will drive the cheetahs away from their kill
+		- Lack of food like antelope due to lack of grasslands 
+		- Heat in summers reaches almost 50 degrees Celsius 
+- https://www.nytimes.com/2023/07/13/opinion/india-us-diplomacy-china-biden-modi.html
+	- List of dictators that US have supported in the past
+	- summary list of problems in India under Modi governance
+	- When Biden administration hosted Modi, they must have know about his governance problems in the current PM terms and before
+	- India’s ties to Russia are deep and India is currently no match for China on economic and military front
+		- If America does intend to go against either with India’s help and America loses, the only thing it has to suffer a bloody nose and the last helicopter ride home with its collaborator hanging on the sides. 
+- https://www.thequint.com/news/politics/opposition-meeting-bengaluru-congress-trinamool-aap-sonia-gandhi-nitish-kumar
+	- #politics second opposition meet in Bangalore
+- [Sharad Pawar talks about opposition unity with the backdrop of the NCP mutiny](https://www.newindianexpress.com/nation/2023/jul/18/opposition-unity-possible-but-its-not-an-easy-task--sharad-pawar-2595935.html)
+- [myths about coalition governments](https://thewire.in/politics/three-myths-coalition-governments)
+	- Myths
+		- Anarchy
+		- Unqualified people given power
+		- disadvantage due to lack of prime ministerial candidate
+		- Good governance
+	- BJP being a majority seat party satisfies most of the above myths
+	- Previous coalition governments have shown to not show signs of above myths
+- [Memory is the biggest weapon against fascism](https://www.telegraphindia.com/india/memory-is-the-biggest-weapon-against-fascism-says-journalist-siddique-kappan/cid/1952528)
+	- Do not forget what was done to us. Memory is the biggest weapon against fascism. 
+	- Kappan was held probably because he was secretary of a journalists’ union that had staged anti BJP protests in Delhi
+	- ED was investigating a 5000 rupees issue. 
+	- Though released, he has to appear at a local police station every Monday and court in Lucknow every fortnight. 
+- https://thewire.in/politics/india-can-have-its-first-dalit-prime-minister-in-2024
+	- Why the Gandhi family should not be and will not themselves be ready to be projected as PM candidates
+	- Mallikarjun Kharge as a ready choice to get support of the Dalit constituency 
+	- Kejriwal and Mamata Banerjee will not be acceptable
+- [Hostpry of various processes of subtitling on film](https://the-artifice.com/subtitling-cinema-history/)
+	- See 1932 process
+- [why Modi avoids acknowledging problems](https://www.rediff.com/news/column/aakar-patel-why-modi-avoids-acknowledging-problems/20230724.htm)
+- [seditions due to books](https://www.thenewsminute.com/article/when-reading-books-criminalised-examining-uapa-sedition-cases-india-180169)
+- [Process of PIL in Supreme Court](https://indianexpress.com/article/opinion/columns/article-370-case-cji-initiated-important-reform-in-public-interest-litigations-8848637/)
 - https://www.lrb.co.uk/the-paper/v45/n08/pankaj-mishra/the-big-con
 	- simple timeline of the effects of Hindenburg reveal of Adani 
-	- Modi was banned from visiting EU and US, businessmen recoiled from him, Adani helped with that
+	- Modi was banned from visiting EU and US, businessmen recoiled from him, Adani helped with funds then
+	- Financial Times has shown sobriety in reporting on India. _Time_, _Foreign Affairs_, _Newsweek_ and the _Economist_ Not sure much. 
+	- Modi’s praise abroad
+		- What America does as a counter balance to China
 - https://www.nytimes.com/2023/04/12/opinion/international-world/singapore-autocracy-democracy.html
+	- *While established democracies do better economically than autocracies overall, the handful of autocrats who have focused on economic growth — rather than their own Swiss bank accounts — have managed to outperform fledgling democracies
+	- Elites do not like big changes that will cut into their bottom lines. Autocrats can get them on board by convincing them protection. 
+	- Democracies have parties that want to make long term changes but have to constantly prove critiquing opposition wrong. Many are voted out by the time their efforts show results. Political parties then rather opt for short term promises that don’t make sense in the long run. Eg. Eknath Shinde’s beautification of Mumbai and Thane. 
+	- Lee Kuan Yew was the autocrat behind Singapore’s rise. His son shows signs of a rule that is based more on yes men and tends to be a plutocracy showing it’s cracks. 
+
+# TO READ
 - https://www.quantamagazine.org/the-unpredictable-abilities-emerging-from-large-ai-models-20230316/
