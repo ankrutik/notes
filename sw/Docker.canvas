@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"b4268b78e60a700e","x":-210,"y":-140,"width":250,"height":60,"type":"text","text":"Containers"},
+		{"id":"09c9ab7638bcf179","x":142,"y":-140,"width":250,"height":60,"type":"text","text":"Images"},
+		{"id":"c16721e060112698","x":517,"y":-140,"width":250,"height":60,"type":"text","text":"Build\n"},
+		{"id":"c96c862235dffd6a","x":-780,"y":-311,"width":400,"height":400,"type":"file","file":"sw/Docker Volumes.md"},
+		{"id":"e43e7da48106e383","x":-780,"y":141,"width":400,"height":400,"type":"file","file":"sw/Docker Bind Mounts.md"},
+		{"id":"373e29404c1808f6","x":567,"y":-711,"width":400,"height":400,"type":"file","file":"sw/Maintaining Docker images and containers.md"},
+		{"id":"ad2ef2b70302b91e","x":1173,"y":-711,"width":400,"height":400,"type":"file","file":"sw/Developer workflow to update Docker Image.md"},
+		{"id":"bf2c34769c384448","x":67,"y":-711,"width":400,"height":400,"type":"file","file":"sw/Sharing Docker Images.md"},
+		{"id":"464c52a8a30072b8","x":1103,"y":89,"width":400,"height":400,"type":"file","file":"sw/Dockerfile.md"},
+		{"id":"e0c8933258b6ba48","x":442,"y":89,"width":400,"height":400,"type":"file","file":"sw/docker build.md"},
+		{"id":"ddaabc76df78a02f","x":-58,"y":81,"width":250,"height":60,"type":"text","text":"Docker"}
+	],
+	"edges":[
+		{"id":"b78fd89ebaabf1ee","fromNode":"09c9ab7638bcf179","fromSide":"right","toNode":"c16721e060112698","toSide":"left"},
+		{"id":"386c8d405a09cacf","fromNode":"c16721e060112698","fromSide":"bottom","toNode":"e0c8933258b6ba48","toSide":"top"},
+		{"id":"49ff9a7a8227a396","fromNode":"c16721e060112698","fromSide":"bottom","toNode":"464c52a8a30072b8","toSide":"top"},
+		{"id":"85fdaffb7037f341","fromNode":"09c9ab7638bcf179","fromSide":"top","toNode":"bf2c34769c384448","toSide":"bottom"},
+		{"id":"1ebefe18daf2d93f","fromNode":"b4268b78e60a700e","fromSide":"left","toNode":"c96c862235dffd6a","toSide":"right"},
+		{"id":"c5f3eed8a4a85c5a","fromNode":"b4268b78e60a700e","fromSide":"left","toNode":"e43e7da48106e383","toSide":"right"},
+		{"id":"5c53a057f053ff5b","fromNode":"c16721e060112698","fromSide":"top","toNode":"373e29404c1808f6","toSide":"bottom"},
+		{"id":"bc20cceae4573f30","fromNode":"c16721e060112698","fromSide":"top","toNode":"ad2ef2b70302b91e","toSide":"bottom"},
+		{"id":"8793eeeed775babe","fromNode":"ddaabc76df78a02f","fromSide":"top","toNode":"b4268b78e60a700e","toSide":"bottom"},
+		{"id":"ebb82a3c6b2ca03e","fromNode":"ddaabc76df78a02f","fromSide":"top","toNode":"09c9ab7638bcf179","toSide":"bottom"}
+	]
+}
