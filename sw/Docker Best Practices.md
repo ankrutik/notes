@@ -11,7 +11,6 @@ Tags: #docker
 - Use `compose` to create and share multi-container apps
 - Image Layering
 	- `docker image history <image_name>`
-	- 
 
 # Links
 

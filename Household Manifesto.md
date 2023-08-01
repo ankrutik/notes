@@ -1,4 +1,3 @@
-# Household Manifesto
 Tags: 
 
 1. No restaurant order/ take out in Oct 22
