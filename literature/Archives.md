@@ -240,6 +240,11 @@ Tags: #archives
 	- Elites do not like big changes that will cut into their bottom lines. Autocrats can get them on board by convincing them protection. 
 	- Democracies have parties that want to make long term changes but have to constantly prove critiquing opposition wrong. Many are voted out by the time their efforts show results. Political parties then rather opt for short term promises that don’t make sense in the long run. Eg. Eknath Shinde’s beautification of Mumbai and Thane. 
 	- Lee Kuan Yew was the autocrat behind Singapore’s rise. His son shows signs of a rule that is based more on yes men and tends to be a plutocracy showing it’s cracks. 
+- [extension to ED director](https://thewire.in/government/extension-directorate-sk-mishra-enforcement)
+	- ED is not a separate constitutional or statutory body
+	- It is a department of the finance ministry
+- [July 2023 freedom of expression situation in Kashmir wrt photojournalists](https://scroll.in/article/1053405/the-half-negative-and-other-graphic-memories-of-legendary-kashmiri-photojournalist-meraj-ud-din)
+- This is a new way to write notes in my phone by connecting to the Bluetooth keyboard that I already have. This is seamless switching between machines. Keep the phone close to you and type on the keyboard that is places right above the phone. Unconventional way to do things but so awesome. Such a cool way to express thoughts and write notes. I love this. Also I can tilt the phone in landscape mode to write more broader notes. Use the keyboard to navigate and **format things like this**. The keyboard in this case behaves like a keyboard on the mac.
 
 # TO READ
 - https://www.quantamagazine.org/the-unpredictable-abilities-emerging-from-large-ai-models-20230316/
