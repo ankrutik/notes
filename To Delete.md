@@ -1,0 +1,19 @@
+- the director, Abbas Kiarostami https://en.m.wikipedia.org/wiki/Abbas_Kiarostami
+	- A suit for a wedding (short film)
+		- Boys working in the tailoring and garment industry try to hustle favours for an evening’s access to a jacket being made for a customer
+		- Disparity between young boys from different social backgrounds; their little short term aspirations; the little politics they have to play
+	- first graders
+		- Documentary; how kindergarten teachers resolving fights between children
+		- people working in education trying to shape a generation
+- Gabbeh; that abstract film I spoke about the soul of a carpet 
+	- Very beautifully shot
+- Francois Truffaut
+	- Watched this director after we spoke about Wes Anderson on our conversation before last
+	- Few films he made with the same actor as he grew up from childhood to teenage to adulthood
+		- 400 blowd
+		- antoine and colette
+		- Stolen kisses
+		- Bed and boar love on the run
+- few media regarding European 
+	- Empire podcast by Anita Anand and William Dalrymple
+	- Zuma by Lucrecia Martel; film

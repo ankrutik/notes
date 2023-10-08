@@ -245,6 +245,12 @@ Tags: #archives
 	- It is a department of the finance ministry
 - [July 2023 freedom of expression situation in Kashmir wrt photojournalists](https://scroll.in/article/1053405/the-half-negative-and-other-graphic-memories-of-legendary-kashmiri-photojournalist-meraj-ud-din)
 - This is a new way to write notes in my phone by connecting to the Bluetooth keyboard that I already have. This is seamless switching between machines. Keep the phone close to you and type on the keyboard that is places right above the phone. Unconventional way to do things but so awesome. Such a cool way to express thoughts and write notes. I love this. Also I can tilt the phone in landscape mode to write more broader notes. Use the keyboard to navigate and **format things like this**. The keyboard in this case behaves like a keyboard on the mac.
+- https://thewalrus.ca/india-canada-relations/
+	- Canada and UK are seen to be tolerant of Sikh separatists
+	- “Vote bank politics” is a term used by right wing ideologues to discredit votes given to liberal parties by minorities 
+	- similarities between Sikh ask of Khalistan with Hindu as of Hindurashtra
+	- Canada’s view, it seems, is that freedom of speech, expression, peaceful protest should be allowed even though the discourse might be separatists. Action will be taken only when these individuals resort to violence. 
+- 
 
 # TO READ
 - https://www.quantamagazine.org/the-unpredictable-abilities-emerging-from-large-ai-models-20230316/
