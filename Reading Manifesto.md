@@ -26,6 +26,7 @@ Choose to make:
 - Mind-Maps
 	- For technical or structural content 
 	- *Do you want to visualize notes for decision making?*
+- Write down what thoughts were spurred on by what you read. 
 
 Consider flagging notes for review later in a third pass.
 
@@ -56,3 +57,4 @@ Open up the literature note and see outgoing links to all permanent notes.
 
 
 # References
+[How Ted Gioia takes notes](https://www.honest-broker.com/p/how-i-take-notes?utm_campaign=post)

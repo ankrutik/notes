@@ -250,7 +250,19 @@ Tags: #archives
 	- “Vote bank politics” is a term used by right wing ideologues to discredit votes given to liberal parties by minorities 
 	- similarities between Sikh ask of Khalistan with Hindu as of Hindurashtra
 	- Canada’s view, it seems, is that freedom of speech, expression, peaceful protest should be allowed even though the discourse might be separatists. Action will be taken only when these individuals resort to violence. 
-- 
+- https://www.thenewsminute.com/telangana/how-and-why-kcr-slowly-expanding-footprint-brs-maharashtra-180676
+	- Case study of a political party making roads to a state, where there are already many regional political parties and no power vacuum 
+	- Visibility of contrast in development along border villages
+	- Politically addressing existing cracks
+	- Migration of farm workers to Telangana from bordering districts of Maharashtra
+	- presence of KCR in Maharashtra #watchlist/politics 
+		- Approximately 14,00,000 workers
+		- Coordinators in the 6 divisions
+		- Multiple regional leaders joining TRS, especially from the NCP
+		- physical offices and at least four major cities
+		- Add in regional newspapers and TV channel
+	- Bordering region was one part of the Nizam empire
+		- Similarities in food, Marathi and Telugu languages; marriages
 
 # TO READ
 - https://www.quantamagazine.org/the-unpredictable-abilities-emerging-from-large-ai-models-20230316/
