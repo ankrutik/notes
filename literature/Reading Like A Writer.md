@@ -1,0 +1,60 @@
+#reading 
+
+# Close Reading
+- Check when you are limiting your writing or choice of reading by external biases
+	- Imagine writers of great classics like Kafka enrolling in a graduate program where his fellow classmates don't believe surreal stories
+- Ability to polish sentences by
+	- Looking at a sentence to see 
+		- what is superfluous 
+		- what can be altered, revised, expanded, cut
+	- Shrink, snap into place, emerge in clear, economical, sharp form
+- Before mass photocopying was possible, students read their work aloud in class
+- #reading/recommendations To study elements of writing
+	- meter with Ovid
+	- plot construction with Homer
+	- comedy with Aristophanes
+	- lucid sentences of Montaigne, Samuel Johnson
+- Only dead writers as teachers can be generous, uncritical, blessed with wisdom and genius, endlessly giving
+- Apart from reading for pleasure, the writer reads in a manner conscious of
+	- style
+	- diction
+	- how sentences are formed
+	- how information is conveyed
+	- structure of plots
+	- character creation
+	- detail and dialogue
+- "Putting every word on trial for its life"
+	- change an adjective, cut a phrase, toggle a comma
+- We learn to hear and then read word by word
+	- Books are written in the same manner
+- Finish a book and return to it years later
+	- what did we miss the last time?
+	- has time and age affected our understanding?
+- #reading/recommendations Challenging, better written, more substantial
+	- Steinbeck
+	- Camus
+	- Hemingway
+	- Fitzgerald
+	- Twain
+	- Salinger
+	- Anne Frank
+	- Jack Kerouac
+	- Allen Ginsberg
+	- Lawrence Ferlinghetti
+	- Truman Capote
+	- Carson McCullers
+	- Herman Hesse
+	- Carlos Castaneda
+- New Criticism is a school of thought in which you read what is on page with only passing reference to 
+	- biography of writer
+	- period
+- Criticism of the writing course that the author has enrolled in
+	- little attention to the language, actual words, sentences that the writer used
+	- form strong, critical, negative opinions of geniuses that were hereto read with delight
+	- prosecute or defend authors on charges having to do with writers' origins, racial, cultural, class backgrounds
+	- re-write classics in more acceptable forms in compatibility with the young critics' level of insight, tolerance, awareness
+- Author's pedestrian, halting way of organising classes
+	- begin at the beginning
+	- linger over every word, phrase, image to see how it enhanced and contributed to the story as a whole
+
+# Words
