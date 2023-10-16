@@ -1,4 +1,3 @@
-# Evaluating a Company when looking for jobs
 Tags: #jobs 
 
 #### Links
