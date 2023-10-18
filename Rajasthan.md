@@ -40,6 +40,8 @@
 	- amber fort
 	- nahargarh
 	- many markets available for shopping
+- Ajmer
+	- 
 - Many have suggested to skip Mount Abu
 
 
