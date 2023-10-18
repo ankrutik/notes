@@ -263,6 +263,18 @@ Tags: #archives
 		- Add in regional newspapers and TV channel
 	- Bordering region was one part of the Nizam empire
 		- Similarities in food, Marathi and Telugu languages; marriages
+- [Philistines & Pharisees by Mukul Kesavan](https://www.telegraphindia.com/opinion/philistines-pharisees-israels-legitimacy-grows-out-of-the-tragedy-of-the-holocaust/cid/1973461)
+	- #israel #gaza #politics 
+	- History of Jews claiming land in Palestine
+		- Ancient ouster
+		- western sympathies for genocide in Europe
+	- subtlety in hypocrisy in Palestine action as terror and Israel action as self defence irrespective of disproportionate fatalities and destruction
+	- Netanyahu’s 2 step approach to put out any solution to Palestinian Statehood
+		- indirectly nurture Hamas to use as reason for heightened action
+		- normalize relations with Arab petroleum-states without promising Palestine
+	- _Since Biden mentioned a false story of beheaded babies, would Biden also mention pictures of blown up babies if Palestinians posted them?_
+
+
 
 # TO READ
 - https://www.quantamagazine.org/the-unpredictable-abilities-emerging-from-large-ai-models-20230316/
