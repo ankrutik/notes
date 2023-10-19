@@ -14,3 +14,4 @@
 	- Such Bookmarks can be named, grouped together.
 	- The Bookmark button is prominently visible at the top next to the Search button.
 	- The Obsidian system file `.obsidian/bookmarks.json` will be modified.
+- Spaced Repetition
