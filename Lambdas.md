@@ -1,6 +1,15 @@
 #java 
 
 See `codenotes/java_notes/lambdas/LambdaBasics.java` 
+# Design Decisions
+
+|Function Type|Arguments?|Returns?|Method|More|
+|---|---|---|---|---|
+|Predicate|1|`boolean`|`test()`|
+|BiPredicate|2|`boolean`|`test()`|
+|Supplier|None|*Typed*|`get()`|
+|Consumer|1, *Typed*|None|`accept()`|`forEach` of Collections that work on 1 element|
+|BiConsumer|2, *Typed*|None|`accept()`|`forEach` of Collections that work on 2 elements|
 
 # Functional Interface
 - Functional Interface in java is an interface with just 1 abstract method.
@@ -53,8 +62,9 @@ GenericParameterWithReturn<Integer> i1_2 = i -> {
 };
 System.out.println(i1_2.process(54));
 ```
-
-# java.util.function.Predicate
+# Predicates
+- Lambda body should return Boolean
+## java.util.function.Predicate
 - Returns **Boolean** 
 - Takes 1 argument which is typed
 - Predefined functional interface with single abstract method 
@@ -79,8 +89,18 @@ Predicate<Integer> isGreaterThanZero = i -> i > 0;
 isGreaterThanZero.test(45);
 ```
 
-## Lambda definition as object
-- Pass Lambda definition as object using Predicates
+## java.util.function.BiPredicate
+- Returns Boolean
+- Takes 2 arguments which are typed
+- Function/Lambda definition
+	- left hand side will need to be in round brackets because 2 elements
+```java
+BiPredicate<String, Integer> isOfLength = (s, i) -> s.length() == i;
+isOfLength.test("Jack", 4);
+```
+
+# Lambda definition as object
+- Pass Lambda definition as object using Predicates, Suppliers, Consumers, etc.
 - Vocabulary in example below
 	- `s` and `i` are **scoped** for the lambda function
 	- Predicate in function parameter is **typed** for other parameter
@@ -94,17 +114,8 @@ System.out.println(check(-1, i -> i < 0));
 System.out.println("ABC goes to market", s -> s.contains("to"));
 ```
 
-# java.util.function.BiPredicate
-- Returns Boolean
-- Takes 2 arguments which are typed
-- Function/Lambda definition
-	- left hand side will need to be in round brackets because 2 elements
-```java
-BiPredicate<String, Integer> isOfLength = (s, i) -> s.length() == i;
-isOfLength.test("Jack", 4);
-```
-
-# java.util.function.Supplier
+# Supplier
+## java.util.function.Supplier
 - Returns object that is Typed
 - Takes no argument
 ```java
@@ -112,7 +123,8 @@ Supplier<LocalTime> currentTime = () -> LocalTime.now();
 currentTime.get();
 ```
 
-# java.util.function.Consumer
+# Consumers
+## java.util.function.Consumer
 - Takes 1 argument
 - Returns void
 ```java
@@ -130,7 +142,7 @@ maintainCapitalSurnames.accept("mangaonkar");
 surnames.forEach(s -> System.out.println(s));
 ```
 
-# java.util.function.BiConsumer
+## java.util.function.BiConsumer
 - Takes 2 arguments
 - Returns void
 ```java
