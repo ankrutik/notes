@@ -1,5 +1,7 @@
 #java 
 
+See `codenotes/java_notes/lambdas/LambdaBasics.java` 
+
 # Functional Interface
 - Functional Interface in java is an interface with just 1 abstract method.
 	- Default and static methods are allowed apart from the single abstract method 
@@ -50,4 +52,97 @@ GenericParameterWithReturn<Integer> i1_2 = i -> {
 	return i > 0;
 };
 System.out.println(i1_2.process(54));
+```
+
+# java.util.function.Predicate
+- Returns **Boolean** 
+- Takes 1 argument which is typed
+- Predefined functional interface with single abstract method 
+	- `boolean test(T i)`
+```java
+Predicate <Integer> do = i -> i > 0;
+do.test(45);
+```
+
+- #java/lambdas/best_practices When using, **add descriptive name to object** of Predicate **instead of the method**
+```java
+// Instead of
+interface IFunctionalInterface1<T> {
+	boolean isGreaterThanZero(T t);
+}
+...
+IFunctionalInterface1 i = i -> i > 0;
+i.isGreaterThanZero(45);
+
+// Do this
+Predicate<Integer> isGreaterThanZero = i -> i > 0;
+isGreaterThanZero.test(45);
+```
+
+## Lambda definition as object
+- Pass Lambda definition as object using Predicates
+- Vocabulary in example below
+	- `s` and `i` are **scoped** for the lambda function
+	- Predicate in function parameter is **typed** for other parameter
+```java
+public static <T> boolean check(T t, Predicate<T> lambda){
+	return lambda.test(t);
+}
+...
+System.out.println(check(45, i -> i > 0));
+System.out.println(check(-1, i -> i < 0));
+System.out.println("ABC goes to market", s -> s.contains("to"));
+```
+
+# java.util.function.BiPredicate
+- Returns Boolean
+- Takes 2 arguments which are typed
+- Function/Lambda definition
+	- left hand side will need to be in round brackets because 2 elements
+```java
+BiPredicate<String, Integer> isOfLength = (s, i) -> s.length() == i;
+isOfLength.test("Jack", 4);
+```
+
+# java.util.function.Supplier
+- Returns object that is Typed
+- Takes no argument
+```java
+Supplier<LocalTime> currentTime = () -> LocalTime.now();
+currentTime.get();
+```
+
+# java.util.function.Consumer
+- Takes 1 argument
+- Returns void
+```java
+Consumer<String> printCapital = s -> System.out.println(s.toUpperCase());
+printCapital.accept("abc");
+Consumer<String> capitalize = s -> s.toUpperCase();
+capitalize.accept("def");
+```
+- Collections which work on single elements accept Consumers in their `forEach` methods
+```java
+List<String> surnames = new ArrayList<>();
+Consumer<String> maintainCapitalSurnames = s -> surnames.add(s.toUpperCase());
+maintainCapitalSurnames.accept("arekar");
+maintainCapitalSurnames.accept("mangaonkar");
+surnames.forEach(s -> System.out.println(s));
+```
+
+# java.util.function.BiConsumer
+- Takes 2 arguments
+- Returns void
+```java
+Map<String, String> pincodes = new HashMap<String, String>();
+BiConsumer<String, String> mapTownToPin = (town, pin) -> pincodes.put(town, pin);
+Consumer<String> printPinForTown = town -> System.out.println(pincodes.get(town));
+mapTownToPin.accept("Mahim", "400016");
+mapTownToPin.accept("Gundavli", "400093");
+printPinForTown.accept("Mahim");
+```
+- Collections that work on 2 elements, accept BiConsumers in their `forEach` methods
+```java
+...
+pincodes.forEach((town, pin) -> System.out.println(town + ": " + pin));
 ```
