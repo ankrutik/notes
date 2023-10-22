@@ -3,13 +3,17 @@
 See `codenotes/java_notes/lambdas/LambdaBasics.java` 
 # Design Decisions
 
-|Function Type|Arguments?|Returns?|Method|More|
-|---|---|---|---|---|
-|Predicate|1|`boolean`|`test()`|
-|BiPredicate|2|`boolean`|`test()`|
-|Supplier|None|*Typed*|`get()`|
-|Consumer|1, *Typed*|None|`accept()`|`forEach` of Collections that work on 1 element|
-|BiConsumer|2, *Typed*|None|`accept()`|`forEach` of Collections that work on 2 elements|
+|What?|Function Type|Arguments?|Returns?|Method|More|
+|---|---|---|---|---|---|
+|Check 1 argument?|Predicate|1|`boolean`|`test()`|
+|Check 2 arguments?|BiPredicate|2|`boolean`|`test()`|
+|Only get?|Supplier|None|*Typed*|`get()`|
+|Only give 1?|Consumer|1, *Typed*|None|`accept()`|`forEach` of Collections that work on 1 element|
+|Only give 2?|BiConsumer|2, *Typed*|None|`accept()`|`forEach` of Collections that work on 2 elements|
+|Give something, get another?|Function|1, *Typed*|1, *Typed*|`apply()`||
+|Give 2 different things, get another?|BiFunction|2, *Typed*|1, *Typed*|`apply()`||
+|Give 1 and get all same type?|UnaryOperator|1, *Typed*|1, *Typed*|`apply()`|Argument and return types same, defined once|
+|Give 2 and get all same type?|BinaryOperator|2, *Typed*|1, *Typed*|`apply()`|2 Arguments and Return types same, defined once|
 
 # Functional Interface
 - Functional Interface in java is an interface with just 1 abstract method.
@@ -157,4 +161,73 @@ printPinForTown.accept("Mahim");
 ```java
 ...
 pincodes.forEach((town, pin) -> System.out.println(town + ": " + pin));
+```
+
+# Functions
+## java.util.function.Function
+- Takes 1 argument
+- Returns
+- Type the argument and return separately
+
+```java
+Function<String, Integer> length = s -> s.length();
+length.apply("What is the length of this string?");
+```
+
+## java.util.function.BiFunction
+- Take 2 arguments
+- Returns
+- Type the 2 arguments and return separately
+```java
+BiFunction<String, String, Boolean> contains = (x, y) -> x.contains(y);
+contains.apply("Stream", "ream");
+```
+
+# Operators
+## java.util.function.UnaryOperator
+- Take 1 argument
+- Returns
+- Type of argument and return will be same, specific just 1 Type
+```java
+UnaryOperator<String> capitalizeOp = s -> s.toUpperCase();
+capitalizeOp.apply("abc");
+```
+
+## java.util.function.BinaryOperator
+- Takes 2 arguments
+- Returns
+- Type of 2 arguments and return will be same, specify just 1 Type
+```java
+BinaryOperator<String> concatBiOp = (x, y) -> x + y;
+concatBiOp.apply("AC", "DC");
+```
+
+# Local variables referenced in lambda are Effectively Final
+- Reassigning values to variables can be blocked by declaring them explicitly  `final`
+- Once a local, non-final variable is used in a lambda, the variable becomes "Effectively Final"
+	- the compiler will not allow you to reassign value to it
+		- inside or outside the lambda
+		- before or after definition of or call to the lambda
+	- such local variables need to be maintained as final by not reassigning value
+- From scope perspective, these variables are effectively final within a method with respect to the lambda defined in that method.
+- Lambdas take snapshot of local variables and must not be changed.
+```java
+// localVariable will be used in lambda
+        int localVariable = 4;
+
+// following statement will not work, reassigning value before lambda definition 
+// localVariable+=5;
+
+Predicate<Integer> checkSomething = x -> {
+	// following will not work, reassigning value inside lambda definition
+	// localVariable++;
+	return x + localVariable > 0;
+};
+
+// following statement will not work, reassigning value after lambda definition
+//localVariable+=2;
+
+System.out.println(checkSomething.test(6));
+// following statement will not work, reassigning value after lambda call
+//localVariable+=2;
 ```
