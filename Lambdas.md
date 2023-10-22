@@ -3,6 +3,22 @@
 See `codenotes/java_notes/lambdas/LambdaBasics.java` 
 # Design Decisions
 
+- Functional Interface -> Lambdas -> Method References
+	- In order of simplifying
+- For single statement lambdas
+	- the method called inside the lambda will impact which Lambda type is used
+		- number of parameters
+		- presence of return
+			- maybe method has a side effect on the object like `Collections.sort()`
+		- type of return
+- Check semantics of method name
+
+Think about:
+- Semantics of the Function type and what you want to do
+- See what method you are going to use
+	- does it return?
+	- how many parameters does it take?
+
 |What?|Function Type|Arguments?|Returns?|Method|More|
 |---|---|---|---|---|---|
 |Check 1 argument?|Predicate|1|`boolean`|`test()`|
@@ -230,4 +246,79 @@ Predicate<Integer> checkSomething = x -> {
 System.out.println(checkSomething.test(6));
 // following statement will not work, reassigning value after lambda call
 //localVariable+=2;
+```
+
+# Method References
+Regular way of writing lambdas
+```java
+String localName = "Krutik";
+Predicate<String> localNameContains_withoutMethodRef = s -> localName.contains(s);
+```
+Lambda can be rewritten using method references when it contains 
+- a single statement 
+- or call to a single method
+```java
+String localName = "Krutik";
+Predicate<String> localNameContains = localName::contains;
+```
+Note the following:
+- local variables can be used
+- method of type of local variable is mentioned without arguments
+- argument to the method in the statement is implied to be the argument to the lambda
+
+If a lambda parameter is simply passed to another method inside lambda body, then we can remove redundancy of referring to lambda parameter. 
+## Bound
+- Instances, or local variables referred to in the lambda body, are known at compile time
+- Here, the methods are bound to the variable on which the method is called
+```java
+String localName = "Krutik";
+Predicate<String> localNameContains = localName::contains;
+System.out.println(localNameContains.test("r"));
+BiPredicate<String, Integer> nameStartsWithOffSet = localName::startsWith;
+System.out.println(nameStartsWithOffSet.test("ru", 1));
+```
+- What happens in case of Method overloading?
+	- The method that will be called on the variable inside the lambda will match the number and type of parameters to the lambda.
+	- In above `nameStartsWithOffSet` example, 
+		- `String.startsWith` has 2 versions
+			- `(String prefix)`
+			- `(String prefix, int offset)`
+		- `nameStartsWithOffSet` is a `BiPredicate` which takes 2 inputs
+		- Call to `localName::startsWith` will be resolved to the `startsWith` version with 2 arguments
+
+## Unbound
+- We are not using any local variables in the lambda body.
+	- Instances are not know at compile time.
+- Method name is specified with Class instead of Object
+- First parameter to lambda is considered as object on which to call the method
+- Second parameter to lambda, if any, is considered as object to pass to method call
+```java
+Function<String, String> upperCase1 = String::toUpperCase;
+// means Function<String, String> upperCase1 = s -> s.toUpperCase();
+upperCase1.apply("case");
+BiFunction<String, String, String> concat1 = String::concat;
+// means BiFunction<String, String, String> concat1 = (x, y) -> x.concat(y);
+concat1.apply("ABC", "DEF");
+```
+
+## Static methods
+- Called on Class and not instance
+```java
+Consumer<List<String>> sort1 = Collections::sort;
+List<String> listOfString = new ArrayList(Arrays.asList("h", "a", "n"));
+sort1.accept(listOfString);
+System.out.println(listOfString);
+```
+
+## Constructor
+- Called on the Class with `new` method
+- Need to use lambda types that return objects
+
+```java
+Supplier<StringBuilder> needAStringBuilder = StringBuilder::new;
+// Supplier<StringBuilder> randomize = () -> new StringBuilder();
+System.out.println(needAStringBuilder.get());
+
+Function<Integer, List<String>> sizedList = ArrayList::new;
+sizedList.apply(4);
 ```
