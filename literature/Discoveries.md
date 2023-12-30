@@ -1,0 +1,26 @@
+- see Apple Notes for Procrastination
+- Gimp for sticker sheets
+	- each image is added as layer
+	- Fuzzy select tool
+		- Invert selection
+	- Check transparencies of layers
+	- Free select tool to cleanup
+	- Rotate to fit in arrangements to print multiple stickers
+		-  Check buffer and border of each sticker 
+	- when scaling, use inches as measure unit to see on a physical scale how large the sticker will come out
+	- Crop image
+		- Current layer only
+- Epson Printer L3150
+	- Banding on dark parts of prints means nozzle needs cleaning
+	- print nozzle check sheet
+		- Perform nozzle head clean up 
+			- Perform 5 nozzle head cleanings at most
+			- Then allow 12 hours for the clean up to work
+		- power cleaning to be used rarely as it will use up waste ink pads which need to be replaced
+	- Advanced Epson printer settings has “thick paper” option. Can we use with 300gsm watercolour paper?
+- Opinion of After Messiah / Aakar Patel 
+	- modern day George Orwell
+	- Conveys ideas thru dialogue method instead of non-fiction
+	- encompassing look into modern political behaviour with empathy for both sides
+- see bookmarks in Instagram for reels on behavioural sciences
+- 

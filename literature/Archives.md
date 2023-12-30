@@ -273,7 +273,14 @@ Tags: #archives
 		- indirectly nurture Hamas to use as reason for heightened action
 		- normalize relations with Arab petroleum-states without promising Palestine
 	- _Since Biden mentioned a false story of beheaded babies, would Biden also mention pictures of blown up babies if Palestinians posted them?_
-
+- [Congress may have a caste strategy, finally](https://gulfnews.com/opinion/op-eds/india-congress-may-have-a-caste-strategy-finally-1.98260772)
+	- Congress had castes under umbrella in the 80s
+	- Early 90s Mandal commission disturbed the Congress hegemony
+	- Today the BJP consolidated small castes 
+	- Bihar’s release of caste census and Congress support for more caste census in the country might disturb the BJP support base
+	- [[Kanshi Ram]]’s push for population-proportionate representation in government
+- [Background of Manoj Kumar Jha as a social justice worker](https://www.mid-day.com/news/opinion/article/the-brahmin-face-of-social-justice-23310817)
+- 
 
 
 # TO READ

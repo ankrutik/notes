@@ -22,3 +22,6 @@ Add everything to a jar and shake.
 Very good alternative to plain milk in coffee, cold or hot.
 
 # References
+https://coffeesock.com/the-sock-life-1/2021/4/11/cold-brew-coffee-101your-complete-guide-to-the-best-brew
+
+# References

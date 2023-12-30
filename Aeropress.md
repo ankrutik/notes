@@ -1,6 +1,54 @@
-Take photographs differently when used as reference for art
-
 Tags: #coffee
+
+# Recipe 3
+Inverted
+
+Grind size (clicks on Timemore C2 Max): 15
+Coffee (gm): 18
+Water (gm):  200
+Water (°C): 70-75
+## Steps
+1. Electric kettle
+	1. Insert thermometer
+	2. Stop at 69 degrees
+2. Inverted Aeropress setup
+	1. Push plunger till the 4 mark
+	2. Invert and add coffee grounds
+3. start the timer
+4. pour all water into chamber
+5. stir back to front x3
+6. Let chamber sit open for immersion time 
+7. after 60 seconds…
+8. stir back to front x3
+9. Invert
+	1. Put on cap with paper filter
+	2. Hold up over cap
+	3. Formally hold the chamber, plunger and cap into place
+	4. Invert in continuous careful motion
+10. Swallow press chamber twice to let coffee grounds sink to the bottom. Wait for a few seconds.
+11. plunge over 15-30 seconds
+# Recipe 2
+Lower temperature, finer grind, cooler cup
+
+Grind size (clicks on Timemore C2 Max): 15
+Coffee (gm): 18
+Water (gm):  200
+Water (°C): 70-75
+
+## Steps
+1. Electric kettle
+	1. Insert thermometer
+	2. Stop at 69 degrees
+2. start the timer
+3. pour all water into chamber
+4. stir back to front x3
+5. Let chamber sit open for immersion time 
+6. after 60 seconds…
+7. stir back to front x3
+8. plunge over 15-30 seconds
+
+# Recipe 1
+Higher temperature, coarser grind 
 
 Grind size (clicks on Timemore C2 Max): 16
 Coffee (gm): 18
@@ -20,9 +68,8 @@ Water (°C): 92-95
 6. after 60 seconds, remove the plunger
 7. stir back to front x3
 8. plunge over 15-30 seconds
-9. enjoy as is
 
-## Notes
+# Notes
 - Description of coffee
 	- used light-medium roast coffee
 - Description of yield
@@ -40,10 +87,6 @@ Water (°C): 92-95
 	- Serving 
 		- Below 60 degrees. Tastes better as it gets to body temperature.
 		- Lightly stir before drinking every time. Do not be vigorous.
-
-
-
-
 
 # Links
 

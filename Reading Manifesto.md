@@ -27,6 +27,8 @@ Choose to make:
 	- For technical or structural content 
 	- *Do you want to visualize notes for decision making?*
 - Write down what thoughts were spurred on by what you read. 
+- Use tags to help retrieval
+	- For notes made from books, look at the meta information of the book somewhere on the first few pages. The categorisation can help with coming up with tags. 
 
 Consider flagging notes for review later in a third pass.
 
