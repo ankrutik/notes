@@ -6,7 +6,7 @@ Inverted
 Grind size (clicks on Timemore C2 Max): 15
 Coffee (gm): 18
 Water (gm):  200
-Water (°C): 70-75
+Water (°C): 68-73 degrees
 ## Steps
 1. Electric kettle
 	1. Insert thermometer
@@ -14,19 +14,23 @@ Water (°C): 70-75
 2. Inverted Aeropress setup
 	1. Push plunger till the 4 mark
 	2. Invert and add coffee grounds
-3. start the timer
-4. pour all water into chamber
-5. stir back to front x3
-6. Let chamber sit open for immersion time 
-7. after 60 seconds…
-8. stir back to front x3
-9. Invert
-	1. Put on cap with paper filter
-	2. Hold up over cap
-	3. Formally hold the chamber, plunger and cap into place
-	4. Invert in continuous careful motion
-10. Swallow press chamber twice to let coffee grounds sink to the bottom. Wait for a few seconds.
-11. plunge over 15-30 seconds
+3. Filter cap setup
+	1. Add paper filter to filter cap
+	2. Pour water to wet the paper and make it stick to the filter cap
+4. start the timer
+5. pour all water into chamber
+6. stir back to front x3
+7. Let chamber sit open for immersion time 
+8. after 60 seconds…
+9. stir back to front x3
+10. Invert
+	1. Lock on filter cap to Aeropress chamber 
+	2. Hold mouth of mug over filter cap
+	3. Firmly hold the mug, chamber, plunger together with both hands
+	4. Invert with one, continuous, careful motion
+	5. Set down away from scale
+11. Swirl Aeropress chamber twice to let coffee grounds sink to the bottom. Wait for a few seconds.
+12. plunge over 15-30 seconds
 # Recipe 2
 Lower temperature, finer grind, cooler cup
 

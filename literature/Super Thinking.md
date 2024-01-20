@@ -1,0 +1,56 @@
+#books #mental-models 
+
+## Chapter 1
+- Inverse thinking, being right is being wrong less
+	- Consistently make fewer unforced errors
+	- sound judgement 
+		- thru techniques 
+		- to take best decision
+		- at that time
+	- antifragile
+		- thinking gets better over time
+			- Learn from mistakes
+			- Interact with surroundings
+	- Simplified Thinking
+		- arguing from first principles
+			- use self-evident assumptions
+			- To build more complex final conclusions
+			- Bottom up approach
+				- deliberate start from scratch
+				- Avoid relying on conventional wisdom even if you agree with it
+		- De-risk
+			- If risk is that one or more of your assumptions are untrue, then conclusions could be false
+		- premature optimization
+			- optimizing processes too early
+			- Before all assumptions are validated
+		- minimum viable product
+			- version of product 
+			- With minimum features
+			- To be viable to be tested by real people
+		- Ockham’s razor
+			- simplest explanation Most likely to be true
+		- conjunction fallacy
+			- people hardwired to latch onto unnecessary assumptions
+		- overfitting
+			- tendency to think that something specific is more probable than something general
+			- overly complicated explanation than a simple one
+	- Frames of reference
+		- Framing
+			- the way you present a situation or explanation
+		- Nudging
+			- nudged in a direction 
+			- by subtle word choice or environmental cues
+		- Anchoring
+			- tendency to rely heavily on first impressions
+		- Availability Bias
+			- bias or distortion to objective view of reality
+			- Due to information made available recently
+		- Filter bubble
+			- Information you are unlikely to click on is removed
+		- Echo Chamber
+			- same ideas bounced around same group of people
+	- Empathize with others
+		- Third story
+			- force yourself to think from perspective of a third impartial person that would do justice to both parties
+		- Most respectful interpretation 
+		- 
