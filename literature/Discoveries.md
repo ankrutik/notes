@@ -10,6 +10,16 @@
 	- when scaling, use inches as measure unit to see on a physical scale how large the sticker will come out
 	- Crop image
 		- Current layer only
+	- Text
+		- Use Text tool on text
+			- Ctrl+A to select all
+		- Select > From Path
+		- While selection is active...
+		- Layer > New Layer (Transparent fill)
+		- Select > Grow
+			- 1 millimeter
+		- Fill tool on selection
+		- Re-arrange layers if needed
 - Epson Printer L3150
 	- Banding on dark parts of prints means nozzle needs cleaning
 	- print nozzle check sheet
