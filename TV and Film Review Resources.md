@@ -1,5 +1,7 @@
 #film
 
+See Resources section of film’s wiki page for reviews or analyses that were quite-worthy to be included on the wiki page. 
+
 Vulture
 https://www.vulture.com/tv/
 

@@ -1,5 +1,6 @@
 Tags: #archives 
 
+- [Summary of Congress’ contribution to the rise of rapid Hindutva](https://www.project-syndicate.org/commentary/modi-hindutva-hindu-nationalism-is-making-india-a-theocracy-by-ashoka-mody-2024-01)
 - https://m.thewire.in/article/politics/why-rahul-gandhis-disqualification-may-be-a-turning-point
 - https://m.thewire.in/article/rights/anand-teltumbde-explains-the-genesis-of-his-articles-on-bhima-koregaon
 - https://www.ft.com/content/7674d7b7-8b9b-4c15-9047-a6a495c6b9c9
@@ -280,7 +281,29 @@ Tags: #archives
 	- Bihar’s release of caste census and Congress support for more caste census in the country might disturb the BJP support base
 	- [[Kanshi Ram]]’s push for population-proportionate representation in government
 - [Background of Manoj Kumar Jha as a social justice worker](https://www.mid-day.com/news/opinion/article/the-brahmin-face-of-social-justice-23310817)
-- 
+- [Short profile of Hemant Soren, 2 Feb 2024, around his arrest by ED](https://www.thequint.com/news/politics/hemant-soren-jharkhand-mukti-morcha-enforcement-directorate-chief-minister-champai)
+- [Politically correct, passive-aggressive: How Indians in the US struggle to decode corporate speak](https://scroll.in/article/1063665/politically-correct-passive-aggressive-how-indians-in-the-us-struggle-to-decode-corporate-speak) #behaviour #communicating #interviews #jobs #lifeskills #work
+- [The Shoah after Gaza by Pankaj Mishra ](https://www.lrb.co.uk/the-paper/v46/n06/pankaj-mishra/the-shoah-after-gaza) #history/patterns #politics 
+	- The BJP and RSS have probably replicated, as is what happened in 1977 in Israel
+		- Apotheosis of a political figure
+		- Re-telling religious texts and stories
+	- Who is in danger of annihilation season self exempted from any moral considerations, which might restrict his efforts to save them self
+	- zionism has been revered by Hindu nationalist since at least the 1970s
+		- Both Zionism and Hindu nationalism, emerging out of an experience of humiliation and shameful lack of manhood among shoes and Hindus
+		- Political heads revered
+		- Even after childish infatuation is overcome, the well managed idea and image of Israel does not change #behaviour 
+	- many examples across the world, where yesterday’s victims are very likely to become today’s victimisers
+		- Pre-emptively crush perceived enemies
+	- Role of western press
+		- Scrutiny over crimes of the oppresses and necessary of the denied gone without much scrutiny
+		- Calling out critics as nazi
+	- memory of a Wrong doing will be constructed deliberately with specific political ends
+	- In the 1940s and 50s, the Holocaust was not seen as an atrocity separate from other atrocities of war
+		- There were many other social groups and citizens of certain states that had to go through the aftermath of war
+	- Jewish American support to Israel
+		- Jew is viewed as both Superman and potential holocaust victim, Boaz Evron
+	- privatisation of the Holocaust, even though similar conditions were being created around the world
+	- 
 
 
 # TO READ
