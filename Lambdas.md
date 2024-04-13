@@ -94,7 +94,7 @@ Predicate <Integer> do = i -> i > 0;
 do.test(45);
 ```
 
-- #java/lambdas/best_practices When using, **add descriptive name to object** of Predicate **instead of the method**
+- #java/lambdas/bestpractices When using, **add descriptive name to object** of Predicate **instead of the method**
 ```java
 // Instead of
 interface IFunctionalInterface1<T> {

@@ -1,0 +1,69 @@
+#coding/bestpractices #checklist 
+- Functions should be as small as possible
+	- 2-4 lines
+	- Never more than 20 lines
+	- One thing rule. Function should...
+		- Do one thing
+		- Do it well
+		- Do that only
+	- One level of abstraction thruout the function
+		- Step Down Rule of abstraction
+			- Top down narrative where every function is followed by functions at the next level
+- Blocks and indentation
+- Switch statements
+	- Violates [[Single Responsibility Principle]]
+	- Violates [[Open Closed Principle]]
+	- Necessary to use despite problems
+	- Bury in a Abstract Factory that will return polymorphic objects that will execute logic as needed
+- Descriptive Names
+	- long, descriptive name better than short, enigmatic one
+- Number of Function Arguments
+	- *In arguments* make testing more difficult
+	- Information should go out thru return argument not *out argument*
+	- Passing boolean to a function means it does 2 things and should be split into 2
+	- Zero (Niladic)
+		- Ideal
+	- One (Monadic)
+		- Asking a question, return will be boolean
+		- Transforming argument, return will argument itself
+		- Event, alter state of system, return nothing
+		- Use verb-noun form for function and argument name
+	- Two (Dyadic)
+		- Avoid
+		- Name arguments correctly if both arguments are of same type
+		- Can you extract the function into class of the first argument?
+	- Three (Triadic)
+		- Avoid
+		- Group arguments into argument Objects
+		- Group arguments into argument Lists
+- Avoid Side Effects
+	- Side effects are lies where your function indicates something but does something else
+	- Creates Temporal Coupling
+- Avoid Output Arguments
+	- Function must change state of only it's owning object
+- Separate Command and Query
+	- Function should either return information about object or change its state
+- Exceptions
+	- Do not return error codes. Throw Exceptions.
+	- Extract try catch blocks into function of their own. 
+	- Nothing after catch-finally blocks.
+- Duplicate code should be extracted into own functions
+- Structure Programming principle
+	- Every function should have one entry and one exit
+	- Single return statement
+	- Avoid break, continue in loops
+	- Never any goto statements
+- Composing Functions
+	- First draft will be long, complicated with...
+		- lots of indenting, nested loops
+		- long arguments
+		- arbitrary and duplicate code
+		- Suite of Unit Tests that test each line of code
+	- Massage and refine code by...
+		- splitting functions
+		- changing names
+		- eliminating duplication
+		- Shrink methods and reorder
+		- Break out classes
+		- Running Unit Tests
+- Master programmers write stories using classes as nouns and functions as verbs
