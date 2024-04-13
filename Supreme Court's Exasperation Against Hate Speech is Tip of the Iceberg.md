@@ -1,4 +1,4 @@
-Tags: #politics 
+#politics 
 
 - Issues with public discourse
 	- Fake news

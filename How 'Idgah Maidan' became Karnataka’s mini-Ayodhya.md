@@ -1,5 +1,4 @@
-# How 'Idgah Maidan' became Karnataka’s mini-Ayodhya
-Tags: #politics 
+#politics 
 
 In the current 2022 Ganpati festival issue, there are 2 Idgah maidans. 
 Idgah maidans are where Muslims offer prayer en mass. 

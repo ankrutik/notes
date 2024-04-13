@@ -1,5 +1,4 @@
-# Michelin star and India
-Tags: #travel 
+#travel #food #restaurant 
 
 - For a restaurant in any country to have a Michelin star, the country itself needs to have a Michelin guide first. For example:
 	- Australia does not have a Michelin guide, hence no Michelin star restaurants. 

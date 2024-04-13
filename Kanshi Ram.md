@@ -11,4 +11,4 @@ Tags: #politics #personalities
 
 
 # References
-[[Literature/podcasts/Anurag Minus Verma#Episode 59]]
+[[Anurag Minus Verma#Episode 59]]
