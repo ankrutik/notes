@@ -303,7 +303,9 @@ Tags: #archives
 	- Jewish American support to Israel
 		- Jew is viewed as both Superman and potential holocaust victim, Boaz Evron
 	- privatisation of the Holocaust, even though similar conditions were being created around the world
-	- 
+- https://www.reporters-collective.in/trc/centre-hands-sainik-schools-to-sangh-parivar-bjp-politicians
+	- sainik schools
+
 
 
 # TO READ
