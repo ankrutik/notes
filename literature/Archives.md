@@ -305,6 +305,12 @@ Tags: #archives
 	- privatisation of the Holocaust, even though similar conditions were being created around the world
 - https://www.reporters-collective.in/trc/centre-hands-sainik-schools-to-sangh-parivar-bjp-politicians
 	- sainik schools
+- [disappointing voter turnout in phase 1 might indicate a lack of a Modi wave](https://thewire.in/politics/narendra-modi-voters-phase-one-feedback)
+	- #watchlist #politics/patterns
+- [Vitamin D status and sun exposure in India](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3897581/)
+	- #health #researchpaper
+	- *Conclusions: Therefore at this latitude exposure to sunlight between the hours of 11 a.m. and 2 p.m. will promote vitamin D production in the skin year round.*
+- 
 
 
 
