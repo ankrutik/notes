@@ -310,6 +310,11 @@ Tags: #archives
 - [Vitamin D status and sun exposure in India](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3897581/)
 	- #health #researchpaper
 	- *Conclusions: Therefore at this latitude exposure to sunlight between the hours of 11 a.m. and 2 p.m. will promote vitamin D production in the skin year round.*
+- https://scroll.in/article/1066867/ramachandra-guha-why-2024-is-indias-most-important-election-since-1977
+	- Comparison between Indira Gandhi‘s emergency and Modi’s regime
+		- Congress had governments in all states, except Tamil Nadu
+		- BJP does not have governments in many states. So will it push for authoritarian measures?
+- [Justice Rohinton Nariman proposes alternative for Collegium](https://www.barandbench.com/news/justice-rohinton-nariman-proposes-alternative-collegium)
 - 
 
 

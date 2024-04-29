@@ -1,5 +1,19 @@
 Tags: #coffee
 
+# Recipe 4 Espresso
+[James Hoffmann Aeropress Espresso](https://aeromatic.app/recipes/james-hoffmann-espresso-aeropress-recipe)
+Inverted
+
+Grind size (clicks on Timemore C2 Max): 15
+Coffee (gm): 18
+Water (gm):  90
+Water (°C): 95-100 degrees 
+
+Pour water in chamber
+Stir aggressively to ensure no clumps
+Steep for 90 Seconds (01:30)
+Plunge
+
 # Recipe 3
 Inverted
 
