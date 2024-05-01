@@ -1,5 +1,4 @@
-Tags: #guitar/concepts  
-Type:: concepts
+#guitar/concepts  
 
 - When practicing, focus on
 	- Shape 
