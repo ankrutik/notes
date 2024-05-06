@@ -52,6 +52,11 @@ Push .ttf or .otf file to
 ```bash
 /storage/sdcard0/Android/data/org.xbmc.kodi/files/.kodi/media/Fonts
 ```
+**Support for OTF fonts has regressed since Kodi 20.** See [[OTF to TTF]] for conversion.
+
+- Restart Kodi application for new fonts to reflect.
+- Before deleting fonts from Firestick storage, make sure they are not in use as selected subtitle font.
+	- In case you do that, Kodi will fail to start. To fix this, push the font file to Firestick storage again, start Kodi, change font selection to default, then delete font file.
 
 # References
 [SMB as a source to Kodi](https://kodi.wiki/view/SMB)
