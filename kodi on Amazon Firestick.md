@@ -58,6 +58,10 @@ Push .ttf or .otf file to
 - Before deleting fonts from Firestick storage, make sure they are not in use as selected subtitle font.
 	- In case you do that, Kodi will fail to start. To fix this, push the font file to Firestick storage again, start Kodi, change font selection to default, then delete font file.
 
+# Movie Set
+Specify movie set information folder (msif) in Kodi for artwork for movie sets.
+
+
 # References
 [SMB as a source to Kodi](https://kodi.wiki/view/SMB)
 [Useful adb commands](https://gist.github.com/Pulimet/5013acf2cd5b28e55036c82c91bd56d8)
@@ -66,3 +70,4 @@ Push .ttf or .otf file to
 [Kodi data folder](https://kodi.wiki/view/Kodi_data_folder)
 [Kodi userdata](https://kodi.wiki/view/Userdata)
 [How to Connect ADB and Run Shell Commands on a Fire TV Stick](https://www.aftvnews.com/how-to-connect-to-a-fire-tv-or-fire-tv-stick-via-adb/)
+[MSIF](https://kodi.wiki/view/Movie_set_information_folder)

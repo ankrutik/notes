@@ -315,6 +315,7 @@ Tags: #archives
 		- Congress had governments in all states, except Tamil Nadu
 		- BJP does not have governments in many states. So will it push for authoritarian measures?
 - [Justice Rohinton Nariman proposes alternative for Collegium](https://www.barandbench.com/news/justice-rohinton-nariman-proposes-alternative-collegium)
+- [Inside a US ally’s (India) secret war on its American critics](https://www.vox.com/world-politics/24160779/inside-indias-secret-campaign-to-threaten-and-harass-americans)
 - 
 
 
