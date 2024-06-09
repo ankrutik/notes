@@ -1,20 +1,21 @@
 #reading 
 
 # Close Reading
-- Check when you are limiting your writing or choice of reading by external biases
+- Are you limiting your writing or choice of reading because of external biases?
 	- Imagine writers of great classics like Kafka enrolling in a graduate program where his fellow classmates don't believe surreal stories
-- Ability to polish sentences by
-	- Looking at a sentence to see 
-		- what is superfluous 
-		- what can be altered, revised, expanded, cut
-	- Shrink, snap into place, emerge in clear, economical, sharp form
+- Ability to polish sentences by looking at
+	- what is superfluous?
+	- what can be altered, revised, expanded, cut?
+	- what to shrink, snap into place?
+	- To emerge in clear, economical, sharp form
 - Before mass photocopying was possible, students read their work aloud in class
 - #reading/recommendations To study elements of writing
 	- meter with Ovid
 	- plot construction with Homer
 	- comedy with Aristophanes
 	- lucid sentences of Montaigne, Samuel Johnson
-- Only dead writers as teachers can be generous, uncritical, blessed with wisdom and genius, endlessly giving
+- Dead writers as teachers 
+	- generous, uncritical, blessed with wisdom and genius, endlessly giving
 - Apart from reading for pleasure, the writer reads in a manner conscious of
 	- style
 	- diction
@@ -58,3 +59,125 @@
 	- linger over every word, phrase, image to see how it enhanced and contributed to the story as a whole
 
 # Words
+- The calibre of writers
+	- If a writers work has survived for centuries, you can assume there are reasons why this is so
+	- Not all great writers may seem great to us, regardless of how often or how hard we try to see the virtues.
+- Literature may seem to change as we change
+	- Artist change as we change ourselves and grow older, perhaps even in a few months
+	- Re-read literature at different points in our life
+- Slow reading
+	- Though you might be tempted to speed up because of so much reading that you need to do, but it is essential that you slowdown and read every word.
+	- To compel yourself to slowdown, try asking yourself, what’s up what sort of information each word or the choice of that word is conveying?
+	- Requires certain amount of stamina, concentration and patients
+	- Reading quickly, can hide, crucial revolutions present in the spaces between words
+	- Reward 
+		- understand the hand and mind of the artist
+		- Like a painting, not only from far away, but also close to see the Brush strokes 
+- Every page starts with a blank page
+	- Countless, large and small deliberations
+	- Writer’s skill in choosing one word over another
+	- chooses what grabs and keeps your  attention
+	- Drafts and revisions and calculations may be needed
+		- numerous decisions of words tried on, tried out, eliminated, replaced with better words.
+	- End result might look like automatic and spontaneous writing
+- Green highlights
+	- How characters might address each other can tell us about how close or sympathetic they are to each other
+	- simplicity and succinctness to establish authority
+	- How are choices of words over others telling us about a character?
+- in many places telling could be more effective than showing. Especially if it saves time.
+- Is something being conveyed in the subtext of the writing?
+	- words can be purposely misused
+	- Are there any fake expressions?
+	- What is being communicated, understood, misunderstood, said, not being said?
+- Reading carnivorously
+	- Does not imply stealing or borrowing
+	- Implies admiring absorbing learning
+	- Reading not only for pleasure, but with an eye and memory for that which the author happens to do perfectly well
+	- Your favourite writings can be sources, not only inspiration, but also technical assistance
+
+# Sentences
+- skill of a writer to put together sentences that pulls us to
+	- Read closely
+	- Disassemble and reassemble
+	- Lego mechanic learning about an engine by taking it apart
+- Read outside one’s genre once in awhile
+- Certain writers’ sentences improve proportion to the density/gravity of the information they are imparting
+- Samuel Johnson, Virginia, Wolff, Philip Roth
+- Green highlights
+	- Perceptions may be true or appear to be true
+	- Are the sentences complete or fragments scattered in complete sentences?
+	- A very long sentence can be lucid
+	- Energy, grace, variety, oration in the sentence?
+- Cadence and rhythm of a sentence
+	- Read the sentence aloud
+	- Say it silently word by word in your mind
+- diagramming sentences
+	- Map them into instantly, visible and comprehensible charts
+	- Account for each word
+	- Keep track of which phrase is modifying, which noun
+	- Which clause follows which  antecedent
+- questions during revision
+	- Is this the best word I can find?
+	- Is my meaning clear?
+	- Can a word of phrase be cut without sacrificing anything essential?
+	- Is it grammatical?
+- The writer is the host and the reader is the guest
+	- The writer will follow the etiquette to make the readers more comfortable, 
+	- especially if The writer wants to serve them, something they are not expecting
+- Struck and White’s *The elements of style*
+- The concept of clarity is a higher ideal than grammatical correctness
+- Style manual will tell you what not to do whereas literature teaches by a positive model
+- Keep handy those books by writers who have revised and polished their sentences
+- Read your work aloud
+	- Sentences that you can hardly pronounce without stumbling are those that might need to be reworked
+	- Can it be smoother and more fluent?
+- Devices of poetry
+	- Meter, alliteration, assonance
+- Use of rhythm
+	- Incantation, lamentation, Sermon
+- One tends to read endings more slowly and softly
+
+# Paragraphs
+- how to look at a paragraph
+	- Quietly change the rhythm
+	- Flash of lightning shows the landscape in a different aspect
+- On translation
+	- essential choices about tone, diction synonyms are made by the translator and not the writer
+	- You can only hope that the translator has decided wisely
+	- Somehow, channelled with the right of would have wished
+- Walter Morrison for Babel, Martin Greenberg for Kliest, Constance Garnett for Chekhov
+- As literary respiration
+	- Each paragraph an extended breath
+	- Inhale at the beginning, excel at the end
+- Read widely as opposed to formatting general rules
+- Very difficult, difficult to copy the paragraph style of another item
+- Everything done with an eye to its effect on the leader
+- Long paragraphs can be broken for visual help
+	- rather than for sense, meaning, all logical development. 
+	- Too many can be distracted
+- Garcia Marquez likes to drink while he reads
+- Single sentence, paragraph
+	- Can be annoying if overused
+	- Lazy attempt to bring energy or life into narrative
+	- Falsely inflating the importance of sentences
+	- Sent should have enough content and residence to be used as an attention grabbing device
+- Paragraphs are a form of emphasis
+	- What appears at the start and the end of a paragraph has greater weight than the middle
+- Cinematically as a change in camera angle
+	- Slight change in point of view
+	- Shift and perspective
+- 
+- Green highlights
+	- Contrast between the body of the paragraph and the end or the start
+	- Does the thought end at the end of a paragraph or carried over to the start of the next?
+	- Is the change in paragraph narrowing into the subjects From a backdrop view? Like a camera, close up
+	- Is there any purposeful indirections being cleared as the paragraph progresses?
+
+# Narration
+- stories within stories
+	- Narrative stole by one character to another
+	- Reader eavesdrops on the storyteller and their audiences
+- Not necessary to pick up point of you and stick to it
+- Second person point of view can be suspect of style being used to substitute content that is thin or insufficient
+- Third person voices may not be as partial as we think
+- What is the narrator’s identity and personality?
