@@ -185,7 +185,50 @@
 - stories within stories
 	- Narrative stole by one character to another
 	- Reader eavesdrops on the storyteller and their audiences
+- Question of the voice
+	- Who is telling the story?
+	- Should the narrator be first or third person?
+	- Close or omniscient?
+- Question of who is listening?
+- On what occasion is the story being told and why?
+- Is the story being told out into the ozone?
+- Who is speaking, and who is being Spoken to?
+- Where are the speaker and the listener?
+- When and why is the event occurring?
+- The right of choose to Hari, the narrator, and hence make the listener impatient. Conversely, the writer can choose to slowdown and clarify things. 
+- Is a story being told, or is it nearly rumination?
+- The recounted events hold any another human beings interest
+- Compare to older classical literature, we no longer live in a time where people tell each other long stories.
+- What personality and character traits are being revealed of the narrator?
+- Does the personality or character trait of the narrator allow the story to be told in a certain manner?
+- The readers awareness of artificial quickly in the face of the urgency of the story being narrated and various characters emerging
+- Is the addiction and rhythm of the narration changing as the narrator is change?
+- Purposeful ambiguity in narration
+- What is the purpose of the story According to the the reader?
+- Are principal characters being introduced?
+- Is the narration merging consciousness of different characters?
+- is the narration slipping between consciousness of characters to observe the scene from various perspectives?
+- Consciousness of the narration can be shown to move through the universe and in a bit characters in different times in spaces.
 - Not necessary to pick up point of you and stick to it
-- Second person point of view can be suspect of style being used to substitute content that is thin or insufficient
+- Second person point of view
+	- Second person point of view can be suspect of style being used to substitute content that is thin or insufficient. 
+	- You is less likely to be the reader than someone in particular
+- Is the narration revealing something about the narrating character?
+	- What are the personal views of the narrator about other characters?
+	- What is the desperation or urgency of the narrative voice to maintain and establish contact with the particular human being?
+- Options of
+	- Writer, choosing to write a story from a particular point of you
+	- Point of view that the story wishes to be written in
+- Is the nation pursuing us to be the narrator’s company or disgusting us?
+- What is being revealed about the narrator’s relationship with the subject?
+- What is being revealed about the narrator themselves?
+- Are there deeper aspects of psychology emerging through phrases that the narrator is using?
+- Is the narrator trying to hide something?
+- Often or third person narrative is disguised form of first person. 
+- Omniscience
+- all knowing
+- Should not assume to be impartial, objective, or free from prejudices and opinions
+- Conveyed through choice of word, rhythm, sentence, length, diction
+- What is being revealed about the narrator’s age? Is the diction switching between different ages and maturity?
 - Third person voices may not be as partial as we think
 - What is the narrator’s identity and personality?
