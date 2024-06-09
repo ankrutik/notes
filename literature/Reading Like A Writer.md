@@ -1,5 +1,4 @@
 #reading 
-
 # Close Reading
 - Are you limiting your writing or choice of reading because of external biases?
 	- Imagine writers of great classics like Kafka enrolling in a graduate program where his fellow classmates don't believe surreal stories
@@ -15,8 +14,10 @@
 	- comedy with Aristophanes
 	- lucid sentences of Montaigne, Samuel Johnson
 - Dead writers as teachers 
-	- generous, uncritical, blessed with wisdom and genius, endlessly giving
-- Apart from reading for pleasure, the writer reads in a manner conscious of
+	- generous, uncritical
+	- blessed with wisdom and genius
+	- endlessly giving
+- Apart from pleasure, the writer reads in a manner conscious of
 	- style
 	- diction
 	- how sentences are formed
@@ -24,9 +25,9 @@
 	- structure of plots
 	- character creation
 	- detail and dialogue
-- "Putting every word on trial for its life"
+- *"Putting every word on trial for its life"*
 	- change an adjective, cut a phrase, toggle a comma
-- We learn to hear and then read word by word
+- We learn to hear, then read word by word
 	- Books are written in the same manner
 - Finish a book and return to it years later
 	- what did we miss the last time?
@@ -46,62 +47,69 @@
 	- Carson McCullers
 	- Herman Hesse
 	- Carlos Castaneda
-- New Criticism is a school of thought in which you read what is on page with only passing reference to 
-	- biography of writer
-	- period
+- New Criticism is a school of thought in which 
+	- you read what is on page with only passing reference to 
+		- biography of writer
+		- period of the subject
 - Criticism of the writing course that the author has enrolled in
 	- little attention to the language, actual words, sentences that the writer used
 	- form strong, critical, negative opinions of geniuses that were hereto read with delight
 	- prosecute or defend authors on charges having to do with writers' origins, racial, cultural, class backgrounds
 	- re-write classics in more acceptable forms in compatibility with the young critics' level of insight, tolerance, awareness
-- Author's pedestrian, halting way of organising classes
+- Author's way of organizing classes
 	- begin at the beginning
 	- linger over every word, phrase, image to see how it enhanced and contributed to the story as a whole
+	- pedestrian, halting
 
 # Words
-- The calibre of writers
-	- If a writers work has survived for centuries, you can assume there are reasons why this is so
+- On the calibre of writers
+	- If a writer's work has survived for centuries, you can assume there are reasons why this is so
 	- Not all great writers may seem great to us, regardless of how often or how hard we try to see the virtues.
 - Literature may seem to change as we change
-	- Artist change as we change ourselves and grow older, perhaps even in a few months
+	- Artists seem to change as we change ourselves or grow older
+		- perhaps even in a few months
 	- Re-read literature at different points in our life
 - Slow reading
-	- Though you might be tempted to speed up because of so much reading that you need to do, but it is essential that you slowdown and read every word.
-	- To compel yourself to slowdown, try asking yourself, what’s up what sort of information each word or the choice of that word is conveying?
-	- Requires certain amount of stamina, concentration and patients
-	- Reading quickly, can hide, crucial revolutions present in the spaces between words
-	- Reward 
-		- understand the hand and mind of the artist
-		- Like a painting, not only from far away, but also close to see the Brush strokes 
+	- might be tempted to speed up because there is so much to read
+	- essential that you slowdown and read every word
+	- To compel yourself to slowdown, try asking yourself
+		- what sort of information each word or the choice of that word is conveying?
+	- Requires certain amount of stamina, concentration and patience
+	- Reading quickly can hide crucial revelations present in the spaces between words
+	- Rewards with
+		- approaching to understand the hand and the mind of the artist
+		- Like looking at a painting
+			- not only from far away, but also close to see the Brush strokes 
 - Every page starts with a blank page
 	- Countless, large and small deliberations
 	- Writer’s skill in choosing one word over another
-	- chooses what grabs and keeps your  attention
-	- Drafts and revisions and calculations may be needed
-		- numerous decisions of words tried on, tried out, eliminated, replaced with better words.
-	- End result might look like automatic and spontaneous writing
+	- Choice of what grabs and keeps your attention
+	- Drafts, revisions, and calculations may be needed
+		- numerous decisions of words 
+			- tried on, tried out, eliminated, replaced with better words
+	- End result might appear to be automatic and spontaneous writing
 - Green highlights
 	- How characters might address each other can tell us about how close or sympathetic they are to each other
-	- simplicity and succinctness to establish authority
+	- Simplicity and succinctness to establish authority
 	- How are choices of words over others telling us about a character?
-- in many places telling could be more effective than showing. Especially if it saves time.
+- In many places telling could be more effective than showing.
+	- Especially if it saves time.
 - Is something being conveyed in the subtext of the writing?
-	- words can be purposely misused
+	- Words can be purposely misused
 	- Are there any fake expressions?
 	- What is being communicated, understood, misunderstood, said, not being said?
-- Reading carnivorously
-	- Does not imply stealing or borrowing
-	- Implies admiring absorbing learning
+- Reading carnivorously does not imply stealing or borrowing
+	- Implies admiring, absorbing, learning
 	- Reading not only for pleasure, but with an eye and memory for that which the author happens to do perfectly well
-	- Your favourite writings can be sources, not only inspiration, but also technical assistance
+	- Your favourite writings can be sources of not just inspiration, but also technical assistance
 
 # Sentences
-- skill of a writer to put together sentences that pulls us to
+- Skill of a writer to put sentences together can pulls us to
 	- Read closely
 	- Disassemble and reassemble
-	- Lego mechanic learning about an engine by taking it apart
+	- Like a mechanic learning about an engine by taking it apart
 - Read outside one’s genre once in awhile
-- Certain writers’ sentences improve proportion to the density/gravity of the information they are imparting
+- Certain writers’ sentences improve proportional to the density/gravity of the information they are imparting
 - Samuel Johnson, Virginia, Wolff, Philip Roth
 - Green highlights
 	- Perceptions may be true or appear to be true
@@ -111,19 +119,19 @@
 - Cadence and rhythm of a sentence
 	- Read the sentence aloud
 	- Say it silently word by word in your mind
-- diagramming sentences
+- Diagramming sentences
 	- Map them into instantly, visible and comprehensible charts
 	- Account for each word
 	- Keep track of which phrase is modifying, which noun
 	- Which clause follows which  antecedent
-- questions during revision
+- Questions during revision
 	- Is this the best word I can find?
 	- Is my meaning clear?
 	- Can a word of phrase be cut without sacrificing anything essential?
 	- Is it grammatical?
 - The writer is the host and the reader is the guest
-	- The writer will follow the etiquette to make the readers more comfortable, 
-	- especially if The writer wants to serve them, something they are not expecting
+	- The writer will follow the etiquette to make the readers more comfortable
+	- especially if the writer wants to serve them something they are not expecting
 - Struck and White’s *The elements of style*
 - The concept of clarity is a higher ideal than grammatical correctness
 - Style manual will tell you what not to do whereas literature teaches by a positive model
@@ -138,7 +146,7 @@
 - One tends to read endings more slowly and softly
 
 # Paragraphs
-- how to look at a paragraph
+- How to look at a paragraph
 	- Quietly change the rhythm
 	- Flash of lightning shows the landscape in a different aspect
 - On translation
