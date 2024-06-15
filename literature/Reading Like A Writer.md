@@ -158,7 +158,7 @@
 	- Each paragraph an extended breath
 	- Inhale at the beginning, excel at the end
 - Read widely as opposed to formatting general rules
-- Very difficult, difficult to copy the paragraph style of another item
+- Very difficult to copy the paragraph style of another item
 - Everything done with an eye to its effect on the leader
 - Long paragraphs can be broken for visual help
 	- rather than for sense, meaning, all logical development. 
@@ -168,7 +168,7 @@
 	- Can be annoying if overused
 	- Lazy attempt to bring energy or life into narrative
 	- Falsely inflating the importance of sentences
-	- Sent should have enough content and residence to be used as an attention grabbing device
+	- Sentence should have enough content and residence to be used as an attention grabbing device
 - Paragraphs are a form of emphasis
 	- What appears at the start and the end of a paragraph has greater weight than the middle
 - Cinematically as a change in camera angle
