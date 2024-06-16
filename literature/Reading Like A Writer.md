@@ -262,8 +262,6 @@
 - The readers longing to have order restored and harmony established? Going towards a happy ending
 - Reading can bring people together
 - is physical description being avoided?
-- 
-…
 - Physical appearance
 	- Props on the person
 	- Fashion
