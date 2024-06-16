@@ -238,3 +238,44 @@
 	- merely means all knowing
 	- Should not assume to be impartial, objective, or free from prejudices and opinions
 	- Conveyed through choice of word, rhythm, sentence, length, diction
+
+# Character
+- characters can be established through
+	- narration
+	- Drama
+	- Dialogue
+- Setting of the characters
+- Situation of the characters
+- Details of the characters being purposefully, not revealed?
+- Are the stories themes being established through the characters?
+- Religious or epic themes?
+- Characters, passions, hopes, fears
+- Power balances
+- Complex loyalties and animosities
+- Suspenseful revolutions that contradict our sense of
+	- The characters are
+	- What happened?
+	- What will happen?
+	- To happen
+- Other readers, not getting the themes and things because of the temporary distance between when the story was written, and when the reader is reading it?
+- Is the own imagination filling up the characters in a manner that is not intended?
+- The readers longing to have order restored and harmony established? Going towards a happy ending
+- Reading can bring people together
+- is physical description being avoided?
+- 
+…
+- Physical appearance
+	- Props on the person
+	- Fashion
+- Their mood in the current setting
+- Habits
+- Education and profession
+- Economic and domestic situation
+- Social class
+- How they treat other people around them?
+- What they appear to think of themselves in public?
+- Direct and indirect desires
+- Are there relating with other characters?
+- How are they interacting with other characters?
+- Any revelations that are contradictory to the image, we are being lead to form about them?
+- Is there a temporal distance between the reader and the characters/setting that impedes the reader from relating to them?
