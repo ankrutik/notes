@@ -9,8 +9,24 @@ Takes 25 minutes total: grind, assemble, pull, clean up
 		- 9 minutes to grind medium dark
 	- Blue Tokai's "Espresso Grind (Commercial)" is not enough
 
+# Pressure Profile
+For now use [what Lance Hedrick suggests](https://youtu.be/rC36en6zo_U?si=aXEAN44fvA8ovrVF):
+- Pre-Infusion: 
+	- 2 bars
+	- hold for 10-15 seconds
+	- filter bottom should saturate, not drip too much
+- Infusion: 
+	- Slam to ramp up to 8 bars
+	- hold till flow reaches fastest speed
+- Taper
+	- slowly and gradually
+	- keeping eye on yield/ratio
+	- 8 to 0 bars
+
+See [[Pressure Profiles]]
+
 # Dialing in
-See "Espresso Compass"
+See [[Espresso Compass]]
 ## Grind
 Process of discovering the sweet spot grind size on your grinder between
 - too coarse where the shot is too fast
