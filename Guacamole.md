@@ -1,4 +1,4 @@
-#recipes 
+#recipe  
 
 - 1 avocado, ripe
 - ½ small white onion, finely diced
