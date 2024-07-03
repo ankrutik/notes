@@ -28,6 +28,8 @@ See [[Pressure Profiles]]
 # Dialing in
 See [[Espresso Compass]]
 ## Grind
+[[Comandante C40 MK4]] without [[Red Clix]] in the range of 6 to 8
+
 Process of discovering the sweet spot grind size on your grinder between
 - too coarse where the shot is too fast
 - too fine where the shot gives too much resistance
@@ -42,6 +44,7 @@ Process of discovering the sweet spot grind size on your grinder between
 - coarser
 	- less bitter
 
+See [[Espresso grind size by roast level]]
 ## Yield
 - Lesser
 	- thicker body
@@ -110,3 +113,8 @@ So pushing the yield, takes the extraction in the sweet range.
 - [Lance Hedrick Pressure profiles](https://youtu.be/rC36en6zo_U?si=aXEAN44fvA8ovrVF)
 - [Sprometheus Dialing in](https://youtu.be/naQkW2bla9I?si=6AbadbocYPauVLTb)
 - [Espresso Compass](https://youtu.be/KqaVDWXMNUM?si=5d3dQ4ao0hbgybPt)
+- reddit for [[Comandante C40 MK4]]
+	- [general grind size, no red clix](https://www.reddit.com/r/FlairEspresso/comments/kbh5n3/comment/gfi5pyl)
+	- [tuning](https://www.reddit.com/r/Coffee/comments/ghgmbt/comment/fq8uj52)
+- [Cliff & Pebble on Dialing In grind size](https://cliffandpebble.com/blogs/our-blog/what-grind-size-for-espresso)
+- 

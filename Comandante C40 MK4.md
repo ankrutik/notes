@@ -1,5 +1,4 @@
 #coffee #grinder
-
 # Zero
 One click is the point at which the handle will drop/move with resistance. 
 
