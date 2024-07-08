@@ -1,9 +1,18 @@
 #coffee #espresso
 
-Takes 25 minutes total: grind, assemble, pull, clean up
-# Compulsory
+Takes 25 minutes total
+- grind, assemble, pull, clean up
+# Checklist
 - Needs to be bolted
+- Pre heat portafilter
+- Pour water on rim of brew head
+	- no bubbles
+	- Water appears clean
+- Brew head takes max 84gm water
+	- 18:54 is max ratio
 - Coffee needs to be really finely ground
+	- [[Comandante C40 MK4]]
+		- 6 to 7 clicks
 	- Timemore C2 Max 
 		- 9 clicks at least
 		- 9 minutes to grind medium dark
@@ -69,11 +78,14 @@ So pushing the yield, takes the extraction in the sweet range.
 *Update: This is correct. See "[[Espresso Compass]]".*
 
 ## Temperature
-*To explore*
+Preheat portafilter and brew head. 
+Water at boiling. 
 ## Dose
-*To explore*
+Increasing dose will increase resistance will increase pressure. 
+Irrespective of coarser grind. 
 ## Pressure
-*To explore*
+Grind and dose should be such that it sustains 6 to 8 bars of pressure for a few seconds at least. 
+
 # Troubleshooting
 ## Deluge
 - Symptoms:
