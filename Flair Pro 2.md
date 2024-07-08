@@ -32,6 +32,8 @@ For now use [what Lance Hedrick suggests](https://youtu.be/rC36en6zo_U?si=aXEAN4
 	- keeping eye on yield/ratio
 	- 8 to 0 bars
 
+*Somehow as the water in the brew head recedes, there is a natural taper off of the pressure that can be reached in the brew head. Augment that with additional reduction of pressure.*
+
 See [[Pressure Profiles]]
 
 # Dialing in
