@@ -318,6 +318,7 @@ Tags: #archives
 - [Inside a US ally’s (India) secret war on its American critics](https://www.vox.com/world-politics/24160779/inside-indias-secret-campaign-to-threaten-and-harass-americans)
 - [Muslim voting patterns as per Lokniti CSDS data](https://www.telegraphindia.com/opinion/myths-demolished-understanding-the-electoral-politics-of-muslims/cid/2026589)
 - [‘Decentralisation’, consolidation, ‘caretakers’: How Congress emerged as MVA dark horse in Maharashtra (LokSabha 2024)](https://www.newslaundry.com/2024/06/06/decentralisation-consolidation-caretakers-how-congress-emerged-as-mva-dark-horse-in-maharashtra)
+- [Bombay Noir in Bollywood](https://mubi.com/en/notebook/posts/notebook-primer-bombay-noir)
 - 
 
 
