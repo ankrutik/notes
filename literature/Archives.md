@@ -319,7 +319,12 @@ Tags: #archives
 - [Muslim voting patterns as per Lokniti CSDS data](https://www.telegraphindia.com/opinion/myths-demolished-understanding-the-electoral-politics-of-muslims/cid/2026589)
 - [‘Decentralisation’, consolidation, ‘caretakers’: How Congress emerged as MVA dark horse in Maharashtra (LokSabha 2024)](https://www.newslaundry.com/2024/06/06/decentralisation-consolidation-caretakers-how-congress-emerged-as-mva-dark-horse-in-maharashtra)
 - [Bombay Noir in Bollywood](https://mubi.com/en/notebook/posts/notebook-primer-bombay-noir)
-- 
+- [PBM on Congress loss in Haryana 2024](https://indianexpress.com/article/opinion/columns/haryana-bjp-slide-overstated-jk-national-conferences-resilience-9610234/)
+- [Prateek Goyal on Eknath Shinde vs UBT](https://www.newslaundry.com/2024/10/07/eknath-shinde-a-figurehead-or-maharashtras-new-powerhouse) #watchlist/politics 
+	- Not a trends or reactionary piece to 8th October Haryana results
+	- SSUBT might still falter
+	- Congress > NCPSP > SSUBT
+	- Feeling that SSES might align with Sharad Pawar NCP or some kind of deal with him #watchlist/politics 
 
 
 
