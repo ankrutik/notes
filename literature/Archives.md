@@ -325,6 +325,9 @@ Tags: #archives
 	- SSUBT might still falter
 	- Congress > NCPSP > SSUBT
 	- Feeling that SSES might align with Sharad Pawar NCP or some kind of deal with him #watchlist/politics 
+- [CJI Sanjiv Khanna profile by the Leaflet](https://theleaflet.in/justice-sanjiv-khannas-journey-from-tis-hazari-to-51st-chief-justice-of-india/)
+	- Was part of the suo moto bench regarding sexual harassment case against Gogoi
+
 
 
 
