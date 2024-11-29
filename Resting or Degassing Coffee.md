@@ -5,12 +5,14 @@
 		- 2 days
 	- For espresso
 		- 1-3 days
+		- 10 days, anecdotally 
 - ﻿﻿Medium roast
 	- For filter
 		- 3-4 days
 		- 10 days, anecdotally 
 	- For espresso
 		- 7-10 days
+		- 12 days, anecdotally 
 - ﻿﻿Light roast
 	- For filter
 		- 5 days
@@ -28,6 +30,7 @@ Use as fresh as possible since it starts to oxidise and the acidity increases af
 ## **Medium roasts**
 Usually lasts for a month or two before flavours deteriorate.
 e.g. Araku Grand Reserve started off tasting mediocre but much better after around 15 days. 
+Tulum Baarbara HSD Medium Dark, 12 days
 ## **Light roasts**
 Can last for much longer without losing flavour or aroma. 
 # Reference 
