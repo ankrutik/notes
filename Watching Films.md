@@ -72,6 +72,10 @@ Repeat process to find more themes...
 - Sexuality
 - Social Class
 - Politics
+- Capital reality/fiction
+	- Economic
+	- Social
+	- Cultural
 
 # References
 [[How to Analyze Films by Patrick Willems]]
