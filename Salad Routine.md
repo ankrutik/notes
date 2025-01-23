@@ -16,7 +16,7 @@ Takes approximately half-an-hour.
 - Feta Cheese
 ### Storage
 - Iceberg Lettuce, Basil Leaves
-	- Perforated plastic bag sealed with a clip. Store on the door in a fridge.
+	- Perforated plastic bag sealed with a clip. Store on the door in a fridge. Anecdotally, the only way they will stay fresh and crisp without wilting.
 - Cucumber, Carrot, Beetroot, Apple, Grapes
 	- Paper bag, in fridge
 - Cherry Tomato
@@ -59,7 +59,6 @@ Salt.
 Kasundi or Mustard.
 Chopped green chilli, *optional*.
 
-
-
-
-
+# References
+[How to Julienne Carrots](https://www.youtube.com/watch?v=sYtlIH-YZL4)
+[How to roll cut Cucumbers for Sushi](https://www.youtube.com/watch?v=TVSUS2wmzjM)
