@@ -1,11 +1,7 @@
 [
   "obsidian-admonition",
   "cm-editor-syntax-highlight-obsidian",
-  "obsidian-spaced-repetition",
-  "obsidian-zoom",
   "dataview",
   "obsidian-outliner",
-  "note-refactor-obsidian",
-  "obsidian-jtab",
-  "obsidian-mind-map"
+  "obsidian-jtab"
 ]
