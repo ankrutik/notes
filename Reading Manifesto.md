@@ -1,17 +1,25 @@
 Tags: #reading #notes  
-
 # First pass
-Read it without much analysis or need to take notes. *Experience the matter as the author intended it.*
-
-Occasionally, evaluate the quality of your reading. *Can you explain or even recall the last paragraph that you just read?*
+- Read it without much analysis or need to take notes. 
+	- *Experience the matter as the author intended it.*
+- You do not have to absorb and understand every single sentence. 
+	- As long as you get the gist, keep moving on.
+- Occasionally, evaluate the quality of your reading. 
+	- *Can you explain or even recall the last paragraph that you just read?*
 
 > [!warning] 
 > If thoughts of ideas or actions pop up, write them down for later and get back to reading. This is important because you'd never finish reading. Reading needs to be a conscious effort.
+> Use a common place book here. Field notebook.
 
-Make quick markings where you'd want to return. 
-It's your own book, use a pencil or a pen. Ballpoint is better as it won't bleed thru the paper.
+- Make quick markings where you'd want to return. 
+	- It's your own book, use a pencil or a pen. 
+	- Ballpoint is better as it won't bleed thru the paper.
+	- When not your book or you want to preserve, use sticky flags or use a common place book.
 
 ![[Annotating#Markings]]
+
+![[Annotating#Use sticky flags]]
+
 
 ![[Annotating#Color coding and Highlights]]
 
@@ -33,7 +41,7 @@ Choose to make:
 Consider flagging notes for review later in a third pass.
 
 # Third pass
-Optional.
+*Optional.*
 
 Go thru notes and see if you can do any of the following:
 - Revise content
@@ -51,12 +59,9 @@ Go thru notes and see if you can do any of the following:
 Do you need to schedule spaced repetitions?
 
 ## Revision pass
-Look at the markings in the book and read only those markings.
-
-Open up the literature note and see outgoing links to all permanent notes.
-
-# Links
-
+- Look at the markings in the book and read only those markings.
+- Open up the literature note and see outgoing links to all permanent notes.
 
 # References
 [How Ted Gioia takes notes](https://www.honest-broker.com/p/how-i-take-notes?utm_campaign=post)
+[[literature/The Notebook A History of Thinking on Paper by Roland Allen]]
