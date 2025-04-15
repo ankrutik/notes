@@ -1,17 +1,20 @@
 #purchase #notes 
 ## Current system
 - Journal
+	- MD Dot grid A5
 	- Leuchtturm1917
-- Book Journal
-	- Leather folio with watercolour paper that mom gifted
+- Book (Fiction) Journal
+	- Leather folio with watercolor paper that mom gifted
 - Commonplace/Field
+    - Use in landscape orientation. Wider view seems better for thinking and visual cognition.
 	- MD Light A6
-	- 100gsm printing paper cut using chef's knife
-	- Use in landscape orientation. Wider view seems better for thinking and visual cognition.
+	- Fabriano Spiral bounds
+	- 100gsm printing paper, cut using chef's knife
 - Coffee Dial In
 	- Moleskine A6 from Aditya Talpade
+	- SCA cupping templates printed on 100gsm
 - Technical study
-	- Rhodia A6
+	- Rhodia A4
 	- Muji A5
 ## Sellers
 - [Aarcaai](https://www.aarcaai.com)
