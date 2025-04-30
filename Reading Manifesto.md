@@ -29,6 +29,7 @@ Choose to make:
 	- Only if the article/book/film seems to be important enough to be recorded on its own
 	- Pull out points to make consolidated, permanent notes in later passes.
 	- For articles, use a single "Archive" note to list multiple articles together with tags
+	- [[atomic notes when reading a book]]
 - [[Permanent Notes]]
 	- Take snippets directly into permanent notes
 - Mind-Maps

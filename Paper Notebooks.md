@@ -5,9 +5,9 @@
 	- Leuchtturm1917
 - Book (Fiction) Journal
 	- Leather folio with watercolor paper that mom gifted
-- Commonplace/Field
+- [[Commonplace Notebook]] or Field Notes
     - Use in landscape orientation. Wider view seems better for thinking and visual cognition.
-	- MD Light A6
+	- [[MD Light A6]]
 	- Fabriano Spiral bounds
 	- 100gsm printing paper, cut using chef's knife
 - Coffee Dial In
