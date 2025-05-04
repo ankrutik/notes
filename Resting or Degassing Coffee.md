@@ -1,4 +1,8 @@
 #coffee 
+## "[[Filter Roast#^filter-roast|Filter roast]]" for international coffees
+For international coffees, they will mostly likely have travelled thru their degassing time.
+If still within 20 days off roast, [[Storing Coffee#Shelf|store on shelf]].
+Past 20 days, best to [[Storing Coffee#Freezer|freeze them]].
 ## *Days off roast date…*
 - Dark roast
 	- For filter
