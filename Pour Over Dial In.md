@@ -1,20 +1,32 @@
  #coffee 
 ## Parameters
-- Coffee
-	- Grind Size
-	- Resting
-	- Storage 
-		- Ambient Temperature
-		- Frozen
+- Grind 
+	- Size
+	- Speed
+	- Angle of burr
+	- Known standard starting points by processing
+- Storage 
+	- [[Resting or Degassing Coffee|Resting Period]]
+	- Ambient Temperature
+	- Frozen?
 - Water
+	- Composition
 	- Temperature
 	- Ratio
 - Bloom
+	- WDT
+		- Dry
+		- Wet
 	- Swirl
 	- Time
-	- Chill
+	- Chilled
 - Pour
 	- Height
+	- Speed
+		- Vertical
+		- Horizontal
 	- Pattern
 	- Number
-	- Swirl
+	- Agitation
+		- Swirl
+		- Wiggle
