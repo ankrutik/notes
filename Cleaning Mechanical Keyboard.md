@@ -1,11 +1,20 @@
 #cleaning #maintenance #keyboards #method
 
 ## Things needed
+- Key Cap puller is mandatory
 - Brush
 - Rubbing Alcohol, as pure as possible
 - Clean handerkerchief
 - Basic Notepad application without autocorrection or autocompletion
-
+## Replacing Key Caps
+Press onto the switches gently. 
+### For keys that need stabilisers
+1. Attach the stabiliser mounts/pins to the stabiliser wire/rod first. 
+2. Settle the wire/rod down. 
+3. Then settle the mounts/pins in their holders/seats on the keyboard.
+4. At this point, the keycap should have nothing on them. Except for o rings if you are using them. 
+5. Then eyeball the keycap onto the switch and 2 stabiliser pins. 
+This is the correct way that gives much more stability than attaching the stabiliser pins/mounts onto the keycap first. 
 ## Method
 - Use basic notepad application to test keys to avoid **any autocompletions and corrections** during
 - After key is identified, pull cap using key puller
