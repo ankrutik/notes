@@ -1,0 +1,65 @@
+#transcript #coffee/pourover #coffee/dial-in
+
+- [Dialing In Pourovers: A Very Good Guide, Maybe the Best - Lance Hedrick](https://www.youtube.com/watch?v=c34qcTTOLZY)
+	- Standard recipe as a baseline. 
+	- Concentrate on big variables.
+	- What Lance does...
+		- Bloom x3 weight of coffee, coarse grind size, bloom from 30s to 2m, then pour rest of water.
+			- if draw down too quick, introduce agitation
+				- manually
+				- split pours
+	- Influencers' options might be based on their individual experience on 1 certain coffee
+	- Never hit 100% of a coffee's potential. Fine with 80%. Too much work and you speed thru the bag otherwise.
+	- Keep building your understanding of what each variable does to the cup.
+	- Filter your water.
+	- *Read thru the effects first then decide what variable you want to change.*
+		- *Are you in the mood to not have your expectations met with the hypothesis of your experiment? How weak are you to confirmation bias right now?*
+	- **Ratio**
+		- Strength of your cup. Thicker or thin.
+		- Lower Ratio...
+			- Higher Concentration, Lower Extraction
+			- Thicker
+		- Higher Ratio...
+			- Lower Concentration, Higher Extraction
+			- Thinner
+	- **Grind size**
+		- Coarser
+			- Under extraction
+			- Lower contact time
+		- Finer
+			- Over extraction
+			- More channeling
+	- **Temperature**
+		- Higher, higher extraction
+		- Lower, lower extraction
+		- Going very high, for that coffee, will unlock certain nasties.
+	- **Brewer**
+		- Wet WDT when not using a cone brewer
+	- **Bloom**
+		- Decide on the fly how much time
+		- 30s, 45s, 1m
+	- **Pours**
+		- Every time you pour, fines go down and into paper. Boulders go up. This causes paper clog and stalls.
+			- Melodrip will reduce this. 
+		- Circle in center
+		- Shake at the end to level
+	- Do not idolize competitions
+	- First, tweak bigger variables
+		- grind size
+		- ratio
+		- temperature, 3 degrees Celsius
+	- Then smaller variables, maybe
+		- bloom time
+		- bloom temperature
+		- change grinder
+- [3 Easy Tips for Improving Pourover Coffee! - Lance Hedrick](https://www.youtube.com/watch?v=UYxEEKxgsRM)
+	- **Water**
+		- 30-50 ppm hardness
+		  10-20 ppm bi-carb
+	- **Filter papers**
+		- Hario old-school un-tabbed
+		- Sibarist, highest quality, expensive
+		- T90
+			- Lance's daily
+			- Highest scoring
+	- 
