@@ -23,6 +23,7 @@ Tags: #reading #notes
 
 ![[Annotating#Color coding and Highlights]]
 
+Consider [[Syntopical note taking]]
 # Second pass
 Choose to make:
 - [[Literature Notes]]
