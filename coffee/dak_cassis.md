@@ -35,5 +35,14 @@ Change 3...
 - Same as Change 1
 - 45 clicks
 - 50/55-98
+- Result
+    - Did 50/55-95 instead
+    - overextracted feeling has gone away
+    - no jam still
 
+*...chasing more sweeter, jam...*
+- Reduce ratio further
 
+Change 4...
+- Same as Change 3
+- 50/55-90
