@@ -53,4 +53,20 @@ Change 4...
 
 ***...Happy where this is going...
 
+- Result:
+    - Nice mouthfeel, no jam
+    - Pati did not like
+
+Change 5
+- Kalita 155 with Origami Air
+- 92 degrees
+- 58 Red Clix
+- Melodrip after chilled bloom
+- 12:180
+- 36/36/36/36/36
+- Result
+    - Sweet
+    - Not jammy, giving up the jam chase
+    - Nice aftertaste
+    - Fruity
 
