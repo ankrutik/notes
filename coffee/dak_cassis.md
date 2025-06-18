@@ -46,3 +46,11 @@ Change 3...
 Change 4...
 - Same as Change 3
 - 50/55-90
+- Result
+    - Poured in the living room, so kettle was off the base. Might have lost temperature
+    - Nice mouth feel
+    - Try this again with proper consistent temperature between pours
+
+***...Happy where this is going...
+
+
