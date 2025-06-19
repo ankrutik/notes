@@ -70,3 +70,10 @@ Change 5
     - Nice aftertaste
     - Fruity
 
+Change 6
+- Tried bypass the last pour as in [Bypass with Coffee]
+- 36/36/36/36/36, last 36 in separate cup
+
+Change 7
+- Same as above
+- 36/36/36/36/18
