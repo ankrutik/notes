@@ -1,16 +1,20 @@
  #coffee 
 ## Parameters
+- Storage 
+	- [[Resting or Degassing Coffee|Resting Period]]
+	- Ambient Temperature
+	- Frozen?
 - Grind 
 	- Size
 	- Speed
 	- Angle of burr
 	- Known standard starting points by processing
-- Storage 
-	- [[Resting or Degassing Coffee|Resting Period]]
-	- Ambient Temperature
-	- Frozen?
+- [[Brewing by Coffee Processing|Impact of Coffee Processing on Brewing]]
 - Water
-	- Composition
+	- Mineral Composition
+		- Mumbai's water, filtered is good enough
+		- When travelling, use packaged drinking water
+			- Aquafina
 	- Temperature
 	- Ratio
 - Bloom
@@ -21,6 +25,11 @@
 	- Time
 	- Chilled
 - Pour
+	- Mix of bare kettle and Melodrip
+		- Use Melodrip in later pours
+	- Wait before previous pour has drained?
+		- Yes when you want increase extraction
+		- No when you want to reduce extraction
 	- Height
 	- Speed
 		- Vertical
@@ -28,5 +37,8 @@
 	- Pattern
 	- Number
 	- Agitation
-		- Swirl
+		- Swirl 
+			- [[Brewing by Coffee Processing#Washed Coffee Specifics|Swirling recommended for Washed Coffee]]
 		- Wiggle
+		- Tap
+		- See [[Brewing by Coffee Processing#Impact of Processing on Agitation|Agitation by Processing]]

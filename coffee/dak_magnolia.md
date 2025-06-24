@@ -15,3 +15,11 @@ Recipe
 - Result
     - Surprisingly nice but very watered down
 
+Change 1
+- 90 degrees
+- 59 Red Clix
+- 12gm
+- Origami Air x Kalita Wave 155
+- 36/36/36/36/18(by pass test)
+- Result
+    - 
