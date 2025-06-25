@@ -1,6 +1,6 @@
 #coffee/dial-in 
 ### Procedure
-Add 10 ml to final brew. Taste.
+Add 5 gm clean brew water to final brew. Taste.
 Repeat till you get desired taste.
 ### Impacts on cup
 - Reduces strength for heavily processed coffee. Example [[intellect_cereza_hidden_alchemy]]
