@@ -15,8 +15,21 @@ Change 1
 - 88 degrees
 - 36/108
 - Result
-    - 
+    - weak, boozy
 
 Possible changes...
 - 86 degrees
 - 36/36/72
+
+Change 2
+- Same as Change 1
+- 85 degrees
+- 36/36/72
+- Consider [[Bypass with Water]]
+
+Change 3
+- Same as Change 2
+- 60 Red Clicks
+- 87 degrees
+- 36/36/72
+- 5gm clean bypass
