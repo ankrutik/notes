@@ -37,5 +37,10 @@ e.g. Araku Grand Reserve started off tasting mediocre but much better after arou
 Tulum Baarbara HSD Medium Dark, 12 days
 ## **Light roasts**
 Can last for much longer without losing flavour or aroma. 
+
+# Miscellany
+#### No web page when I brew...
+Most coffee web pages are taken down by the time I open the bag to brew. Shipping plus resting.
+
 # Reference 
 [Basic Guidelines for Resting Coffee](https://berto-online.com/coffee-resting/)
