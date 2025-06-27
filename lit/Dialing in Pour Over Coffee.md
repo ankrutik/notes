@@ -62,4 +62,78 @@
 		- T90
 			- Lance's daily
 			- Highest scoring
-	- 
+
+# Matteo D'Otaavio Light Roast Dial-In Ep. 1 to 3
+- Light is difficult to extract
+- Fresh water added after full drain of a pour helps extract. Will remaining water, the extraction will not be that much.
+- attempt one
+	- 95 degrees water
+	- Comandante 30 clicks
+	- 15:270
+	- bloom 40s
+	- 40gm x 6
+- *wet aroma could be an indication of a good cup. flat flavours there might indicate not an ideal extraction*
+- higher TDS is not always better
+- mouthfeel and body is associated with extraction
+- attempt two, different bag
+	- same recipe as before
+	- low acidity, sweetness, and body present but he felt it to be over extracted a bit
+- Is the coffee easy or difficult to extract?
+	- processing
+		- ferments are easy
+		- washed might be difficult
+	- how many days off roast?
+		- more days, more soluble because CO2 has degassed
+	- roast level?
+		- lighter will be more difficult
+- *taste is source of truth, numbers for reference only*
+- if coarser, you might go weaker intensity
+- **what can you change to reduce extraction...**
+	- grind size: go coarse
+	- water temp: decrease temp
+		- won't affect much
+	- brew ratio: go lower
+	- pouring: less pours
+- attempt three
+	- changes: 
+		- 45gm bloom for 40 seconds
+		- less pours: 3 x 75gm pours
+	- gained little brightness in aroma
+	- lower mouth feel
+	- cleaner, better flavour when cooled
+	- feels room for improvement
+- **number of pours and TDS**
+	- 6 gave 1.42 TDS
+	- 4 gave 1.27 TDS
+- **same recipe comparison between orea and v60**
+	- v60
+		- higher acidity
+		- brighter
+	- orea
+		- higher sweetness
+		- juicier mouthfeel
+- attempt four
+	- changes from attempt three
+		- brew ratio: go lower, from 270 to 250
+	- bright, good acidity, juicy, he's happy, good mouth feel and intensity
+	- TDS went higher 1.31
+- easier to extract, reduce ratio
+- you cannot have a recipe for every coffee
+- database of recipes to waste less coffee
+- attempt five
+	- changes from attempt three
+		- grind size: 2 clicks coarser
+	-  watery, weaker, tea like; but he's happy 
+	- aroma delicate and floral
+	- this approach needs high quality of coffee
+	- TDS went lower 1.17
+- **Reducing Extraction...**
+	- Better flavour achieved in both attempt four and five
+	- But cup profiles changed
+	- Reducing ratio increased intensity
+		- "juicy"
+	- Coarser grind size reduced intensity
+		- "tea-like delicate aroma"
+	- When you want to dial in to reduce extraction, you know what to do, but ask...
+		- Do you want cup juicy?
+		- Do you want cup delicate and aromatic?

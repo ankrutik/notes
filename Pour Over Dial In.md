@@ -4,7 +4,7 @@
 	- [[Resting or Degassing Coffee|Resting Period]]
 	- Ambient Temperature
 	- Frozen?
-- Grind 
+- Grind
 	- Size
 	- Speed
 	- Angle of burr
@@ -17,12 +17,20 @@
 			- Aquafina
 	- Temperature
 	- Ratio
+		- 1:14-1:17, depending on roast level
+		- darker- tighter, lighter- wider
 - Bloom
-	- WDT
-		- Dry
-		- Wet
-	- Swirl
+	- Agitation
+		- No agitation
+		- WDT (Dry/Wet)
+		- Swirl
+			- Fines migration!
+		- Wiggle
+		- Excavate with Spoon
+		- Probe with Melodrip glass stick
 	- Time
+		- watch the bloom
+		- you can stop once the bubbling stops
 	- Chilled
 - Pour
 	- Mix of bare kettle and Melodrip
