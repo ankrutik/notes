@@ -1,8 +1,6 @@
 [
   "obsidian-admonition",
-  "cm-editor-syntax-highlight-obsidian",
-  "dataview",
   "obsidian-outliner",
-  "obsidian-jtab",
-  "obsidian-spaced-repetition"
+  "obsidian-style-settings",
+  "obsidian-list-callouts"
 ]

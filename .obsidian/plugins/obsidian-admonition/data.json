@@ -15,7 +15,7 @@
     }
   },
   "syntaxHighlight": false,
-  "copyButton": false,
+  "copyButton": true,
   "version": "10.3.2",
   "autoCollapse": false,
   "defaultCollapseType": "open",
@@ -30,8 +30,8 @@
     "advanced": true
   },
   "icons": [
-    "octicons",
-    "rpg"
+    "rpg",
+    "octicons"
   ],
   "useFontAwesome": true,
   "rpgDownloadedOnce": false,
