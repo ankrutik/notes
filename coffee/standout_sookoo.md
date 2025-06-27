@@ -49,6 +49,30 @@ Suggested recipe is [[Fermented Coffee#Double Bloom]]
 > No Melodrip
 >  ### Result
 > - ! Clarity lost without Melodrip, bring it back
+
+> [!question] Recipe 3
+> Same as recipe 2
+> 40/40/40/20(cup)
+> Melodrip
+> ### Result
+> - Abandonned
 > 
+
+> [!question] Recipe 4
+> 60 Red Clix
+> 36/36/36/36/36(cup)
+> Melodrip
+> ### Result
+> - Last 36gm was tasteless
+> - No harshness
+> - Can go finer to 54 Red Clix
+
+
+> [!question] Recipe 5
+> 54 Red Clix
+> 36/36/36/36(cup)
+> Melodrip
+> ### Result
+> - update [[Fermented Coffee#Approach]] accordingly
 
 
