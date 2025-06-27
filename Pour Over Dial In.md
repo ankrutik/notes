@@ -35,6 +35,7 @@
 - Pour
 	- Mix of bare kettle and Melodrip
 		- Use Melodrip in later pours
+		- [[Melodrip#When to use it...]] and [[Melodrip#When you might skip it...]]
 	- Wait before previous pour has drained?
 		- Yes when you want increase extraction
 		- No when you want to reduce extraction

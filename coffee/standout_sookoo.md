@@ -36,7 +36,7 @@ Suggested recipe is [[Fermented Coffee#Double Bloom]]
 > V60 x Cafec T90
 > 96 degrees from STANDOUT but check chart
 > 89 degrees
-> **Result**
+> ### Result
 > - Body thinned out
 > - Tasty cup, very pleasant
 > - Go back to my own method
@@ -47,4 +47,8 @@ Suggested recipe is [[Fermented Coffee#Double Bloom]]
 > Same as recipe 1
 > 40/40/80
 > No Melodrip
+>  ### Result
+> - ! Clarity lost without Melodrip, bring it back
+> 
+
 

@@ -1,16 +1,14 @@
 {
   "ulu-theme-settings@@ulu-callouts": "ulu-brutal-callouts",
   "ulu-theme-settings@@ulu-subtheme-selection": "ulu-gummy",
-  "ulu-theme-settings@@ulu-theme-light": "ulu-shark-l",
+  "ulu-theme-settings@@ulu-theme-light": "ulu-obplus-lt",
   "ulu-theme-settings@@ulu-radius": "var(--radius-m)",
-  "ulu-theme-settings@@ulu-grad": false,
+  "ulu-theme-settings@@ulu-grad": true,
   "ulu-theme-settings@@ulu-border": "ulu-noborder",
-  "ulu-theme-settings@@ulu-prop-card": true,
+  "ulu-theme-settings@@ulu-prop-card": false,
   "ulu-theme-settings@@ulu-codeblocks": "ulu-gummy-codeblock",
   "ulu-theme-settings@@ulu-cards-border": false,
   "ulu-theme-settings@@ulu-cards-shadow": false,
-  "ulu-theme-settings@@ulu-faintselect": false,
-  "ulu-theme-settings@@ulu-accent-title": false,
   "ulu-theme-settings@@ulu-canvas-center": false,
   "ulu-theme-settings@@ulu-colorfo-headings": true
 }
