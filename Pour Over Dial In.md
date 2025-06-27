@@ -42,3 +42,5 @@
 		- Wiggle
 		- Tap
 		- See [[Brewing by Coffee Processing#Impact of Processing on Agitation|Agitation by Processing]]
+- Change Brewer... ![[Brewer Choice during Dial In#Thought Process]]
+- 
