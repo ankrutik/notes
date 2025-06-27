@@ -10,8 +10,8 @@ Ease of extraction [[Brewing by Coffee Processing#Order of easy extraction|is th
 ### Approach
 - Coarse grind and more pours
 	- 52 to 60 Red Clix
-	- >=3 pours 
-- [[Bypass with Coffee|Cup last ratios separately]]
+	- 3 pours or more 
+- ! [[Bypass with Coffee|Cup last ratios separately]]
 
 ### Double Bloom
 A recipe that I've come to discover separately on my own and on  STANDOUT as the Double Bloom.
