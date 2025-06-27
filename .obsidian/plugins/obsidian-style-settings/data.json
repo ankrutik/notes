@@ -5,7 +5,7 @@
   "ulu-theme-settings@@ulu-radius": "var(--radius-m)",
   "ulu-theme-settings@@ulu-grad": false,
   "ulu-theme-settings@@ulu-border": "ulu-noborder",
-  "ulu-theme-settings@@ulu-prop-card": false,
+  "ulu-theme-settings@@ulu-prop-card": true,
   "ulu-theme-settings@@ulu-codeblocks": "ulu-gummy-codeblock",
   "ulu-theme-settings@@ulu-cards-border": false,
   "ulu-theme-settings@@ulu-cards-shadow": false,

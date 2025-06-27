@@ -19,4 +19,32 @@ Floral explosion, red grape sweetness, juicy lime acidity, long cane sugar finis
 
 Perfect for filter, V60, or expressive espresso extractions
 
+Suggested recipe is [[Fermented Coffee#Double Bloom]]
+>[!info] The Double Bloom 
+>15 g coffee/250 g water
+>⏱ 0:00-0:10 | 50 grams  
+  ⏱ 0:30-0:40 | 50 grams  
+  ⏱ 1:00-1:10 | 150 grams
+  
+
+> [!Failure] Recipe 1
+> 12gm/200gm
+> 0:00 : 40gm
+> 0:30 : 40gm
+> 1:00 : 120gm
+> 44 Red Clicks
+> V60 x Cafec T90
+> 96 degrees from STANDOUT but check chart
+> 89 degrees
+> **Result**
+> - Body thinned out
+> - Tasty cup, very pleasant
+> - Go back to my own method
+>
+
+> [!Question]
+> Recipe 2
+> Same as recipe 1
+> 40/40/80
+> No Melodrip
 
