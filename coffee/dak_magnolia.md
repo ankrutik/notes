@@ -1,3 +1,5 @@
+#coffee/dial-in 
+
 Started off wonky from sleep. Forgot to add a chilling rock on the bloom and then forgot to tare before the second pour. [[When you forget to tare scales|We know what to do when this happens next.]]
 [[When you forget to tare scales#Eyeball|Eyeballed it.]]
 End weight of cup was 245.6 gm

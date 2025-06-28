@@ -1,3 +1,5 @@
+#coffee/dial-in 
+
 [Sookoo Anaerobic Naturals](https://www.standoutcoffee.com/products/sookoo-anaerobic-natural-gibirinna-serto-varieties-ethiopia)
 
 Gibirinna & Serto varieties
@@ -50,15 +52,12 @@ Suggested recipe is [[Fermented Coffee#Double Bloom]]
 >  ### Result
 > - ! Clarity lost without Melodrip, bring it back
 
-> [!question] Recipe 3
+> [!fail] Recipe 3 ABANDON
 > Same as recipe 2
 > 40/40/40/20(cup)
 > Melodrip
-> ### Result
-> - Abandonned
-> 
 
-> [!question] Recipe 4
+> [!failure] Recipe 4
 > 60 Red Clix
 > 36/36/36/36/36(cup)
 > Melodrip
@@ -67,12 +66,42 @@ Suggested recipe is [[Fermented Coffee#Double Bloom]]
 > - No harshness
 > - Can go finer to 54 Red Clix
 
-
-> [!question] Recipe 5
+> [!success] Recipe 5 | Base
 > 54 Red Clix
-> 36/36/36/36(cup)
+> 36/36/36/15
 > Melodrip
 > ### Result
 > - update [[Fermented Coffee#Approach]] accordingly
+> - Good cup!
+> - Sweet without harshness
+> - Pomegranate, dates
+
+
+> [!question] ## Further Exploration 
+>  ==**Recipe 6** TRY THIS NEXT==
+> 56 Red Clix
+> 36/36/36/36(cup)
+> Melodrip
+> Expecting...
+> - Gentler, on acidic side
+> 
+> Recipe 7
+> 53 Red Clix
+> 36/36/36/36
+> Melodrip
+> Expecting...
+> - Sweeter
+> 
+> **Recipe 8 | DONE**
+> Recipe 7 with Origami Air
+> Expecting...
+> - No idea, you tell me
+> Result...
+> - relatively weak on Origami Air x Cafec T90
+> - reduce water 36/36/36/15
+
+
+
+
 
 
