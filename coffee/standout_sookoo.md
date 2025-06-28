@@ -76,15 +76,16 @@ Suggested recipe is [[Fermented Coffee#Double Bloom]]
 > - Sweet without harshness
 > - Pomegranate, dates
 
+> [!success] Recipe 6
+> 56 Red Clix
+> 90 degrees
+> 36/36/50
+> V60 x Cafec T90 x Melodrip
+> ### Result...
+> - Gentler, on acidic side, as expected
 
 > [!question] ## Further Exploration 
->  ==**Recipe 6** TRY THIS NEXT==
-> 56 Red Clix
-> 36/36/36/36(cup)
-> Melodrip
-> Expecting...
-> - Gentler, on acidic side
-> 
+>  
 > Recipe 7
 > 53 Red Clix
 > 36/36/36/36
@@ -97,11 +98,5 @@ Suggested recipe is [[Fermented Coffee#Double Bloom]]
 > Expecting...
 > - No idea, you tell me
 > Result...
-> - relatively weak on Origami Air x Cafec T90
+> - Fast, hence relatively weak on Origami Air x Cafec T90
 > - reduce water 36/36/36/15
-
-
-
-
-
-
