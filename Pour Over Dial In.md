@@ -11,10 +11,13 @@
 	- Known standard starting points by processing
 - [[Brewing by Coffee Processing|Impact of Coffee Processing on Brewing]]
 - Water
+	- $ Use Aquafina or Bisleri
 	- Mineral Composition
-		- Mumbai's water, filtered is good enough
+		- With dialling in [[standout_sookoo]], I might have to conceded that packaged drinking water/mineral water is better
 		- When travelling, use packaged drinking water
-			- Aquafina
+			- Observed that Aquafina goes well 
+		- Mumbai's water (filtered) is okay but not good enough
+		- I think it affects the mouthfeel too, heavy creamy smooth.
 	- Temperature
 	- Ratio
 		- 1:14-1:17, depending on roast level

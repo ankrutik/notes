@@ -16,7 +16,14 @@
       "key": "."
     }
   ],
-  "app:open-settings": [],
+  "app:open-settings": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "S"
+    }
+  ],
   "editor:toggle-source": [
     {
       "modifiers": [
@@ -24,6 +31,14 @@
         "Shift"
       ],
       "key": "/"
+    }
+  ],
+  "editor:insert-callout": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "C"
     }
   ]
 }
