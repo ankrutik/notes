@@ -1,7 +1,6 @@
 #coffee/dial-in 
 
-> [!formula] 
-> Change 7
+> [!formula] Change 7 
 > - Origami Air x Kalita 155 x Melodrip
 > - 92 degrees
 > - 58 Red Clix
