@@ -1,4 +1,30 @@
  #coffee 
+
+## Common assumed practices
+- Chilled bloom
+	- I used a chilled whiskey rock under the drip of the bloom pour
+- 30 seconds bloom
+	- Restrict bloom close to 30 seconds instead of 45
+	- Go above 40 seconds if visually obvious that bubbles are still forming and gas is releasing
+- Do not disturb coffee bed after bloom pour
+- Melodrip
+	- Melodrip is used for all pours after bloom.
+	- Bloom is bare kettle
+- Water at temperature for following uses outside of brewing
+	- Rinse filter papers
+	- Rinse and preheat serving cup or carafe
+	- Rinse and preheat flask
+- Grind
+	- Tilt grinder
+	- Crank slowly
+	- Blow away chaff
+	- Mix grounds
+		- Spin grounds inside grinder catch cup
+		- Use WDT on catch cup
+- 2-3 water spritz on beans
+- WDT to level dry grounds inside filter paper
+- Rinse brewer without soap as much as possible
+
 ## Parameters
 - Storage 
 	- [[Resting or Degassing Coffee|Resting Period]]
@@ -11,7 +37,8 @@
 	- Known standard starting points by processing
 - [[Brewing by Coffee Processing|Impact of Coffee Processing on Brewing]]
 - Water
-	- $ Use Aquafina or Bisleri
+	- $ Use Aquafina
+		- Aquafina is currently better than Bisleri 
 	- Mineral Composition
 		- With dialling in [[standout_sookoo]], I might have to conceded that packaged drinking water/mineral water is better
 		- When travelling, use packaged drinking water
