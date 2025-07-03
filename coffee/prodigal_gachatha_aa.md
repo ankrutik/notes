@@ -5,7 +5,7 @@
 > - 50 Red Clix
 > - 12gm
 > - V60 x Cafec T92 x Melodrip
-> - 36/36/36/36
+> - 36/36/36/36/10
 
 [Prodigal Gachatha AA](https://getprodigal.com/products/gachatha-aa-kenya)
 

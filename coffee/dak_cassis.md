@@ -1,5 +1,28 @@
 #coffee/dial-in 
 
+> [!formula] 
+> Change 7
+> - Origami Air x Kalita 155 x Melodrip
+> - 92 degrees
+> - 58 Red Clix
+> - 12:180
+> - 36/36/36/36/18
+> 
+
+
+> [!info]
+> [DAK Cassis, from Kofio](https://www.kofio.co/coffee/kenya-cassis-05-22-dak-coffee-roasters/8708)  
+> Roastery: DAK Coffee Roasters 
+> Origin: Kenya  
+> Region: Ngariama  
+> Variety: SL28, SL34    
+> Process: Washed  
+> Taste Notes: Dark Berries, Currant Jam, Rosehip
+> Flavour Profile (from Kofio): Lime, Black currant, Raspberries
+> Roast Level: Light to Medium Light  
+> Brewing Method: Aeropress, Chemex, Clever dripper, French Press, Hario V60, Vacuum Pot
+> 
+
 Started off with... 
 - 46 clicks
 - 50/36-72-110
@@ -75,7 +98,3 @@ Change 5
 Change 6
 - Tried bypass the last pour as in [Bypass with Coffee]
 - 36/36/36/36/36, last 36 in separate cup
-
-Change 7
-- Same as above
-- 36/36/36/36/18

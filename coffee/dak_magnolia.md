@@ -1,5 +1,14 @@
 #coffee/dial-in 
 
+> [!formula] Recipe 2*
+> - 90 degrees
+> - 59 Red Clix
+> - 12gm
+> - Origami Air x Kalita Wave 155
+> - 36/36/36/30
+> - Result
+> 	- Nice cup
+
 > [!Information]
 > 
 > DAK Roasters
@@ -8,9 +17,6 @@
 > Origin: Tarrazu, Costa Rica
 > Taste Notes: White Currants, Honeydew, Citrus, Flowers
 > 
-
-
-
 
 > [!question] Trying out...
 > Started off wonky from sleep. Forgot to add a chilling rock on the bloom and then forgot to tare before the second pour. [[When you forget to tare scales|We know what to do when this happens next.]]
@@ -32,12 +38,3 @@
 > - Result
 >     - Surprisingly nice but very watered down
 > 
-
-> [!Success] Recipe 2*
-> - 90 degrees
-> - 59 Red Clix
-> - 12gm
-> - Origami Air x Kalita Wave 155
-> - 36/36/36/30
-> - Result
-> 	- Nice cup
