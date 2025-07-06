@@ -7,6 +7,10 @@ This includes
  
 Ease of extraction [[Brewing by Coffee Processing#Order of easy extraction|is the easiest]]
 
+### Resting
+- [[standout_sookoo]] 21 days
+	- roasted on 13/6/2025, tasted noteworthy on 4/7/2025
+
 ### Approach
 - Coarse grind and more pours
 	- 52 to 60 Red Clix
