@@ -1,6 +1,14 @@
 #coffee/dial-in 
 
-> [!formula] 
+> [!formula] Origami 
+> 12gm
+> 36/36/36/15
+> 92 degrees
+> 52 Red Clix
+> Origami Air x Kalita 155 x Melodrip
+> 
+
+> [!formula] Orea 
 > 12gm
 > 36/36/36/36
 > 92 degrees
@@ -15,15 +23,6 @@
 > 57 Red Clix
 > Origami Air x Cafec T92 x Melodrip
 > 
-
-> [!question] 
-> 12gm
-> 36/36/36/15(separate)
-> 92 degrees
-> 52 Red Clix
-> Origami Air x Kalita 135 x Melodrip
-> 
-
 
 > [!info] Eclipse
 > Variety: SL9, SL795

@@ -35,6 +35,7 @@
 	- Speed
 	- Angle of burr
 	- Known standard starting points by processing
+	- Changing from 55 red clix to 52 red clix took cup from slight bitter and dry to sweet and fruity with [[groundzero_eclipse]]
 - [[Brewing by Coffee Processing|Impact of Coffee Processing on Brewing]]
 - Water
 	- $ Use Aquafina
@@ -46,9 +47,17 @@
 		- Mumbai's water (filtered) is okay but not good enough
 		- I think it affects the mouthfeel too, heavy creamy smooth.
 	- Temperature
-	- Ratio
-		- 1:14-1:17, depending on roast level
-		- darker- tighter, lighter- wider
+- Ratio
+	- Use to adjust mouth feel more than taste
+	- See [[Bypass with Coffee]] to try out impact of various ratios
+	- By roast...
+		- darker - tighter
+		- lighter - wider
+	- Standards
+		- Personal
+			- Stick between 1:10 and 1:12
+		- Community
+			- 1:14-1:17, depending on roast level
 - Bloom
 	- Agitation
 		- No agitation
@@ -61,6 +70,8 @@
 	- Time
 		- watch the bloom
 		- you can stop once the bubbling stops
+		- Standards
+			- mostly around 35 to 40 seconds
 	- Chilled
 - Pour
 	- Mix of bare kettle and Melodrip
