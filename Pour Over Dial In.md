@@ -58,6 +58,10 @@
 			- Stick between 1:10 and 1:12
 		- Community
 			- 1:14-1:17, depending on roast level
+	- For ratio…Araku site says for pour overs start with 1:10. I couldn’t agree more with that. So 10,12 are valid spots you should try. 
+1. Adjust ratio for mouth feel, use separate cups where separate cup will have almost entire pour sizes. 
+2. Then tweak grind size if needed. 
+3. Then adjust ratio for taste, use separate cups where separate cups will have half of a pour size.
 - Bloom
 	- Agitation
 		- No agitation
