@@ -1,5 +1,6 @@
  #coffee 
 
+*Send suggestions to ankrutik@gmail.com*
 ## Common assumed practices
 - Chilled bloom
 	- I used a chilled whiskey rock under the drip of the bloom pour
@@ -100,4 +101,3 @@
 		- Tap
 		- See [[Brewing by Coffee Processing#Impact of Processing on Agitation|Agitation by Processing]]
 - Change Brewer... ![[Brewer Choice during Dial In#Thought Process]]
-- 
