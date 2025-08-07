@@ -2,7 +2,7 @@
 
 > [!formula] 
 > 12gm
-> 36/36/36/15
+> 36/36/36/15 or 36
 > Orea v3 x Kalita 185 x Melodrip x *chilled bloom*
 > 44 Red Clix
 > 95 degrees
