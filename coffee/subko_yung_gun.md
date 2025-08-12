@@ -1,10 +1,10 @@
 #coffee/dial-in 
 
-> [!question] 
+> [!formula] 
 > 12gm
-> 36/36/36/10(separate)
-> V60 x T90 x Melodrip
-> 55 Red Clix
+> 36/36/36/36
+> V60 x T92 x Melodrip
+> 59 Red Clix
 > 89 degrees
 > 
 
