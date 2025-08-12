@@ -1,5 +1,16 @@
 #coffee/dial-in 
 
+> [!question] 
+> 12gm
+> 36/36/36/36(separate cup)
+> V60 x T92 x Melodrip x *chilled bloom*
+> Bloom till 1 minute
+> 53 Red Clix
+> 95 degrees
+> 
+> Tastes like: 
+
+
 > [!formula] 
 > 12gm
 > 36/36/36/15 or 36
@@ -8,6 +19,7 @@
 > 95 degrees
 > 
 > Tastes like: Sweetened light tomato juice
+> Unfortunately not reproducible after first brew
 
 
 > [!info] Senzu Chania
