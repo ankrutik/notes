@@ -18,7 +18,6 @@ Change 1
 - 36/108
 - Result
     - weak, boozy
-
 Possible changes...
 - 86 degrees
 - 36/36/72
