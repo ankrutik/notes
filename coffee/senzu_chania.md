@@ -1,11 +1,11 @@
 #coffee/dial-in 
 
-> [!question] 
+> [!formula] 
 > 12gm
 > 36/36/36/36(separate cup)
-> V60 x T92 x Melodrip x *chilled bloom*
+> Origami Air x Kalita Wave 155 x Melodrip x *chilled bloom*
 > Bloom till 1 minute
-> 53 Red Clix
+> 56 Red Clix
 > 95 degrees
 > 
 > Tastes like: 
