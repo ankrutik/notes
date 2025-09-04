@@ -1,5 +1,11 @@
 Tags: #archives 
 
+- [Ineffective protests](https://www.newindianexpress.com/nation/2025/Sep/03/maratha-community-divided-as-maharashtra-government-issues-gr-on-kunbi-certificates-under-obc-quota)
+	- No consultation with think tanks and legal experts
+	- #protest/fasting Fasting will not be effective with governments known to be stubborn or insensitive
+		- Hampers judgement and strategy
+		- weigh down group with baggage of survival at biological level
+	- Authorities will stall and try to negotiation a solution that already exists #politics/strategy 
 - [Summary of Congress’ contribution to the rise of rapid Hindutva](https://www.project-syndicate.org/commentary/modi-hindutva-hindu-nationalism-is-making-india-a-theocracy-by-ashoka-mody-2024-01)
 - https://m.thewire.in/article/politics/why-rahul-gandhis-disqualification-may-be-a-turning-point
 - https://m.thewire.in/article/rights/anand-teltumbde-explains-the-genesis-of-his-articles-on-bhima-koregaon
