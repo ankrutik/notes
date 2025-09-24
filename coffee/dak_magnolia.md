@@ -12,10 +12,10 @@
 > [!Information]
 > 
 > DAK Roasters
-> Variety: Red Catuai
-> Process: Natural
-> Origin: Tarrazu, Costa Rica
-> Taste Notes: White Currants, Honeydew, Citrus, Flowers
+> Variety:: Red Catuai
+> Process:: Natural
+> Origin:: Tarrazu, Costa Rica
+> Taste Notes:: White Currants, Honeydew, Citrus, Flowers
 > 
 
 > [!question] Trying out...

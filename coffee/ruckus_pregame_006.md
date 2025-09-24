@@ -9,9 +9,9 @@
 > 
 
 > [!info] Pregame_006 Blame it on the Mungmungthi
-> Variety:  SL6
-> Process:  Natural, Cultured
-> Taste Notes: Tamarind, Strawberry, Cashew
-> Origin: Kerehaklu
-> Roaster: Ruckus 
+> Variety::  SL6
+> Process::  Natural, Cultured
+> Taste Notes:: Tamarind, Strawberry, Cashew
+> Origin:: Kerehaklu
+> Roaster:: Ruckus 
 

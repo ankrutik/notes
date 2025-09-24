@@ -1,10 +1,11 @@
 #coffee/dial-in 
 
 > [!info] Details 
-> 24h Fermented Washed
-> Light Roast
-> SLN9
-> Taste notes: Orange Blossom, Black Tea, Sweet Citrus, Mild Floral
+> Roaster::  Rossette
+> Origin::  
+> Process:: 24h Fermented Washed  
+> Variety:: SLN9  
+> Taste Notes:: Orange Blossom, Black Tea, Sweet Citrus, Mild Floral
 
 ![[Resting or Degassing Coffee#No web page when I brew...]]
 

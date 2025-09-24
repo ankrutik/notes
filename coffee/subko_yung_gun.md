@@ -16,10 +16,10 @@
 > 
 
 > [!info] Coffee Name
-> Variety: Cauvery 
-> Process: 76 Hrs Anoxic Naturals
-> Taste Notes: Jasmine, Mulberry, Black Grapes
-> Origin: Kerehaklu, 1154 MASL
-> Roaster: Subko
+> Variety:: Cauvery 
+> Process:: 76 Hrs Anoxic Naturals
+> Taste Notes:: Jasmine, Mulberry, Black Grapes
+> Origin:: Kerehaklu, 1154 MASL
+> Roaster:: Subko
 > Roast: "Light", 75 Agtron
 

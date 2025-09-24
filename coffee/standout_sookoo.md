@@ -15,18 +15,14 @@
 [Sookoo Anaerobic Naturals](https://www.standoutcoffee.com/products/sookoo-anaerobic-natural-gibirinna-serto-varieties-ethiopia)
 
 > [!info] 
-> Gibirinna & Serto varieties
-> Ethiopia
-> 
-> Producer and Process Info
-> • Producer: Sookoo Coffee, owned by Ture Waji
-> • Location: Suke Quto kebele, Shakiso woreda, Guji zone
-> • Elevation: 2,000–2,200 masl
-> • Varieties: Gibirinna 74110 & Serto 74112
-> • Process: Anaerobic Natural
-> • Fermented in sealed GrainPro bags for 86 hours, then dried for ~25 days
-> 
-> Floral explosion, red grape sweetness, juicy lime acidity, long cane sugar finish
+> Variety:: Gibirinna 74110, Serto 74112
+> Roaster:: Standout
+> Origin:: Suke Quto kebele, Shakiso woreda, Guji zone, Ethiopia
+> Producer: Sookoo Coffee, owned by Ture Waji
+> Elevation: 2,000–2,200 MASL
+> Process:: Anaerobic Natural
+> Fermented in sealed GrainPro bags for 86 hours, then dried for ~25 days
+> Taste Notes:: Floral explosion, red grape sweetness, juicy lime acidity, long cane sugar finish
 > 
 > > This lot comes from Shoondhisa, a sub-kebele within Suke Quto. The Suke drying station was the original heart of Sookoo Coffee and played a key role in shaping their quality-driven approach.
 > 

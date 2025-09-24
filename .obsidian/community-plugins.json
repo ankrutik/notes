@@ -3,5 +3,7 @@
   "obsidian-style-settings",
   "obsidian-list-callouts",
   "obsidian-admonition",
-  "better-export-pdf"
+  "better-export-pdf",
+  "dataview",
+  "global-search-and-replace"
 ]

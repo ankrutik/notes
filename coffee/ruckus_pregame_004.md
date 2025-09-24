@@ -11,11 +11,11 @@
 > - Melodrip from 2nd pour
 
 > [!info] Ruckus Pregame 004
-> Variety: SL10
-> Process: Natural
-> Taste Notes: Watermelon, Maple, Syrupy
-> Origin: Kerehaklu, Karnataka
-> Roaster: Ruckus
+> Variety:: SL10
+> Process:: Natural
+> Taste Notes:: Watermelon, Maple, Syrupy
+> Origin:: Kerehaklu, Karnataka
+> Roaster:: Ruckus
 
 > [!info] Recipe from ruckus
 > 12g, "medium fine"

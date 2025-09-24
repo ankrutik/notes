@@ -11,12 +11,12 @@
 
 > [!info]
 > [DAK Cassis, from Kofio](https://www.kofio.co/coffee/kenya-cassis-05-22-dak-coffee-roasters/8708)  
-> Roastery: DAK Coffee Roasters 
-> Origin: Kenya  
-> Region: Ngariama  
-> Variety: SL28, SL34    
-> Process: Washed  
-> Taste Notes: Dark Berries, Currant Jam, Rosehip
+> Roaster:: DAK Coffee Roasters 
+> Origin:: Kenya  
+> Region:: Ngariama  
+> Variety:: SL28, SL34    
+> Process:: Washed  
+> Taste Notes:: Dark Berries, Currant Jam, Rosehip
 > Flavour Profile (from Kofio): Lime, Black currant, Raspberries
 > Roast Level: Light to Medium Light  
 > Brewing Method: Aeropress, Chemex, Clever dripper, French Press, Hario V60, Vacuum Pot
