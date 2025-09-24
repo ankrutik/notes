@@ -1,6 +1,15 @@
  #coffee 
 
 *Send suggestions to ankrutik@gmail.com*
+
+## Current/Last known reliable recipe
+3 Pour Recipe
+12gm
+Bloom is 12gm x 3. Round up by 5gm. 40 grams.
+Remaining coffee weight, divided by 2
+Second pour at 1'. Third at 1'25".
+Use Melodrip held at water surface.
+
 ## Common assumed practices
 - Chilled bloom
 	- I used a chilled whiskey rock under the drip of the bloom pour
