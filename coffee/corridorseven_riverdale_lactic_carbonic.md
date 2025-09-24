@@ -23,13 +23,22 @@
 > 89 degrees
 > 
 
-> [!question] Attempt 2
+> [!question] Attempt 3
+> 12gm
+> 36/36/36/36(cup)
+> Origami Air x Cafec T90 x Melodrip x *chilled bloom*
+> 52 Red Clix
+> 89 degrees
+> Rationale: Attempt 2 felt under extracted. Want to go finer. But bitterness might increase. So go faster. 
+> Result: 
+
+> [!failure] Attempt 2
 > 12gm
 > 36/36/36/36(cup)/36(cup)
 > V60 x Cafec T90 x Melodrip x *chilled bloom*
 > 56 Red Clix
 > 89 degrees
-> Result:
+> Result: Underextracted
 
 > [!fail] Attempt 1
 > 12gm
