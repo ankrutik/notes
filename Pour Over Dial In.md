@@ -1,14 +1,16 @@
- #coffee 
+ #coffee #coffee/dial-in 
 
 *Send suggestions to ankrutik@gmail.com*
 
 ## Current/Last known reliable recipe
-3 Pour Recipe
-12gm
-Bloom is 12gm x 3. Round up by 5gm. 40 grams.
-Remaining coffee weight, divided by 2
-Second pour at 1'. Third at 1'25".
-Use Melodrip held at water surface.
+### 3 Pour Recipe
+Switched to this after giving up on [[corridorseven_riverdale_lactic_carbonic|Corridor Seven Riverdale Lactic Carbonic Maceration]]
+
+12g dose with 1:13 ratio
+Bloom is dose x 3, rounded up by 5g to wet grounds properly. 40g.
+Divide remaining water weight by 2.
+Second pour of 58g at 1'. Third at 1'25".
+Melodrip held at water surface.
 
 ## Common assumed practices
 - Chilled bloom
