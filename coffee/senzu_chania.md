@@ -21,13 +21,10 @@
 > Tastes like: Sweetened light tomato juice
 > Unfortunately not reproducible after first brew
 
-Process:: Washed
 > [!info] Senzu Chania
 > Variety:: SL34, Ruiru 11, Batian, K7
-> Process:: (process:: Washed)
-> [Process:: Washed]
-> Taste Notes:: Spicy, Lemon, Tomato, Milk Chocolate
-> Taste Notes:: Honey; Tomato; Caramel; Peach; Apricot
+> Process:: Washed
+> Taste Notes:: Spicy, Lemon, Tomato, Milk Chocolate; Honey, Caramel, Peach, Apricot
 > Origin:: Chania Estate, Kenya, 1525m, 88.5/100
 > Roaster:: Senzu, Portugal
 > *The Harries family has lived in Kenya, in the city of Thika (Central Province), since 1904. There they have two plantations: Chania and Oreti. These two farms are the last remaining medium-sized farms in Kenya and are currently owned by Boyce Harries, who is a 5th generation family coffee farmer.*  

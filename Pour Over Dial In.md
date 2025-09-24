@@ -16,24 +16,24 @@ Melodrip held at water surface.
 - Chilled bloom
 	- I used a chilled whiskey rock under the drip of the bloom pour
 - Bloom timings
-	- Restrict bloom close to 30 seconds instead of 45
-	- Go above 40 seconds if visually obvious that bubbles are still forming and gas is releasing
-	- 1 minute needed for some coffees
-- Do not disturb coffee bed after bloom pour
+	- For a new coffee, observe the bed on the second pour. If you see bubbles rising, it needs a longer bloom.
+	- Restrict bloom close to 30 seconds instead of 45.
+		- 1 minute needed for some coffees
+- Do not disturb coffee bed after bloom pour.
 - Melodrip
-	- Melodrip is used for all pours after bloom.
+	- Used for all pours after bloom
 	- Bloom is bare kettle
-- Water at temperature for following uses outside of brewing
+- Water at temperature for following uses outside of brewing...
 	- Rinse filter papers
 	- Rinse and preheat serving cup or carafe
 	- Rinse and preheat flask
 - Grinder
-	- Tilt grinder
-	- Crank slowly
+	- Tilt grinder at 45 degrees for slow feed
+	- Crank slowly, feel thru the grind
 	- Blow away chaff
 	- Mix grounds
 		- Spin grounds inside grinder catch cup
-		- Use WDT on catch cup
+		- Or use WDT on catch cup
 	- Wipe grinder **with a dry rag**
 		- Pump air thru the burrs into the grinder chamber
 		- Wipe the chamber from the other side
