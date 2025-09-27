@@ -3,7 +3,7 @@
 Add 5 gm clean brew water to final brew. Taste.
 Repeat till you get desired taste.
 ### Impacts on cup
-- Reduces strength for heavily processed coffee. Example [[intellect_cereza_hidden_alchemy]]
+- Reduces strength for heavily processed coffee. Example [[intellect cereza hidden alchemy]]
 - Opens up flavours. 
 - Makes brew smoother, rounder, sweeter.
 ### References

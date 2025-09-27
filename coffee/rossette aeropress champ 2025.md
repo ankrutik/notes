@@ -1,11 +1,27 @@
 #coffee/dial-in 
 
-> [!info] Details 
+> [!info] Rossette Aeropress Championship 2025 Mumbai Regional 
 > Roaster::  Rossette
-> Origin::  
+> Origin::  Nilgiri, Tamil Nadu
 > Process:: 24h Fermented Washed  
 > Variety:: SLN9  
 > Taste Notes:: Orange Blossom, Black Tea, Sweet Citrus, Mild Floral
+
+> [!question] 
+> 12gm
+> 40 (o') - 58 (1')  - 58 (1'35")
+> V60 x T90 x Melodrip x *chilled bloom*
+> 53 Red Clix
+> 95 degrees
+> 
+
+> [!formula] 
+> 12gm
+> 40 (o') - 58 (1')  - 58 (1'35")
+> V60 x T90 x Melodrip x *chilled bloom*
+> 55 Red Clix
+> 95 degrees
+> 
 
 ![[Resting or Degassing Coffee#No web page when I brew...]]
 

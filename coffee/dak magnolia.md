@@ -10,8 +10,7 @@
 > 	- Nice cup
 
 > [!Information]
-> 
-> DAK Roasters
+> Roaster:: DAK 
 > Variety:: Red Catuai
 > Process:: Natural
 > Origin:: Tarrazu, Costa Rica

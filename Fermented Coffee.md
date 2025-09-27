@@ -8,7 +8,7 @@ This includes
 Ease of extraction [[Brewing by Coffee Processing#Order of easy extraction|is the easiest]]
 
 ### Resting
-- [[standout_sookoo]] 21 days
+- [[standout sookoo]] 21 days
 	- roasted on 13/6/2025, tasted noteworthy on 4/7/2025
 
 ### Approach
@@ -33,7 +33,7 @@ A recipe that I've come to discover separately on my own and on  STANDOUT as the
 	- *After dial in...*
 		- Pour remaining dialled in weight post Pour 2 in single go
 
-Pour 3 is a single pour to avoid extracting further since fermented coffees are very soluble. Example, [[intellect_cereza_hidden_alchemy]]
+Pour 3 is a single pour to avoid extracting further since fermented coffees are very soluble. Example, [[intellect cereza hidden alchemy]]
 
 ### Carbonic Maceration vs Anaerobic Fermentation
 - Carbonic maceration uses full cherry, anaerobic requires pulped cherry.

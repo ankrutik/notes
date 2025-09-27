@@ -4,7 +4,7 @@
 
 ## Current/Last known reliable recipe
 ### 3 Pour Recipe
-Switched to this after giving up on [[corridorseven_riverdale_lactic_carbonic|Corridor Seven Riverdale Lactic Carbonic Maceration]]
+Switched to this after giving up on [[corridorseven riverdale lactic carbonic|Corridor Seven Riverdale Lactic Carbonic Maceration]]
 
 12g dose with 1:13 ratio
 Bloom is dose x 3, rounded up by 5g to wet grounds properly. 40g.
@@ -47,9 +47,9 @@ Melodrip held at water surface.
 - Frozen?
 ### Grind
 - Size
-	- Changing from 55 red clix to 52 red clix for [[groundzero_eclipse]]
+	- Changing from 55 red clix to 52 red clix for [[groundzero eclipse]]
 		- from slight bitter and dry, to sweet and fruity with 
-	- Changing from 56 to 58 Red Clix for [[subko_salawara_bros]]
+	- Changing from 56 to 58 Red Clix for [[subko salawara bros]]
 		- from pleasant strength, no sourness
 		- to under-extracted, vegetal, sparser, light
 - Speed
@@ -61,7 +61,7 @@ Melodrip held at water surface.
 	- Aquafina is currently better than Bisleri 
 		- Temperature
 - Mineral Composition
-	- With dialling in [[standout_sookoo]], I might have to conceded that packaged drinking water/mineral water is better
+	- With dialling in [[standout sookoo]], I might have to conceded that packaged drinking water/mineral water is better
 	- When travelling, use packaged drinking water
 		- Observed that Aquafina goes well 
 	- Mumbai's water (filtered) is okay but not good enough

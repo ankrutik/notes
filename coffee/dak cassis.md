@@ -11,7 +11,7 @@
 
 > [!info]
 > [DAK Cassis, from Kofio](https://www.kofio.co/coffee/kenya-cassis-05-22-dak-coffee-roasters/8708)  
-> Roaster:: DAK Coffee Roasters 
+> Roaster:: DAK
 > Origin:: Kenya  
 > Region:: Ngariama  
 > Variety:: SL28, SL34    
