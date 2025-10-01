@@ -10,9 +10,18 @@
 > [!question] 
 > 12gm
 > 40 (o') - 58 (1')  - 58 (1'35")
+> V60 x T92 x Melodrip x *chilled bloom*
+> 53 Red Clix
+> 95 degrees
+> _Push subtle orange to be more prominent_
+
+> [!formula] 
+> 12gm
+> 40 (o') - 58 (1')  - 58 (1'35")
 > V60 x T90 x Melodrip x *chilled bloom*
 > 53 Red Clix
 > 95 degrees
+> Subtle orange
 > 
 
 > [!formula] 
