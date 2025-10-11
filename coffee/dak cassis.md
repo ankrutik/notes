@@ -1,5 +1,13 @@
 #coffee/dial-in 
 
+> [!formula] Change 8 
+> - Origami Air x Kalita 155 x Melodrip
+> - 94 degrees
+> - 54 Red Clix
+> - 1:13
+> - 40 (o') - 58 (1')  - 58 (1'25")
+> 
+
 > [!formula] Change 7 
 > - Origami Air x Kalita 155 x Melodrip
 > - 92 degrees

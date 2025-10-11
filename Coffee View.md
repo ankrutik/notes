@@ -22,8 +22,9 @@ icontains(process, "ferment")
 OR icontains(process, "anaerobic")
 OR icontains(process, "anoxic")
 OR icontains(process, "culture")
-OR icontains(process, "maceration")
+OR icontains(process, "macerat")
 OR icontains(process, "mosto")
+OR icontains(process, "inoc")
 SORT
 process desc, file.cday  desc
 ```

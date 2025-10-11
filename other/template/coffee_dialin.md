@@ -14,5 +14,5 @@
 > Process:: 
 > Variety:: 
 > Taste Notes:: 
-> 
+> Altitude:: 1000 MASL
 
