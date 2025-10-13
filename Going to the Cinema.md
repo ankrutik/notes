@@ -24,9 +24,13 @@
 
 ## Theatre
 - Available via Mubi Go?
+	- Defunct unfortunately 
 - How early to watch during release in theatres? Will shows be carried over to next week? Is it a limited or single screening?
 - Closest by public transport in order of rickshaw, metro, train? Otherwise use car.
-- time of day? Avoid late night shows for cerebral films.
+- time of day? 
+	- Avoid late night shows for cerebral films
+	- Best is to watch a 3-4pm show or 10am show. 
+	- Lunch and dinner covered. 
 - Should you wait for company or go alone?
 
 ### Theatres
@@ -58,6 +62,9 @@
 	- Drive
 - Regal Cinema
 	- large single screen
+	- Film Heritage Foundation!!
+	- Line 3 of the Metro extends from Acharya Atre to Cuffe Parade this week. 
+	- Hutatma Chowk or Vidhan Bhavan, then walk around 10-15 minutes to Regal.
 
 
 ## Rewatch
