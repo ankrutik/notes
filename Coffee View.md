@@ -28,3 +28,13 @@ OR icontains(process, "inoc")
 SORT
 process desc, file.cday  desc
 ```
+
+# Espresso
+```dataview
+TABLE
+process, variety, ratio, grind, taste-notes
+FROM
+#coffee/dial-in/espresso and "coffee"
+SORT
+process desc, file.cday  desc
+```
