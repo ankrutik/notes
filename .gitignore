@@ -7,3 +7,5 @@
 .DS_Store
 other/typesetting/*/.ScribusThumbs/*
 .trash/*
+*/*.ods#
+
