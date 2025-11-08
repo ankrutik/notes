@@ -26,7 +26,7 @@ OR icontains(process, "macerat")
 OR icontains(process, "mosto")
 OR icontains(process, "inoc")
 SORT
-process desc, file.cday  desc
+file.cday  desc
 ```
 
 # Espresso
