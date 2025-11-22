@@ -4,6 +4,9 @@ Art is subjective. The film makers had their point to make but **some of it will
 Where is the film on a scale of **Realism vs Formalism**?
 Is the **auteur theory** applicable?
 What **historical/cultural context** is necessary? Does the film introduce any?
+
+Get rest the previous day. Keep phone aside as much as possible even before you watch.
+
 # Scene/Shot
 Look closely to **describe** and ask why **deliberate choices** were made.
 "**Mise en scene**" or "What is in the frame?"
