@@ -1,5 +1,14 @@
 #coffee/dial-in
 
+> [!question] 
+> 12gm
+> 40 (o') - 40 (45'')  - 80 (water just below bed)
+> Origami x T83 x Melodrip x *chilled bloom*
+> 46 Red Clix
+> 90 degrees
+> - Reduced temperature to 90 from 94. 
+> 	- Was tasting over extracted yet watery
+
 > [!formula] 
 > 12gm
 > 32 (o') - 63 (20") - 35 (1')  - 31 (1'40")
