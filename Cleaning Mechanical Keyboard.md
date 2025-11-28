@@ -1,11 +1,13 @@
 #cleaning #maintenance #keyboards #method
-
 ## Things needed
 - Key Cap puller is mandatory
 - Brush
 - Rubbing Alcohol, as pure as possible
-- Clean handerkerchief
+- Clean handkerchief
 - Basic Notepad application without autocorrection or autocompletion
+- **Cling wrap**
+- **Masking Tape**
+- Foam
 ## Replacing Key Caps
 Press onto the switches gently. 
 ### For keys that need stabilisers
@@ -15,7 +17,17 @@ Press onto the switches gently.
 4. At this point, the keycap should have nothing on them. Except for o rings if you are using them. 
 5. Then eyeball the keycap onto the switch and 2 stabiliser pins. 
 This is the correct way that gives much more stability than attaching the stabiliser pins/mounts onto the keycap first. 
-## Method
+
+## Stuck keys
+Keycaps might not be a perfect fit for your keyboard. Use **sand paper** to sand off plastic off the inner walls of the key cap.
+## Rattle
+For the **space bar**, if the key rattles too much, insert small pieces of **cling wrap** into the stems of the keycap before assembly. They will give a better and tighter fit on the stabilizer and switch stems. This seems to be very effective at the moment. The issues seems to be more with the Stabilizer stems than the Switch stems.
+
+Consider **foam** for space bar keycaps. *I've ordered some from curiositycaps.in, yet to test how they will perform.*
+
+For backspace, shift, enter keys, line the inside walls of the keycaps with tiny pieces of **masking tape**. Use 3 layers. This absorbs some of the rattle and vibration.
+## Multiple key presses
+- *This issue has completely gone away from the Filco keyboard after I replaced all the key caps.*
 - Use basic notepad application to test keys to avoid **any autocompletions and corrections** during
 - After key is identified, pull cap using key puller
 - Brush off any visible dust

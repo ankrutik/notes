@@ -1,1 +1,6 @@
-[]
+[
+  "dataview",
+  "obsidian-admonition",
+  "obsidian-list-callouts",
+  "obsidian-outliner"
+]
