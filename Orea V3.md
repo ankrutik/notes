@@ -1,9 +1,10 @@
 #coffee/brewer
-
 ## Profile
 Concentrate, Fast, balanced, Thicker mouth feel
 Washed Light Roasts
 Aim dial in for a sweet, juicy, clean cup.
+
+Using this brewer at work. I carry filter paper, ground coffee, and a milk pitcher to pour water. Water temperature seems to be between 80 and 88. Coffee turns out great with a double bloom recipe of 1:13.33.
 ## Known Recipes
 ### Maria Stritz
 42 Red Clix
