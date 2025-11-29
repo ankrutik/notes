@@ -5,6 +5,8 @@ Washed Light Roasts
 Aim dial in for a sweet, juicy, clean cup.
 
 Using this brewer at work. I carry filter paper, ground coffee, and a milk pitcher to pour water. Water temperature seems to be between 80 and 88. Coffee turns out great with a double bloom recipe of 1:13.33.
+
+Might have to go 3-5 degrees cooler as compared to a V60 or Origami.
 ## Known Recipes
 ### Maria Stritz
 42 Red Clix

@@ -1,5 +1,12 @@
 #coffee/dial-in 
 
+ > [!formula] 
+> 12gm
+> 40 (o') - 30 (45'')  - 90 (water just below bed)
+> Orea v3 x Kalita 185 x Melodrip x *chilled bloom*
+> 45 Red Clix
+> 82 degrees
+
 > [!formula] 
 > 12gm
 > 40 (o') - 40 (45'')  - 80 (water just below bed)
