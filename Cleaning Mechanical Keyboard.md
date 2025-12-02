@@ -7,6 +7,7 @@
 - Basic Notepad application without autocorrection or autocompletion
 - **Cling wrap**
 - **Masking Tape**
+- small scissors
 - Foam
 ## Replacing Key Caps
 Press onto the switches gently. 
@@ -23,9 +24,9 @@ Keycaps might not be a perfect fit for your keyboard. Use **sand paper** to sand
 ## Rattle
 For the **space bar**, if the key rattles too much, insert small pieces of **cling wrap** into the stems of the keycap before assembly. They will give a better and tighter fit on the stabilizer and switch stems. This seems to be very effective at the moment. The issues seems to be more with the Stabilizer stems than the Switch stems.
 
-Consider **foam** for space bar keycaps. *I've ordered some from curiositycaps.in, yet to test how they will perform.*
+Consider **foam** for stabilized keycaps. Helps immensely.
 
-For backspace, shift, enter keys, line the inside walls of the keycaps with tiny pieces of **masking tape**. Use 3 layers. This absorbs some of the rattle and vibration.
+For backspace, shift, enter keys, line the inside walls of the keycaps with tiny pieces of **masking tape**. Use 3 layers. This absorbs some of the rattle and vibration. If the keys are getting stuck, one of the sides of tape might need to be removed.
 ## Multiple key presses
 - *This issue has completely gone away from the Filco keyboard after I replaced all the key caps.*
 - Use basic notepad application to test keys to avoid **any autocompletions and corrections** during
