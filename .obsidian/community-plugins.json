@@ -1,6 +1,9 @@
 [
-  "dataview",
   "obsidian-admonition",
+  "better-export-pdf",
+  "dataview",
+  "global-search-and-replace",
+  "obsidian-jtab",
   "obsidian-list-callouts",
   "obsidian-outliner"
 ]
