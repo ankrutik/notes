@@ -1,13 +1,12 @@
 #coffee/dial-in 
 
 > [!formula] 
-> 12gm
-> 40 (o') - 58 (1')  - 58 (1'35")
-> 40 (o') - 40 (45'')  - 80 (water just below bed)
-> B x P x Melodrip x *chilled bloom*
-> 44 Red Clix
-> 90 degrees
-> 
+12gm  
+40 (o') - 60 (30") - 60 (1'5")  
+Origami Air x Kalita 155 x Melodrip x _chilled bloom_ 
+V60 x T90 x Melodrip x _chilled bloom_ 
+55 Red Clix  
+92 degrees
 
 > [!info] Coffee Name
 > Roaster::

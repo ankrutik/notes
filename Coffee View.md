@@ -6,9 +6,9 @@ process, variety, origin, taste-notes
 FROM
 "coffee"
 WHERE
-process = "Washed" OR process = "Natural"
+process = "Washed" OR contains(process, "Natural")
 SORT
-process desc, file.cday  desc
+file.mday  desc
 ```
 
 # Ferments
@@ -26,7 +26,7 @@ OR icontains(process, "macerat")
 OR icontains(process, "mosto")
 OR icontains(process, "inoc")
 SORT
-file.cday  desc
+file.mday  desc
 ```
 
 # Espresso

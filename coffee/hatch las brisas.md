@@ -1,6 +1,13 @@
 #coffee/dial-in 
 
-> [!question] 
+> [!formula] 
+> 12gm
+> 40 (0') - 60(40')  - 60 (1'15")
+> V60 x T90 x Melodrip x *chilled bloom*
+> 54 Red Clix
+> 90 degrees
+
+> [!formula] 
 > 12gm
 > 40 (o') - 40(1')  - 40 (1'35")
 > V60 x T90 x Melodrip x *chilled bloom*

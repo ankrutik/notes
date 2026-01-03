@@ -1,11 +1,11 @@
 #coffee/dial-in 
 
-> [!question]  Yet to brew
-> 12gm
-> 40 (o') - 58 (1')  - 58 (1'35")
-> B x P x Melodrip x *chilled bloom*
-> 44 Red Clix
-> 90 degrees
+> [!formula]  [[rp5]]
+12gm  
+40 (0') - 60 (40") - 60 (1'25")  
+Orea v3 x Kalita 185 x Melodrip x _chilled bloom_  
+44 Red Clix  
+92 degrees
 > 
 
 > [!info] [Mate Matiwos Washed](https://www.hatchcrafted.com/shop/mate-matiwos-washed)
