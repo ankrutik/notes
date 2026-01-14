@@ -1,4 +1,4 @@
-sudo #p2p
+#p2p
 
 [rarbg mirrors](https://github.com/wesharebytes/RARBG-Proxy-List?tab=readme-ov-file)
 [yts](https://www.yts-official.cc)
