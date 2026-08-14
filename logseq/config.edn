@@ -422,4 +422,5 @@
  ;;      ;use Percent-encoding for other invalid characters
  :file/name-format :triple-lowbar
  :journal/page-title-format "yyyyMMdd"
- :graph/settings {:journal? false}}
+ :graph/settings {:journal? false}
+ :ui/show-brackets? false}
