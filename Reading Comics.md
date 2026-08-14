@@ -1,0 +1,25 @@
+- notice the background, mid, foreground
+- deliberate choice of colours
+- composition of panel, balance of shapes, what is in sharp contrast, what is clearly lit?
+- characters
+	- start with the eyes, what emotion do they convey?
+	- look at the rest of the face
+- panel
+	- what focal length does the panel convey? wide shot or zoom shot?
+	- objective (from afar, dettached) or subjective (intimate) view?
+	- perspective and point of convergence and parallel lines in panel
+	- does it convey point of view of another character or is it staged for the audience?
+	- those that do not have a border can be considered as establishing shots while those with borders can be detailing shots
+- is the writing simple, clear, and succinct for the limited space of the speech bubbles?
+- are you understanding the lettering or are you skimming?
+- what could be the sources of light in the scene of the panel?
+- what is the artist doing for world building?
+	- anything revealed about the geography, climate, atmosphere, sociological, temporal, political conditions?
+- *reading comics like this could be an extension of appreciating good paintings*
+- second pass of a chapter just to look at the art and visual storytelling.
+	- do not read dialogues
+	- guaranteed to notice new things in good comics
+- various writers and artists doing their own treatments on established comic book stories and characters is like improvising on jazz standards
+- real world connections coming out of comic books
+	- parallels related to society, gender, politics, history, cinema, corruption, etc.
+	- the art itself resemble painting and writing

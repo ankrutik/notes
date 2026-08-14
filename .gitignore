@@ -7,4 +7,5 @@
 .DS_Store
 other/typesetting/*/.ScribusThumbs/*
 .trash/*
-
+logseq/bak
+logseq/.recycle/

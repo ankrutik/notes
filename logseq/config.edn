@@ -54,7 +54,7 @@
 
  ;; Enable Block timestamps.
  ;; Default value: false
- :feature/enable-block-timestamps? false
+ :feature/enable-block-timestamps? true
 
  ;; Disable accent marks when searching.
  ;; After changing this setting, rebuild the search index by pressing (^C ^S).
@@ -222,7 +222,9 @@
     :inputs [:14d :today]
     :result-transform (fn [result]
                         (sort-by (fn [h]
-                                   (get h :block/priority "Z")) result))
+                                   ;;(get h :block/priority "Z")
+                                   (- (get h :block/created-at 20260806))                            
+                                   ) result))
     :group-by-page? false
     :collapsed? false}
    {:title "📅 NEXT"
@@ -419,4 +421,5 @@
  ;;      ;use triple underscore `___` for slash `/` in page title
  ;;      ;use Percent-encoding for other invalid characters
  :file/name-format :triple-lowbar
- :journal/page-title-format "yyyyMMdd"}
+ :journal/page-title-format "yyyyMMdd"
+ :graph/settings {:journal? false}}
