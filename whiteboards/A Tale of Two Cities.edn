@@ -2186,7 +2186,7 @@
 :italic false
 :text "Erase anything"}}
 :block/updated-at 1788317913166} 
-{:block/created-at 1788318066869
+{:block/created-at 1788531900364
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2200,12 +2200,12 @@
 :isAspectRatioLocked true
 :isLocked false
 :objectFit "fill"
-:point [25464 -1984]
+:point [21288 -9304]
 :parentId "6a9790d7-925a-4321-999c-a3d201f96c6b"
-:nonce 1788318056883
+:nonce 1788318056997
 :clipping 0}}
-:block/updated-at 1788318066869} 
-{:block/created-at 1788319240187
+:block/updated-at 1788531900364} 
+{:block/created-at 1788531900364
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2219,12 +2219,12 @@
 :isAspectRatioLocked true
 :isLocked false
 :objectFit "fill"
-:point [30040 -2520]
+:point [25864 -9840]
 :parentId "6a9790d7-925a-4321-999c-a3d201f96c6b"
-:nonce 1788319167336
+:nonce 1788319167450
 :clipping 0}}
-:block/updated-at 1788319240187} 
-{:block/created-at 1788319249180
+:block/updated-at 1788531900364} 
+{:block/created-at 1788531934388
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2238,12 +2238,12 @@
 :isAspectRatioLocked true
 :isLocked false
 :objectFit "fill"
-:point [30664 -1512]
+:point [29240 -9936]
 :parentId "6a9790d7-925a-4321-999c-a3d201f96c6b"
-:nonce 1788319226158
+:nonce 1788319226505
 :clipping 0}}
-:block/updated-at 1788319249180} 
-{:block/created-at 1788319394170
+:block/updated-at 1788531934388} 
+{:block/created-at 1788531900363
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2257,12 +2257,12 @@
 :isAspectRatioLocked true
 :isLocked false
 :objectFit "fill"
-:point [31408 -2560]
+:point [27232 -9880]
 :parentId "6a9790d7-925a-4321-999c-a3d201f96c6b"
-:nonce 1788319387631
+:nonce 1788319387745
 :clipping 0}}
-:block/updated-at 1788319394170} 
-{:block/created-at 1788319445523
+:block/updated-at 1788531900363} 
+{:block/created-at 1788531900364
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2276,12 +2276,12 @@
 :isAspectRatioLocked true
 :isLocked false
 :objectFit "fill"
-:point [24616 -824]
+:point [20440 -8144]
 :parentId "6a9790d7-925a-4321-999c-a3d201f96c6b"
-:nonce 1788319437968
+:nonce 1788319438082
 :clipping 0}}
-:block/updated-at 1788319445523} 
-{:block/created-at 1788319512306
+:block/updated-at 1788531900364} 
+{:block/created-at 1788531900364
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2303,15 +2303,15 @@
 :padding 4
 :fontWeight 400
 :noFill true
-:point [26232 -400]
+:point [22056 -7720]
 :lineHeight 1.2
 :fontSize 48
 :parentId "6a9790d7-925a-4321-999c-a3d201f96c6b"
-:nonce 1788319489291
+:nonce 1788319489405
 :italic false
 :text "Stopping the Dover Mail\nHarry Furniss\n1910"}}
-:block/updated-at 1788319512306} 
-{:block/created-at 1788319530552
+:block/updated-at 1788531900364} 
+{:block/created-at 1788531900364
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2328,7 +2328,7 @@
 :id "ea57c722-a67d-11f1-a4b9-0ff620bde7f1"
 :fontWeight 400
 :noFill true
-:point [26172.35 -216]
+:point [21996.35 -7536]
 :fontSize 20
 :handles 
 {:start 
@@ -2344,9 +2344,26 @@
 :decorations 
 {:end "arrow"}
 :parentId "6a9790d7-925a-4321-999c-a3d201f96c6b"
-:nonce 1788319515953
+:nonce 1788319516067
 :italic false}}
-:block/updated-at 1788319530552})
+:block/updated-at 1788531900364} 
+{:block/created-at 1788531900364
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:rotation 0
+:index 86
+:scale [1 1]
+:scaleLevel "xl"
+:type "html"
+:size [1448 2096]
+:id "400f39b0-a86c-11f1-ba49-b10cb190122a"
+:isLocked false
+:point [22712 -7344]
+:parentId "6a9790d7-925a-4321-999c-a3d201f96c6b"
+:nonce 1788531832182
+:html "<meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"><img src=\"https://imgs.search.brave.com/lPSIF36EmTzmuGzzV_i8wzGF7izsILpx2cJ5mUxmci0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2MxL0NoYXJsZXNf/RGlja2Vuc18oMTgx/Mi0xODcwKS5qcGc\" alt=\"https://imgs.search.brave.com/lPSIF36EmTzmuGzzV_i8wzGF7izsILpx2cJ5mUxmci0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2MxL0NoYXJsZXNf/RGlja2Vuc18oMTgx/Mi0xODcwKS5qcGc\" width=\"718\" height=\"1040\" class=\"shrinkToFit\">"}}
+:block/updated-at 1788531900364})
 :pages (
 {:block/uuid #uuid "6a9790d7-925a-4321-999c-a3d201f96c6b"
 :block/properties 
@@ -2601,8 +2618,9 @@
 :type "image"
 :src "assets/image_1788319437270_0.png"
 :size [652 1000]}]
-:shapes-index ("2eb87ee0-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ee1-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ee2-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ee3-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ee4-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ee5-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ee6-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ee7-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ee8-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ee9-a67a-11f1-a4b9-0ff620bde7f1" "2eb87eea-a67a-11f1-a4b9-0ff620bde7f1" "2eb87eeb-a67a-11f1-a4b9-0ff620bde7f1" "2eb87eec-a67a-11f1-a4b9-0ff620bde7f1" "2eb87eed-a67a-11f1-a4b9-0ff620bde7f1" "2eb87eee-a67a-11f1-a4b9-0ff620bde7f1" "2eb87eef-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef0-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef1-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef2-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef3-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef4-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef5-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef6-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef7-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef8-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef9-a67a-11f1-a4b9-0ff620bde7f1" "2eb87efa-a67a-11f1-a4b9-0ff620bde7f1" "2eb87efb-a67a-11f1-a4b9-0ff620bde7f1" "2eb87efc-a67a-11f1-a4b9-0ff620bde7f1" "2eb87efd-a67a-11f1-a4b9-0ff620bde7f1" "2eb87efe-a67a-11f1-a4b9-0ff620bde7f1" "2eb87eff-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f00-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f01-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f02-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f03-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f04-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f05-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f06-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f07-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f08-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f09-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f0a-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f0b-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f0c-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f0d-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f0e-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f0f-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f10-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f11-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f12-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f13-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f0-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f1-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f2-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f3-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f4-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f5-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f6-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f7-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f8-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f9-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5fa-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5fb-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5fc-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5fd-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5fe-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5ff-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a600-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a601-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a602-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a603-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a604-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a605-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a606-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a607-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a608-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a609-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a60a-a67a-11f1-a4b9-0ff620bde7f1" "846f1790-a67a-11f1-a4b9-0ff620bde7f1" "1a7c69c0-a67d-11f1-a4b9-0ff620bde7f1" "3d679f40-a67d-11f1-a4b9-0ff620bde7f1" "9dc56c00-a67d-11f1-a4b9-0ff620bde7f1" "bb8c1a40-a67d-11f1-a4b9-0ff620bde7f1" "da663450-a67d-11f1-a4b9-0ff620bde7f1" "ea57c722-a67d-11f1-a4b9-0ff620bde7f1")}}
-:block/updated-at 1788319530552
+:shapes-index ("2eb87ee0-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ee1-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ee2-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ee3-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ee4-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ee5-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ee6-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ee7-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ee8-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ee9-a67a-11f1-a4b9-0ff620bde7f1" "2eb87eea-a67a-11f1-a4b9-0ff620bde7f1" "2eb87eeb-a67a-11f1-a4b9-0ff620bde7f1" "2eb87eec-a67a-11f1-a4b9-0ff620bde7f1" "2eb87eed-a67a-11f1-a4b9-0ff620bde7f1" "2eb87eee-a67a-11f1-a4b9-0ff620bde7f1" "2eb87eef-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef0-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef1-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef2-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef3-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef4-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef5-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef6-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef7-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef8-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef9-a67a-11f1-a4b9-0ff620bde7f1" "2eb87efa-a67a-11f1-a4b9-0ff620bde7f1" "2eb87efb-a67a-11f1-a4b9-0ff620bde7f1" "2eb87efc-a67a-11f1-a4b9-0ff620bde7f1" "2eb87efd-a67a-11f1-a4b9-0ff620bde7f1" "2eb87efe-a67a-11f1-a4b9-0ff620bde7f1" "2eb87eff-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f00-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f01-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f02-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f03-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f04-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f05-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f06-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f07-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f08-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f09-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f0a-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f0b-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f0c-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f0d-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f0e-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f0f-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f10-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f11-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f12-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f13-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f0-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f1-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f2-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f3-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f4-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f5-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f6-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f7-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f8-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f9-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5fa-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5fb-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5fc-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5fd-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5fe-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5ff-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a600-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a601-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a602-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a603-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a604-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a605-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a606-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a607-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a608-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a609-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a60a-a67a-11f1-a4b9-0ff620bde7f1" "846f1790-a67a-11f1-a4b9-0ff620bde7f1" "1a7c69c0-a67d-11f1-a4b9-0ff620bde7f1" "3d679f40-a67d-11f1-a4b9-0ff620bde7f1" "9dc56c00-a67d-11f1-a4b9-0ff620bde7f1" "bb8c1a40-a67d-11f1-a4b9-0ff620bde7f1" "da663450-a67d-11f1-a4b9-0ff620bde7f1" "ea57c722-a67d-11f1-a4b9-0ff620bde7f1" "400f39b0-a86c-11f1-ba49-b10cb190122a")}}
+:block/journal? false
+:block/updated-at 1788531934388
 :block/created-at 1788317911900
 :block/type "whiteboard"
 :block/name "a tale of two cities"
