@@ -1,0 +1,9 @@
+/* Regular text throughout the app */
+body, .ls-block, .cp__sidebar-main-content {
+  font-family: "Atkinson Hyperlegible Next, Regular", sans-serif !important;
+}
+
+/* Code blocks and inline code */
+code, pre, .CodeMirror, .cp__block-editor-code {
+  font-family: "Atkinson Hyperlegible Next, Light", monospace !important;
+}
