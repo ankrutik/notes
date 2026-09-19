@@ -42,5 +42,5 @@ jobs:
           path: build # must match output-directory above
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@vPrefersNonDefaultGPU=true
+        uses: actions/deploy-pages@v4
 
