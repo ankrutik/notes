@@ -1,4 +1,5 @@
--
+public:: true
+
 - #film #routine #manifesto
 - # Film
   Art is subjective. The film makers had their point to make but **some of it will be left to the audience**.
