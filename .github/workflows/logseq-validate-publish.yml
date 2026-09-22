@@ -1,0 +1,46 @@
+name: Validate and Publish Logseq Graph to GitHub Pages
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  # Triggers the workflow on push to the main branch
+  # push: { branches: ["main"] }
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    name: Validate then Publish Logseq Graph
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run graph-validator tests
+        uses: logseq/graph-validator@main
+      - name: Build Logseq graph
+        uses: logseq/publish-spa@main
+        with:
+          output-directory: build # must match path below
+          accent-color: indigo # options: tomato, red, crimson, pink, plum, purple, violet, indigo, blue, cyan, teal, green, grass, orange, brown
+          # Excludes the `assets-exist-and-are-used` test
+          exclude: assets-exist-and-are-used
+      - name: Configure for GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build # must match output-directory above
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
