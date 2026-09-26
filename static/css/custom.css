@@ -1,5 +1,6 @@
 /* Regular text throughout the app */
-body, .ls-block, .cp__sidebar-main-content {
+body, .ls-block, .editor-inner, .cp__sidebar-main-content {
+  --font-family: "Nimbus Roman", sans-serif !important;
   font-family: "Atkinson Hyperlegible Next, Regular", sans-serif !important;
 }
 
