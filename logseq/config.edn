@@ -301,7 +301,7 @@
  ;;  :charge-range    600}   ; Default value: 600
 
  ;; Favorites to list on the left sidebar
- :favorites ["dailydriver" "later" "books/why bob dylan matters/listen"]
+ :favorites ["DnD" "dailydriver" "later" "books/why bob dylan matters/listen"]
 
  ;; Set flashcards interval.
  ;; Expected value:
