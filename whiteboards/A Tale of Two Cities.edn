@@ -1,34 +1,5 @@
 {:blocks (
-{:block/created-at 1788317913163
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:isSizeLocked true
-:stroke "var(--tl-foreground, #000)"
-:borderRadius 0
-:index 56
-:scale [1 1]
-:scaleLevel "xl"
-:fill "#ffffff"
-:type "text"
-:size [357 68]
-:fontFamily "'Inter'"
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:id "2eb8a5f4-a67a-11f1-a4b9-0ff620bde7f1"
-:padding 4
-:fontWeight 700
-:noFill true
-:point [595.2254289408047 58.86847566029519]
-:lineHeight 1.2
-:fontSize 48
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1667212477690
-:italic false
-:text "Whiteboards!"}}
-:block/updated-at 1788317913163} 
-{:block/created-at 1788317913164
+{:block/created-at 1790419705056
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -36,545 +7,66 @@
 :stroke "var(--tl-foreground, #000)"
 :rotation 0
 :borderRadius 0
-:index 16
+:index 36
 :scale [1 1]
 :ls-type "whiteboard-shape"
 :fill "#ffffff"
 :type "text"
-:size [83 34]
+:size [279 34]
 :fontFamily "'Inter'"
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
-:id "2eb87ef0-a67a-11f1-a4b9-0ff620bde7f1"
+:id "2eb87f04-a67a-11f1-a4b9-0ff620bde7f1"
 :padding 4
 :fontWeight 700
 :noFill true
-:point [734.2313889558754 468.1421227092193]
+:point [-4536 1808]
 :lineHeight 1.2
 :fontSize 20
 :parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366266365
+:nonce 1664465570988
 :italic false
-:text "Canvas"}}
-:block/updated-at 1788317913164} 
-{:block/created-at 1788317913164
+:text "Double Click on the Canvas"}}
+:block/updated-at 1790419705056} 
+{:block/created-at 1790419705055
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
-{:stroke "gray"
-:index 40
-:scale [1 1]
-:ls-type "whiteboard-shape"
-:fill "gray"
-:type "line"
-:strokeType "line"
-:strokeWidth 1
-:opacity 1
-:label ""
-:id "2eb87f08-a67a-11f1-a4b9-0ff620bde7f1"
-:fontWeight 400
-:noFill true
-:point [1072.4686273338484 303.9751251093385]
-:fontSize 20
-:handles 
-{:start 
-{:id "start"
-:canBind true
-:point [0 0]
-:bindingId "2eb8cd07-a67a-11f1-a4b9-0ff620bde7f1"}
-:end 
-{:id "end"
-:canBind true
-:point [79.74 0.41]
-:bindingId "2eb8cd08-a67a-11f1-a4b9-0ff620bde7f1"}}
-:decorations 
-{:end "arrow"}
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664466317953
-:italic false}}
-:block/updated-at 1788317913164} 
-{:block/created-at 1788317913164
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:isSizeLocked true
-:stroke "var(--tl-foreground, #000)"
-:rotation 0
-:borderRadius 0
-:index 15
-:scale [1 1]
-:ls-type "whiteboard-shape"
-:fill "#ffffff"
-:type "text"
-:size [107 34]
-:fontFamily "'Inter'"
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:id "2eb87eef-a67a-11f1-a4b9-0ff620bde7f1"
-:padding 4
-:fontWeight 700
-:noFill true
-:point [269.7448314329995 472.9979644038741]
-:lineHeight 1.2
-:fontSize 20
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366266186
-:italic false
-:text "Outliner"}}
-:block/updated-at 1788317913164} 
-{:block/created-at 1788317913164
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:isSizeLocked true
-:stroke "var(--tl-foreground, #000)"
-:borderRadius 0
-:index 3
-:scale [1 1]
-:scaleLevel "xl"
-:ls-type "whiteboard-shape"
-:fill "#ffffff"
-:type "text"
-:size [299 68]
-:fontFamily "'Inter'"
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:id "2eb87ee3-a67a-11f1-a4b9-0ff620bde7f1"
-:padding 4
-:fontWeight 700
-:noFill true
-:point [204.0169386539128 56.49977990267462]
-:lineHeight 1.2
-:fontSize 48
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366266118
-:italic false
-:text "Welcome to"}}
-:block/updated-at 1788317913164} 
-{:block/created-at 1788317913164
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:isSizeLocked true
-:stroke "var(--tl-foreground, #000)"
-:rotation 0
-:borderRadius 0
-:index 53
-:scale [1 1]
-:scaleLevel "md"
-:ls-type "whiteboard-shape"
-:fill "#ffffff"
-:type "text"
-:size [176 34]
-:fontFamily "'Inter'"
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:id "2eb8a5f1-a67a-11f1-a4b9-0ff620bde7f1"
-:padding 4
-:fontWeight 700
-:noFill true
-:point [7783.8615829772125 501.84971389721795]
-:lineHeight 1.2
-:fontSize 20
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366321386
-:italic false
-:text "Website Embeds"}}
-:block/updated-at 1788317913164} 
-{:block/created-at 1788317913164
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:isSizeLocked true
-:stroke "var(--tl-foreground, #000)"
-:rotation 0
-:borderRadius 0
-:index 54
-:scale [1 1]
-:scaleLevel "lg"
-:ls-type "whiteboard-shape"
-:fill "#ffffff"
-:type "text"
-:size [844 49]
-:fontFamily "'Inter'"
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:id "2eb8a5f2-a67a-11f1-a4b9-0ff620bde7f1"
-:padding 4
-:fontWeight 400
-:noFill true
-:point [7121.847619597745 129.56313036190397]
-:lineHeight 1.2
-:fontSize 32
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366268235
-:italic false
-:text "Paste different media types to stimulate your thoughts."}}
-:block/updated-at 1788317913164} 
-{:block/created-at 1788317913164
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:isSizeLocked true
-:stroke "var(--tl-foreground, #000)"
-:borderRadius 0
-:index 34
-:scale [1 1]
-:scaleLevel "xl"
-:ls-type "whiteboard-shape"
-:fill "#ffffff"
-:type "text"
-:size [475 68]
-:fontFamily "'Inter'"
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:id "2eb87f02-a67a-11f1-a4b9-0ff620bde7f1"
-:padding 4
-:fontWeight 700
-:noFill true
-:point [4938.871166081751 53.79789703021379]
-:lineHeight 1.2
-:fontSize 48
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366266665
-:italic false
-:text "Try it out right here:"}}
-:block/updated-at 1788317913164} 
-{:block/created-at 1788317913164
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:stroke "var(--ls-primary-text-color, #000)"
-:index 35
-:scale [1 1]
-:ls-type "whiteboard-shape"
-:fill "var(--ls-secondary-background-color)"
-:type "line"
-:strokeType "line"
-:strokeWidth 1
-:opacity 1
-:label "hit enter"
-:id "2eb87f03-a67a-11f1-a4b9-0ff620bde7f1"
-:fontWeight 400
-:noFill true
-:point [4176.2559294555585 201.46865332556217]
-:fontSize 20
-:handles 
-{:start 
-{:id "start"
-:canBind true
-:point [0 0]
-:bindingId "2eb8cd00-a67a-11f1-a4b9-0ff620bde7f1"}
-:end 
-{:id "end"
-:canBind true
-:point [128.5 0.2]
-:bindingId "2eb8cd01-a67a-11f1-a4b9-0ff620bde7f1"}}
-:decorations 
-{:end "arrow"}
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664465986946
-:italic false}}
-:block/updated-at 1788317913164} 
-{:block/created-at 1788317913164
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:stroke "var(--ls-primary-text-color, #000)"
-:index 24
-:scale [1 1]
-:ls-type "whiteboard-shape"
-:fill "var(--ls-secondary-background-color)"
-:type "line"
-:strokeType "line"
-:strokeWidth 1
-:opacity 1
-:label ""
-:id "2eb87ef8-a67a-11f1-a4b9-0ff620bde7f1"
-:fontWeight 400
-:noFill true
-:point [2758.5673701662217 187.62423175354206]
-:fontSize 20
-:handles 
-{:start 
-{:id "start"
-:canBind true
-:point [40.45 0]}
-:end 
-{:id "end"
-:canBind true
-:point [0 0]}}
-:decorations 
-{:end "arrow"}
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664464890353
-:italic false}}
-:block/updated-at 1788317913164} 
-{:block/created-at 1788317913164
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:index 61
+{:index 70
 :scale [1 1]
 :type "image"
-:assetId "a8d0e4f3-590e-11ed-9035-ebf85ccffec3"
-:size [100 100.5]
+:assetId "a8d0bde0-590e-11ed-9035-ebf85ccffec3"
+:size [39.092513518779924 39.092513518779924]
 :opacity 1
-:id "2eb8a5f9-a67a-11f1-a4b9-0ff620bde7f1"
+:id "2eb8a602-a67a-11f1-a4b9-0ff620bde7f1"
 :isAspectRatioLocked true
 :objectFit "fill"
-:point [7140.30291599857 192.3780661667921]
+:point [-4592 1800]
 :parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1667215502231
+:nonce 1667215502042
 :clipping 0}}
-:block/updated-at 1788317913164} 
-{:block/created-at 1788317913164
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705055
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
-{:stroke "gray"
-:index 43
-:scale [1 1]
-:ls-type "whiteboard-shape"
-:fill "gray"
-:type "line"
-:strokeType "line"
-:strokeWidth 1
-:opacity 1
-:label ""
-:id "2eb87f0b-a67a-11f1-a4b9-0ff620bde7f1"
-:fontWeight 400
-:noFill true
-:point [5728.613350968252 286.38110713319475]
-:fontSize 20
-:handles 
-{:start 
-{:id "start"
-:canBind true
-:point [0 0]}
-:end 
-{:id "end"
-:canBind true
-:point [108.93 0]}}
-:decorations 
-{:end "arrow"}
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664466305828
-:italic false}}
-:block/updated-at 1788317913164} 
-{:block/created-at 1788317913164
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:stroke "#ababab"
-:rotation 0
-:borderRadius 2
-:index 41
-:scale [1 1]
-:ls-type "whiteboard-shape"
-:fill "var(--ls-secondary-background-color)"
-:type "box"
-:size [1071.46875 578.7624827596054]
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:label ""
-:id "2eb87f09-a67a-11f1-a4b9-0ff620bde7f1"
-:fontWeight 400
-:noFill false
-:point [5835.248449169169 6.073986839513054]
-:fontSize 20
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366266337
-:italic false}}
-:block/updated-at 1788317913164} 
-{:block/created-at 1788317913164
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:isSizeLocked true
-:stroke "var(--tl-foreground, #000)"
-:rotation 0
-:borderRadius 0
-:index 20
-:scale [1 1]
-:scaleLevel "lg"
-:ls-type "whiteboard-shape"
-:fill "#ffffff"
-:type "text"
-:size [1009 126]
-:fontFamily "'Inter'"
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:id "2eb87ef4-a67a-11f1-a4b9-0ff620bde7f1"
-:padding 4
-:fontWeight 400
-:noFill true
-:point [1195.2177197089186 150.13892604498506]
-:lineHeight 1.2
-:fontSize 32
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366267231
-:italic false
-:text "Put thoughts from your knowledge base (your current graph)\nas well as new ones next to each other on a spatial canvas\ntogether with shapes, drawings, website embeds and connectors."}}
-:block/updated-at 1788317913164} 
-{:block/created-at 1788317913164
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:isSizeLocked true
-:stroke "var(--tl-foreground, #000)"
-:rotation 0
-:borderRadius 0
-:index 45
-:scale [1 1]
-:scaleLevel "lg"
-:ls-type "whiteboard-shape"
-:fill "#ffffff"
-:type "text"
-:size [1009 87]
-:fontFamily "'Inter'"
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:id "2eb87f0d-a67a-11f1-a4b9-0ff620bde7f1"
-:padding 4
-:fontWeight 400
-:noFill true
-:point [5877.671694575297 128.89278044052935]
-:lineHeight 1.2
-:fontSize 32
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366267033
-:italic false
-:text "Toggle blocks and pages on the canvas between a compact focus\nview or the expanded outliner view."}}
-:block/updated-at 1788317913164} 
-{:block/created-at 1788317913164
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:isSizeLocked true
-:stroke "var(--tl-foreground, #000)"
-:borderRadius 0
-:index 5
-:scale [1 1]
-:scaleLevel "md"
-:ls-type "whiteboard-shape"
-:fill "#ffffff"
-:type "text"
-:size [275 34]
-:fontFamily "'Inter'"
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:id "2eb87ee5-a67a-11f1-a4b9-0ff620bde7f1"
-:padding 4
-:fontWeight 700
-:noFill true
-:point [2883.8887730838196 204.21258066228074]
-:lineHeight 1.2
-:fontSize 20
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366266559
-:italic false
-:text "Move around the canvas"}}
-:block/updated-at 1788317913164} 
-{:block/created-at 1788317913164
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:index 64
+{:index 83
 :scale [1 1]
 :type "image"
-:assetId "a8d1cf51-590e-11ed-9035-ebf85ccffec3"
-:size [38 38]
+:assetId "bb8b7e00-a67d-11f1-a4b9-0ff620bde7f1"
+:size [1552.3543282796672 2380.9115464412075]
 :opacity 1
-:id "2eb8a5fc-a67a-11f1-a4b9-0ff620bde7f1"
+:id "bb8c1a40-a67d-11f1-a4b9-0ff620bde7f1"
 :isAspectRatioLocked true
+:isLocked false
 :objectFit "fill"
-:point [4668.904549052878 0]
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1667215501870
+:point [10840 -6472]
+:parentId "6a9790d7-925a-4321-999c-a3d201f96c6b"
+:nonce 1788319438188
 :clipping 0}}
-:block/updated-at 1788317913164} 
-{:block/created-at 1788317913164
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:stroke "var(--ls-primary-text-color, #000)"
-:index 26
-:scale [1 1]
-:ls-type "whiteboard-shape"
-:fill "var(--ls-secondary-background-color)"
-:type "line"
-:strokeType "line"
-:strokeWidth 1
-:opacity 1
-:label ""
-:id "2eb87efa-a67a-11f1-a4b9-0ff620bde7f1"
-:fontWeight 400
-:noFill true
-:point [2824.3141502854396 412.62423175354206]
-:fontSize 20
-:handles 
-{:start 
-{:id "start"
-:canBind true
-:point [0 0.54]}
-:end 
-{:id "end"
-:canBind true
-:point [52.21 0]}}
-:decorations 
-{:end "arrow"}
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664464964097
-:italic false}}
-:block/updated-at 1788317913164} 
-{:block/created-at 1788317913164
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:stroke "var(--ls-primary-text-color, #000)"
-:index 68
-:scale [1 1]
-:ls-type "whiteboard-shape"
-:fill "var(--ls-secondary-background-color)"
-:type "line"
-:strokeType "line"
-:strokeWidth 1
-:opacity 1
-:label ""
-:id "2eb8a600-a67a-11f1-a4b9-0ff620bde7f1"
-:fontWeight 400
-:noFill true
-:point [3619.1165248545385 196.4678476092372]
-:fontSize 20
-:handles 
-{:start 
-{:id "start"
-:canBind true
-:point [0 0]
-:bindingId "2eb8cd0a-a67a-11f1-a4b9-0ff620bde7f1"}
-:end 
-{:id "end"
-:canBind true
-:point [191.81 0.65]
-:bindingId "2eb8cd0b-a67a-11f1-a4b9-0ff620bde7f1"}}
-:decorations 
-{:end "arrow"}
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664465608656
-:italic false}}
-:block/updated-at 1788317913164} 
-{:block/created-at 1788317913165
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705055
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -587,690 +79,48 @@
 :id "2eb8a5ff-a67a-11f1-a4b9-0ff620bde7f1"
 :isAspectRatioLocked true
 :objectFit "fill"
-:point [5691.90953555179 0]
+:point [-3912 1672]
 :parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1667215501898
+:nonce 1667215502004
 :clipping 0}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705054
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
-{:index 63
-:scale [1 1]
-:type "image"
-:assetId "a8d1f661-590e-11ed-9035-ebf85ccffec3"
-:size [100.5 100]
-:opacity 1
-:id "2eb8a5fb-a67a-11f1-a4b9-0ff620bde7f1"
-:isAspectRatioLocked true
-:objectFit "fill"
-:point [7821.171696290311 192.6280661667921]
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1667215502330
-:clipping 0}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:index 58
-:scale [1 1]
-:type "image"
-:assetId "a8cffa90-590e-11ed-9035-ebf85ccffec3"
-:size [108 364]
-:opacity 1
-:id "2eb8a5f6-a67a-11f1-a4b9-0ff620bde7f1"
-:isAspectRatioLocked true
-:objectFit "fill"
-:point [2758.9569697893185 160.85783779473695]
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1667215501864
-:clipping 0}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:index 57
-:scale [1 1]
-:type "image"
-:assetId "a8cfac70-590e-11ed-9035-ebf85ccffec3"
-:size [128 128]
-:opacity 1
-:id "2eb8a5f5-a67a-11f1-a4b9-0ff620bde7f1"
-:isAspectRatioLocked true
-:objectFit "fill"
-:point [479.8611113809711 28.651668207736748]
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1667215501684
-:clipping 0}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:isSizeLocked true
-:stroke "var(--tl-foreground, #000)"
-:borderRadius 0
-:index 42
+{:stroke ""
+:index 85
 :scale [1 1]
 :scaleLevel "xl"
-:ls-type "whiteboard-shape"
-:fill "#ffffff"
-:type "text"
-:size [914 68]
-:fontFamily "'Inter'"
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:id "2eb87f0a-a67a-11f1-a4b9-0ff620bde7f1"
-:padding 4
-:fontWeight 700
-:noFill true
-:point [5877.34878817132 52.11961082051539]
-:lineHeight 1.2
-:fontSize 48
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366266997
-:italic false
-:text "Switch between focus & outliner mode"}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:isSizeLocked true
-:stroke "var(--tl-foreground, #000)"
-:borderRadius 0
-:index 30
-:scale [1 1]
-:scaleLevel "xs"
-:ls-type "whiteboard-shape"
-:fill "#ffffff"
-:type "text"
-:size [101 22]
-:fontFamily "'Inter'"
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:id "2eb87efe-a67a-11f1-a4b9-0ff620bde7f1"
-:padding 4
-:fontWeight 400
-:noFill true
-:point [2657.5377594479814 461.32491442804724]
-:lineHeight 1.2
-:fontSize 10
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664464808159
-:italic false
-:text "Blocks or Pages"}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:index 77
-:scale [1 1]
-:type "image"
-:assetId "a8d32ee0-590e-11ed-9035-ebf85ccffec3"
-:size [235.44813504195554 156.96542336130426]
-:opacity 1
-:id "2eb8a609-a67a-11f1-a4b9-0ff620bde7f1"
-:isAspectRatioLocked true
-:objectFit "fill"
-:point [7085.273064760749 322.45589626022195]
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1667215502922
-:clipping 0}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:index 59
-:scale [1 1]
-:type "image"
-:assetId "a8d1f662-590e-11ed-9035-ebf85ccffec3"
-:size [360.3328152655931 332.1904361254012]
-:opacity 1
-:id "2eb8a5f7-a67a-11f1-a4b9-0ff620bde7f1"
-:isAspectRatioLocked true
-:objectFit "fill"
-:point [3814.9280225497287 164.35136418554112]
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1667215501790
-:clipping 0}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:index 72
-:scale [1 1]
-:type "image"
-:assetId "a8d06fc0-590e-11ed-9035-ebf85ccffec3"
-:size [358 217.5]
-:opacity 1
-:id "2eb8a604-a67a-11f1-a4b9-0ff620bde7f1"
-:isAspectRatioLocked true
-:objectFit "fill"
-:point [602.3083590913811 280.0456058983905]
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1667215502262
-:clipping 0}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:stroke "var(--ls-primary-text-color, #000)"
-:index 55
-:scale [1 1]
-:ls-type "whiteboard-shape"
-:fill "var(--ls-secondary-background-color)"
+:fill ""
 :type "line"
 :strokeType "line"
 :strokeWidth 1
 :opacity 1
 :label ""
-:id "2eb8a5f3-a67a-11f1-a4b9-0ff620bde7f1"
+:id "ea57c722-a67d-11f1-a4b9-0ff620bde7f1"
 :fontWeight 400
 :noFill true
-:point [2752.8873701662214 447.1769239765757]
+:point [12396.35 -5864]
 :fontSize 20
 :handles 
 {:start 
 {:id "start"
 :canBind true
-:point [41.57 0]}
+:point [223.23 0]
+:bindingId "ea57c720-a67d-11f1-a4b9-0ff620bde7f1"}
 :end 
 {:id "end"
 :canBind true
-:point [0 0.29]
-:bindingId "2eb8cd09-a67a-11f1-a4b9-0ff620bde7f1"}}
+:point [0 210.88]
+:bindingId "ea57c721-a67d-11f1-a4b9-0ff620bde7f1"}}
 :decorations 
 {:end "arrow"}
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366317903
+:parentId "6a9790d7-925a-4321-999c-a3d201f96c6b"
+:nonce 1788319516173
 :italic false}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:index 60
-:scale [1 1]
-:type "image"
-:assetId "a8d0e4f2-590e-11ed-9035-ebf85ccffec3"
-:size [556 360]
-:opacity 1
-:id "2eb8a5f8-a67a-11f1-a4b9-0ff620bde7f1"
-:isAspectRatioLocked true
-:objectFit "fill"
-:point [5921.28003020123 304.8164571773209]
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1667215501879
-:clipping 0}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:index 62
-:scale [1 1]
-:type "image"
-:assetId "a8d1cf50-590e-11ed-9035-ebf85ccffec3"
-:size [100 100]
-:opacity 1
-:id "2eb8a5fa-a67a-11f1-a4b9-0ff620bde7f1"
-:isAspectRatioLocked true
-:objectFit "fill"
-:point [7480.7373061444405 192.6280661667921]
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1667215502272
-:clipping 0}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:stroke "gray"
-:index 39
-:scale [1 1]
-:ls-type "whiteboard-shape"
-:fill "gray"
-:type "line"
-:strokeType "line"
-:strokeWidth 1
-:opacity 1
-:label ""
-:id "2eb87f07-a67a-11f1-a4b9-0ff620bde7f1"
-:fontWeight 400
-:noFill true
-:point [4569.113350968245 285.9811071331951]
-:fontSize 20
-:handles 
-{:start 
-{:id "start"
-:canBind true
-:point [0 0]
-:bindingId "2eb8cd06-a67a-11f1-a4b9-0ff620bde7f1"}
-:end 
-{:id "end"
-:canBind true
-:point [96.46 0.4]}}
-:decorations 
-{:end "arrow"}
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664466305565
-:italic false}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:stroke "#ababab"
-:rotation 0
-:borderRadius 2
-:index 2
-:scale [1 1]
-:ls-type "whiteboard-shape"
-:fill "var(--ls-secondary-background-color)"
-:type "box"
-:size [1071.46875 578.7624827596054]
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:label ""
-:id "2eb87ee2-a67a-11f1-a4b9-0ff620bde7f1"
-:fontWeight 400
-:noFill false
-:point [0 0.13863227640877085]
-:fontSize 20
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366265814
-:italic false}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:isSizeLocked true
-:stroke "var(--tl-foreground, #000)"
-:rotation 0
-:borderRadius 0
-:index 75
-:scale [1 1]
-:scaleLevel "lg"
-:ls-type "whiteboard-shape"
-:fill "#ffffff"
-:type "text"
-:size [756 87]
-:fontFamily "'Inter'"
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:id "2eb8a607-a67a-11f1-a4b9-0ff620bde7f1"
-:padding 4
-:fontWeight 700
-:noFill true
-:point [1302.7534235477142 452.49799161039493]
-:lineHeight 1.2
-:fontSize 32
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366266969
-:italic false
-:text "Break out of the linearity of pages and enjoy the\nfreedom of an infinite canvas."}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:stroke "gray"
-:index 78
-:scale [1 1]
-:fill "gray"
-:type "line"
-:strokeType "line"
-:strokeWidth 1
-:opacity 1
-:label ""
-:id "2eb8a60a-a67a-11f1-a4b9-0ff620bde7f1"
-:fontWeight 400
-:noFill true
-:point [6907.72 286.9]
-:fontSize 20
-:handles 
-{:start 
-{:id "start"
-:canBind true
-:point [0 0.4]
-:bindingId "2eb8cd0c-a67a-11f1-a4b9-0ff620bde7f1"}
-:end 
-{:id "end"
-:canBind true
-:point [98.18 0]
-:bindingId "2eb8cd0d-a67a-11f1-a4b9-0ff620bde7f1"}}
-:decorations 
-{:end "arrow"}
-:parentId "637239f2-9680-4c82-802c-8858d9835c80"
-:nonce 1668430343546
-:italic false}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:isSizeLocked true
-:stroke "var(--tl-foreground, #000)"
-:borderRadius 0
-:index 19
-:scale [1 1]
-:scaleLevel "xl"
-:ls-type "whiteboard-shape"
-:fill "#ffffff"
-:type "text"
-:size [357 68]
-:fontFamily "'Inter'"
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:id "2eb87ef3-a67a-11f1-a4b9-0ff620bde7f1"
-:padding 4
-:fontWeight 700
-:noFill true
-:point [1195.2177197089186 52.077792876827516]
-:lineHeight 1.2
-:fontSize 48
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366266057
-:italic false
-:text "The Benefits"}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:index 48
-:scale [1 1]
-:type "image"
-:assetId "a8d66330-590e-11ed-9035-ebf85ccffec3"
-:size [358 217.5]
-:opacity 1
-:id "2eb87f10-a67a-11f1-a4b9-0ff620bde7f1"
-:isAspectRatioLocked true
-:objectFit "fill"
-:point [141.088750357565 278.9662394221]
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1667215502035
-:clipping 0}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:isSizeLocked true
-:stroke "var(--tl-foreground, #000)"
-:borderRadius 0
-:index 32
-:scale [1 1]
-:scaleLevel "xl"
-:ls-type "whiteboard-shape"
-:fill "#ffffff"
-:type "text"
-:size [619 68]
-:fontFamily "'Inter'"
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:id "2eb87f00-a67a-11f1-a4b9-0ff620bde7f1"
-:padding 4
-:fontWeight 700
-:noFill true
-:point [3577.728163201662 53.79789703021379]
-:lineHeight 1.2
-:fontSize 48
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366266514
-:italic false
-:text "Get started adding blocks"}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:isSizeLocked true
-:stroke "var(--tl-foreground, #000)"
-:borderRadius 0
-:index 21
-:scale [1 1]
-:scaleLevel "xl"
-:ls-type "whiteboard-shape"
-:fill "#ffffff"
-:type "text"
-:size [789 68]
-:fontFamily "'Inter'"
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:id "2eb87ef5-a67a-11f1-a4b9-0ff620bde7f1"
-:padding 4
-:fontWeight 700
-:noFill true
-:point [2544.240547618143 53.79789703021379]
-:lineHeight 1.2
-:fontSize 48
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366266228
-:italic false
-:text "Quick intro to your toolbox"}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:stroke "var(--ls-primary-text-color, #000)"
-:index 28
-:scale [1 1]
-:ls-type "whiteboard-shape"
-:fill "var(--ls-secondary-background-color)"
-:type "line"
-:strokeType "line"
-:strokeWidth 1
-:opacity 1
-:label ""
-:id "2eb87efc-a67a-11f1-a4b9-0ff620bde7f1"
-:fontWeight 400
-:noFill true
-:point [2824.3141502854396 284.5574186468866]
-:fontSize 20
-:handles 
-{:start 
-{:id "start"
-:canBind true
-:point [0 0.54]}
-:end 
-{:id "end"
-:canBind true
-:point [52.21 0]}}
-:decorations 
-{:end "arrow"}
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664464964296
-:italic false}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:isSizeLocked true
-:stroke "var(--tl-foreground, #000)"
-:rotation 0
-:borderRadius 0
-:index 51
-:scale [1 1]
-:scaleLevel "md"
-:ls-type "whiteboard-shape"
-:fill "#ffffff"
-:type "text"
-:size [174 34]
-:fontFamily "'Inter'"
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:id "2eb87f13-a67a-11f1-a4b9-0ff620bde7f1"
-:padding 4
-:fontWeight 700
-:noFill true
-:point [7115.526182310244 501.84971389721795]
-:lineHeight 1.2
-:fontSize 20
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366321146
-:italic false
-:text "Images & Videos"}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:isSizeLocked true
-:stroke "var(--tl-foreground, #000)"
-:rotation 0
-:borderRadius 0
-:index 11
-:scale [1 1]
-:scaleLevel "md"
-:ls-type "whiteboard-shape"
-:fill "#ffffff"
-:type "text"
-:size [371 34]
-:fontFamily "'Inter'"
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:id "2eb87eeb-a67a-11f1-a4b9-0ff620bde7f1"
-:padding 4
-:fontWeight 700
-:noFill true
-:point [2883.8887730838196 328.6398129803001]
-:lineHeight 1.2
-:fontSize 20
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366319853
-:italic false
-:text "Connect anything on the canvas"}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:stroke "#ababab"
-:rotation 0
-:borderRadius 2
-:index 0
-:scale [1 1]
-:ls-type "whiteboard-shape"
-:fill "var(--ls-secondary-background-color)"
-:type "box"
-:size [1071.46875 578.7624827596054]
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:label ""
-:id "2eb87ee0-a67a-11f1-a4b9-0ff620bde7f1"
-:fontWeight 400
-:noFill false
-:point [2324.506172618143 6.073986839513054]
-:fontSize 20
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366266054
-:italic false}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:index 71
-:scale [1 1]
-:type "image"
-:assetId "a8d0e4f0-590e-11ed-9035-ebf85ccffec3"
-:size [390 115.5]
-:opacity 1
-:id "2eb8a603-a67a-11f1-a4b9-0ff620bde7f1"
-:isAspectRatioLocked true
-:objectFit "fill"
-:point [5921.28003020123 204.19780760223875]
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1667215501945
-:clipping 0}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:isSizeLocked true
-:stroke "var(--tl-foreground, #000)"
-:borderRadius 0
-:index 12
-:scale [1 1]
-:scaleLevel "md"
-:ls-type "whiteboard-shape"
-:fill "#ffffff"
-:type "text"
-:size [143 34]
-:fontFamily "'Inter'"
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:id "2eb87eec-a67a-11f1-a4b9-0ff620bde7f1"
-:padding 4
-:fontWeight 700
-:noFill true
-:point [2610.884914168668 363.79353124741283]
-:lineHeight 1.2
-:fontSize 20
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366315492
-:italic false
-:text "Draw shapes"}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:rotation 0
-:index 50
-:scale [1 1]
-:ls-type "whiteboard-shape"
-:type "iframe"
-:size [282.2308496958967 158.81689080191143]
-:id "2eb87f12-a67a-11f1-a4b9-0ff620bde7f1"
-:url "https://logseq.com/"
-:point [7730.246158129262 321.5301625399185]
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664531425980}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:index 73
-:scale [1 1]
-:type "image"
-:assetId "a8d10c00-590e-11ed-9035-ebf85ccffec3"
-:size [240 240]
-:opacity 1
-:id "2eb8a605-a67a-11f1-a4b9-0ff620bde7f1"
-:isAspectRatioLocked true
-:objectFit "fill"
-:point [1111.0046389162417 319.4182499171725]
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1667215501740
-:clipping 0}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705054
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1293,20 +143,128 @@
 :padding 4
 :fontWeight 700
 :noFill true
-:point [7476.930187595982 501.84971389721795]
+:point [-2128 2176]
 :lineHeight 1.2
 :fontSize 20
 :parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366321229
+:nonce 1664366321335
 :italic false
 :text "YouTube"}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705055
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:index 73
+:scale [1 1]
+:type "image"
+:assetId "a8d10c00-590e-11ed-9035-ebf85ccffec3"
+:size [240 240]
+:opacity 1
+:id "2eb8a605-a67a-11f1-a4b9-0ff620bde7f1"
+:isAspectRatioLocked true
+:objectFit "fill"
+:point [-8488 1992]
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1667215501846
+:clipping 0}}
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705055
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:isSizeLocked true
+:stroke "var(--tl-foreground, #000)"
+:borderRadius 0
+:index 47
+:scale [1 1]
+:scaleLevel "xl"
+:ls-type "whiteboard-shape"
+:fill "#ffffff"
+:type "text"
+:size [588 68]
+:fontFamily "'Inter'"
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "2eb87f0f-a67a-11f1-a4b9-0ff620bde7f1"
+:padding 4
+:fontWeight 700
+:noFill true
+:point [-2360 1728]
+:lineHeight 1.2
+:fontSize 48
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664366268130
+:italic false
+:text "Add media to the canvas"}}
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705054
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:isSizeLocked true
+:stroke "var(--tl-foreground, #000)"
+:rotation 0
+:borderRadius 0
+:index 15
+:scale [1 1]
+:ls-type "whiteboard-shape"
+:fill "#ffffff"
+:type "text"
+:size [107 34]
+:fontFamily "'Inter'"
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "2eb87eef-a67a-11f1-a4b9-0ff620bde7f1"
+:padding 4
+:fontWeight 700
+:noFill true
+:point [-9328 2144]
+:lineHeight 1.2
+:fontSize 20
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664366266292
+:italic false
+:text "Outliner"}}
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705054
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:isSizeLocked true
+:stroke "var(--tl-foreground, #000)"
+:borderRadius 0
+:index 12
+:scale [1 1]
+:scaleLevel "md"
+:ls-type "whiteboard-shape"
+:fill "#ffffff"
+:type "text"
+:size [143 34]
+:fontFamily "'Inter'"
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "2eb87eec-a67a-11f1-a4b9-0ff620bde7f1"
+:padding 4
+:fontWeight 700
+:noFill true
+:point [-6992 2040]
+:lineHeight 1.2
+:fontSize 20
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664366315598
+:italic false
+:text "Draw shapes"}}
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705054
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
 {:stroke "var(--ls-primary-text-color, #000)"
-:index 13
+:index 24
 :scale [1 1]
 :ls-type "whiteboard-shape"
 :fill "var(--ls-secondary-background-color)"
@@ -1315,28 +273,169 @@
 :strokeWidth 1
 :opacity 1
 :label ""
-:id "2eb87eed-a67a-11f1-a4b9-0ff620bde7f1"
+:id "2eb87ef8-a67a-11f1-a4b9-0ff620bde7f1"
 :fontWeight 400
 :noFill true
-:point [2757.881349288151 380.00312891660815]
+:point [-6840 1864]
 :fontSize 20
 :handles 
 {:start 
 {:id "start"
 :canBind true
-:point [36.57 0]}
+:point [40.45 0]}
 :end 
 {:id "end"
 :canBind true
-:point [0 0.26]
-:bindingId "2eb8a60d-a67a-11f1-a4b9-0ff620bde7f1"}}
+:point [0 0]}}
 :decorations 
 {:end "arrow"}
 :parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366317757
+:nonce 1664464890459
 :italic false}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705054
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke "#ababab"
+:rotation 0
+:borderRadius 2
+:index 46
+:scale [1 1]
+:ls-type "whiteboard-shape"
+:fill "var(--ls-secondary-background-color)"
+:type "box"
+:size [1071.46875 578.7624827596054]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:label ""
+:id "2eb87f0e-a67a-11f1-a4b9-0ff620bde7f1"
+:fontWeight 400
+:noFill false
+:point [-2592 1680]
+:fontSize 20
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664366267550
+:italic false}}
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705054
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke "gray"
+:index 43
+:scale [1 1]
+:ls-type "whiteboard-shape"
+:fill "gray"
+:type "line"
+:strokeType "line"
+:strokeWidth 1
+:opacity 1
+:label ""
+:id "2eb87f0b-a67a-11f1-a4b9-0ff620bde7f1"
+:fontWeight 400
+:noFill true
+:point [-3872 1960]
+:fontSize 20
+:handles 
+{:start 
+{:id "start"
+:canBind true
+:point [0 0]}
+:end 
+{:id "end"
+:canBind true
+:point [108.93 0]}}
+:decorations 
+{:end "arrow"}
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664466305934
+:italic false}}
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705055
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:rotation 0
+:index 86
+:scale [1 1]
+:scaleLevel "xl"
+:type "html"
+:size [1448 2096]
+:id "400f39b0-a86c-11f1-ba49-b10cb190122a"
+:isLocked false
+:point [13112 -5672]
+:parentId "6a9790d7-925a-4321-999c-a3d201f96c6b"
+:nonce 1788531832288
+:html "<meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"><img src=\"https://imgs.search.brave.com/lPSIF36EmTzmuGzzV_i8wzGF7izsILpx2cJ5mUxmci0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2MxL0NoYXJsZXNf/RGlja2Vuc18oMTgx/Mi0xODcwKS5qcGc\" alt=\"https://imgs.search.brave.com/lPSIF36EmTzmuGzzV_i8wzGF7izsILpx2cJ5mUxmci0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2MxL0NoYXJsZXNf/RGlja2Vuc18oMTgx/Mi0xODcwKS5qcGc\" width=\"718\" height=\"1040\" class=\"shrinkToFit\">"}}
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705053
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:isSizeLocked true
+:stroke "var(--tl-foreground, #000)"
+:borderRadius 0
+:index 34
+:scale [1 1]
+:scaleLevel "xl"
+:ls-type "whiteboard-shape"
+:fill "#ffffff"
+:type "text"
+:size [475 68]
+:fontFamily "'Inter'"
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "2eb87f02-a67a-11f1-a4b9-0ff620bde7f1"
+:padding 4
+:fontWeight 700
+:noFill true
+:point [-4664 1728]
+:lineHeight 1.2
+:fontSize 48
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664366266771
+:italic false
+:text "Try it out right here:"}}
+:block/updated-at 1790419705053} 
+{:block/created-at 1790419705054
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke "gray"
+:index 39
+:scale [1 1]
+:ls-type "whiteboard-shape"
+:fill "gray"
+:type "line"
+:strokeType "line"
+:strokeWidth 1
+:opacity 1
+:label ""
+:id "2eb87f07-a67a-11f1-a4b9-0ff620bde7f1"
+:fontWeight 400
+:noFill true
+:point [-5031.53 1960]
+:fontSize 20
+:handles 
+{:start 
+{:id "start"
+:canBind true
+:point [0 0]
+:bindingId "2eb8cd06-a67a-11f1-a4b9-0ff620bde7f1"}
+:end 
+{:id "end"
+:canBind true
+:point [95.55 0.41]}}
+:decorations 
+{:end "arrow"}
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664466305724
+:italic false}}
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705054
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1353,7 +452,7 @@
 :id "2eb87f05-a67a-11f1-a4b9-0ff620bde7f1"
 :fontWeight 400
 :noFill true
-:point [2228.6786273338494 289.54512510933864]
+:point [-7375.53 1962.29]
 :fontSize 20
 :handles 
 {:start 
@@ -1364,20 +463,81 @@
 :end 
 {:id "end"
 :canBind true
-:point [91.83 0.01]
+:point [91.53 0.15]
 :bindingId "2eb8cd03-a67a-11f1-a4b9-0ff620bde7f1"}}
 :decorations 
 {:end "arrow"}
 :parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664466271253
+:nonce 1664466271362
 :italic false}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705055
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:isSizeLocked true
+:stroke "var(--tl-foreground, #000)"
+:rotation 0
+:borderRadius 0
+:index 45
+:scale [1 1]
+:scaleLevel "lg"
+:ls-type "whiteboard-shape"
+:fill "#ffffff"
+:type "text"
+:size [1009 87]
+:fontFamily "'Inter'"
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "2eb87f0d-a67a-11f1-a4b9-0ff620bde7f1"
+:padding 4
+:fontWeight 400
+:noFill true
+:point [-3720 1800]
+:lineHeight 1.2
+:fontSize 32
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664366267139
+:italic false
+:text "Toggle blocks and pages on the canvas between a compact focus\nview or the expanded outliner view."}}
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705055
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:isSizeLocked true
+:stroke "var(--tl-foreground, #000)"
+:borderRadius 0
+:index 3
+:scale [1 1]
+:scaleLevel "xl"
+:ls-type "whiteboard-shape"
+:fill "#ffffff"
+:type "text"
+:size [299 68]
+:fontFamily "'Inter'"
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "2eb87ee3-a67a-11f1-a4b9-0ff620bde7f1"
+:padding 4
+:fontWeight 700
+:noFill true
+:point [-9400 1728]
+:lineHeight 1.2
+:fontSize 48
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664366266224
+:italic false
+:text "Welcome to"}}
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705056
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
 {:stroke "var(--ls-primary-text-color, #000)"
-:index 44
+:index 68
 :scale [1 1]
 :ls-type "whiteboard-shape"
 :fill "var(--ls-secondary-background-color)"
@@ -1386,77 +546,125 @@
 :strokeWidth 1
 :opacity 1
 :label ""
-:id "2eb87f0c-a67a-11f1-a4b9-0ff620bde7f1"
+:id "2eb8a600-a67a-11f1-a4b9-0ff620bde7f1"
 :fontWeight 400
 :noFill true
-:point [5938.844748780602 324.8070956131355]
+:point [-5983.91 1867.84]
 :fontSize 20
 :handles 
 {:start 
 {:id "start"
 :canBind true
-:point [0.04 0]
-:bindingId "942a2e90-590e-11ed-9035-ebf85ccffec3"}
+:point [0 0]
+:bindingId "2eb8cd0a-a67a-11f1-a4b9-0ff620bde7f1"}
 :end 
 {:id "end"
 :canBind true
-:point [0 29.69]}}
+:point [195.91 2.8]
+:bindingId "2eb8cd0b-a67a-11f1-a4b9-0ff620bde7f1"}}
 :decorations 
-{:start "arrow"
-:end "arrow"}
+{:end "arrow"}
 :parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664529447883
+:nonce 1664465608776
 :italic false}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
+:block/updated-at 1790419705056} 
+{:block/created-at 1790419705055
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:index 60
+:scale [1 1]
+:type "image"
+:assetId "a8d0e4f2-590e-11ed-9035-ebf85ccffec3"
+:size [556 360]
+:opacity 1
+:id "2eb8a5f8-a67a-11f1-a4b9-0ff620bde7f1"
+:isAspectRatioLocked true
+:objectFit "fill"
+:point [-3680 1976]
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1667215501985
+:clipping 0}}
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705055
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
 {:isSizeLocked true
 :stroke "var(--tl-foreground, #000)"
 :borderRadius 0
-:index 25
+:index 30
 :scale [1 1]
-:scaleLevel "md"
+:scaleLevel "xs"
 :ls-type "whiteboard-shape"
 :fill "#ffffff"
 :type "text"
-:size [263 34]
+:size [101 22]
 :fontFamily "'Inter'"
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
-:id "2eb87ef9-a67a-11f1-a4b9-0ff620bde7f1"
+:id "2eb87efe-a67a-11f1-a4b9-0ff620bde7f1"
 :padding 4
-:fontWeight 700
+:fontWeight 400
 :noFill true
-:point [2516.311468956932 431.5043207717591]
+:point [-6944 2136]
 :lineHeight 1.2
-:fontSize 20
+:fontSize 10
 :parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366300081
+:nonce 1664464808265
 :italic false
-:text "Create Logseq Portals"}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
+:text "Blocks or Pages"}}
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705054
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
-{:index 74
+{:index 71
 :scale [1 1]
 :type "image"
-:assetId "a8d0e4f1-590e-11ed-9035-ebf85ccffec3"
-:size [212.1512918586286 70.34490203733476]
+:assetId "a8d0e4f0-590e-11ed-9035-ebf85ccffec3"
+:size [390 115.5]
 :opacity 1
-:id "2eb8a606-a67a-11f1-a4b9-0ff620bde7f1"
+:id "2eb8a603-a67a-11f1-a4b9-0ff620bde7f1"
 :isAspectRatioLocked true
 :objectFit "fill"
-:point [4308.751661052477 164.32493698103463]
+:point [-3680 1880]
 :parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1667215502124
+:nonce 1667215502051
 :clipping 0}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705054
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:isSizeLocked true
+:stroke "var(--tl-foreground, #000)"
+:borderRadius 0
+:index 42
+:scale [1 1]
+:scaleLevel "xl"
+:ls-type "whiteboard-shape"
+:fill "#ffffff"
+:type "text"
+:size [914 68]
+:fontFamily "'Inter'"
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "2eb87f0a-a67a-11f1-a4b9-0ff620bde7f1"
+:padding 4
+:fontWeight 700
+:noFill true
+:point [-3720 1728]
+:lineHeight 1.2
+:fontSize 48
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664366267103
+:italic false
+:text "Switch between focus & outliner mode"}}
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705054
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1464,59 +672,105 @@
 :stroke "var(--tl-foreground, #000)"
 :rotation 0
 :borderRadius 0
-:index 33
-:scale [1 1]
-:ls-type "whiteboard-shape"
-:fill "#ffffff"
-:type "text"
-:size [323 34]
-:fontFamily "'Inter'"
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:id "2eb87f01-a67a-11f1-a4b9-0ff620bde7f1"
-:padding 4
-:fontWeight 700
-:noFill true
-:point [3532.7604149775234 222.77282529102786]
-:lineHeight 1.2
-:fontSize 20
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664465570902
-:italic false
-:text "Double Click on the Canvas"}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:isSizeLocked true
-:stroke "var(--tl-foreground, #000)"
-:borderRadius 0
-:index 23
+:index 51
 :scale [1 1]
 :scaleLevel "md"
 :ls-type "whiteboard-shape"
 :fill "#ffffff"
 :type "text"
-:size [191 34]
+:size [174 34]
 :fontFamily "'Inter'"
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
-:id "2eb87ef7-a67a-11f1-a4b9-0ff620bde7f1"
+:id "2eb87f13-a67a-11f1-a4b9-0ff620bde7f1"
 :padding 4
 :fontWeight 700
 :noFill true
-:point [2588.34172866303 171.88971755414423]
+:point [-2488 2176]
 :lineHeight 1.2
 :fontSize 20
 :parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366299851
+:nonce 1664366321252
 :italic false
-:text "Select anything"}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913165
+:text "Images & Videos"}}
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705055
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:isSizeLocked true
+:stroke "var(--tl-foreground, #000)"
+:rotation 0
+:borderRadius 0
+:index 20
+:scale [1 1]
+:scaleLevel "lg"
+:ls-type "whiteboard-shape"
+:fill "#ffffff"
+:type "text"
+:size [1009 126]
+:fontFamily "'Inter'"
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "2eb87ef4-a67a-11f1-a4b9-0ff620bde7f1"
+:padding 4
+:fontWeight 400
+:noFill true
+:point [-8408 1824]
+:lineHeight 1.2
+:fontSize 32
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664366267337
+:italic false
+:text "Put thoughts from your knowledge base (your current graph)\nas well as new ones next to each other on a spatial canvas\ntogether with shapes, drawings, website embeds and connectors."}}
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705055
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:index 77
+:scale [1 1]
+:type "image"
+:assetId "a8d32ee0-590e-11ed-9035-ebf85ccffec3"
+:size [235.44813504195554 156.96542336130426]
+:opacity 1
+:id "2eb8a609-a67a-11f1-a4b9-0ff620bde7f1"
+:isAspectRatioLocked true
+:objectFit "fill"
+:point [-2512 2000]
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1667215503028
+:clipping 0}}
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705054
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke "#ababab"
+:rotation 0
+:borderRadius 2
+:index 31
+:scale [1 1]
+:ls-type "whiteboard-shape"
+:fill "var(--ls-secondary-background-color)"
+:type "box"
+:size [1071.46875 578.7624827596054]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:label ""
+:id "2eb87eff-a67a-11f1-a4b9-0ff620bde7f1"
+:fontWeight 400
+:noFill false
+:point [-6104 1680]
+:fontSize 20
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664366266268
+:italic false}}
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705053
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1529,47 +783,17 @@
 :id "2eb8a5fd-a67a-11f1-a4b9-0ff620bde7f1"
 :isAspectRatioLocked true
 :objectFit "fill"
-:point [4668.904549052878 538.3068033096805]
+:point [-4936 2216]
 :parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1667215501744
+:nonce 1667215501850
 :clipping 0}}
-:block/updated-at 1788317913165} 
-{:block/created-at 1788317913166
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:isSizeLocked true
-:stroke "var(--tl-foreground, #000)"
-:borderRadius 0
-:index 8
-:scale [1 1]
-:scaleLevel "md"
-:ls-type "whiteboard-shape"
-:fill "#ffffff"
-:type "text"
-:size [395 34]
-:fontFamily "'Inter'"
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:id "2eb87ee8-a67a-11f1-a4b9-0ff620bde7f1"
-:padding 4
-:fontWeight 700
-:noFill true
-:point [2883.8887730838196 267.13873991877426]
-:lineHeight 1.2
-:fontSize 20
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366266559
-:italic false
-:text "Highlight anything on the canvas"}}
-:block/updated-at 1788317913166} 
-{:block/created-at 1788317913166
+:block/updated-at 1790419705053} 
+{:block/created-at 1790419705054
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
 {:stroke "var(--ls-primary-text-color, #000)"
-:index 7
+:index 35
 :scale [1 1]
 :ls-type "whiteboard-shape"
 :fill "var(--ls-secondary-background-color)"
@@ -1577,29 +801,30 @@
 :strokeType "line"
 :strokeWidth 1
 :opacity 1
-:label ""
-:id "2eb87ee7-a67a-11f1-a4b9-0ff620bde7f1"
+:label "hit enter"
+:id "2eb87f03-a67a-11f1-a4b9-0ff620bde7f1"
 :fontWeight 400
 :noFill true
-:point [2767.881349288151 251.42312891660822]
+:point [-5422.67 1877.13]
 :fontSize 20
 :handles 
 {:start 
 {:id "start"
 :canBind true
-:point [26.57 0.33]}
+:point [0 0]
+:bindingId "2eb8cd00-a67a-11f1-a4b9-0ff620bde7f1"}
 :end 
 {:id "end"
 :canBind true
-:point [0 0]
-:bindingId "2eb8a60b-a67a-11f1-a4b9-0ff620bde7f1"}}
+:point [122.67 0.2]
+:bindingId "2eb8cd01-a67a-11f1-a4b9-0ff620bde7f1"}}
 :decorations 
 {:end "arrow"}
 :parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366266552
+:nonce 1664465987060
 :italic false}}
-:block/updated-at 1788317913166} 
-{:block/created-at 1788317913166
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705053
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1621,94 +846,20 @@
 :padding 4
 :fontWeight 700
 :noFill true
-:point [2883.8887730838196 394.66394866867586]
+:point [-6720 2072]
 :lineHeight 1.2
 :fontSize 20
 :parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366345770
+:nonce 1664366345876
 :italic false
 :text "Write"}}
-:block/updated-at 1788317913166} 
-{:block/created-at 1788317913166
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:index 69
-:scale [1 1]
-:type "image"
-:assetId "a8d0bde0-590e-11ed-9035-ebf85ccffec3"
-:size [39.092513518779924 39.092513518779924]
-:opacity 1
-:id "2eb8a601-a67a-11f1-a4b9-0ff620bde7f1"
-:isAspectRatioLocked true
-:objectFit "fill"
-:point [3579.025870086314 176.85234755424744]
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1667215501858
-:clipping 0}}
-:block/updated-at 1788317913166} 
-{:block/created-at 1788317913166
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:stroke "#ababab"
-:rotation 0
-:borderRadius 2
-:index 1
-:scale [1 1]
-:ls-type "whiteboard-shape"
-:fill "var(--ls-secondary-background-color)"
-:type "box"
-:size [1071.46875 578.7624827596054]
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:label ""
-:id "2eb87ee1-a67a-11f1-a4b9-0ff620bde7f1"
-:fontWeight 400
-:noFill false
-:point [1156.2121290723044 0.13863227640877085]
-:fontSize 20
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366266231
-:italic false}}
-:block/updated-at 1788317913166} 
-{:block/created-at 1788317913166
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:isSizeLocked true
-:stroke "var(--tl-foreground, #000)"
-:borderRadius 0
-:index 6
-:scale [1 1]
-:scaleLevel "md"
-:ls-type "whiteboard-shape"
-:fill "#ffffff"
-:type "text"
-:size [167 34]
-:fontFamily "'Inter'"
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:id "2eb87ee6-a67a-11f1-a4b9-0ff620bde7f1"
-:padding 4
-:fontWeight 700
-:noFill true
-:point [2596.884914168668 233.3198810096037]
-:lineHeight 1.2
-:fontSize 20
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366299578
-:italic false
-:text "Draw freeform"}}
-:block/updated-at 1788317913166} 
-{:block/created-at 1788317913166
+:block/updated-at 1790419705053} 
+{:block/created-at 1790419705055
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
 {:stroke "var(--ls-primary-text-color, #000)"
-:index 10
+:index 13
 :scale [1 1]
 :ls-type "whiteboard-shape"
 :fill "var(--ls-secondary-background-color)"
@@ -1717,28 +868,74 @@
 :strokeWidth 1
 :opacity 1
 :label ""
-:id "2eb87eea-a67a-11f1-a4b9-0ff620bde7f1"
+:id "2eb87eed-a67a-11f1-a4b9-0ff620bde7f1"
 :fontWeight 400
 :noFill true
-:point [2753.153104639694 313.21314504656493]
+:point [-6845 2056]
 :fontSize 20
 :handles 
 {:start 
 {:id "start"
 :canBind true
-:point [41.3 0.31]}
+:point [15 0]}
 :end 
 {:id "end"
 :canBind true
-:point [0 0]
-:bindingId "2eb8a60c-a67a-11f1-a4b9-0ff620bde7f1"}}
+:point [0 0.17]
+:bindingId "2eb8a60d-a67a-11f1-a4b9-0ff620bde7f1"}}
 :decorations 
 {:end "arrow"}
 :parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366317654
+:nonce 1664366317909
 :italic false}}
-:block/updated-at 1788317913166} 
-{:block/created-at 1788317913166
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705055
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:isSizeLocked true
+:stroke "var(--tl-foreground, #000)"
+:rotation 0
+:borderRadius 0
+:index 33
+:scale [1 1]
+:ls-type "whiteboard-shape"
+:fill "#ffffff"
+:type "text"
+:size [323 34]
+:fontFamily "'Inter'"
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "2eb87f01-a67a-11f1-a4b9-0ff620bde7f1"
+:padding 4
+:fontWeight 700
+:noFill true
+:point [-6072 1896]
+:lineHeight 1.2
+:fontSize 20
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664465571008
+:italic false
+:text "Double Click on the Canvas"}}
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705054
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:rotation 0
+:index 49
+:scale [1 1]
+:ls-type "whiteboard-shape"
+:type "youtube"
+:size [283.77468321648394 159.68563651103435]
+:id "2eb87f11-a67a-11f1-a4b9-0ff620bde7f1"
+:url "https://www.youtube.com/watch?v=oBtKHwFBn0k&list=PLNnZ7rjaL84JjFpgDxRlAOKRa9ie25gtp"
+:point [-2216 1992]
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664531348047}}
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705053
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1761,33 +958,201 @@
 :padding 4
 :fontWeight 400
 :noFill true
-:point [1296.7355537197436 345.9064477751249]
+:point [-8304 2016]
 :lineHeight 1.2
 :fontSize 32
 :parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366266517
+:nonce 1664366266623
 :italic false
 :text "If you are a visual thinker this helps you to compose, remix,\nannotate and relate thoughts in a new way."}}
-:block/updated-at 1788317913166} 
-{:block/created-at 1788317913166
+:block/updated-at 1790419705053} 
+{:block/created-at 1790419705055
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
-{:index 66
+{:isSizeLocked true
+:stroke "var(--tl-foreground, #000)"
+:borderRadius 0
+:index 32
+:scale [1 1]
+:scaleLevel "xl"
+:ls-type "whiteboard-shape"
+:fill "#ffffff"
+:type "text"
+:size [619 68]
+:fontFamily "'Inter'"
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "2eb87f00-a67a-11f1-a4b9-0ff620bde7f1"
+:padding 4
+:fontWeight 700
+:noFill true
+:point [-6024 1728]
+:lineHeight 1.2
+:fontSize 48
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664366266620
+:italic false
+:text "Get started adding blocks"}}
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705056
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:index 79
 :scale [1 1]
 :type "image"
-:assetId "a8d1f660-590e-11ed-9035-ebf85ccffec3"
-:size [38 38]
+:assetId "846ea260-a67a-11f1-a4b9-0ff620bde7f1"
+:size [4129.548244701444 1387.7202822310667]
 :opacity 1
-:id "2eb8a5fe-a67a-11f1-a4b9-0ff620bde7f1"
+:id "846f1790-a67a-11f1-a4b9-0ff620bde7f1"
+:isAspectRatioLocked true
+:isLocked false
+:objectFit "fill"
+:point [11688 -7632]
+:parentId "6a9790d7-925a-4321-999c-a3d201f96c6b"
+:nonce 1788318057103
+:clipping 0}}
+:block/updated-at 1790419705056} 
+{:block/created-at 1790419705055
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:index 48
+:scale [1 1]
+:type "image"
+:assetId "a8d66330-590e-11ed-9035-ebf85ccffec3"
+:size [358 217.5]
+:opacity 1
+:id "2eb87f10-a67a-11f1-a4b9-0ff620bde7f1"
 :isAspectRatioLocked true
 :objectFit "fill"
-:point [5691.90953555179 538.3068033096805]
+:point [-9456 1952]
 :parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1667215501772
+:nonce 1667215502141
 :clipping 0}}
-:block/updated-at 1788317913166} 
-{:block/created-at 1788317913166
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705055
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:isSizeLocked true
+:stroke "var(--tl-foreground, #000)"
+:borderRadius 0
+:index 9
+:scale [1 1]
+:scaleLevel "md"
+:ls-type "whiteboard-shape"
+:fill "#ffffff"
+:type "text"
+:size [179 34]
+:fontFamily "'Inter'"
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "2eb87ee9-a67a-11f1-a4b9-0ff620bde7f1"
+:padding 4
+:fontWeight 700
+:noFill true
+:point [-7008 1968]
+:lineHeight 1.2
+:fontSize 20
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664366270493
+:italic false
+:text "Erase anything"}}
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705055
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke "gray"
+:index 38
+:scale [1 1]
+:ls-type "whiteboard-shape"
+:fill "gray"
+:type "line"
+:strokeType "line"
+:strokeWidth 1
+:opacity 1
+:label ""
+:id "2eb87f06-a67a-11f1-a4b9-0ff620bde7f1"
+:fontWeight 400
+:noFill true
+:point [-6207.53 1963.26]
+:fontSize 20
+:handles 
+{:start 
+{:id "start"
+:canBind true
+:point [0 0.95]
+:bindingId "2eb8cd04-a67a-11f1-a4b9-0ff620bde7f1"}
+:end 
+{:id "end"
+:canBind true
+:point [99.53 0]
+:bindingId "2eb8cd05-a67a-11f1-a4b9-0ff620bde7f1"}}
+:decorations 
+{:end "arrow"}
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664466297599
+:italic false}}
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705053
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:index 80
+:scale [1 1]
+:type "image"
+:assetId "1a7bf490-a67d-11f1-a4b9-0ff620bde7f1"
+:size [1081.7147577657997 1318.6790274435918]
+:opacity 1
+:id "1a7c69c0-a67d-11f1-a4b9-0ff620bde7f1"
+:isAspectRatioLocked true
+:isLocked false
+:objectFit "fill"
+:point [16264 -8168]
+:parentId "6a9790d7-925a-4321-999c-a3d201f96c6b"
+:nonce 1788319167556
+:clipping 0}}
+:block/updated-at 1790419705053} 
+{:block/created-at 1790419705055
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke "var(--ls-primary-text-color, #000)"
+:index 29
+:scale [1 1]
+:ls-type "whiteboard-shape"
+:fill "var(--ls-secondary-background-color)"
+:type "line"
+:strokeType "line"
+:strokeWidth 1
+:opacity 1
+:label ""
+:id "2eb87efd-a67a-11f1-a4b9-0ff620bde7f1"
+:fontWeight 400
+:noFill true
+:point [-6776 1896]
+:fontSize 20
+:handles 
+{:start 
+{:id "start"
+:canBind true
+:point [0 0.54]}
+:end 
+{:id "end"
+:canBind true
+:point [52.21 0]}}
+:decorations 
+{:end "arrow"}
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664464964462
+:italic false}}
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705053
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1809,36 +1174,89 @@
 :padding 4
 :fontWeight 400
 :noFill true
-:point [2614.884914168668 394.66543393409165]
+:point [-6984 2072]
 :lineHeight 1.2
 :fontSize 10
 :parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664464807740
+:nonce 1664464807846
 :italic false
 :text "Rectangle, Circle, Triangle"}}
-:block/updated-at 1788317913166} 
-{:block/created-at 1788317913166
+:block/updated-at 1790419705053} 
+{:block/created-at 1790419705055
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
-{:stroke "#ff00ea"
-:index 76
+{:index 59
 :scale [1 1]
+:type "image"
+:assetId "a8d1f662-590e-11ed-9035-ebf85ccffec3"
+:size [360.3328152655931 332.1904361254012]
+:opacity 1
+:id "2eb8a5f7-a67a-11f1-a4b9-0ff620bde7f1"
+:isAspectRatioLocked true
+:objectFit "fill"
+:point [-5784 1840]
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1667215501896
+:clipping 0}}
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705053
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:isSizeLocked true
+:stroke "var(--tl-foreground, #000)"
+:borderRadius 0
+:index 6
+:scale [1 1]
+:scaleLevel "md"
 :ls-type "whiteboard-shape"
-:fill "#ff00ea"
-:type "highlighter"
-:points [[0 3.6093461432803906 0.5] [174.2203619160373 4.333198529158153 0.5] [191.44408238548272 3.3416199183668596 0.5] [260.3290484771567 3.3416199183668596 0.5] [296.90838342924894 1.6261889216978034 0.5] [374.449830793131 1.6261889216978034 0.5] [416.97863740997127 0 0.5] [446.01205913394165 0 0.5] [446.01205913394165 0 0.5]]
+:fill "#ffffff"
+:type "text"
+:size [167 34]
+:fontFamily "'Inter'"
 :strokeType "line"
 :strokeWidth 2
-:opacity 0.5
-:id "2eb8a608-a67a-11f1-a4b9-0ff620bde7f1"
+:opacity 1
+:id "2eb87ee6-a67a-11f1-a4b9-0ff620bde7f1"
+:padding 4
+:fontWeight 700
 :noFill true
-:point [1309.7801720619173 514.4650674148926]
+:point [-7008 1904]
+:lineHeight 1.2
+:fontSize 20
 :parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664462167124
-:isComplete true}}
-:block/updated-at 1788317913166} 
-{:block/created-at 1788317913166
+:nonce 1664366299684
+:italic false
+:text "Draw freeform"}}
+:block/updated-at 1790419705053} 
+{:block/created-at 1790419705054
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke "#ababab"
+:rotation 0
+:borderRadius 2
+:index 0
+:scale [1 1]
+:ls-type "whiteboard-shape"
+:fill "var(--ls-secondary-background-color)"
+:type "box"
+:size [1071.46875 578.7624827596054]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:label ""
+:id "2eb87ee0-a67a-11f1-a4b9-0ff620bde7f1"
+:fontWeight 400
+:noFill false
+:point [-7280 1680]
+:fontSize 20
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664366266160
+:italic false}}
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705055
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1846,45 +1264,30 @@
 :stroke "var(--tl-foreground, #000)"
 :rotation 0
 :borderRadius 0
-:index 36
+:index 11
 :scale [1 1]
+:scaleLevel "md"
 :ls-type "whiteboard-shape"
 :fill "#ffffff"
 :type "text"
-:size [279 34]
+:size [371 34]
 :fontFamily "'Inter'"
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
-:id "2eb87f04-a67a-11f1-a4b9-0ff620bde7f1"
+:id "2eb87eeb-a67a-11f1-a4b9-0ff620bde7f1"
 :padding 4
 :fontWeight 700
 :noFill true
-:point [5065.880639392109 133.24122367389236]
+:point [-6720 2000]
 :lineHeight 1.2
 :fontSize 20
 :parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664465570882
+:nonce 1664366319959
 :italic false
-:text "Double Click on the Canvas"}}
-:block/updated-at 1788317913166} 
-{:block/created-at 1788317913166
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:rotation 0
-:index 49
-:scale [1 1]
-:ls-type "whiteboard-shape"
-:type "youtube"
-:size [283.77468321648394 159.68563651103435]
-:id "2eb87f11-a67a-11f1-a4b9-0ff620bde7f1"
-:url "https://www.youtube.com/watch?v=oBtKHwFBn0k&list=PLNnZ7rjaL84JjFpgDxRlAOKRa9ie25gtp"
-:point [7383.596337357742 321.09578968535664]
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664531347941}}
-:block/updated-at 1788317913166} 
-{:block/created-at 1788317913166
+:text "Connect anything on the canvas"}}
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705055
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1907,15 +1310,273 @@
 :padding 4
 :fontWeight 400
 :noFill true
-:point [84.2959581047653 149.08605309844052]
+:point [-9520 1824]
 :lineHeight 1.2
 :fontSize 32
 :parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366266016
+:nonce 1664366266122
 :italic false
 :text "Experience the benefits of an outliner on an infinite canvas."}}
-:block/updated-at 1788317913166} 
-{:block/created-at 1788317913166
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705053
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:isSizeLocked true
+:stroke "var(--tl-foreground, #000)"
+:rotation 0
+:borderRadius 0
+:index 53
+:scale [1 1]
+:scaleLevel "md"
+:ls-type "whiteboard-shape"
+:fill "#ffffff"
+:type "text"
+:size [176 34]
+:fontFamily "'Inter'"
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "2eb8a5f1-a67a-11f1-a4b9-0ff620bde7f1"
+:padding 4
+:fontWeight 700
+:noFill true
+:point [-1816 2176]
+:lineHeight 1.2
+:fontSize 20
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664366321492
+:italic false
+:text "Website Embeds"}}
+:block/updated-at 1790419705053} 
+{:block/created-at 1790419705054
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:isSizeLocked true
+:stroke "var(--tl-foreground, #000)"
+:rotation 0
+:borderRadius 0
+:index 75
+:scale [1 1]
+:scaleLevel "lg"
+:ls-type "whiteboard-shape"
+:fill "#ffffff"
+:type "text"
+:size [756 87]
+:fontFamily "'Inter'"
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "2eb8a607-a67a-11f1-a4b9-0ff620bde7f1"
+:padding 4
+:fontWeight 700
+:noFill true
+:point [-8296 2128]
+:lineHeight 1.2
+:fontSize 32
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664366267075
+:italic false
+:text "Break out of the linearity of pages and enjoy the\nfreedom of an infinite canvas."}}
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705053
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke "var(--ls-primary-text-color, #000)"
+:index 28
+:scale [1 1]
+:ls-type "whiteboard-shape"
+:fill "var(--ls-secondary-background-color)"
+:type "line"
+:strokeType "line"
+:strokeWidth 1
+:opacity 1
+:label ""
+:id "2eb87efc-a67a-11f1-a4b9-0ff620bde7f1"
+:fontWeight 400
+:noFill true
+:point [-6776 1960]
+:fontSize 20
+:handles 
+{:start 
+{:id "start"
+:canBind true
+:point [0 0.54]}
+:end 
+{:id "end"
+:canBind true
+:point [52.21 0]}}
+:decorations 
+{:end "arrow"}
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664464964402
+:italic false}}
+:block/updated-at 1790419705053} 
+{:block/created-at 1790419705054
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:isSizeLocked true
+:stroke "var(--tl-foreground, #000)"
+:rotation 0
+:borderRadius 0
+:index 54
+:scale [1 1]
+:scaleLevel "lg"
+:ls-type "whiteboard-shape"
+:fill "#ffffff"
+:type "text"
+:size [844 49]
+:fontFamily "'Inter'"
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "2eb8a5f2-a67a-11f1-a4b9-0ff620bde7f1"
+:padding 4
+:fontWeight 400
+:noFill true
+:point [-2480 1800]
+:lineHeight 1.2
+:fontSize 32
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664366268341
+:italic false
+:text "Paste different media types to stimulate your thoughts."}}
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705054
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:isSizeLocked true
+:stroke "var(--tl-foreground, #000)"
+:rotation 0
+:borderRadius 0
+:index 16
+:scale [1 1]
+:ls-type "whiteboard-shape"
+:fill "#ffffff"
+:type "text"
+:size [83 34]
+:fontFamily "'Inter'"
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "2eb87ef0-a67a-11f1-a4b9-0ff620bde7f1"
+:padding 4
+:fontWeight 700
+:noFill true
+:point [-8864 2144]
+:lineHeight 1.2
+:fontSize 20
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664366266471
+:italic false
+:text "Canvas"}}
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705054
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:index 72
+:scale [1 1]
+:type "image"
+:assetId "a8d06fc0-590e-11ed-9035-ebf85ccffec3"
+:size [358 217.5]
+:opacity 1
+:id "2eb8a604-a67a-11f1-a4b9-0ff620bde7f1"
+:isAspectRatioLocked true
+:objectFit "fill"
+:point [-9000 1952]
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1667215502368
+:clipping 0}}
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705054
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:isSizeLocked true
+:stroke "var(--tl-foreground, #000)"
+:borderRadius 0
+:index 25
+:scale [1 1]
+:scaleLevel "md"
+:ls-type "whiteboard-shape"
+:fill "#ffffff"
+:type "text"
+:size [263 34]
+:fontFamily "'Inter'"
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "2eb87ef9-a67a-11f1-a4b9-0ff620bde7f1"
+:padding 4
+:fontWeight 700
+:noFill true
+:point [-7088 2104]
+:lineHeight 1.2
+:fontSize 20
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664366300187
+:italic false
+:text "Create Logseq Portals"}}
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705056
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:index 81
+:scale [1 1]
+:type "image"
+:assetId "3d672a10-a67d-11f1-a4b9-0ff620bde7f1"
+:size [2196.5224040728717 1461.9864173345243]
+:opacity 1
+:id "3d679f40-a67d-11f1-a4b9-0ff620bde7f1"
+:isAspectRatioLocked true
+:isLocked false
+:objectFit "fill"
+:point [19640 -8264]
+:parentId "6a9790d7-925a-4321-999c-a3d201f96c6b"
+:nonce 1788319226611
+:clipping 0}}
+:block/updated-at 1790419705056} 
+{:block/created-at 1790419705055
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:rotation 0
+:index 50
+:scale [1 1]
+:ls-type "whiteboard-shape"
+:type "iframe"
+:size [282.2308496958967 158.81689080191143]
+:id "2eb87f12-a67a-11f1-a4b9-0ff620bde7f1"
+:url "https://logseq.com/"
+:point [-1872 1992]
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664531426086}}
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705055
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:index 61
+:scale [1 1]
+:type "image"
+:assetId "a8d0e4f3-590e-11ed-9035-ebf85ccffec3"
+:size [100 100.5]
+:opacity 1
+:id "2eb8a5f9-a67a-11f1-a4b9-0ff620bde7f1"
+:isAspectRatioLocked true
+:objectFit "fill"
+:point [-2464 1864]
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1667215502337
+:clipping 0}}
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705054
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -1932,7 +1593,7 @@
 :id "2eb87ef1-a67a-11f1-a4b9-0ff620bde7f1"
 :fontWeight 400
 :noFill true
-:point [511.40772523958367 357.868789521071]
+:point [-9088 2032]
 :fontSize 20
 :handles 
 {:start 
@@ -1949,67 +1610,15 @@
 {:start "arrow"
 :end "arrow"}
 :parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664461652607
+:nonce 1664461652713
 :italic false}}
-:block/updated-at 1788317913166} 
-{:block/created-at 1788317913166
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:stroke "#ababab"
-:rotation 0
-:borderRadius 2
-:index 31
-:scale [1 1]
-:ls-type "whiteboard-shape"
-:fill "var(--ls-secondary-background-color)"
-:type "box"
-:size [1071.46875 578.7624827596054]
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:label ""
-:id "2eb87eff-a67a-11f1-a4b9-0ff620bde7f1"
-:fontWeight 400
-:noFill false
-:point [3496.6484156178285 6.073986839513054]
-:fontSize 20
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366266162
-:italic false}}
-:block/updated-at 1788317913166} 
-{:block/created-at 1788317913166
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:stroke "#ababab"
-:rotation 0
-:borderRadius 2
-:index 46
-:scale [1 1]
-:ls-type "whiteboard-shape"
-:fill "var(--ls-secondary-background-color)"
-:type "box"
-:size [1071.46875 578.7624827596054]
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:label ""
-:id "2eb87f0e-a67a-11f1-a4b9-0ff620bde7f1"
-:fontWeight 400
-:noFill false
-:point [7009.895619682694 6.958541654559781]
-:fontSize 20
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366267444
-:italic false}}
-:block/updated-at 1788317913166} 
-{:block/created-at 1788317913166
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705055
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
 {:stroke "var(--ls-primary-text-color, #000)"
-:index 29
+:index 55
 :scale [1 1]
 :ls-type "whiteboard-shape"
 :fill "var(--ls-secondary-background-color)"
@@ -2018,45 +1627,49 @@
 :strokeWidth 1
 :opacity 1
 :label ""
-:id "2eb87efd-a67a-11f1-a4b9-0ff620bde7f1"
+:id "2eb8a5f3-a67a-11f1-a4b9-0ff620bde7f1"
 :fontWeight 400
 :noFill true
-:point [2824.3141502854396 221.93599306675378]
+:point [-6848 2120]
 :fontSize 20
 :handles 
 {:start 
 {:id "start"
 :canBind true
-:point [0 0.54]}
+:point [41.57 0]}
 :end 
 {:id "end"
 :canBind true
-:point [52.21 0]}}
+:point [0 0.29]
+:bindingId "2eb8cd09-a67a-11f1-a4b9-0ff620bde7f1"}}
 :decorations 
 {:end "arrow"}
 :parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664464964356
+:nonce 1664366318009
 :italic false}}
-:block/updated-at 1788317913166} 
-{:block/created-at 1788317913166
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705055
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
-{:index 70
+{:stroke "#ff00ea"
+:index 76
 :scale [1 1]
-:type "image"
-:assetId "a8d0bde0-590e-11ed-9035-ebf85ccffec3"
-:size [39.092513518779924 39.092513518779924]
-:opacity 1
-:id "2eb8a602-a67a-11f1-a4b9-0ff620bde7f1"
-:isAspectRatioLocked true
-:objectFit "fill"
-:point [5010.948917221148 129.89956944120922]
+:ls-type "whiteboard-shape"
+:fill "#ff00ea"
+:type "highlighter"
+:points [[0 3.6093461432803906 0.5] [174.2203619160373 4.333198529158153 0.5] [191.44408238548272 3.3416199183668596 0.5] [260.3290484771567 3.3416199183668596 0.5] [296.90838342924894 1.6261889216978034 0.5] [374.449830793131 1.6261889216978034 0.5] [416.97863740997127 0 0.5] [446.01205913394165 0 0.5] [446.01205913394165 0 0.5]]
+:strokeType "line"
+:strokeWidth 2
+:opacity 0.5
+:id "2eb8a608-a67a-11f1-a4b9-0ff620bde7f1"
+:noFill true
+:point [-8288 2192]
 :parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1667215501936
-:clipping 0}}
-:block/updated-at 1788317913166} 
-{:block/created-at 1788317913166
+:nonce 1664462167230
+:isComplete true}}
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705054
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2073,7 +1686,7 @@
 :id "2eb87efb-a67a-11f1-a4b9-0ff620bde7f1"
 :fontWeight 400
 :noFill true
-:point [2824.3141502854396 346.1736581654718]
+:point [-6776 2016]
 :fontSize 20
 :handles 
 {:start 
@@ -2087,163 +1700,256 @@
 :decorations 
 {:end "arrow"}
 :parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664464964227
+:nonce 1664464964333
 :italic false}}
-:block/updated-at 1788317913166} 
-{:block/created-at 1788317913166
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705055
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
-{:stroke "gray"
-:index 38
+{:index 62
 :scale [1 1]
-:ls-type "whiteboard-shape"
-:fill "gray"
-:type "line"
-:strokeType "line"
-:strokeWidth 1
+:type "image"
+:assetId "a8d1cf50-590e-11ed-9035-ebf85ccffec3"
+:size [100 100]
 :opacity 1
-:label ""
-:id "2eb87f06-a67a-11f1-a4b9-0ff620bde7f1"
-:fontWeight 400
-:noFill true
-:point [3396.9747487806035 289.3470956131355]
-:fontSize 20
-:handles 
-{:start 
-{:id "start"
-:canBind true
-:point [0 0.93]
-:bindingId "2eb8cd04-a67a-11f1-a4b9-0ff620bde7f1"}
-:end 
-{:id "end"
-:canBind true
-:point [95.67 0]
-:bindingId "2eb8cd05-a67a-11f1-a4b9-0ff620bde7f1"}}
-:decorations 
-{:end "arrow"}
+:id "2eb8a5fa-a67a-11f1-a4b9-0ff620bde7f1"
+:isAspectRatioLocked true
+:objectFit "fill"
+:point [-2120 1864]
 :parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664466297482
-:italic false}}
-:block/updated-at 1788317913166} 
-{:block/created-at 1788317913166
+:nonce 1667215502378
+:clipping 0}}
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705054
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
 {:isSizeLocked true
 :stroke "var(--tl-foreground, #000)"
 :borderRadius 0
-:index 47
-:scale [1 1]
-:scaleLevel "xl"
-:ls-type "whiteboard-shape"
-:fill "#ffffff"
-:type "text"
-:size [588 68]
-:fontFamily "'Inter'"
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:id "2eb87f0f-a67a-11f1-a4b9-0ff620bde7f1"
-:padding 4
-:fontWeight 700
-:noFill true
-:point [7242.5374815958885 54.68245184526006]
-:lineHeight 1.2
-:fontSize 48
-:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366268024
-:italic false
-:text "Add media to the canvas"}}
-:block/updated-at 1788317913166} 
-{:block/created-at 1788317913166
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:isSizeLocked true
-:stroke "var(--tl-foreground, #000)"
-:borderRadius 0
-:index 9
+:index 23
 :scale [1 1]
 :scaleLevel "md"
 :ls-type "whiteboard-shape"
 :fill "#ffffff"
 :type "text"
-:size [179 34]
+:size [191 34]
 :fontFamily "'Inter'"
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
-:id "2eb87ee9-a67a-11f1-a4b9-0ff620bde7f1"
+:id "2eb87ef7-a67a-11f1-a4b9-0ff620bde7f1"
 :padding 4
 :fontWeight 700
 :noFill true
-:point [2591.884914168668 293.534343019443]
+:point [-7016 1848]
 :lineHeight 1.2
 :fontSize 20
 :parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
-:nonce 1664366270387
+:nonce 1664366299957
 :italic false
-:text "Erase anything"}}
-:block/updated-at 1788317913166} 
-{:block/created-at 1788531900364
+:text "Select anything"}}
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705054
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
-{:index 79
+{:stroke "var(--ls-primary-text-color, #000)"
+:index 44
 :scale [1 1]
-:type "image"
-:assetId "846ea260-a67a-11f1-a4b9-0ff620bde7f1"
-:size [4129.548244701444 1387.7202822310667]
+:ls-type "whiteboard-shape"
+:fill "var(--ls-secondary-background-color)"
+:type "line"
+:strokeType "line"
+:strokeWidth 1
 :opacity 1
-:id "846f1790-a67a-11f1-a4b9-0ff620bde7f1"
-:isAspectRatioLocked true
-:isLocked false
-:objectFit "fill"
-:point [21288 -9304]
-:parentId "6a9790d7-925a-4321-999c-a3d201f96c6b"
-:nonce 1788318056997
-:clipping 0}}
-:block/updated-at 1788531900364} 
-{:block/created-at 1788531900364
+:label ""
+:id "2eb87f0c-a67a-11f1-a4b9-0ff620bde7f1"
+:fontWeight 400
+:noFill true
+:point [-3664 2000]
+:fontSize 20
+:handles 
+{:start 
+{:id "start"
+:canBind true
+:point [0.04 0]
+:bindingId "942a2e90-590e-11ed-9035-ebf85ccffec3"}
+:end 
+{:id "end"
+:canBind true
+:point [0 29.69]}}
+:decorations 
+{:start "arrow"
+:end "arrow"}
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664529447989
+:italic false}}
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705055
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
-{:index 80
+{:index 58
 :scale [1 1]
 :type "image"
-:assetId "1a7bf490-a67d-11f1-a4b9-0ff620bde7f1"
-:size [1081.7147577657997 1318.6790274435918]
+:assetId "a8cffa90-590e-11ed-9035-ebf85ccffec3"
+:size [108 364]
 :opacity 1
-:id "1a7c69c0-a67d-11f1-a4b9-0ff620bde7f1"
+:id "2eb8a5f6-a67a-11f1-a4b9-0ff620bde7f1"
 :isAspectRatioLocked true
-:isLocked false
 :objectFit "fill"
-:point [25864 -9840]
-:parentId "6a9790d7-925a-4321-999c-a3d201f96c6b"
-:nonce 1788319167450
+:point [-6840 1832]
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1667215501970
 :clipping 0}}
-:block/updated-at 1788531900364} 
-{:block/created-at 1788531934388
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705055
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
-{:index 81
+{:index 64
 :scale [1 1]
 :type "image"
-:assetId "3d672a10-a67d-11f1-a4b9-0ff620bde7f1"
-:size [2196.5224040728717 1461.9864173345243]
+:assetId "a8d1cf51-590e-11ed-9035-ebf85ccffec3"
+:size [38 38]
 :opacity 1
-:id "3d679f40-a67d-11f1-a4b9-0ff620bde7f1"
+:id "2eb8a5fc-a67a-11f1-a4b9-0ff620bde7f1"
 :isAspectRatioLocked true
-:isLocked false
 :objectFit "fill"
-:point [29240 -9936]
-:parentId "6a9790d7-925a-4321-999c-a3d201f96c6b"
-:nonce 1788319226505
+:point [-4936 1672]
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1667215501976
 :clipping 0}}
-:block/updated-at 1788531934388} 
-{:block/created-at 1788531900363
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705055
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke "#ababab"
+:rotation 0
+:borderRadius 2
+:index 1
+:scale [1 1]
+:ls-type "whiteboard-shape"
+:fill "var(--ls-secondary-background-color)"
+:type "box"
+:size [1071.46875 578.7624827596054]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:label ""
+:id "2eb87ee1-a67a-11f1-a4b9-0ff620bde7f1"
+:fontWeight 400
+:noFill false
+:point [-8448 1672]
+:fontSize 20
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664366266337
+:italic false}}
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705054
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke "#ababab"
+:rotation 0
+:borderRadius 2
+:index 2
+:scale [1 1]
+:ls-type "whiteboard-shape"
+:fill "var(--ls-secondary-background-color)"
+:type "box"
+:size [1071.46875 578.7624827596054]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:label ""
+:id "2eb87ee2-a67a-11f1-a4b9-0ff620bde7f1"
+:fontWeight 400
+:noFill false
+:point [-9600 1672]
+:fontSize 20
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664366265920
+:italic false}}
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705056
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:index 74
+:scale [1 1]
+:type "image"
+:assetId "a8d0e4f1-590e-11ed-9035-ebf85ccffec3"
+:size [212.1512918586286 70.34490203733476]
+:opacity 1
+:id "2eb8a606-a67a-11f1-a4b9-0ff620bde7f1"
+:isAspectRatioLocked true
+:objectFit "fill"
+:point [-5296 1840]
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1667215502230
+:clipping 0}}
+:block/updated-at 1790419705056} 
+{:block/created-at 1790419705054
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:isSizeLocked true
+:stroke "var(--tl-foreground, #000)"
+:borderRadius 0
+:index 8
+:scale [1 1]
+:scaleLevel "md"
+:ls-type "whiteboard-shape"
+:fill "#ffffff"
+:type "text"
+:size [395 34]
+:fontFamily "'Inter'"
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "2eb87ee8-a67a-11f1-a4b9-0ff620bde7f1"
+:padding 4
+:fontWeight 700
+:noFill true
+:point [-6720 1944]
+:lineHeight 1.2
+:fontSize 20
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664366266665
+:italic false
+:text "Highlight anything on the canvas"}}
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705053
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke "#ababab"
+:rotation 0
+:borderRadius 2
+:index 41
+:scale [1 1]
+:ls-type "whiteboard-shape"
+:fill "var(--ls-secondary-background-color)"
+:type "box"
+:size [1071.46875 578.7624827596054]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:label ""
+:id "2eb87f09-a67a-11f1-a4b9-0ff620bde7f1"
+:fontWeight 400
+:noFill false
+:point [-3768 1680]
+:fontSize 20
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664366266443
+:italic false}}
+:block/updated-at 1790419705053} 
+{:block/created-at 1790419705054
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2257,31 +1963,82 @@
 :isAspectRatioLocked true
 :isLocked false
 :objectFit "fill"
-:point [27232 -9880]
+:point [17632 -8208]
 :parentId "6a9790d7-925a-4321-999c-a3d201f96c6b"
-:nonce 1788319387745
+:nonce 1788319387851
 :clipping 0}}
-:block/updated-at 1788531900363} 
-{:block/created-at 1788531900364
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705055
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
-{:index 83
+{:stroke "var(--ls-primary-text-color, #000)"
+:index 10
 :scale [1 1]
-:type "image"
-:assetId "bb8b7e00-a67d-11f1-a4b9-0ff620bde7f1"
-:size [1552.3543282796672 2380.9115464412075]
+:ls-type "whiteboard-shape"
+:fill "var(--ls-secondary-background-color)"
+:type "line"
+:strokeType "line"
+:strokeWidth 1
 :opacity 1
-:id "bb8c1a40-a67d-11f1-a4b9-0ff620bde7f1"
-:isAspectRatioLocked true
-:isLocked false
-:objectFit "fill"
-:point [20440 -8144]
-:parentId "6a9790d7-925a-4321-999c-a3d201f96c6b"
-:nonce 1788319438082
-:clipping 0}}
-:block/updated-at 1788531900364} 
-{:block/created-at 1788531900364
+:label ""
+:id "2eb87eea-a67a-11f1-a4b9-0ff620bde7f1"
+:fontWeight 400
+:noFill true
+:point [-6848 1984]
+:fontSize 20
+:handles 
+{:start 
+{:id "start"
+:canBind true
+:point [41.3 0.31]}
+:end 
+{:id "end"
+:canBind true
+:point [0 0]
+:bindingId "2eb8a60c-a67a-11f1-a4b9-0ff620bde7f1"}}
+:decorations 
+{:end "arrow"}
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664366317760
+:italic false}}
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705054
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke "var(--ls-primary-text-color, #000)"
+:index 7
+:scale [1 1]
+:ls-type "whiteboard-shape"
+:fill "var(--ls-secondary-background-color)"
+:type "line"
+:strokeType "line"
+:strokeWidth 1
+:opacity 1
+:label ""
+:id "2eb87ee7-a67a-11f1-a4b9-0ff620bde7f1"
+:fontWeight 400
+:noFill true
+:point [-6837 1920.74]
+:fontSize 20
+:handles 
+{:start 
+{:id "start"
+:canBind true
+:point [14.97 0]}
+:end 
+{:id "end"
+:canBind true
+:point [0 0.04]
+:bindingId "2eb8a60b-a67a-11f1-a4b9-0ff620bde7f1"}}
+:decorations 
+{:end "arrow"}
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664366266711
+:italic false}}
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705054
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
@@ -2303,69 +2060,312 @@
 :padding 4
 :fontWeight 400
 :noFill true
-:point [22056 -7720]
+:point [12456 -6048]
 :lineHeight 1.2
 :fontSize 48
 :parentId "6a9790d7-925a-4321-999c-a3d201f96c6b"
-:nonce 1788319489405
+:nonce 1788319489511
 :italic false
 :text "Stopping the Dover Mail\nHarry Furniss\n1910"}}
-:block/updated-at 1788531900364} 
-{:block/created-at 1788531900364
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705054
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
-{:stroke ""
-:index 85
+{:index 57
+:scale [1 1]
+:type "image"
+:assetId "a8cfac70-590e-11ed-9035-ebf85ccffec3"
+:size [128 128]
+:opacity 1
+:id "2eb8a5f5-a67a-11f1-a4b9-0ff620bde7f1"
+:isAspectRatioLocked true
+:objectFit "fill"
+:point [-9120 1704]
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1667215501790
+:clipping 0}}
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705054
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:index 66
+:scale [1 1]
+:type "image"
+:assetId "a8d1f660-590e-11ed-9035-ebf85ccffec3"
+:size [38 38]
+:opacity 1
+:id "2eb8a5fe-a67a-11f1-a4b9-0ff620bde7f1"
+:isAspectRatioLocked true
+:objectFit "fill"
+:point [-3912 2216]
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1667215501878
+:clipping 0}}
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705055
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:isSizeLocked true
+:stroke "var(--tl-foreground, #000)"
+:borderRadius 0
+:index 5
+:scale [1 1]
+:scaleLevel "md"
+:ls-type "whiteboard-shape"
+:fill "#ffffff"
+:type "text"
+:size [275 34]
+:fontFamily "'Inter'"
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "2eb87ee5-a67a-11f1-a4b9-0ff620bde7f1"
+:padding 4
+:fontWeight 700
+:noFill true
+:point [-6720 1880]
+:lineHeight 1.2
+:fontSize 20
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664366266665
+:italic false
+:text "Move around the canvas"}}
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705055
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:index 63
+:scale [1 1]
+:type "image"
+:assetId "a8d1f661-590e-11ed-9035-ebf85ccffec3"
+:size [100.5 100]
+:opacity 1
+:id "2eb8a5fb-a67a-11f1-a4b9-0ff620bde7f1"
+:isAspectRatioLocked true
+:objectFit "fill"
+:point [-1776 1864]
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1667215502436
+:clipping 0}}
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705054
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:index 69
+:scale [1 1]
+:type "image"
+:assetId "a8d0bde0-590e-11ed-9035-ebf85ccffec3"
+:size [39.092513518779924 39.092513518779924]
+:opacity 1
+:id "2eb8a601-a67a-11f1-a4b9-0ff620bde7f1"
+:isAspectRatioLocked true
+:objectFit "fill"
+:point [-6024 1848]
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1667215501964
+:clipping 0}}
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705053
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:isSizeLocked true
+:stroke "var(--tl-foreground, #000)"
+:borderRadius 0
+:index 21
 :scale [1 1]
 :scaleLevel "xl"
-:fill ""
+:ls-type "whiteboard-shape"
+:fill "#ffffff"
+:type "text"
+:size [789 68]
+:fontFamily "'Inter'"
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "2eb87ef5-a67a-11f1-a4b9-0ff620bde7f1"
+:padding 4
+:fontWeight 700
+:noFill true
+:point [-7056 1728]
+:lineHeight 1.2
+:fontSize 48
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664366266334
+:italic false
+:text "Quick intro to your toolbox"}}
+:block/updated-at 1790419705053} 
+{:block/created-at 1790419705056
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke "var(--ls-primary-text-color, #000)"
+:index 26
+:scale [1 1]
+:ls-type "whiteboard-shape"
+:fill "var(--ls-secondary-background-color)"
 :type "line"
 :strokeType "line"
 :strokeWidth 1
 :opacity 1
 :label ""
-:id "ea57c722-a67d-11f1-a4b9-0ff620bde7f1"
+:id "2eb87efa-a67a-11f1-a4b9-0ff620bde7f1"
 :fontWeight 400
 :noFill true
-:point [21996.35 -7536]
+:point [-6776 2088]
 :fontSize 20
 :handles 
 {:start 
 {:id "start"
 :canBind true
-:point [223.23 0]
-:bindingId "ea57c720-a67d-11f1-a4b9-0ff620bde7f1"}
+:point [0 0.54]}
 :end 
 {:id "end"
 :canBind true
-:point [0 210.88]
-:bindingId "ea57c721-a67d-11f1-a4b9-0ff620bde7f1"}}
+:point [52.21 0]}}
 :decorations 
 {:end "arrow"}
-:parentId "6a9790d7-925a-4321-999c-a3d201f96c6b"
-:nonce 1788319516067
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664464964203
 :italic false}}
-:block/updated-at 1788531900364} 
-{:block/created-at 1788531900364
+:block/updated-at 1790419705056} 
+{:block/created-at 1790419705055
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
-{:rotation 0
-:index 86
+{:isSizeLocked true
+:stroke "var(--tl-foreground, #000)"
+:borderRadius 0
+:index 19
 :scale [1 1]
 :scaleLevel "xl"
-:type "html"
-:size [1448 2096]
-:id "400f39b0-a86c-11f1-ba49-b10cb190122a"
-:isLocked false
-:point [22712 -7344]
-:parentId "6a9790d7-925a-4321-999c-a3d201f96c6b"
-:nonce 1788531832182
-:html "<meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"><img src=\"https://imgs.search.brave.com/lPSIF36EmTzmuGzzV_i8wzGF7izsILpx2cJ5mUxmci0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2MxL0NoYXJsZXNf/RGlja2Vuc18oMTgx/Mi0xODcwKS5qcGc\" alt=\"https://imgs.search.brave.com/lPSIF36EmTzmuGzzV_i8wzGF7izsILpx2cJ5mUxmci0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2MxL0NoYXJsZXNf/RGlja2Vuc18oMTgx/Mi0xODcwKS5qcGc\" width=\"718\" height=\"1040\" class=\"shrinkToFit\">"}}
-:block/updated-at 1788531900364})
+:ls-type "whiteboard-shape"
+:fill "#ffffff"
+:type "text"
+:size [357 68]
+:fontFamily "'Inter'"
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "2eb87ef3-a67a-11f1-a4b9-0ff620bde7f1"
+:padding 4
+:fontWeight 700
+:noFill true
+:point [-8408 1728]
+:lineHeight 1.2
+:fontSize 48
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664366266163
+:italic false
+:text "The Benefits"}}
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705055
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke "gray"
+:index 40
+:scale [1 1]
+:ls-type "whiteboard-shape"
+:fill "gray"
+:type "line"
+:strokeType "line"
+:strokeWidth 1
+:opacity 1
+:label ""
+:id "2eb87f08-a67a-11f1-a4b9-0ff620bde7f1"
+:fontWeight 400
+:noFill true
+:point [-8527.53 1975.85]
+:fontSize 20
+:handles 
+{:start 
+{:id "start"
+:canBind true
+:point [0 0]
+:bindingId "2eb8cd07-a67a-11f1-a4b9-0ff620bde7f1"}
+:end 
+{:id "end"
+:canBind true
+:point [75.53 0.39]
+:bindingId "2eb8cd08-a67a-11f1-a4b9-0ff620bde7f1"}}
+:decorations 
+{:end "arrow"}
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1664466318068
+:italic false}}
+:block/updated-at 1790419705055} 
+{:block/created-at 1790419705054
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke "gray"
+:index 78
+:scale [1 1]
+:fill "gray"
+:type "line"
+:strokeType "line"
+:strokeWidth 1
+:opacity 1
+:label ""
+:id "2eb8a60a-a67a-11f1-a4b9-0ff620bde7f1"
+:fontWeight 400
+:noFill true
+:point [-2695.53 1960.35]
+:fontSize 20
+:handles 
+{:start 
+{:id "start"
+:canBind true
+:point [0 0.48]
+:bindingId "2eb8cd0c-a67a-11f1-a4b9-0ff620bde7f1"}
+:end 
+{:id "end"
+:canBind true
+:point [99.53 0]
+:bindingId "2eb8cd0d-a67a-11f1-a4b9-0ff620bde7f1"}}
+:decorations 
+{:end "arrow"}
+:parentId "637239f2-9680-4c82-802c-8858d9835c80"
+:nonce 1668430343657
+:italic false}}
+:block/updated-at 1790419705054} 
+{:block/created-at 1790419705056
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:isSizeLocked true
+:stroke "var(--tl-foreground, #000)"
+:borderRadius 0
+:index 56
+:scale [1 1]
+:scaleLevel "xl"
+:fill "#ffffff"
+:type "text"
+:size [357 68]
+:fontFamily "'Inter'"
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "2eb8a5f4-a67a-11f1-a4b9-0ff620bde7f1"
+:padding 4
+:fontWeight 700
+:noFill true
+:point [-9008 1736]
+:lineHeight 1.2
+:fontSize 48
+:parentId "63343143-c1b8-4d33-a4d2-b9b91d772e96"
+:nonce 1667212477796
+:italic false
+:text "Whiteboards!"}}
+:block/updated-at 1790419705056})
 :pages (
-{:block/uuid #uuid "6a9790d7-925a-4321-999c-a3d201f96c6b"
+{:block/uuid #uuid "6aae45dd-094d-4911-bb2b-02f25f6078c7"
 :block/properties 
 {:ls-type :whiteboard-page
 :logseq.tldraw.page 
@@ -2620,8 +2620,8 @@
 :size [652 1000]}]
 :shapes-index ("2eb87ee0-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ee1-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ee2-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ee3-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ee4-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ee5-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ee6-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ee7-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ee8-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ee9-a67a-11f1-a4b9-0ff620bde7f1" "2eb87eea-a67a-11f1-a4b9-0ff620bde7f1" "2eb87eeb-a67a-11f1-a4b9-0ff620bde7f1" "2eb87eec-a67a-11f1-a4b9-0ff620bde7f1" "2eb87eed-a67a-11f1-a4b9-0ff620bde7f1" "2eb87eee-a67a-11f1-a4b9-0ff620bde7f1" "2eb87eef-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef0-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef1-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef2-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef3-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef4-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef5-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef6-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef7-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef8-a67a-11f1-a4b9-0ff620bde7f1" "2eb87ef9-a67a-11f1-a4b9-0ff620bde7f1" "2eb87efa-a67a-11f1-a4b9-0ff620bde7f1" "2eb87efb-a67a-11f1-a4b9-0ff620bde7f1" "2eb87efc-a67a-11f1-a4b9-0ff620bde7f1" "2eb87efd-a67a-11f1-a4b9-0ff620bde7f1" "2eb87efe-a67a-11f1-a4b9-0ff620bde7f1" "2eb87eff-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f00-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f01-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f02-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f03-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f04-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f05-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f06-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f07-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f08-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f09-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f0a-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f0b-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f0c-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f0d-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f0e-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f0f-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f10-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f11-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f12-a67a-11f1-a4b9-0ff620bde7f1" "2eb87f13-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f0-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f1-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f2-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f3-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f4-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f5-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f6-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f7-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f8-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5f9-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5fa-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5fb-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5fc-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5fd-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5fe-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a5ff-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a600-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a601-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a602-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a603-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a604-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a605-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a606-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a607-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a608-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a609-a67a-11f1-a4b9-0ff620bde7f1" "2eb8a60a-a67a-11f1-a4b9-0ff620bde7f1" "846f1790-a67a-11f1-a4b9-0ff620bde7f1" "1a7c69c0-a67d-11f1-a4b9-0ff620bde7f1" "3d679f40-a67d-11f1-a4b9-0ff620bde7f1" "9dc56c00-a67d-11f1-a4b9-0ff620bde7f1" "bb8c1a40-a67d-11f1-a4b9-0ff620bde7f1" "da663450-a67d-11f1-a4b9-0ff620bde7f1" "ea57c722-a67d-11f1-a4b9-0ff620bde7f1" "400f39b0-a86c-11f1-ba49-b10cb190122a")}}
 :block/journal? false
-:block/updated-at 1788531934388
-:block/created-at 1788317911900
+:block/updated-at 1789806045165
+:block/created-at 1789806045165
 :block/type "whiteboard"
 :block/name "a tale of two cities"
 :block/original-name "A Tale of Two Cities"})}
